@@ -8,7 +8,7 @@ const Review = require("../models/Review");
    POST - CREATE REVIEW
    PUBLIC
    POST /api/reviews
-   ONE REVIEW PER STUDENT
+   ONE REVIEW PER STUDENT PER COURSE
 ========================================================= */
 
 router.post("/", async (req, res) => {
@@ -33,18 +33,30 @@ router.post("/", async (req, res) => {
         }
 
 
+        if (!courseName) {
+
+            return res.status(400).json({
+                message: "Course name is required"
+            });
+
+        }
+
+
         /* =================================================
-           CHECK IF STUDENT ALREADY HAS A REVIEW
+           CHECK IF STUDENT ALREADY REVIEWED THIS COURSE
         ================================================= */
 
         const existingReview =
-            await Review.findOne({ studentId });
+            await Review.findOne({
+                studentId,
+                courseName
+            });
 
 
         if (existingReview) {
 
             return res.status(400).json({
-                message: "You have already submitted a review"
+                message: "You have already reviewed this course"
             });
 
         }
@@ -113,7 +125,7 @@ router.get("/", async (req, res) => {
 
 
 /* =========================================================
-   GET BY STUDENT ID - GET ONE STUDENT'S REVIEW
+   GET BY STUDENT ID - GET ALL REVIEWS BY ONE STUDENT
    PUBLIC
    GET /api/reviews/student/:studentId
 ========================================================= */
@@ -122,20 +134,21 @@ router.get("/student/:studentId", async (req, res) => {
 
     try {
 
-        const review =
-            await Review.findOne({
+        const reviews =
+            await Review.find({
                 studentId: req.params.studentId
-            });
+            })
+            .sort({ createdAt: -1 });
 
 
         res.status(200).json({
-            review: review
+            reviews: reviews
         });
 
     } catch (error) {
 
         res.status(500).json({
-            message: "Failed to retrieve review",
+            message: "Failed to retrieve student reviews",
             error: error.message
         });
 

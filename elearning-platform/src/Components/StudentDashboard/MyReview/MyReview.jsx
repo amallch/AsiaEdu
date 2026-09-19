@@ -28,6 +28,8 @@ function MyReview() {
 
     const [review, setReview] = useState(null);
 
+    const [enrollments, setEnrollments] = useState([]);
+
     const [loading, setLoading] = useState(true);
 
     const [error, setError] = useState("");
@@ -53,7 +55,7 @@ function MyReview() {
 
 
     /* =====================================================
-       LOAD EXISTING REVIEW
+       LOAD REVIEW + ENROLLMENTS
     ===================================================== */
 
     useEffect(() => {
@@ -69,18 +71,23 @@ function MyReview() {
         }
 
 
-        const fetchReview = async () => {
+        const loadData = async () => {
 
             try {
 
                 setLoading(true);
 
-                const response = await fetch(
+
+                /* =============================================
+                   FETCH EXISTING REVIEW
+                ============================================= */
+
+                const reviewResponse = await fetch(
                     `https://asiaedu-backend.onrender.com/api/reviews/student/${studentId}`
                 );
 
 
-                if (!response.ok) {
+                if (!reviewResponse.ok) {
 
                     throw new Error(
                         "Failed to fetch review"
@@ -89,10 +96,52 @@ function MyReview() {
                 }
 
 
-                const data = await response.json();
+                const reviewData =
+                    await reviewResponse.json();
 
 
-                setReview(data.review);
+                setReview(reviewData.review);
+
+
+                /* =============================================
+                   FETCH STUDENT'S ENROLLMENTS
+                ============================================= */
+
+                const enrollmentResponse = await fetch(
+                    `https://asiaedu-backend.onrender.com/api/enrollments/student/${studentId}`
+                );
+
+
+                if (!enrollmentResponse.ok) {
+
+                    throw new Error(
+                        "Failed to fetch enrollments"
+                    );
+
+                }
+
+
+                const enrollmentData =
+                    await enrollmentResponse.json();
+
+
+                const list =
+                    enrollmentData.enrollments || [];
+
+
+                setEnrollments(list);
+
+
+                /* =============================================
+                   AUTO-SELECT COURSE
+                ============================================= */
+
+                if (list.length === 1) {
+
+                    setCourseName(list[0].courseTitle || "");
+
+                }
+
 
                 setError("");
 
@@ -101,7 +150,7 @@ function MyReview() {
                 console.error(err);
 
                 setError(
-                    "Failed to load your review."
+                    "Failed to load your data."
                 );
 
             } finally {
@@ -113,7 +162,7 @@ function MyReview() {
         };
 
 
-        fetchReview();
+        loadData();
 
     }, [studentId]);
 
@@ -145,7 +194,7 @@ function MyReview() {
         if (!courseName.trim()) {
 
             setSubmitError(
-                "Please enter the course you enrolled in."
+                "Please select the course you enrolled in."
             );
 
             return;
@@ -216,8 +265,6 @@ function MyReview() {
 
 
             setReview(data.review);
-
-            setCourseName("");
 
             setRating(0);
 
@@ -455,6 +502,26 @@ function MyReview() {
 
                 </div>
 
+            ) : enrollments.length === 0 ? (
+
+                /* =================================================
+                   NO ENROLLMENTS
+                ================================================= */
+
+                <div className="MyReview-empty">
+
+                    <i className="fa-solid fa-graduation-cap"></i>
+
+                    <h2>
+                        No active courses
+                    </h2>
+
+                    <p>
+                        You need to be enrolled in at least one course before you can leave a review.
+                    </p>
+
+                </div>
+
             ) : (
 
                 /* =================================================
@@ -502,14 +569,43 @@ function MyReview() {
 
                             <i className="fa-solid fa-graduation-cap"></i>
 
-                            <input
-                                type="text"
-                                placeholder="e.g. Chinese Beginner"
-                                value={courseName}
-                                onChange={(e) =>
-                                    setCourseName(e.target.value)
-                                }
-                            />
+
+                            {enrollments.length === 1 ? (
+
+                                <input
+                                    type="text"
+                                    value={courseName}
+                                    readOnly
+                                />
+
+                            ) : (
+
+                                <select
+                                    value={courseName}
+                                    onChange={(e) =>
+                                        setCourseName(e.target.value)
+                                    }
+                                    className="MyReview-select"
+                                >
+
+                                    <option value="">
+                                        Select a course
+                                    </option>
+
+                                    {enrollments.map((enrollment) => (
+
+                                        <option
+                                            key={enrollment._id}
+                                            value={enrollment.courseTitle}
+                                        >
+                                            {enrollment.courseTitle}
+                                        </option>
+
+                                    ))}
+
+                                </select>
+
+                            )}
 
                         </div>
 
