@@ -1,0 +1,865 @@
+/* =========================================================
+   REVIEWS
+========================================================= */
+
+.Reviews {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.Reviews-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+
+.Reviews-header span {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+.Reviews-header h1 {
+    margin: 4px 0 5px;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.Reviews-header p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   TOTAL
+========================================================= */
+
+.Reviews-total {
+    min-width: 130px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 3px;
+}
+
+
+.Reviews-total strong {
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #CC3650;
+}
+
+
+.Reviews-total span {
+    font-size: 11px;
+
+    color: #958B84;
+
+    text-transform: none;
+
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.Reviews-filters {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.Reviews-search {
+    height: 44px;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+}
+
+
+.Reviews-search i {
+    color: #958B84;
+
+    font-size: 14px;
+}
+
+
+.Reviews-search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 13px;
+}
+
+
+.Reviews-search input::placeholder {
+    color: #B0A8A2;
+}
+
+
+/* =========================================================
+   YEAR FILTER
+========================================================= */
+
+.Reviews-year-filter {
+    height: 44px;
+
+    width: 150px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+}
+
+
+.Reviews-year-filter i {
+    color: #958B84;
+
+    font-size: 13px;
+}
+
+
+.Reviews-year-filter select {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #746B66;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.Reviews-error {
+    margin-bottom: 18px;
+
+    padding: 12px 15px;
+
+    box-sizing: border-box;
+
+    background-color: #FDECEC;
+
+    border: 1px solid rgba(204, 54, 80, 0.12);
+
+    border-radius: 9px;
+
+    color: #CC3650;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   TABLE CARD
+========================================================= */
+
+.Reviews-card {
+    width: 100%;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.Reviews-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.Reviews-table {
+    width: 100%;
+
+    min-width: 850px;
+
+    border-collapse: collapse;
+
+    table-layout: auto;
+}
+
+
+/* =========================================================
+   TABLE HEAD
+========================================================= */
+
+.Reviews-table thead {
+    background-color: #FBFAFA;
+}
+
+
+.Reviews-table th {
+    padding: 15px 18px;
+
+    text-align: left;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.07);
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TABLE BODY
+========================================================= */
+
+.Reviews-table td {
+    padding: 15px 18px;
+
+    font-size: 12px;
+
+    color: #746B66;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.05);
+
+    vertical-align: middle;
+}
+
+
+.Reviews-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+.Reviews-table tbody tr:hover {
+    background-color: rgba(204, 54, 80, 0.025);
+}
+
+
+/* =========================================================
+   USER
+========================================================= */
+
+.Reviews-user {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+.Reviews-avatar {
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   NAME
+========================================================= */
+
+.Reviews-name {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   COURSE
+========================================================= */
+
+.Reviews-course {
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #746B66;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   STARS
+========================================================= */
+
+.Reviews-stars {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 3px;
+
+    color: #F2B01E;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.Reviews-date {
+    font-size: 11px;
+
+    color: #958B84;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.Reviews-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+/* =========================================================
+   VIEW / DELETE BUTTONS
+========================================================= */
+
+.Reviews-view,
+.Reviews-delete {
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(204, 54, 80, 0.15);
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.05);
+
+    color: #CC3650;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.Reviews-view:hover {
+    background-color: rgba(204, 54, 80, 0.10);
+
+    transform: translateX(2px);
+}
+
+
+.Reviews-delete:hover {
+    background-color: rgba(204, 54, 80, 0.10);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   DELETE MODAL OVERLAY
+========================================================= */
+
+.Reviews-modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: rgba(44, 34, 34, 0.35);
+}
+
+
+/* =========================================================
+   DELETE MODAL
+========================================================= */
+
+.Reviews-delete-modal {
+    width: 100%;
+
+    max-width: 395px;
+
+    padding: 26px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 15px 40px rgba(44, 34, 34, 0.15);
+}
+
+
+/* =========================================================
+   DELETE ICON
+========================================================= */
+
+.Reviews-delete-icon {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 14px;
+
+    border-radius: 12px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   DELETE MODAL TEXT
+========================================================= */
+
+.Reviews-delete-modal h2 {
+    margin: 0 0 7px;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.Reviews-delete-modal p {
+    margin: 0 auto 20px;
+
+    max-width: 320px;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #958B84;
+}
+
+
+.Reviews-delete-modal p strong {
+    color: #2C2222;
+}
+
+
+/* =========================================================
+   DELETE MODAL ACTIONS
+========================================================= */
+
+.Reviews-delete-actions {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.Reviews-cancel-delete,
+.Reviews-confirm-delete {
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 16px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.Reviews-cancel-delete {
+    border: 1px solid rgba(44, 34, 34, 0.10);
+
+    background-color: #FFFFFF;
+
+    color: #746B66;
+}
+
+
+.Reviews-cancel-delete:hover {
+    background-color: #FAF9F8;
+}
+
+
+.Reviews-confirm-delete {
+    border: none;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+}
+
+
+.Reviews-confirm-delete:hover {
+    background-color: #B92F47;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.Reviews-empty {
+    height: 130px;
+
+    text-align: center !important;
+
+    color: #958B84 !important;
+
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .Reviews-header {
+        align-items: flex-start;
+    }
+
+
+    .Reviews-header h1 {
+        font-size: 23px;
+    }
+
+
+    .Reviews-header p {
+        font-size: 12px;
+    }
+
+
+    .Reviews-total {
+        min-width: auto;
+    }
+
+
+    .Reviews-total strong {
+        font-size: 23px;
+    }
+
+
+    .Reviews-year-filter {
+        width: 100%;
+    }
+
+
+    .Reviews-table {
+        min-width: 800px;
+    }
+
+
+    .Reviews-table th {
+        font-size: 9px;
+
+        padding: 13px 14px;
+    }
+
+
+    .Reviews-table td {
+        font-size: 11px;
+
+        padding: 13px 14px;
+    }
+
+
+    .Reviews-name {
+        font-size: 12px;
+    }
+
+
+    .Reviews-course {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .Reviews-header h1 {
+        font-size: 21px;
+    }
+
+
+    .Reviews-header p {
+        font-size: 11px;
+    }
+
+
+    .Reviews-total strong {
+        font-size: 21px;
+    }
+
+
+    .Reviews-total span {
+        font-size: 10px;
+    }
+
+
+    .Reviews-actions {
+        gap: 5px;
+    }
+
+
+    .Reviews-view,
+    .Reviews-delete {
+        width: 28px;
+
+        height: 28px;
+
+        font-size: 10px;
+    }
+
+
+    .Reviews-delete-modal {
+        padding: 20px;
+    }
+
+
+    .Reviews-delete-modal h2 {
+        font-size: 16px;
+    }
+
+
+    .Reviews-delete-modal p {
+        font-size: 11px;
+    }
+
+
+    .Reviews-cancel-delete,
+    .Reviews-confirm-delete {
+        font-size: 10px;
+
+        height: 34px;
+
+        padding: 0 12px;
+    }
+
+
+    .Reviews-table th {
+        font-size: 8px;
+
+        padding: 11px 10px;
+    }
+
+
+    .Reviews-table td {
+        font-size: 10px;
+
+        padding: 11px 10px;
+    }
+
+
+    .Reviews-name {
+        font-size: 11px;
+    }
+
+
+    .Reviews-course {
+        font-size: 10px;
+    }
+
+
+    .Reviews-avatar {
+        width: 32px;
+
+        height: 32px;
+
+        font-size: 10px;
+    }
+
+}

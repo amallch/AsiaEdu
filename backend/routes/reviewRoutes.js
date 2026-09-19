@@ -70,6 +70,45 @@ router.get("/", async (req, res) => {
 
 
 /* =========================================================
+   GET BY ID - GET ONE REVIEW
+   PUBLIC
+   GET /api/reviews/:id
+========================================================= */
+
+router.get("/:id", async (req, res) => {
+
+    try {
+
+        const review =
+            await Review.findById(
+                req.params.id
+            );
+
+        if (!review) {
+
+            return res.status(404).json({
+                message: "Review not found"
+            });
+
+        }
+
+        res.status(200).json({
+            review: review
+        });
+
+    } catch (error) {
+
+        res.status(500).json({
+            message: "Failed to retrieve review",
+            error: error.message
+        });
+
+    }
+
+});
+
+
+/* =========================================================
    DELETE - DELETE REVIEW
    ADMIN ONLY
    DELETE /api/reviews/:id
