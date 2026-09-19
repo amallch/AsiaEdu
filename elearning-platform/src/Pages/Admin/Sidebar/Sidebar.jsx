@@ -82,6 +82,11 @@ const NAVIGATION_GROUPS = [
                 to: "/admin/contact",
                 icon: "fa-solid fa-envelope",
                 label: "Contact Messages"
+            },
+            {
+                to: "/admin/reviews",
+                icon: "fa-solid fa-star",
+                label: "Reviews"
             }
         ]
     }

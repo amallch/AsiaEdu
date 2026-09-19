@@ -287,6 +287,17 @@ import ViewContactMessage
 
 
 /* =========================================================
+   ADMIN REVIEWS
+========================================================= */
+
+import Reviews
+    from "./Pages/Admin/Reviews/Reviews";
+
+import ViewReview
+    from "./Pages/Admin/Reviews/ViewReview/ViewReview";
+
+
+/* =========================================================
    ADMIN SETTINGS
 ========================================================= */
 
@@ -801,6 +812,22 @@ function App() {
                     <Route
                         path="contact/:id"
                         element={<ViewContactMessage />}
+                    />
+
+
+                    {/* =================================================
+                        REVIEWS
+                    ================================================= */}
+
+                    <Route
+                        path="reviews"
+                        element={<Reviews />}
+                    />
+
+
+                    <Route
+                        path="reviews/:id"
+                        element={<ViewReview />}
                     />
 
 
