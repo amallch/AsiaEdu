@@ -47,10 +47,8 @@ import ResetPassword
 
 
 /* =========================================================
-   SPEAKING / COURSES
+   COURSES
 ========================================================= */
-
-import Speaking from "./Pages/speaking/speaking";
 
 import CourseDetails
     from "./Pages/CourseDetails/CourseDetails";
@@ -404,12 +402,6 @@ function App() {
                 <Route
                     path="/apply-to-teach"
                     element={<ApplyToTeach />}
-                />
-
-
-                <Route
-                    path="/speaking"
-                    element={<Speaking />}
                 />
 
 
