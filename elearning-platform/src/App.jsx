@@ -64,7 +64,7 @@ import Enrollment
 ========================================================= */
 
 import StudentDashboard
-    from "./pages/StudentDashboard/StudentDashboard";
+    from "./Pages/StudentDashboard/StudentDashboard";
 
 import Dashboard
     from "./Components/StudentDashboard/Dashboard/Dashboard";
@@ -96,7 +96,7 @@ import ViewMyLesson
 ========================================================= */
 
 import TeacherDashboard
-    from "./pages/TeacherDashboard/TeacherDashboard";
+    from "./Pages/TeacherDashboard/TeacherDashboard";
 
 import TeacherDashboardHome
     from "./Components/TeacherDashboard/TeacherDashboardHome/TeacherDashboardHome";
