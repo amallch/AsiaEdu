@@ -1,6 +1,6 @@
 import "./StudentDashboard.css";
 
-import Sidebar from "../Sidebar/Sidebar";
+import Sidebar from "./Sidebar/Sidebar";
 
 
 import {
