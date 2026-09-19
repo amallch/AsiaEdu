@@ -1,0 +1,85 @@
+.Badge{
+    width: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    padding: 4px 10px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+/* White */
+
+.Badge.primary{
+    background: rgba(255,255,255,.95);
+
+    color:#8B2E2E;
+
+    border:1px solid #E8D7CF;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+/* Red */
+
+.Badge.red{
+    background:linear-gradient(
+        135deg,
+        #B53A3A,
+        #8B2E2E
+    );
+
+    color:white;
+
+    box-shadow:0 10px 20px rgba(161,51,51,.22);
+}
+
+/* Gold */
+
+.Badge.gold{
+    background:#F8E7A2;
+
+    color:#8B5A00;
+}
+
+/* Blue */
+
+.Badge.blue{
+    background:#DDEEFF;
+
+    color:#2F73C8;
+}
+
+/* Green */
+
+.Badge.green{
+    background:#DDF6E6;
+    color:#1F8B53;
+}
+
+.Badge i{
+    font-size:12px;
+}
+
+.Badge.level{
+    background:#14de6f;
+    color:white;
+}
+
+.Badge.language{
+    background: rgba(255,255,255,.95);
+
+    color: #8B2E2E;
+
+    border: 1px solid #E8D7CF;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}

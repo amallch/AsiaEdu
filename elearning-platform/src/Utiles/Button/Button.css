@@ -1,0 +1,155 @@
+/* =================================================
+   BUTTON
+================================================= */
+
+.Button {
+
+    padding: 11px 21px;
+
+    width: fit-content;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 9px;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+/* =================================================
+   PRIMARY
+================================================= */
+
+.primary {
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    border: 1px solid #CC3650;
+
+}
+
+
+.primary:hover {
+
+    background-color: #B92F48;
+
+    border-color: #B92F48;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 16px
+        rgba(204, 54, 80, 0.18);
+
+}
+
+
+/* =================================================
+   OUTLINE
+================================================= */
+
+.outline {
+
+    background-color: transparent;
+
+    color: #CC3650;
+
+    border: 1px solid #CC3650;
+
+}
+
+
+.outline:hover {
+
+    background-color:
+        rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+
+    border-color: #CC3650;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 14px
+        rgba(204, 54, 80, 0.10);
+
+}
+
+
+/* =================================================
+   CATEGORY
+================================================= */
+
+.category {
+
+    padding: 8px 14px;
+
+    border: 1px solid
+        rgba(204, 54, 80, 0.12);
+
+    border-radius: 8px;
+
+    background-color:
+        rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.category:hover {
+
+    background-color:
+        rgba(204, 54, 80, 0.10);
+
+    transform: translateY(-1px);
+
+}
+
+
+/* =================================================
+   SMALL SCREENS
+================================================= */
+
+@media (max-width: 500px) {
+
+    .Button {
+
+        padding: 10px 18px;
+
+        font-size: 13px;
+
+    }
+
+}

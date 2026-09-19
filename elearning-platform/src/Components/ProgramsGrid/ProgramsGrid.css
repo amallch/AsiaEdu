@@ -1,0 +1,581 @@
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.ProgramsGrid {
+    width: 100%;
+
+    padding: 80px 0;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.ProgramsGrid-container {
+    width: 80%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
+}
+
+
+/* =========================================================
+   SELECTED PROGRAM
+========================================================= */
+
+.ProgramsGrid-selected {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 48% 52%;
+
+    background-color: #ffffff;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    border: 1px solid #f1e7e9;
+
+    box-shadow: 0 15px 45px rgba(45, 30, 30, 0.08);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.ProgramsGrid-image-container {
+    min-height: 560px;
+
+    padding: 14px;
+}
+
+
+.ProgramsGrid-image {
+    width: 100%;
+    height: 100%;
+
+    min-height: 530px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 18px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.ProgramsGrid-image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.02),
+            rgba(0, 0, 0, 0.30)
+        );
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.ProgramsGrid-badge {
+    position: absolute;
+
+    top: 18px;
+    left: 18px;
+
+    z-index: 2;
+
+    background-color: #ffffff;
+
+    color: #cc3650;
+
+    padding: 7px 15px;
+
+    border-radius: 50px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+
+    text-transform: uppercase;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.ProgramsGrid-content {
+    padding: 55px 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.ProgramsGrid-label {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 14px;
+
+    color: #cc3650;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+
+.ProgramsGrid-label i {
+    font-size: 13px;
+}
+
+
+.ProgramsGrid-content h1 {
+    margin: 0 0 18px;
+
+    font-size: 40px;
+
+    line-height: 1.15;
+
+    color: #2e2929;
+
+    font-weight: 750;
+}
+
+
+.ProgramsGrid-description {
+    margin: 0 0 30px;
+
+    color: #817777;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    max-width: 520px;
+}
+
+
+/* =========================================================
+   PROGRAM INFO
+========================================================= */
+
+.ProgramsGrid-info {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+
+    margin-bottom: 0;
+}
+
+
+.ProgramsGrid-infoItem {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px;
+
+    border: 1px solid #f1e5e7;
+
+    border-radius: 14px;
+
+    background-color: #fffafa;
+
+    transition: 0.3s ease;
+}
+
+
+.ProgramsGrid-infoItem:hover {
+    transform: translateY(-2px);
+
+    border-color: #e8b7bd;
+
+    box-shadow: 0 8px 20px rgba(204, 54, 80, 0.06);
+}
+
+
+.ProgramsGrid-infoIcon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #cc3650;
+
+    color: #ffffff;
+
+    border-radius: 11px;
+
+    font-size: 14px;
+}
+
+
+.ProgramsGrid-infoItem > div:last-child {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    min-width: 0;
+}
+
+
+.ProgramsGrid-infoItem span {
+    color: #9b9090;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+.ProgramsGrid-infoItem strong {
+    color: #3e3636;
+
+    font-size: 13px;
+
+    font-weight: 650;
+}
+
+
+/* =========================================================
+   EXPLORE MORE PROGRAMS
+========================================================= */
+
+.ProgramsGrid-more {
+    width: 100%;
+}
+
+
+.ProgramsGrid-moreHeader {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.ProgramsGrid-moreLabel {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #cc3650;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.ProgramsGrid-moreHeader h2 {
+    margin: 0;
+
+    color: #2e2929;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   OTHER PROGRAM CARDS
+========================================================= */
+
+.ProgramsGrid-moreCards {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   NOT FOUND
+========================================================= */
+
+.ProgramsGrid-notFound {
+    width: 80%;
+    max-width: 700px;
+
+    min-height: 350px;
+
+    margin: auto;
+
+    background-color: #ffffff;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+
+.ProgramsGrid-notFound-icon {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff0f2;
+
+    color: #cc3650;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+.ProgramsGrid-notFound h2 {
+    margin: 0 0 8px;
+
+    color: #2f2929;
+}
+
+
+.ProgramsGrid-notFound p {
+    margin: 0;
+
+    color: #807575;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .ProgramsGrid-container {
+        width: 88%;
+    }
+
+
+    .ProgramsGrid-content {
+        padding: 40px 35px;
+    }
+
+
+    .ProgramsGrid-content h1 {
+        font-size: 34px;
+    }
+
+
+    .ProgramsGrid-image-container {
+        min-height: 500px;
+    }
+
+
+    .ProgramsGrid-image {
+        min-height: 470px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .ProgramsGrid-selected {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ProgramsGrid-image-container {
+        min-height: 400px;
+    }
+
+
+    .ProgramsGrid-image {
+        min-height: 380px;
+    }
+
+
+    .ProgramsGrid-content {
+        padding: 40px;
+    }
+
+
+    .ProgramsGrid-moreCards {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .ProgramsGrid {
+        padding: 45px 0;
+    }
+
+
+    .ProgramsGrid-container {
+        width: 92%;
+
+        gap: 55px;
+    }
+
+
+    .ProgramsGrid-selected {
+        border-radius: 18px;
+    }
+
+
+    .ProgramsGrid-image-container {
+        padding: 10px;
+
+        min-height: 280px;
+    }
+
+
+    .ProgramsGrid-image {
+        min-height: 260px;
+
+        border-radius: 14px;
+    }
+
+
+    .ProgramsGrid-content {
+        padding: 30px 22px;
+    }
+
+
+    .ProgramsGrid-content h1 {
+        font-size: 28px;
+    }
+
+
+    .ProgramsGrid-description {
+        font-size: 14px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .ProgramsGrid-info {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+
+    .ProgramsGrid-moreHeader h2 {
+        font-size: 25px;
+    }
+
+
+    .ProgramsGrid-moreCards {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .ProgramsGrid-content {
+        padding: 25px 18px;
+    }
+
+
+    .ProgramsGrid-content h1 {
+        font-size: 25px;
+    }
+
+
+    .ProgramsGrid-infoItem {
+        padding: 12px;
+    }
+
+
+    .ProgramsGrid-moreHeader h2 {
+        font-size: 22px;
+    }
+
+}

@@ -1,0 +1,321 @@
+.Testimonials {
+
+    background-color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 0 90px;
+
+}
+
+
+.Testimonials-container {
+
+    width: 80%;
+
+    max-width: 1400px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+
+/* =========================================================
+   SLIDER
+========================================================= */
+
+.Testimonials-slider {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.Testimonials-cards {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 30px;
+
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+.Testimonials-slider {
+
+    opacity: 0;
+
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+
+}
+
+
+.Testimonials-visible
+.Testimonials-slider {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.15s;
+
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.Testimonials-arrow {
+
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    border: 1px solid #EAE4E4;
+
+    background-color: white;
+
+    color: #403838;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.2s ease;
+
+}
+
+
+.Testimonials-arrow:hover:not(:disabled) {
+
+    background-color: #CC3650;
+
+    border-color: #CC3650;
+
+    color: white;
+
+    transform: scale(1.08);
+
+}
+
+
+.Testimonials-arrow:disabled {
+
+    opacity: 0.35;
+
+    cursor: not-allowed;
+
+}
+
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .Testimonials-container {
+
+        width: 88%;
+
+    }
+
+
+    .Testimonials-cards {
+
+        gap: 25px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .Testimonials {
+
+        padding: 60px 0 80px;
+
+    }
+
+
+    .Testimonials-container {
+
+        width: 90%;
+
+    }
+
+
+    .Testimonials-slider {
+
+        gap: 15px;
+
+    }
+
+
+    .Testimonials-cards {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .Testimonials {
+
+        padding: 50px 0 70px;
+
+    }
+
+
+    .Testimonials-container {
+
+        width: 92%;
+
+        gap: 30px;
+
+    }
+
+
+    .Testimonials-slider {
+
+        gap: 10px;
+
+    }
+
+
+    .Testimonials-cards {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .Testimonials-arrow {
+
+        width: 34px;
+
+        height: 34px;
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .Testimonials-container {
+
+        width: 94%;
+
+    }
+
+
+    .Testimonials-slider {
+
+        gap: 7px;
+
+    }
+
+
+    .Testimonials-arrow {
+
+        width: 30px;
+
+        height: 30px;
+
+        font-size: 9px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .Testimonials-slider {
+
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+
+    }
+
+}

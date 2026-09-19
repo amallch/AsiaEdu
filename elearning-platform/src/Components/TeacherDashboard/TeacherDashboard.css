@@ -1,0 +1,196 @@
+/* =========================================================
+   TEACHER DASHBOARD
+========================================================= */
+
+.TeacherDashboard {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background-color: #F8F9FB;
+
+    padding-bottom: 60px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.TeacherDashboard-container {
+
+    width: 80%;
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 28px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.TeacherDashboard-container > .Sidebar {
+
+    width: 245px;
+
+    height: auto;
+
+    min-height: 0;
+
+    flex-shrink: 0;
+
+    position: sticky;
+
+    top: 40px;
+
+    box-sizing: border-box;
+
+    border-radius: 16px;
+
+    margin-top: 40px;
+}
+
+
+/* =========================================================
+   OUTLET
+========================================================= */
+
+.TeacherDashboard-main {
+
+    flex: 1;
+
+    min-width: 0;
+
+    width: calc(100% - 273px);
+
+    margin-top: 40px;
+}
+
+
+/* =========================================================
+   1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .TeacherDashboard-container {
+
+        gap: 20px;
+    }
+
+
+    .TeacherDashboard-container > .Sidebar {
+
+        width: 230px;
+    }
+
+
+    .TeacherDashboard-main {
+
+        width: calc(100% - 250px);
+    }
+
+}
+
+
+/* =========================================================
+   992px
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .TeacherDashboard-container {
+
+        width: 90%;
+    }
+
+
+    .TeacherDashboard-container > .Sidebar {
+
+        width: 220px;
+    }
+
+
+    .TeacherDashboard-main {
+
+        width: calc(100% - 240px);
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .TeacherDashboard-container {
+
+        width: 94%;
+
+        gap: 15px;
+    }
+
+
+    .TeacherDashboard-container > .Sidebar {
+
+        width: 75px;
+
+        margin-top: 25px;
+
+        top: 25px;
+    }
+
+
+    .TeacherDashboard-main {
+
+        width: calc(100% - 90px);
+
+        margin-top: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   560px
+========================================================= */
+
+@media (max-width: 560px) {
+
+    .TeacherDashboard-container {
+
+        width: 94%;
+
+        flex-direction: column;
+    }
+
+
+    .TeacherDashboard-container > .Sidebar {
+
+        width: 100%;
+
+        margin-top: 20px;
+
+        position: static;
+    }
+
+
+    .TeacherDashboard-main {
+
+        width: 100%;
+
+        margin-top: 20px;
+    }
+
+}

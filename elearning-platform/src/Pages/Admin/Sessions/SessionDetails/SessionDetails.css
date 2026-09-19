@@ -1,0 +1,1059 @@
+/* =========================================================
+   SESSION DETAILS
+========================================================= */
+
+.SessionDetails {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.SessionDetails-header {
+    margin-bottom: 25px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+
+.SessionDetails-header > div:first-child span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #CC3650;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+.SessionDetails-header h1 {
+    margin: 0 0 5px;
+
+    color: #2C2222;
+
+    font-size: 26px;
+
+    font-weight: 800;
+}
+
+
+.SessionDetails-header p {
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
+
+.SessionDetails-header-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.SessionDetails-back-button,
+.SessionDetails-edit-button {
+    height: 38px;
+
+    padding: 0 13px;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.SessionDetails-back-button {
+    border: 1px solid #E5DDD8;
+
+    background-color: #FFFFFF;
+
+    color: #2C2222;
+}
+
+
+.SessionDetails-back-button:hover {
+    background-color: #F7F3EA;
+
+    border-color: #D9CEC8;
+}
+
+
+.SessionDetails-edit-button {
+    border: none;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+}
+
+
+.SessionDetails-edit-button:hover {
+    background-color: #B92F47;
+}
+
+
+/* =========================================================
+   OVERVIEW
+========================================================= */
+
+.SessionDetails-overview {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+/* =========================================================
+   OVERVIEW ICON
+========================================================= */
+
+.SessionDetails-overview-icon {
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+}
+
+
+.SessionDetails-overview-icon i {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   OVERVIEW MAIN
+========================================================= */
+
+.SessionDetails-overview-main {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.SessionDetails-language {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #CC3650;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+.SessionDetails-overview-main h2 {
+    margin: 0 0 3px;
+
+    color: #2C2222;
+
+    font-size: 17px;
+
+    font-weight: 800;
+}
+
+
+.SessionDetails-overview-main p {
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PROGRAM TYPE
+========================================================= */
+
+.SessionDetails-program {
+    min-width: 120px;
+
+    padding-left: 18px;
+
+    border-left: 1px solid rgba(44, 34, 34, 0.07);
+}
+
+
+.SessionDetails-program span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #958B84;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.SessionDetails-program strong {
+    color: #CC3650;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.SessionDetails-sections {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.SessionDetails-section {
+    width: 100%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.SessionDetails-section-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    margin-bottom: 18px;
+}
+
+
+.SessionDetails-section-icon {
+    width: 36px;
+
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+}
+
+
+.SessionDetails-section-icon i {
+    font-size: 12px;
+}
+
+
+.SessionDetails-section-title h2 {
+    margin: 0 0 3px;
+
+    color: #2C2222;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+
+.SessionDetails-section-title p {
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   STUDENT COUNT
+========================================================= */
+
+.SessionDetails-student-count {
+    margin-left: auto;
+
+    min-width: 30px;
+
+    height: 30px;
+
+    padding: 0 8px;
+
+    box-sizing: border-box;
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   INFORMATION GRID
+========================================================= */
+
+.SessionDetails-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+
+.SessionDetails-info-item {
+    min-height: 62px;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 4px;
+}
+
+
+.SessionDetails-info-item span {
+    color: #958B84;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.SessionDetails-info-item strong {
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   AVAILABLE / FULL
+========================================================= */
+
+.SessionDetails-info-item.available strong {
+    color: #4C8A62;
+}
+
+
+.SessionDetails-info-item.full strong {
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   INSTRUCTOR
+========================================================= */
+
+.SessionDetails-instructor-card {
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+.SessionDetails-instructor-icon {
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+}
+
+
+.SessionDetails-instructor-icon i {
+    font-size: 12px;
+}
+
+
+.SessionDetails-instructor-card > div:last-child {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.SessionDetails-instructor-card strong {
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+.SessionDetails-instructor-card span {
+    color: #958B84;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.SessionDetails-instructor-card small {
+    color: #CC3650;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   STUDENTS
+========================================================= */
+
+.SessionDetails-students {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.SessionDetails-student {
+    min-height: 60px;
+
+    padding: 10px 12px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    transition: 0.2s ease;
+}
+
+
+.SessionDetails-student:hover {
+    background-color: #FFFFFF;
+
+    border-color: rgba(204, 54, 80, 0.16);
+}
+
+
+/* =========================================================
+   STUDENT ICON
+========================================================= */
+
+.SessionDetails-student-icon {
+    width: 36px;
+
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+}
+
+
+.SessionDetails-student-icon i {
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   STUDENT INFO
+========================================================= */
+
+.SessionDetails-student-main {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.SessionDetails-student-main strong {
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+.SessionDetails-student-main span {
+    color: #958B84;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.SessionDetails-student-main small {
+    color: #958B84;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   STUDENT STATUS
+========================================================= */
+
+.SessionDetails-student-status {
+    flex-shrink: 0;
+
+    padding: 6px 9px;
+
+    border-radius: 7px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.3px;
+}
+
+
+.SessionDetails-student-status.confirmed {
+    background-color: rgba(76, 138, 98, 0.08);
+
+    color: #4C8A62;
+}
+
+
+.SessionDetails-student-status.pending {
+    background-color: rgba(178, 122, 54, 0.09);
+
+    color: #B27A36;
+}
+
+
+/* =========================================================
+   VIEW ENROLLMENT
+========================================================= */
+
+.SessionDetails-student-view {
+    width: 30px;
+
+    height: 30px;
+
+    flex-shrink: 0;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.SessionDetails-student-view i {
+    font-size: 10px;
+}
+
+
+.SessionDetails-student-view:hover {
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   NO STUDENTS
+========================================================= */
+
+.SessionDetails-no-students {
+    padding: 35px 20px;
+
+    border: 1px dashed #DDD4CF;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+.SessionDetails-no-students i {
+    margin-bottom: 10px;
+
+    color: #CC3650;
+
+    font-size: 25px;
+}
+
+
+.SessionDetails-no-students h3 {
+    margin: 0 0 5px;
+
+    color: #2C2222;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+.SessionDetails-no-students p {
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.SessionDetails-loading {
+    min-height: 60vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    color: #958B84;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.SessionDetails-loading i {
+    color: #CC3650;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   ERROR PAGE
+========================================================= */
+
+.SessionDetails-error-page {
+    min-height: 60vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.SessionDetails-error-page > i {
+    margin-bottom: 13px;
+
+    color: #CC3650;
+
+    font-size: 28px;
+}
+
+
+.SessionDetails-error-page h2 {
+    margin: 0 0 7px;
+
+    color: #2C2222;
+
+    font-size: 19px;
+
+    font-weight: 800;
+}
+
+
+.SessionDetails-error-page p {
+    margin: 0 0 18px;
+
+    color: #958B84;
+
+    font-size: 12px;
+}
+
+
+.SessionDetails-error-page button {
+    height: 38px;
+
+    padding: 0 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   1000px
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .SessionDetails-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .SessionDetails-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .SessionDetails-header-actions {
+        width: 100%;
+    }
+
+
+    .SessionDetails-back-button,
+    .SessionDetails-edit-button {
+        flex: 1;
+    }
+
+
+    .SessionDetails-overview {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .SessionDetails-program {
+        width: 100%;
+
+        padding: 13px 0 0;
+
+        border-left: none;
+
+        border-top: 1px solid rgba(44, 34, 34, 0.07);
+    }
+
+
+    .SessionDetails-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .SessionDetails-student {
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .SessionDetails-section {
+        padding: 16px;
+    }
+
+
+    .SessionDetails-overview {
+        padding: 16px;
+    }
+
+
+    .SessionDetails-header h1 {
+        font-size: 23px;
+    }
+
+
+    .SessionDetails-header p {
+        font-size: 12px;
+    }
+
+
+    .SessionDetails-student {
+        flex-wrap: wrap;
+    }
+
+
+    .SessionDetails-student-status {
+        margin-left: 47px;
+    }
+
+
+    .SessionDetails-student-view {
+        margin-left: auto;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .SessionDetails-header h1 {
+        font-size: 21px;
+    }
+
+
+    .SessionDetails-header-actions {
+        flex-direction: column;
+    }
+
+
+    .SessionDetails-back-button,
+    .SessionDetails-edit-button {
+        width: 100%;
+
+        flex: none;
+    }
+
+
+    .SessionDetails-overview-main h2 {
+        font-size: 15px;
+    }
+
+
+    .SessionDetails-section-title h2 {
+        font-size: 14px;
+    }
+
+}

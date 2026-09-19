@@ -1,0 +1,1706 @@
+/* =========================================================
+   TEACHER DETAILS
+========================================================= */
+
+.TeacherDetails {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.TeacherDetails-header {
+    margin-bottom: 25px;
+}
+
+
+.TeacherDetails-back {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 16px;
+
+    padding: 0;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: #958B84;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+
+.TeacherDetails-back i {
+    font-size: 11px;
+}
+
+
+.TeacherDetails-back:hover {
+    color: #CC3650;
+}
+
+
+.TeacherDetails-label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+.TeacherDetails-header h1 {
+    margin: 0 0 5px;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.TeacherDetails-header p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   TEACHER STATISTICS
+========================================================= */
+
+.TeacherDetails-stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+.TeacherDetails-stat-card {
+    min-height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 13px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 11px;
+}
+
+
+.TeacherDetails-stat-icon {
+    width: 36px;
+
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+}
+
+
+.TeacherDetails-stat-icon i {
+    font-size: 13px;
+}
+
+
+.TeacherDetails-stat-card > div:last-child {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.TeacherDetails-stat-card span {
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.TeacherDetails-stat-card strong {
+    font-size: 16px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.TeacherDetails-section {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.TeacherDetails-section-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+
+.TeacherDetails-section-header h2 {
+    margin: 0 0 4px;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.TeacherDetails-section-header p {
+    margin: 0;
+
+    font-size: 11px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   TEACHER INFO GRID
+========================================================= */
+
+.TeacherDetails-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+
+.TeacherDetails-info-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    min-height: 62px;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 10px;
+}
+
+
+.TeacherDetails-info-icon {
+    width: 34px;
+
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+}
+
+
+.TeacherDetails-info-icon i {
+    font-size: 12px;
+}
+
+
+.TeacherDetails-info-item > div:last-child {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.TeacherDetails-info-item span {
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.TeacherDetails-info-item strong {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   COURSE COUNT
+========================================================= */
+
+.TeacherDetails-course-count {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 7px 10px;
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+}
+
+
+.TeacherDetails-course-count strong {
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+.TeacherDetails-course-count span {
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   COURSE CARD
+========================================================= */
+
+.TeacherDetails-course-card {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 11px;
+
+    overflow: hidden;
+
+    background-color: #FFFFFF;
+}
+
+
+.TeacherDetails-section .TeacherDetails-course-card + .TeacherDetails-course-card {
+    margin-top: 12px;
+}
+
+
+/* =========================================================
+   COURSE HEADER
+========================================================= */
+
+.TeacherDetails-course-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 17px;
+
+    background-color: #FBFAFA;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.06);
+}
+
+
+.TeacherDetails-course-title-wrapper {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    min-width: 0;
+}
+
+
+.TeacherDetails-course-icon {
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+}
+
+
+.TeacherDetails-course-icon i {
+    font-size: 14px;
+}
+
+
+.TeacherDetails-course-label {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.TeacherDetails-course-header h3 {
+    margin: 0 0 3px;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.TeacherDetails-course-header p {
+    margin: 0;
+
+    font-size: 11px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   COURSE STATUS + ACTION
+========================================================= */
+
+.TeacherDetails-course-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    flex-shrink: 0;
+}
+
+
+.TeacherDetails-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 6px 9px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.TeacherDetails-status-dot {
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: currentColor;
+}
+
+
+.TeacherDetails-status.active {
+    color: #4C8A62;
+
+    background-color: rgba(76, 138, 98, 0.08);
+}
+
+
+.TeacherDetails-status.inactive {
+    color: #958B84;
+
+    background-color: rgba(149, 139, 132, 0.09);
+}
+
+
+.TeacherDetails-course-action {
+    height: 30px;
+
+    padding: 0 10px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.TeacherDetails-course-action.deactivate {
+    border: 1px solid rgba(204, 54, 80, 0.18);
+
+    background-color: rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+}
+
+
+.TeacherDetails-course-action.deactivate:hover {
+    background-color: rgba(204, 54, 80, 0.12);
+
+    border-color: rgba(204, 54, 80, 0.28);
+
+    transform: translateY(-1px);
+}
+
+
+.TeacherDetails-course-action.activate {
+    border: 1px solid rgba(76, 138, 98, 0.18);
+
+    background-color: rgba(76, 138, 98, 0.07);
+
+    color: #4C8A62;
+}
+
+
+.TeacherDetails-course-action.activate:hover {
+    background-color: rgba(76, 138, 98, 0.12);
+
+    border-color: rgba(76, 138, 98, 0.28);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   COURSE DELETE
+========================================================= */
+
+.TeacherDetails-course-action.delete {
+    border: 1px solid rgba(180, 55, 55, 0.18);
+
+    background-color: rgba(180, 55, 55, 0.06);
+
+    color: #B43737;
+}
+
+
+.TeacherDetails-course-action.delete:hover {
+    background-color: rgba(180, 55, 55, 0.12);
+
+    border-color: rgba(180, 55, 55, 0.28);
+
+    transform: translateY(-1px);
+}
+
+
+.TeacherDetails-course-action:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   SESSIONS
+========================================================= */
+
+.TeacherDetails-sessions {
+    padding: 17px;
+}
+
+
+.TeacherDetails-sessions-heading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+}
+
+
+.TeacherDetails-sessions-heading h4 {
+    margin: 0 0 3px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.TeacherDetails-sessions-heading p {
+    margin: 0;
+
+    font-size: 10px;
+
+    color: #958B84;
+}
+
+
+.TeacherDetails-session-count {
+    flex-shrink: 0;
+
+    padding: 6px 9px;
+
+    border-radius: 7px;
+
+    background-color: rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SESSION LIST
+========================================================= */
+
+.TeacherDetails-session-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   SESSION CARD
+========================================================= */
+
+.TeacherDetails-session-card {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 15px;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.06);
+
+    border-radius: 10px;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.TeacherDetails-session-card.session-inactive {
+    background-color: #F9F8F8;
+
+    border-color: rgba(149, 139, 132, 0.12);
+}
+
+
+/* =========================================================
+   SESSION HEADER
+========================================================= */
+
+.TeacherDetails-session-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 14px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.06);
+}
+
+
+.TeacherDetails-session-label {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+.TeacherDetails-session-header h5 {
+    margin: 0;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.TeacherDetails-session-header-right {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    flex-shrink: 0;
+}
+
+
+.TeacherDetails-session-students {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    flex-shrink: 0;
+
+    padding: 7px 9px;
+
+    border-radius: 7px;
+
+    background-color: rgba(76, 138, 98, 0.08);
+
+    color: #4C8A62;
+}
+
+
+.TeacherDetails-session-students i {
+    font-size: 10px;
+}
+
+
+.TeacherDetails-session-students span {
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+.TeacherDetails-session-students small {
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SESSION INFORMATION GRID
+========================================================= */
+
+.TeacherDetails-session-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+}
+
+
+.TeacherDetails-session-info-item {
+    min-height: 58px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 8px;
+}
+
+
+.TeacherDetails-session-info-item span {
+    font-size: 8px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.TeacherDetails-session-info-item strong {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   SESSION ACTIONS
+========================================================= */
+
+.TeacherDetails-session-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-top: 12px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid rgba(44, 34, 34, 0.06);
+}
+
+
+.TeacherDetails-session-status-wrapper {
+    display: flex;
+
+    align-items: center;
+}
+
+
+.TeacherDetails-session-action-buttons {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 7px;
+}
+
+
+/* =========================================================
+   SESSION ACTION BUTTON
+========================================================= */
+
+.TeacherDetails-session-action {
+    height: 30px;
+
+    padding: 0 10px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* =========================================================
+   DEACTIVATE
+========================================================= */
+
+.TeacherDetails-session-action.deactivate {
+    border: 1px solid rgba(204, 54, 80, 0.18);
+
+    background-color: rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+}
+
+
+.TeacherDetails-session-action.deactivate:hover {
+    background-color: rgba(204, 54, 80, 0.12);
+
+    border-color: rgba(204, 54, 80, 0.28);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   ACTIVATE
+========================================================= */
+
+.TeacherDetails-session-action.activate {
+    border: 1px solid rgba(76, 138, 98, 0.18);
+
+    background-color: rgba(76, 138, 98, 0.07);
+
+    color: #4C8A62;
+}
+
+
+.TeacherDetails-session-action.activate:hover {
+    background-color: rgba(76, 138, 98, 0.12);
+
+    border-color: rgba(76, 138, 98, 0.28);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   DELETE
+========================================================= */
+
+.TeacherDetails-session-action.delete {
+    border: 1px solid rgba(180, 55, 55, 0.18);
+
+    background-color: rgba(180, 55, 55, 0.06);
+
+    color: #B43737;
+}
+
+
+.TeacherDetails-session-action.delete:hover {
+    background-color: rgba(180, 55, 55, 0.12);
+
+    border-color: rgba(180, 55, 55, 0.28);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   DISABLED
+========================================================= */
+
+.TeacherDetails-session-action:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   CUSTOM MODAL OVERLAY
+========================================================= */
+
+.TeacherDetails-modal-overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: rgba(44, 34, 34, 0.35);
+
+    backdrop-filter: blur(3px);
+
+    animation: TeacherDetailsModalFadeIn 0.2s ease;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.TeacherDetails-modal {
+    width: 100%;
+
+    max-width: 390px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 15px 45px rgba(44, 34, 34, 0.16);
+
+    animation: TeacherDetailsModalScaleIn 0.2s ease;
+}
+
+
+/* =========================================================
+   MODAL ICON
+========================================================= */
+
+.TeacherDetails-modal-icon {
+    width: 48px;
+
+    height: 48px;
+
+    margin: 0 auto 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+}
+
+
+.TeacherDetails-modal-icon.warning {
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+}
+
+
+.TeacherDetails-modal-icon.delete {
+    background-color: rgba(180, 55, 55, 0.09);
+
+    color: #B43737;
+}
+
+
+.TeacherDetails-modal-icon.error {
+    background-color: rgba(180, 55, 55, 0.09);
+
+    color: #B43737;
+}
+
+
+.TeacherDetails-modal-icon.success {
+    background-color: rgba(76, 138, 98, 0.09);
+
+    color: #4C8A62;
+}
+
+
+/* =========================================================
+   MODAL TEXT
+========================================================= */
+
+.TeacherDetails-modal h3 {
+    margin: 0 0 8px;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.TeacherDetails-modal p {
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   MODAL ACTIONS
+========================================================= */
+
+.TeacherDetails-modal-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 22px;
+}
+
+
+.TeacherDetails-modal-actions button {
+    height: 34px;
+
+    padding: 0 15px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* =========================================================
+   MODAL CANCEL
+========================================================= */
+
+.TeacherDetails-modal-cancel {
+    border: 1px solid rgba(44, 34, 34, 0.10);
+
+    background-color: #FFFFFF;
+
+    color: #958B84;
+}
+
+
+.TeacherDetails-modal-cancel:hover {
+    background-color: #F8F7F7;
+
+    color: #2C2222;
+}
+
+
+/* =========================================================
+   MODAL CONFIRM
+========================================================= */
+
+.TeacherDetails-modal-confirm {
+    border: 1px solid #CC3650;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+}
+
+
+.TeacherDetails-modal-confirm:hover {
+    background-color: #B92F47;
+
+    border-color: #B92F47;
+
+    transform: translateY(-1px);
+}
+
+
+.TeacherDetails-modal-confirm.warning {
+    border-color: #CC3650;
+
+    background-color: #CC3650;
+}
+
+
+.TeacherDetails-modal-confirm.delete {
+    border-color: #B43737;
+
+    background-color: #B43737;
+}
+
+
+.TeacherDetails-modal-confirm.delete:hover {
+    background-color: #9F3030;
+
+    border-color: #9F3030;
+}
+
+
+/* =========================================================
+   MODAL ANIMATIONS
+========================================================= */
+
+@keyframes TeacherDetailsModalFadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+@keyframes TeacherDetailsModalScaleIn {
+
+    from {
+        opacity: 0;
+
+        transform: scale(0.94);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.TeacherDetails-empty {
+    min-height: 400px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.TeacherDetails-empty i {
+    margin-bottom: 12px;
+
+    font-size: 28px;
+
+    color: #CC3650;
+}
+
+
+.TeacherDetails-empty h2 {
+    margin: 0 0 5px;
+
+    font-size: 20px;
+
+    color: #2C2222;
+}
+
+
+.TeacherDetails-empty p {
+    margin: 0 0 18px;
+
+    font-size: 13px;
+
+    color: #958B84;
+}
+
+
+.TeacherDetails-empty button {
+    height: 36px;
+
+    padding: 0 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.TeacherDetails-empty button i {
+    margin: 0;
+
+    font-size: 10px;
+
+    color: #FFFFFF;
+}
+
+
+.TeacherDetails-empty button:hover {
+    background-color: #B92F47;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .TeacherDetails-header h1 {
+        font-size: 23px;
+    }
+
+
+    .TeacherDetails-header p {
+        font-size: 12px;
+    }
+
+
+    .TeacherDetails-stats {
+        grid-template-columns: 1fr;
+    }
+
+
+    .TeacherDetails-stat-card strong {
+        font-size: 15px;
+    }
+
+
+    .TeacherDetails-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .TeacherDetails-info-item strong {
+        font-size: 12px;
+    }
+
+
+    .TeacherDetails-session-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .TeacherDetails-session-info-item strong {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .TeacherDetails-section {
+        padding: 16px;
+    }
+
+
+    .TeacherDetails-course-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .TeacherDetails-course-actions {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .TeacherDetails-session-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .TeacherDetails-session-header-right {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .TeacherDetails-session-students {
+        align-self: flex-start;
+    }
+
+
+    .TeacherDetails-session-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .TeacherDetails-session-info-item strong {
+        font-size: 11px;
+    }
+
+
+    .TeacherDetails-session-actions {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .TeacherDetails-session-action-buttons {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .TeacherDetails-modal {
+        max-width: 350px;
+
+        padding: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .TeacherDetails-header h1 {
+        font-size: 22px;
+    }
+
+
+    .TeacherDetails-header p {
+        font-size: 11px;
+    }
+
+
+    .TeacherDetails-stat-card strong {
+        font-size: 14px;
+    }
+
+
+    .TeacherDetails-section-header {
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+
+    .TeacherDetails-section-header h2 {
+        font-size: 14px;
+    }
+
+
+    .TeacherDetails-info-item strong {
+        font-size: 11px;
+    }
+
+
+    .TeacherDetails-course-header h3 {
+        font-size: 13px;
+    }
+
+
+    .TeacherDetails-course-actions {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .TeacherDetails-status {
+        font-size: 10px;
+    }
+
+
+    .TeacherDetails-course-action {
+        font-size: 9px;
+
+        height: 29px;
+
+        padding: 0 9px;
+    }
+
+
+    .TeacherDetails-session-header h5 {
+        font-size: 13px;
+    }
+
+
+    .TeacherDetails-session-count {
+        font-size: 9px;
+    }
+
+
+    .TeacherDetails-session-students span {
+        font-size: 10px;
+    }
+
+
+    .TeacherDetails-session-info-item strong {
+        font-size: 10px;
+    }
+
+
+    .TeacherDetails-session-action {
+        font-size: 9px;
+
+        height: 29px;
+
+        padding: 0 9px;
+    }
+
+
+    .TeacherDetails-empty h2 {
+        font-size: 18px;
+    }
+
+
+    .TeacherDetails-empty p {
+        font-size: 12px;
+    }
+
+
+    .TeacherDetails-empty button {
+        height: 34px;
+
+        font-size: 10px;
+
+        padding: 0 12px;
+    }
+
+
+    .TeacherDetails-modal {
+        max-width: 320px;
+
+        padding: 20px;
+    }
+
+
+    .TeacherDetails-modal h3 {
+        font-size: 16px;
+    }
+
+
+    .TeacherDetails-modal p {
+        font-size: 11px;
+    }
+
+
+    .TeacherDetails-modal-actions button {
+        height: 33px;
+
+        padding: 0 13px;
+
+        font-size: 9px;
+    }
+
+}

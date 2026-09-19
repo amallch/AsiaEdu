@@ -1,0 +1,392 @@
+/* =========================================================
+   ARTICLES CARD
+========================================================= */
+
+.ArticlesCard {
+
+    width: 100%;
+
+    height: 510px;
+
+    background-color: white;
+
+    border: 1px solid #e8e8e8;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.ArticlesCard:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.ArticlesCard-image {
+
+    width: 100%;
+
+    height: 43%;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    position: relative;
+
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.ArticlesCard-category {
+
+    width: fit-content;
+
+    padding-left: 10px;
+
+    padding-top: 10px;
+
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.ArticlesCard-content {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+/* =========================================================
+   CONTENT CONTAINER
+========================================================= */
+
+.ArticlesCard-content-container {
+
+    width: 88%;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding-top: 22px;
+
+    padding-bottom: 20px;
+
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.ArticlesCard-title h3 {
+
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    color: #111111;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.ArticlesCard-desc {
+
+    min-height: calc(1.7em * 3);
+
+}
+
+
+.ArticlesCard-desc p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #666666;
+
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 3;
+
+    line-clamp: 3;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   ARTICLE INFO
+========================================================= */
+
+.ArticlesCardInfo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    color: #666666;
+
+    font-size: 13.5px;
+
+}
+
+
+/* =========================================================
+   AUTHOR / DATE
+========================================================= */
+
+.ArticlesCardAuthor,
+.ArticlesCardDate {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.ArticlesCardAuthor i,
+.ArticlesCardDate i {
+
+    color: var(--primary-red);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   SEPARATION
+========================================================= */
+
+.ArticlesCard-seperation {
+
+    width: 100%;
+
+    height: 1px;
+
+    margin-top: auto;
+
+    background-color: rgba(218, 216, 216, 0.4);
+
+}
+
+
+/* =========================================================
+   READ MORE
+========================================================= */
+
+.ReadMore-button {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: auto;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .ArticlesCard {
+
+        height: 500px;
+
+    }
+
+
+    .ArticlesCard-title h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .ArticlesCard-desc p {
+
+        font-size: 13.5px;
+
+    }
+
+
+    .ArticlesCardInfo {
+
+        gap: 18px;
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .ArticlesCard {
+
+        height: 500px;
+
+        border-radius: 18px;
+
+    }
+
+
+    .ArticlesCard-image {
+
+        height: 42%;
+
+    }
+
+
+    .ArticlesCard-content-container {
+
+        width: 88%;
+
+        padding-top: 20px;
+
+        padding-bottom: 18px;
+
+    }
+
+
+    .ArticlesCard-title h3 {
+
+        font-size: 18px;
+
+    }
+
+
+    .ArticlesCard-desc p {
+
+        font-size: 13px;
+
+        line-height: 1.65;
+
+    }
+
+
+    .ArticlesCardInfo {
+
+        gap: 15px;
+
+        font-size: 12.5px;
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .ArticlesCard {
+
+        height: 490px;
+
+    }
+
+
+    .ArticlesCard-image {
+
+        height: 40%;
+
+    }
+
+
+    .ArticlesCard-content-container {
+
+        width: 88%;
+
+        gap: 13px;
+
+    }
+
+
+    .ArticlesCard-title h3 {
+
+        font-size: 17px;
+
+    }
+
+
+    .ArticlesCard-desc p {
+
+        font-size: 12.5px;
+
+    }
+
+
+    .ArticlesCardInfo {
+
+        font-size: 12px;
+
+    }
+
+}

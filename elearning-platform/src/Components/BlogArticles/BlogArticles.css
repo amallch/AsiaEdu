@@ -1,0 +1,260 @@
+/* ================================================= */
+/* BLOG ARTICLES */
+/* ================================================= */
+
+.BlogArticles{
+
+    display: flex;
+
+    justify-content: center;
+    background-color: #f8f9fb;
+
+    padding: 80px 0;
+
+}
+
+.BlogArticles-container{
+
+    width: 80%;
+
+    max-width: 1250px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 40px;
+
+}
+
+/* ================================================= */
+/* HEADINGS */
+/* ================================================= */
+
+
+
+/* ================================================= */
+/* FILTERS */
+/* ================================================= */
+
+.BlogArticlesFilters{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.BlogArticlesCategories{
+
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+.BlogArticlesCategories button{
+
+    padding: 10px 20px;
+
+    border: 1.5px solid transparent;
+
+    border-radius: 30px;
+
+    background-color: #F4F0EC;
+
+    color: #55504C;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+}
+
+.BlogArticlesCategories button:hover{
+
+    background: rgba(204, 54, 80, .08);
+
+    color: var(--primary-red);
+
+}
+
+.BlogArticlesCategories button.active{
+
+    background: linear-gradient(135deg, #D8455D, #A82238);
+
+    color: white;
+
+    box-shadow: 0 10px 22px rgba(184, 40, 63, .28);
+
+}
+
+.BlogArticlesSearch{
+
+    width: 320px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 18px;
+
+    background: white;
+
+    border: 1.5px solid #F0EAE4;
+
+    border-radius: 12px;
+
+    transition: .25s ease;
+
+}
+
+.BlogArticlesSearch:focus-within{
+
+    border-color: var(--primary-red);
+
+    box-shadow: 0 0 0 4px rgba(204, 54, 80, .08);
+
+}
+
+.BlogArticlesSearch input{
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 14px;
+
+    font-family: inherit;
+
+    color: #2C2222;
+
+}
+
+.BlogArticlesSearch input::placeholder{
+
+    color: #A79E96;
+
+}
+
+.BlogArticlesSearch i{
+
+    color: #A79E96;
+
+    font-size: 14px;
+
+}
+
+/* ================================================= */
+/* CARDS GRID */
+/* ================================================= */
+
+.BlogArticlesCards{
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 32px;
+
+}
+
+/* ================================================= */
+/* EMPTY STATE */
+/* ================================================= */
+
+.BlogArticlesEmpty{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 60px 0;
+
+    color: #A79E96;
+
+}
+
+.BlogArticlesEmpty i{
+
+    font-size: 30px;
+
+}
+
+.BlogArticlesEmpty p{
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+}
+
+/* ================================================= */
+/* Responsive */
+/* ================================================= */
+
+@media (max-width: 1024px){
+
+    .BlogArticlesCards{
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 720px){
+
+    .BlogArticlesFilters{
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    .BlogArticlesSearch{
+
+        width: 100%;
+
+    }
+
+    .BlogArticlesCards{
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .BlogArticles-headings h2{
+
+        font-size: 30px;
+
+    }
+
+}

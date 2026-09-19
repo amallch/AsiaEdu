@@ -1,0 +1,1028 @@
+/* =========================================================
+   ENROLLMENTS
+========================================================= */
+
+.Enrollments {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.Enrollments-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+
+.Enrollments-header > div:first-child > span {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+.Enrollments-header h1 {
+    margin: 4px 0 5px;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.Enrollments-header p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.Enrollments-summary {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.Enrollments-summary > div {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 3px;
+}
+
+
+.Enrollments-summary strong {
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #CC3650;
+}
+
+
+.Enrollments-summary span {
+    font-size: 11px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.Enrollments-filters {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+/* =========================================================
+   YEAR FILTER
+========================================================= */
+
+.Enrollments-year-filter {
+    height: 44px;
+
+    width: 150px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+}
+
+
+.Enrollments-year-filter i {
+    color: #958B84;
+
+    font-size: 13px;
+}
+
+
+.Enrollments-year-filter select {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #746B66;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.Enrollments-search {
+    height: 44px;
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+}
+
+
+.Enrollments-search i {
+    color: #958B84;
+
+    font-size: 14px;
+}
+
+
+.Enrollments-search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    color: #2C2222;
+}
+
+
+.Enrollments-search input::placeholder {
+    color: #B0A8A2;
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.Enrollments-filter {
+    min-width: 175px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+}
+
+
+.Enrollments-filter i {
+    color: #958B84;
+
+    font-size: 13px;
+}
+
+
+.Enrollments-filter select {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #746B66;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.Enrollments-table-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+}
+
+
+.Enrollments-table {
+    width: 100%;
+
+    min-width: 850px;
+
+    border-collapse: collapse;
+}
+
+
+.Enrollments-table thead {
+    background-color: #FAF9F8;
+}
+
+
+.Enrollments-table th {
+    padding: 15px 16px;
+
+    text-align: left;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+
+    white-space: nowrap;
+}
+
+
+.Enrollments-table td {
+    padding: 15px 16px;
+
+    border-top: 1px solid rgba(44, 34, 34, 0.06);
+
+    font-size: 12px;
+
+    color: #746B66;
+
+    white-space: nowrap;
+}
+
+
+.Enrollments-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+
+.Enrollments-table tbody tr:hover {
+    background-color: rgba(204, 54, 80, 0.025);
+}
+
+
+/* =========================================================
+   STUDENT
+========================================================= */
+
+.Enrollments-student {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+.Enrollments-avatar {
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+.Enrollments-student-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.Enrollments-student-info strong {
+    font-size: 13px;
+
+    color: #2C2222;
+}
+
+
+.Enrollments-student-info span {
+    font-size: 11px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   COURSE
+========================================================= */
+
+.Enrollments-course-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.Enrollments-course-info strong {
+    color: #CC3650;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.Enrollments-course-info span {
+    font-size: 11px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   LEVEL
+========================================================= */
+
+.Enrollments-level {
+    display: inline-flex;
+
+    padding: 5px 8px;
+
+    border-radius: 7px;
+
+    background-color: rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.Enrollments-date {
+    color: #958B84;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.Enrollments-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 5px 9px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.Enrollments-status-dot {
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: currentColor;
+}
+
+
+.Enrollments-status.pending {
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+}
+
+
+.Enrollments-status.confirmed {
+    background-color: rgba(76, 138, 98, 0.09);
+
+    color: #4C8A62;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.Enrollments-arrow {
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(204, 54, 80, 0.15);
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.05);
+
+    color: #CC3650;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.Enrollments-arrow:hover {
+    background-color: rgba(204, 54, 80, 0.10);
+
+    transform: translateX(2px);
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.Enrollments-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+/* =========================================================
+   DELETE BUTTON
+========================================================= */
+
+.Enrollments-delete {
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(204, 54, 80, 0.15);
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.05);
+
+    color: #CC3650;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.Enrollments-delete:hover {
+    background-color: rgba(204, 54, 80, 0.12);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   DELETE MODAL OVERLAY
+========================================================= */
+
+.Enrollments-modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: rgba(44, 34, 34, 0.35);
+}
+
+
+/* =========================================================
+   DELETE MODAL
+========================================================= */
+
+.Enrollments-modal {
+    width: 100%;
+
+    max-width: 395px;
+
+    padding: 26px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(44, 34, 34, 0.15);
+}
+
+
+/* =========================================================
+   MODAL ICON
+========================================================= */
+
+.Enrollments-modal-icon {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 14px;
+
+    border-radius: 12px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   MODAL TITLE
+========================================================= */
+
+.Enrollments-modal h2 {
+    margin: 0 0 7px;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+/* =========================================================
+   MODAL MESSAGE
+========================================================= */
+
+.Enrollments-modal p {
+    margin: 0 auto 22px;
+
+    max-width: 310px;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #958B84;
+}
+
+
+.Enrollments-modal p strong {
+    color: #2C2222;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   MODAL ACTIONS
+========================================================= */
+
+.Enrollments-modal-actions {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   CANCEL
+========================================================= */
+
+.Enrollments-cancel {
+    height: 36px;
+
+    padding: 0 16px;
+
+    border: 1px solid rgba(44, 34, 34, 0.10);
+
+    border-radius: 8px;
+
+    background-color: #FFFFFF;
+
+    color: #746B66;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.Enrollments-cancel:hover {
+    background-color: #FAF9F8;
+}
+
+
+/* =========================================================
+   DELETE CONFIRM
+========================================================= */
+
+.Enrollments-delete-confirm {
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 16px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.Enrollments-delete-confirm:hover {
+    background-color: #B92F47;
+}
+
+
+.Enrollments-delete-confirm i {
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.Enrollments-empty {
+    height: 150px;
+
+    text-align: center !important;
+
+    color: #958B84 !important;
+
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .Enrollments-header h1 {
+        font-size: 23px;
+    }
+
+    .Enrollments-header p {
+        font-size: 12px;
+    }
+
+    .Enrollments-summary strong {
+        font-size: 23px;
+    }
+
+    .Enrollments-filters {
+        flex-direction: column;
+    }
+
+    .Enrollments-filter {
+        width: 100%;
+
+        min-width: auto;
+    }
+
+    .Enrollments-table th {
+        font-size: 9px;
+        padding: 13px 14px;
+    }
+
+    .Enrollments-table td {
+        font-size: 11px;
+        padding: 13px 14px;
+    }
+
+    .Enrollments-student-info strong {
+        font-size: 12px;
+    }
+
+    .Enrollments-student-info span {
+        font-size: 10px;
+    }
+
+    .Enrollments-course-info strong {
+        font-size: 11px;
+    }
+
+    .Enrollments-course-info span {
+        font-size: 10px;
+    }
+
+    .Enrollments-level {
+        font-size: 10px;
+    }
+
+    .Enrollments-date {
+        font-size: 11px;
+    }
+
+    .Enrollments-status {
+        font-size: 10px;
+    }
+
+    .Enrollments-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .Enrollments-delete {
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .Enrollments-year-filter {
+    width: 100%;
+}
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .Enrollments-header {
+        align-items: flex-start;
+    }
+
+    .Enrollments-header h1 {
+        font-size: 22px;
+    }
+
+    .Enrollments-header p {
+        font-size: 11px;
+    }
+
+    .Enrollments-summary strong {
+        font-size: 22px;
+    }
+
+    .Enrollments-summary span {
+        font-size: 10px;
+    }
+
+    .Enrollments-summary {
+        display: none;
+    }
+
+    .Enrollments-avatar {
+        width: 34px;
+        height: 34px;
+        font-size: 10px;
+    }
+
+    .Enrollments-student-info strong {
+        font-size: 11px;
+    }
+
+    .Enrollments-student-info span {
+        font-size: 9px;
+    }
+
+    .Enrollments-course-info strong {
+        font-size: 10px;
+    }
+
+    .Enrollments-course-info span {
+        font-size: 9px;
+    }
+
+    .Enrollments-level {
+        font-size: 9px;
+        padding: 4px 7px;
+    }
+
+    .Enrollments-date {
+        font-size: 10px;
+    }
+
+    .Enrollments-status {
+        font-size: 10px;
+    }
+
+    .Enrollments-arrow {
+        width: 28px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .Enrollments-delete {
+        width: 28px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .Enrollments-modal {
+        padding: 20px;
+        max-width: 340px;
+    }
+
+    .Enrollments-modal h2 {
+        font-size: 16px;
+    }
+
+    .Enrollments-modal p {
+        font-size: 11px;
+    }
+
+    .Enrollments-modal-actions {
+        flex-direction: column;
+    }
+
+    .Enrollments-cancel,
+    .Enrollments-delete-confirm {
+        width: 100%;
+        height: 34px;
+        font-size: 10px;
+    }
+
+    .Enrollments-table th {
+        font-size: 8px;
+        padding: 11px 10px;
+    }
+
+    .Enrollments-table td {
+        font-size: 10px;
+        padding: 11px 10px;
+    }
+
+}

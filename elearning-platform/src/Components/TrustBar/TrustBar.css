@@ -1,0 +1,446 @@
+/* =========================================================
+   TRUST BAR
+========================================================= */
+
+.TrustBar {
+    width: 100%;
+
+    padding: 75px 0;
+
+    background-color: #ffffff;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.TrustBar-container {
+    width: 85%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.TrustBar-header {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.TrustBar-badge {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 7px 15px;
+
+    margin-bottom: 15px;
+
+    border-radius: 30px;
+
+    background-color: #fff2f4;
+
+    color: #cc3650;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.TrustBar-header h2 {
+    margin: 0;
+
+    color: #302a2b;
+
+    font-size: 30px;
+
+    font-weight: 750;
+
+    line-height: 1.3;
+}
+
+
+.TrustBar-header h2 span {
+    color: #cc3650;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.TrustBar-header p {
+    max-width: 600px;
+
+    margin: 12px 0 0;
+
+    color: #8b8181;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.TrustBar-stats {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 0;
+
+    border: 1px solid #eee8e9;
+
+    border-radius: 22px;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 12px 35px rgba(70, 40, 45, 0.06);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   STAT
+========================================================= */
+
+.TrustBar-stat {
+    position: relative;
+
+    min-height: 145px;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    transition:
+        background-color 0.3s ease;
+}
+
+
+.TrustBar-stat:hover {
+    background-color: #fffafa;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.TrustBar-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background-color: #fff2f4;
+
+    color: #cc3650;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.TrustBar-stat:hover .TrustBar-icon {
+    background-color: #cc3650;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+.TrustBar-icon i {
+    font-size: 19px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.TrustBar-content {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.TrustBar-number {
+    color: #302a2b;
+
+    font-size: 27px;
+
+    font-weight: 750;
+
+    line-height: 1.2;
+
+    transition: color 0.3s ease;
+}
+
+
+.TrustBar-stat:hover .TrustBar-number {
+    color: #cc3650;
+}
+
+
+.TrustBar-label {
+    color: #918787;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.TrustBar-divider {
+    position: absolute;
+
+    top: 30px;
+    right: 0;
+
+    width: 1px;
+    height: 85px;
+
+    background-color: #eee8e9;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .TrustBar {
+        padding: 60px 0;
+    }
+
+
+    .TrustBar-container {
+        width: 90%;
+    }
+
+
+    .TrustBar-stats {
+        grid-template-columns: repeat(2, 1fr);
+
+        border-radius: 20px;
+    }
+
+
+    .TrustBar-stat {
+        min-height: 125px;
+
+        padding: 22px;
+    }
+
+
+    .TrustBar-divider {
+        display: none;
+    }
+
+
+    .TrustBar-stat:nth-child(1),
+    .TrustBar-stat:nth-child(2) {
+        border-bottom: 1px solid #eee8e9;
+    }
+
+
+    .TrustBar-stat:nth-child(1),
+    .TrustBar-stat:nth-child(3) {
+        border-right: 1px solid #eee8e9;
+    }
+
+
+    .TrustBar-header h2 {
+        font-size: 28px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .TrustBar {
+        padding: 50px 0;
+    }
+
+
+    .TrustBar-container {
+        width: 92%;
+    }
+
+
+    .TrustBar-header {
+        margin-bottom: 30px;
+    }
+
+
+    .TrustBar-badge {
+        font-size: 10px;
+
+        padding: 6px 13px;
+    }
+
+
+    .TrustBar-header h2 {
+        font-size: 24px;
+    }
+
+
+    .TrustBar-header p {
+        font-size: 12px;
+    }
+
+
+    .TrustBar-stats {
+        grid-template-columns: 1fr;
+
+        border-radius: 18px;
+    }
+
+
+    .TrustBar-stat {
+        min-height: 95px;
+
+        padding: 20px;
+    }
+
+
+    .TrustBar-stat:nth-child(1),
+    .TrustBar-stat:nth-child(2),
+    .TrustBar-stat:nth-child(3) {
+        border-right: none;
+
+        border-bottom: 1px solid #eee8e9;
+    }
+
+
+    .TrustBar-stat:nth-child(4) {
+        border-bottom: none;
+    }
+
+
+    .TrustBar-icon {
+        width: 46px;
+        height: 46px;
+
+        border-radius: 13px;
+    }
+
+
+    .TrustBar-icon i {
+        font-size: 17px;
+    }
+
+
+    .TrustBar-number {
+        font-size: 23px;
+    }
+
+
+    .TrustBar-label {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .TrustBar {
+        padding: 45px 0;
+    }
+
+
+    .TrustBar-header h2 {
+        font-size: 22px;
+    }
+
+
+    .TrustBar-header p {
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+
+    .TrustBar-stat {
+        padding: 17px;
+    }
+
+
+    .TrustBar-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .TrustBar-number {
+        font-size: 21px;
+    }
+
+}

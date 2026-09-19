@@ -1,0 +1,215 @@
+/* ================================================= */
+/* MISSION & VISION */
+/* ================================================= */
+
+.MissionVision{
+
+    background-color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 90px 0;
+
+}
+
+.MissionVision-container{
+
+    width: 80%;
+
+    max-width: 1150px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 50px;
+
+}
+
+/* ================================================= */
+/* HEADINGS */
+/* ================================================= */
+
+.MissionVision-headings{
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.MissionVision-badge{
+
+    padding: 6px 16px;
+
+    border-radius: 30px;
+
+    background: #FDECEC;
+
+    color: var(--primary-red);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 16px;
+
+}
+
+.MissionVision-headings h2{
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    color: #111;
+
+    letter-spacing: -.5px;
+
+}
+
+.MissionVision-headings h2 span{
+
+    color: var(--primary-red);
+
+}
+
+.MissionVision-headings p{
+
+    color: #6F6660;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    max-width: 480px;
+
+    margin-top: 12px;
+
+}
+
+/* ================================================= */
+/* CARDS */
+/* ================================================= */
+
+.MissionVisionCards{
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+.MissionVisionCard{
+
+    background: white;
+
+    border: 1px solid #F0EAE4;
+
+    border-radius: 20px;
+
+    padding: 36px 34px;
+
+    box-shadow: 0 16px 40px rgba(44, 34, 34, .07);
+
+    transition: .35s ease;
+
+}
+
+.MissionVisionCard:hover{
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 22px 48px rgba(44, 34, 34, .1);
+
+}
+
+.MissionVisionCardIcon{
+
+    width: 56px;
+
+    height: 56px;
+
+    border-radius: 16px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 22px;
+
+    color: white;
+
+    background: linear-gradient(135deg, #D8455D, #A82238);
+
+    box-shadow: 0 12px 26px rgba(184, 40, 63, .28);
+
+    margin-bottom: 22px;
+
+}
+
+.MissionVisionCard h3{
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    color: #111;
+
+    margin-bottom: 12px;
+
+}
+
+.MissionVisionCard p{
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    color: #6F6660;
+
+}
+
+/* ================================================= */
+/* Responsive */
+/* ================================================= */
+
+@media (max-width: 800px){
+
+    .MissionVisionCards{
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .MissionVision-headings h2{
+
+        font-size: 28px;
+
+    }
+
+    .MissionVisionCard{
+
+        padding: 28px 26px;
+
+    }
+
+}

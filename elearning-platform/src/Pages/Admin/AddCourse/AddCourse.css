@@ -1,0 +1,1192 @@
+/* =========================================================
+   ADD COURSE
+========================================================= */
+
+.AddCourse {
+
+    width: 100%;
+
+    min-width: 0;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.AddCourse-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.AddCourse-header > div {
+
+    min-width: 0;
+
+}
+
+
+.AddCourse-header span {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+
+}
+
+
+.AddCourse-header h1 {
+
+    margin: 4px 0 5px;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+
+}
+
+
+.AddCourse-header p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #958B84;
+
+}
+
+
+/* =========================================================
+   BACK
+========================================================= */
+
+.AddCourse-back-button {
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 0 16px;
+
+    border: 1px solid #E5DFDB;
+
+    border-radius: 9px;
+
+    background-color: #FFFFFF;
+
+    color: #5F5550;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.AddCourse-back-button:hover {
+
+    background-color: rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.AddCourse-error {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    padding: 11px 13px;
+
+    border: 1px solid rgba(180, 74, 74, 0.15);
+
+    border-radius: 9px;
+
+    background-color: rgba(180, 74, 74, 0.06);
+
+    color: #A63E3E;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.AddCourse-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.AddCourse-section {
+
+    padding: 25px 26px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #EDE7E3;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 18px rgba(44, 34, 34, 0.05);
+
+}
+
+
+.AddCourse-section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 24px;
+
+}
+
+
+.AddCourse-section-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: rgba(204, 54, 80, 0.07);
+
+    color: #CC3650;
+
+}
+
+
+.AddCourse-section-icon i {
+
+    font-size: 15px;
+
+}
+
+
+.AddCourse-section-title h2 {
+
+    margin: 0 0 4px;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+
+}
+
+
+.AddCourse-section-title p {
+
+    margin: 0;
+
+    font-size: 11px;
+
+    color: #958B84;
+
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.AddCourse-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 17px;
+
+}
+
+
+.AddCourse-group {
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+}
+
+
+.AddCourse-group.full {
+
+    grid-column: 1 / -1;
+
+}
+
+
+.AddCourse-group label {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #5F5550;
+
+}
+
+
+.AddCourse-group input,
+.AddCourse-group select,
+.AddCourse-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #E5DFDB;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background-color: #FFFFFF;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+}
+
+
+.AddCourse-group input,
+.AddCourse-group select {
+
+    height: 42px;
+
+    padding: 0 12px;
+
+}
+
+
+.AddCourse-group textarea {
+
+    padding: 11px 12px;
+
+    resize: vertical;
+
+    line-height: 1.5;
+
+}
+
+
+.AddCourse-group input:focus,
+.AddCourse-group select:focus,
+.AddCourse-group textarea:focus {
+
+    border-color: rgba(204, 54, 80, 0.5);
+
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.06);
+
+}
+
+
+.AddCourse-group input::placeholder,
+.AddCourse-group textarea::placeholder {
+
+    color: #B0A8A2;
+
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.AddCourse-price {
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    box-sizing: border-box;
+
+    border: 1px solid #E5DFDB;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+}
+
+
+.AddCourse-price:focus-within {
+
+    border-color: rgba(204, 54, 80, 0.5);
+
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.06);
+
+}
+
+
+.AddCourse-price input {
+
+    height: 100%;
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 0 12px;
+
+    border: none;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+}
+
+
+.AddCourse-price span {
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 13px;
+
+    border-left: 1px solid #E5DFDB;
+
+    background-color: #F8F9FB;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.AddCourse-subtitle {
+
+    margin: 24px 0 12px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    color: #5F5550;
+
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.AddCourse-stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 15px;
+
+}
+
+
+/* =========================================================
+   REPEAT LIST
+========================================================= */
+
+.AddCourse-repeat-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+}
+
+
+.AddCourse-repeat-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+}
+
+
+.AddCourse-repeat-row > span {
+
+    width: 28px;
+
+    height: 28px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background-color: rgba(204, 54, 80, 0.07);
+
+    color: #CC3650;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+}
+
+
+.AddCourse-repeat-row input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    height: 40px;
+
+    box-sizing: border-box;
+
+    padding: 0 11px;
+
+    border: 1px solid #E5DFDB;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+}
+
+
+.AddCourse-repeat-row input:focus {
+
+    border-color: rgba(204, 54, 80, 0.5);
+
+}
+
+
+.AddCourse-repeat-row button {
+
+    width: 34px;
+
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: transparent;
+
+    color: #B8ADA7;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.AddCourse-repeat-row button:hover {
+
+    background-color: rgba(180, 74, 74, 0.07);
+
+    color: #A63E3E;
+
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.AddCourse-secondary-button,
+.AddCourse-small-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    border: 1px solid rgba(204, 54, 80, 0.18);
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.05);
+
+    color: #CC3650;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease;
+
+}
+
+
+.AddCourse-secondary-button {
+
+    height: 38px;
+
+    margin-top: 13px;
+
+    padding: 0 14px;
+
+}
+
+
+.AddCourse-small-button {
+
+    height: 36px;
+
+    margin-top: 12px;
+
+    padding: 0 13px;
+
+}
+
+
+.AddCourse-secondary-button:hover,
+.AddCourse-small-button:hover {
+
+    background-color: rgba(204, 54, 80, 0.10);
+
+}
+
+
+/* =========================================================
+   REVIEWS
+========================================================= */
+
+.AddCourse-reviews {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+}
+
+
+.AddCourse-review {
+
+    padding: 17px;
+
+    border: 1px solid #EEE9E5;
+
+    border-radius: 11px;
+
+    background-color: #FCFBFA;
+
+}
+
+
+.AddCourse-review-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 16px;
+
+}
+
+
+.AddCourse-review-header strong {
+
+    font-size: 12px;
+
+    color: #2C2222;
+
+}
+
+
+.AddCourse-review-header button {
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: transparent;
+
+    color: #B8ADA7;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+
+}
+
+
+.AddCourse-review-header button:hover {
+
+    color: #A63E3E;
+
+    background-color: rgba(180, 74, 74, 0.07);
+
+}
+
+
+/* =========================================================
+   MODULES
+========================================================= */
+
+.AddCourse-modules {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.AddCourse-module {
+
+    padding: 18px;
+
+    border: 1px solid #EEE9E5;
+
+    border-radius: 11px;
+
+    background-color: #FCFBFA;
+
+}
+
+
+.AddCourse-module-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.AddCourse-module-header strong {
+
+    font-size: 13px;
+
+    color: #2C2222;
+
+}
+
+
+.AddCourse-module-header button {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: #B44A4A;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.AddCourse-module-header button:hover {
+
+    color: #A63E3E;
+
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.AddCourse-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding: 4px 0 15px;
+
+}
+
+
+.AddCourse-cancel,
+.AddCourse-save {
+
+    height: 42px;
+
+    padding: 0 18px;
+
+    border-radius: 9px;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.AddCourse-cancel {
+
+    border: 1px solid #E5DFDB;
+
+    background-color: #FFFFFF;
+
+    color: #746B66;
+
+}
+
+
+.AddCourse-cancel:hover {
+
+    background-color: #F8F9FB;
+
+}
+
+
+.AddCourse-save {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.AddCourse-save:hover {
+
+    background-color: #B92F47;
+
+    transform: translateY(-1px);
+
+}
+
+
+.AddCourse-save:disabled {
+
+    opacity: 0.65;
+
+    cursor: not-allowed;
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .AddCourse-header {
+
+        align-items: flex-start;
+
+    }
+
+    .AddCourse-header h1 {
+        font-size: 23px;
+    }
+
+    .AddCourse-header p {
+        font-size: 12px;
+    }
+
+    .AddCourse-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .AddCourse-group.full {
+
+        grid-column: auto;
+
+    }
+
+
+    .AddCourse-stat-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .AddCourse-section {
+
+        padding: 21px;
+
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .AddCourse-header {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .AddCourse-back-button {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    .AddCourse-section {
+
+        padding: 18px;
+
+    }
+
+
+    .AddCourse-section-title {
+
+        align-items: flex-start;
+
+    }
+
+
+    .AddCourse-repeat-row {
+
+        align-items: stretch;
+
+    }
+
+
+    .AddCourse-repeat-row > span {
+
+        margin-top: 5px;
+
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .AddCourse-header h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .AddCourse-header p {
+
+        font-size: 11px;
+
+    }
+
+
+    .AddCourse-section {
+
+        padding: 16px;
+
+        border-radius: 12px;
+
+    }
+
+
+    .AddCourse-section-title h2 {
+
+        font-size: 14px;
+
+    }
+
+
+    .AddCourse-section-title p {
+
+        line-height: 1.4;
+
+    }
+
+
+    .AddCourse-actions {
+
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+
+    }
+
+
+    .AddCourse-cancel,
+    .AddCourse-save {
+
+        width: 100%;
+
+    }
+
+
+    .AddCourse-repeat-row {
+
+        gap: 6px;
+
+    }
+
+
+    .AddCourse-repeat-row > span {
+
+        width: 26px;
+
+        height: 26px;
+
+        font-size: 10px;
+
+    }
+
+
+    .AddCourse-repeat-row button {
+
+        width: 30px;
+
+    }
+
+
+    .AddCourse-review,
+    .AddCourse-module {
+
+        padding: 13px;
+
+    }
+
+
+    .AddCourse-module-header {
+
+        align-items: flex-start;
+
+    }
+
+
+    .AddCourse-module-header button {
+
+        font-size: 9px;
+
+    }
+
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .AddCourse-section {
+
+        padding: 13px;
+
+    }
+
+
+    .AddCourse-section-icon {
+
+        width: 36px;
+
+        height: 36px;
+
+    }
+
+
+    .AddCourse-section-title {
+
+        gap: 9px;
+
+    }
+
+}

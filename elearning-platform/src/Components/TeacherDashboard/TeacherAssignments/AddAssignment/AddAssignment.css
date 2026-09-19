@@ -1,0 +1,750 @@
+/* =========================================================
+   ADD ASSIGNMENT
+   AsiaEdu Teacher Dashboard
+========================================================= */
+
+.AddAssignment {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F8F9FB;
+    padding-bottom: 60px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.AddAssignment-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.AddAssignment-header {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.AddAssignment-back {
+    border: none;
+    background: transparent;
+    color: #2C2222;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: color 0.2s ease;
+}
+
+
+.AddAssignment-back i {
+    color: #CC3650;
+    font-size: 12px;
+}
+
+
+.AddAssignment-back:hover {
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   TITLE SECTION
+========================================================= */
+
+.AddAssignment-title-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 15px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+}
+
+
+/* =========================================================
+   TITLE ICON
+========================================================= */
+
+.AddAssignment-title-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+.AddAssignment-title-section h1 {
+    margin: 0 0 5px;
+    color: #2C2222;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+
+.AddAssignment-title-section p {
+    margin: 0;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+.AddAssignment-title-section p strong {
+    color: #2C2222;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.AddAssignment-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 12px;
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.AddAssignment-section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+
+.AddAssignment-section-icon {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+
+.AddAssignment-section-header h2 {
+    margin: 0;
+    color: #2C2222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FIELDS
+========================================================= */
+
+.AddAssignment-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+
+.AddAssignment-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+.AddAssignment-field label {
+    color: #2C2222;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.AddAssignment-field input,
+.AddAssignment-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    color: #2C2222;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.AddAssignment-field input {
+    height: 44px;
+    padding: 0 13px;
+}
+
+
+.AddAssignment-field textarea {
+    padding: 12px 13px;
+    resize: vertical;
+    min-height: 105px;
+    line-height: 1.6;
+}
+
+
+.AddAssignment-field input:hover,
+.AddAssignment-field textarea:hover {
+    background-color: #FFFFFF;
+    border-color: rgba(204, 54, 80, 0.2);
+}
+
+
+.AddAssignment-field input:focus,
+.AddAssignment-field textarea:focus {
+    background-color: #FFFFFF;
+    border-color: #CC3650;
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.08);
+}
+
+
+.AddAssignment-field input::placeholder,
+.AddAssignment-field textarea::placeholder {
+    color: #B0AAA7;
+}
+
+
+/* =========================================================
+   ROW
+========================================================= */
+
+.AddAssignment-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+}
+
+
+/* =========================================================
+   RESOURCES
+========================================================= */
+
+.AddAssignment-resources {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.AddAssignment-resource-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.AddAssignment-resource-row input {
+    flex: 1;
+    height: 42px;
+    box-sizing: border-box;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    padding: 0 13px;
+    background-color: #FAF8F7;
+    color: #2C2222;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.AddAssignment-resource-row input:hover {
+    background-color: #FFFFFF;
+    border-color: rgba(204, 54, 80, 0.2);
+}
+
+
+.AddAssignment-resource-row input:focus {
+    background-color: #FFFFFF;
+    border-color: #CC3650;
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.08);
+}
+
+
+.AddAssignment-resource-row input::placeholder {
+    color: #B0AAA7;
+}
+
+
+/* =========================================================
+   REMOVE BUTTON
+========================================================= */
+
+.AddAssignment-remove-button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 9px;
+    background-color: #FDECEC;
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.AddAssignment-remove-button:hover {
+    background-color: #CC3650;
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   ADD RESOURCE
+========================================================= */
+
+.AddAssignment-add-resource {
+    width: fit-content;
+    border: none;
+    background: transparent;
+    color: #CC3650;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+
+.AddAssignment-add-resource:hover {
+    color: #B3273F;
+}
+
+
+/* =========================================================
+   ATTACHMENTS
+========================================================= */
+
+.AddAssignment-attachments {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+
+/* =========================================================
+   UPLOAD
+========================================================= */
+
+.AddAssignment-upload {
+    min-height: 105px;
+    border: 1px dashed #DED6D2;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #958B84;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.AddAssignment-upload i {
+    color: #CC3650;
+    font-size: 19px;
+    margin-bottom: 3px;
+}
+
+
+.AddAssignment-upload span {
+    color: #726862;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.AddAssignment-upload small {
+    color: #958B84;
+    font-size: 10px;
+}
+
+
+.AddAssignment-upload input {
+    display: none;
+}
+
+
+.AddAssignment-upload:hover {
+    border-color: rgba(204, 54, 80, 0.35);
+    background-color: #FFFBFA;
+}
+
+
+/* =========================================================
+   ATTACHMENT LIST
+========================================================= */
+
+.AddAssignment-attachment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+
+.AddAssignment-attachment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background-color: #FAF8F7;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    padding: 9px 11px;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.AddAssignment-attachment:hover {
+    border-color: rgba(204, 54, 80, 0.2);
+    background-color: #FFFBFA;
+}
+
+
+.AddAssignment-attachment-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+
+.AddAssignment-attachment-info span {
+    color: #726862;
+    font-size: 12px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.AddAssignment-attachment-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.AddAssignment-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+
+.AddAssignment-cancel {
+    height: 42px;
+    padding: 0 18px;
+    border: 1px solid #DCD6D2;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    color: #726862;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.AddAssignment-cancel:hover {
+    background-color: #F8F9FB;
+    border-color: #CFC7C3;
+}
+
+
+.AddAssignment-save {
+    height: 42px;
+    padding: 0 19px;
+    border: none;
+    border-radius: 9px;
+    background-color: #CC3650;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.AddAssignment-save:hover {
+    background-color: #B3273F;
+    transform: translateY(-1px);
+}
+
+
+.AddAssignment-save:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.AddAssignment-empty {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.AddAssignment-empty-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 13px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+
+.AddAssignment-empty h2 {
+    margin: 0 0 6px;
+    color: #2C2222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.AddAssignment-empty p {
+    margin: 0 0 18px;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+.AddAssignment-back-button {
+    border: none;
+    background-color: #CC3650;
+    color: #FFFFFF;
+    padding: 11px 16px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.AddAssignment-back-button:hover {
+    background-color: #B3273F;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .AddAssignment-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .AddAssignment-title-section {
+        padding: 18px;
+    }
+
+
+    .AddAssignment-title-section h1 {
+        font-size: 16px;
+    }
+
+
+    .AddAssignment-section {
+        padding: 18px;
+    }
+
+
+    .AddAssignment-actions {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+
+    .AddAssignment-cancel,
+    .AddAssignment-save {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .AddAssignment-title-section {
+        gap: 12px;
+        padding: 16px;
+    }
+
+
+    .AddAssignment-title-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 11px;
+        font-size: 16px;
+    }
+
+
+    .AddAssignment-title-section h1 {
+        font-size: 15px;
+    }
+
+
+    .AddAssignment-title-section p {
+        font-size: 11px;
+    }
+
+
+    .AddAssignment-section {
+        padding: 16px;
+    }
+
+
+    .AddAssignment-section-header {
+        gap: 9px;
+    }
+
+
+    .AddAssignment-section-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .AddAssignment-section-header h2 {
+        font-size: 14px;
+    }
+
+
+    .AddAssignment-field label {
+        font-size: 11px;
+    }
+
+
+    .AddAssignment-field input,
+    .AddAssignment-field textarea {
+        font-size: 12px;
+    }
+
+
+    .AddAssignment-resource-row input {
+        font-size: 12px;
+    }
+}

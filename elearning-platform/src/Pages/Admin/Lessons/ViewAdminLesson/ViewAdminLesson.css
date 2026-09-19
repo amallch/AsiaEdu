@@ -1,0 +1,568 @@
+/* =========================================================
+   VIEW ADMIN LESSON
+   AsiaEdu Admin Dashboard
+========================================================= */
+
+.ViewAdminLesson {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F8F9FB;
+    padding-bottom: 60px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.ViewAdminLesson-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ViewAdminLesson-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.ViewAdminLesson-back {
+    border: none;
+    background: transparent;
+    color: #2C2222;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: color 0.2s ease;
+}
+
+.ViewAdminLesson-back i {
+    color: #CC3650;
+    font-size: 12px;
+}
+
+.ViewAdminLesson-back:hover {
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   TITLE SECTION
+========================================================= */
+
+.ViewAdminLesson-title-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 15px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+}
+
+
+/* =========================================================
+   TITLE ICON
+========================================================= */
+
+.ViewAdminLesson-title-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+.ViewAdminLesson-title-section h1 {
+    margin: 0 0 5px;
+    color: #2C2222;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+
+.ViewAdminLesson-title-section p {
+    margin: 0;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   INFO GRID
+========================================================= */
+
+.ViewAdminLesson-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+
+.ViewAdminLesson-info-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 14px;
+    padding: 17px;
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+}
+
+
+.ViewAdminLesson-info-label {
+    display: block;
+    color: #958B84;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+
+.ViewAdminLesson-info-card strong {
+    display: block;
+    color: #2C2222;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.ViewAdminLesson-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 12px;
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.ViewAdminLesson-section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+.ViewAdminLesson-section-icon {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+
+.ViewAdminLesson-section-header h2 {
+    margin: 0;
+    color: #2C2222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.ViewAdminLesson-content {
+    padding-left: 45px;
+}
+
+
+.ViewAdminLesson-content p {
+    margin: 0;
+    color: #726862;
+    font-size: 14.5px;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.ViewAdminLesson-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* =========================================================
+   RESOURCE
+========================================================= */
+
+.ViewAdminLesson-resource {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    padding: 9px 11px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    color: #726862;
+    cursor: pointer;
+    font-family: inherit;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.ViewAdminLesson-resource:hover {
+    border-color: rgba(204, 54, 80, 0.25);
+    background-color: #FFFBFA;
+}
+
+
+.ViewAdminLesson-resource:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+
+.ViewAdminLesson-resource:disabled:hover {
+    border-color: #E6DFDC;
+    background-color: #FAF8F7;
+}
+
+
+.ViewAdminLesson-resource span {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.ViewAdminLesson-resource-open {
+    flex-shrink: 0;
+    color: #CC3650;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   ATTACHMENT
+========================================================= */
+
+.ViewAdminLesson-attachment {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    padding: 9px 11px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    color: #726862;
+    cursor: pointer;
+    font-family: inherit;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.ViewAdminLesson-attachment:hover {
+    border-color: rgba(204, 54, 80, 0.25);
+    background-color: #FFFBFA;
+}
+
+
+.ViewAdminLesson-attachment:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+
+.ViewAdminLesson-attachment:disabled:hover {
+    border-color: #E6DFDC;
+    background-color: #FAF8F7;
+}
+
+
+.ViewAdminLesson-attachment span {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.ViewAdminLesson-attachment-open {
+    flex-shrink: 0;
+    color: #CC3650;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   RESOURCE / ATTACHMENT ICON
+========================================================= */
+
+.ViewAdminLesson-resource-icon,
+.ViewAdminLesson-attachment-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   EMPTY TEXT
+========================================================= */
+
+.ViewAdminLesson-empty-text {
+    margin: 0;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   EMPTY PAGE
+========================================================= */
+
+.ViewAdminLesson-empty {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.ViewAdminLesson-empty-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 13px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+
+.ViewAdminLesson-empty h2 {
+    margin: 0 0 6px;
+    color: #2C2222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.ViewAdminLesson-empty p {
+    margin: 0 0 18px;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BACK TO LESSONS
+========================================================= */
+
+.ViewAdminLesson-back-button {
+    border: none;
+    background-color: #CC3650;
+    color: #FFFFFF;
+    padding: 11px 16px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.ViewAdminLesson-back-button:hover {
+    background-color: #B3273F;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .ViewAdminLesson-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .ViewAdminLesson-header {
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+
+    .ViewAdminLesson-title-section {
+        padding: 18px;
+    }
+
+
+    .ViewAdminLesson-title-section h1 {
+        font-size: 16px;
+    }
+
+
+    .ViewAdminLesson-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ViewAdminLesson-section {
+        padding: 18px;
+    }
+
+
+    .ViewAdminLesson-content {
+        padding-left: 0;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .ViewAdminLesson-title-section {
+        gap: 12px;
+        padding: 16px;
+    }
+
+
+    .ViewAdminLesson-title-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 11px;
+        font-size: 16px;
+    }
+
+
+    .ViewAdminLesson-title-section h1 {
+        font-size: 15px;
+    }
+
+
+    .ViewAdminLesson-title-section p {
+        font-size: 11px;
+    }
+
+
+    .ViewAdminLesson-info-card {
+        padding: 15px;
+    }
+
+
+    .ViewAdminLesson-section {
+        padding: 16px;
+    }
+
+
+    .ViewAdminLesson-section-header {
+        gap: 9px;
+    }
+
+
+    .ViewAdminLesson-section-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .ViewAdminLesson-section-header h2 {
+        font-size: 14px;
+    }
+
+
+    .ViewAdminLesson-content p {
+        font-size: 11px;
+    }
+}

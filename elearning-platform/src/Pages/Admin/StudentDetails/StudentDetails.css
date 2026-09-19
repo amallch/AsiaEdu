@@ -1,0 +1,938 @@
+/* =========================================================
+   STUDENT DETAILS
+========================================================= */
+
+.StudentDetails {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.StudentDetails-header {
+    margin-bottom: 25px;
+}
+
+
+.StudentDetails-back {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 16px;
+
+    padding: 0;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: #958B84;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+
+.StudentDetails-back i {
+    font-size: 11px;
+}
+
+
+.StudentDetails-back:hover {
+    color: #CC3650;
+}
+
+
+.StudentDetails-label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+.StudentDetails-header h1 {
+    margin: 0 0 5px;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.StudentDetails-header p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.StudentDetails-section {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.StudentDetails-section-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+
+.StudentDetails-section-header h2 {
+    margin: 0 0 4px;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.StudentDetails-section-header p {
+    margin: 0;
+
+    font-size: 11px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   STUDENT INFO GRID
+========================================================= */
+
+.StudentDetails-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+
+.StudentDetails-info-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    min-height: 62px;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 10px;
+}
+
+
+.StudentDetails-info-icon {
+    width: 34px;
+
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+}
+
+
+.StudentDetails-info-icon i {
+    font-size: 12px;
+}
+
+
+.StudentDetails-info-item > div:last-child {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.StudentDetails-info-item span {
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.StudentDetails-info-item strong {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   COURSE COUNT
+========================================================= */
+
+.StudentDetails-course-count {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 7px 10px;
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+}
+
+
+.StudentDetails-course-count strong {
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+.StudentDetails-course-count span {
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   COURSE CARD
+========================================================= */
+
+.StudentDetails-course-card {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 11px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   COURSE HEADER
+========================================================= */
+
+.StudentDetails-course-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 17px;
+
+    background-color: #FBFAFA;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.06);
+}
+
+
+.StudentDetails-course-title-wrapper {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    min-width: 0;
+}
+
+
+.StudentDetails-course-icon {
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+}
+
+
+.StudentDetails-course-icon i {
+    font-size: 14px;
+}
+
+
+.StudentDetails-course-label {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.StudentDetails-course-header h3 {
+    margin: 0 0 3px;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.StudentDetails-course-header p {
+    margin: 0;
+
+    font-size: 11px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   ENROLLED COURSES SPACING
+========================================================= */
+
+.StudentDetails-section .StudentDetails-course-card + .StudentDetails-course-card {
+    margin-top: 12px;
+}
+
+
+/* =========================================================
+   COURSE ACTIONS
+========================================================= */
+
+.StudentDetails-course-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    flex-shrink: 0;
+}
+
+
+.StudentDetails-course-action {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    min-width: 92px;
+
+    height: 30px;
+
+    padding: 0 10px;
+
+    border: 1px solid transparent;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.StudentDetails-course-action:hover {
+    transform: translateY(-1px);
+}
+
+
+.StudentDetails-course-action:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+.StudentDetails-course-action i {
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   DEACTIVATE BUTTON
+========================================================= */
+
+.StudentDetails-course-action.deactivate {
+    color: #B05A5A;
+
+    background-color: rgba(176, 90, 90, 0.07);
+
+    border-color: rgba(176, 90, 90, 0.14);
+}
+
+
+.StudentDetails-course-action.deactivate:hover {
+    background-color: rgba(176, 90, 90, 0.12);
+
+    border-color: rgba(176, 90, 90, 0.22);
+}
+
+
+/* =========================================================
+   ACTIVATE BUTTON
+========================================================= */
+
+.StudentDetails-course-action.activate {
+    color: #4C8A62;
+
+    background-color: rgba(76, 138, 98, 0.07);
+
+    border-color: rgba(76, 138, 98, 0.14);
+}
+
+
+.StudentDetails-course-action.activate:hover {
+    background-color: rgba(76, 138, 98, 0.12);
+
+    border-color: rgba(76, 138, 98, 0.22);
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.StudentDetails-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    flex-shrink: 0;
+
+    padding: 6px 9px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.StudentDetails-status-dot {
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: currentColor;
+}
+
+
+.StudentDetails-status.active {
+    color: #4C8A62;
+
+    background-color: rgba(76, 138, 98, 0.08);
+}
+
+
+.StudentDetails-status.pending {
+    color: #B27A36;
+
+    background-color: rgba(178, 122, 54, 0.09);
+}
+
+
+.StudentDetails-status.inactive {
+    color: #958B84;
+
+    background-color: rgba(149, 139, 132, 0.09);
+}
+
+
+/* =========================================================
+   COURSE INFO GRID
+========================================================= */
+
+.StudentDetails-course-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.06);
+}
+
+
+.StudentDetails-course-info-item {
+    min-height: 68px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 12px 15px;
+
+    box-sizing: border-box;
+
+    border-right: 1px solid rgba(44, 34, 34, 0.06);
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.06);
+}
+
+
+.StudentDetails-course-info-item:nth-child(4n) {
+    border-right: none;
+}
+
+
+.StudentDetails-course-info-item:nth-child(n + 5) {
+    border-bottom: none;
+}
+
+
+.StudentDetails-course-info-item span {
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.StudentDetails-course-info-item strong {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+
+/* =========================================================
+   ENROLLMENT INFORMATION
+========================================================= */
+
+.StudentDetails-enrollment {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0;
+
+    padding: 13px 15px;
+
+    background-color: #FBFAFA;
+}
+
+
+.StudentDetails-enrollment-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    min-width: 0;
+
+    padding: 3px 12px;
+
+    border-right: 1px solid rgba(44, 34, 34, 0.06);
+}
+
+
+.StudentDetails-enrollment-item:first-child {
+    padding-left: 0;
+}
+
+
+.StudentDetails-enrollment-item:last-child {
+    border-right: none;
+}
+
+
+.StudentDetails-enrollment-item > i {
+    color: #CC3650;
+
+    font-size: 12px;
+}
+
+
+.StudentDetails-enrollment-item > div {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.StudentDetails-enrollment-item span {
+    font-size: 9px;
+
+    color: #958B84;
+}
+
+
+.StudentDetails-enrollment-item strong {
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #746B66;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.StudentDetails-empty {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    min-height: 220px;
+
+    text-align: center;
+}
+
+
+.StudentDetails-empty > i {
+    margin-bottom: 12px;
+
+    font-size: 28px;
+
+    color: #CC3650;
+}
+
+
+.StudentDetails-empty h2 {
+    margin: 0 0 6px;
+
+    font-size: 17px;
+
+    color: #2C2222;
+}
+
+
+.StudentDetails-empty p {
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+.StudentDetails-empty button {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 16px;
+
+    padding: 9px 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+
+.StudentDetails-empty button:hover {
+    background-color: #B92F47;
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .StudentDetails-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .StudentDetails-course-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .StudentDetails-course-info-item:nth-child(2n) {
+        border-right: none;
+    }
+
+
+    .StudentDetails-course-info-item:nth-child(n + 5) {
+        border-bottom: 1px solid rgba(44, 34, 34, 0.06);
+    }
+
+
+    .StudentDetails-course-info-item:nth-child(n + 7) {
+        border-bottom: none;
+    }
+
+
+    .StudentDetails-enrollment {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+
+    .StudentDetails-enrollment-item {
+        padding: 5px 0;
+
+        border-right: none;
+
+        border-bottom: 1px solid rgba(44, 34, 34, 0.06);
+    }
+
+
+    .StudentDetails-enrollment-item:last-child {
+        border-bottom: none;
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .StudentDetails-section {
+        padding: 16px;
+    }
+
+
+    .StudentDetails-course-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .StudentDetails-course-actions {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .StudentDetails-status {
+        align-self: flex-start;
+    }
+
+
+    .StudentDetails-course-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .StudentDetails-course-info-item {
+        border-right: none !important;
+
+        border-bottom: 1px solid rgba(44, 34, 34, 0.06) !important;
+    }
+
+
+    .StudentDetails-course-info-item:last-child {
+        border-bottom: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .StudentDetails-header h1 {
+        font-size: 22px;
+    }
+
+
+    .StudentDetails-header p {
+        font-size: 12px;
+    }
+
+
+    .StudentDetails-section-header {
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+
+    .StudentDetails-section-header h2 {
+        font-size: 14px;
+    }
+
+
+    .StudentDetails-course-action {
+        min-width: 88px;
+    }
+
+}

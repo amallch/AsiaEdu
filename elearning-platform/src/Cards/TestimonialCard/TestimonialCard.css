@@ -1,0 +1,449 @@
+/* =====================================================
+   TESTIMONIAL CARD
+===================================================== */
+
+.TestimonialCard {
+
+    position: relative;
+
+    width: 100%;
+
+    height: fit-content;
+
+    background-color: #FFFFFF;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid
+        rgba(44, 34, 34, 0.06);
+
+    box-shadow:
+        0 5px 16px
+        rgba(44, 34, 34, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.TestimonialCard:hover {
+
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(204, 54, 80, 0.14);
+
+    box-shadow:
+        0 12px 28px
+        rgba(44, 34, 34, 0.08);
+
+}
+
+
+/* =====================================================
+   ACCENT
+===================================================== */
+
+.TestimonialCard-accent {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background-color: #CC3650;
+
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.TestimonialCard-content {
+
+    width: 100%;
+
+    height: 100%;
+
+    box-sizing: border-box;
+
+    padding: 30px 28px 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.TestimonialCard-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-shrink: 0;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =====================================================
+   QUOTE
+===================================================== */
+
+.TestimonialCard-quote {
+
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color:
+        rgba(204, 54, 80, 0.10);
+
+    color: #CC3650;
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    padding-top: 7px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =====================================================
+   RATING
+===================================================== */
+
+.TestimonialCard-rating {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 3px;
+
+    flex-shrink: 0;
+
+}
+
+
+.TestimonialCard-rating span {
+
+    font-size: 15px;
+
+    color: #E5A900;
+
+}
+
+
+/* =====================================================
+   COMMENT
+===================================================== */
+
+.TestimonialCard-comment {
+
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    font-weight: 400;
+
+    flex: 1;
+
+    overflow: hidden;
+
+}
+
+
+/* =====================================================
+   SEPARATOR
+===================================================== */
+
+.TestimonialCard-line {
+
+    width: 100%;
+
+    height: 1px;
+
+    flex-shrink: 0;
+
+    background-color:
+        rgba(44, 34, 34, 0.07);
+
+    margin: 20px 0 18px;
+
+}
+
+
+/* =====================================================
+   USER
+===================================================== */
+
+.TestimonialCard-user {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    flex-shrink: 0;
+
+    min-height: 50px;
+
+}
+
+
+/* =====================================================
+   INITIALS
+===================================================== */
+
+.TestimonialCard-initials {
+
+    width: 50px;
+
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color:
+        rgba(204, 54, 80, 0.10);
+
+    color: #CC3650;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* =====================================================
+   USER INFO
+===================================================== */
+
+.TestimonialCard-user-info {
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.TestimonialCard-user-info h4 {
+
+    margin: 0 0 5px;
+
+    color: #2C2222;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+}
+
+
+.TestimonialCard-user-info p {
+
+    margin: 0;
+
+    color: #746B66;
+
+    font-size: 12.5px;
+
+    line-height: 1.3;
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .TestimonialCard {
+
+        height: 330px;
+
+    }
+
+
+    .TestimonialCard-content {
+
+        padding: 28px 25px 22px;
+
+    }
+
+
+    .TestimonialCard-comment {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .TestimonialCard {
+
+        height: 315px;
+
+        border-radius: 16px;
+
+    }
+
+
+    .TestimonialCard-content {
+
+        padding: 25px 22px 20px;
+
+    }
+
+
+    .TestimonialCard-header {
+
+        margin-bottom: 17px;
+
+    }
+
+
+    .TestimonialCard-quote {
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 30px;
+
+    }
+
+
+    .TestimonialCard-rating span {
+
+        font-size: 14px;
+
+    }
+
+
+    .TestimonialCard-comment {
+
+        font-size: 13.5px;
+
+        line-height: 1.7;
+
+        flex: 1;
+
+        overflow: hidden;
+
+    }
+
+
+    .TestimonialCard-line {
+
+        margin: 18px 0 16px;
+
+    }
+
+
+    .TestimonialCard-initials {
+
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 14px;
+
+    }
+
+
+    .TestimonialCard-user {
+
+        min-height: 48px;
+
+    }
+
+
+    .TestimonialCard-user-info h4 {
+
+        font-size: 14px;
+
+    }
+
+
+    .TestimonialCard-user-info p {
+
+        font-size: 12px;
+
+    }
+
+}

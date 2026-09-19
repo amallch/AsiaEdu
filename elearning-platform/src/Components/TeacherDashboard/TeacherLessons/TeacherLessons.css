@@ -1,0 +1,1103 @@
+/* =========================================================
+   TEACHER LESSONS
+   AsiaEdu Teacher Dashboard
+========================================================= */
+
+.TeacherLessons {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background-color: #F8F9FB;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.TeacherLessons-container {
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   1. PAGE HEADER
+========================================================= */
+
+.TeacherLessons-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 28px;
+}
+
+
+.TeacherLessons-heading h2 {
+
+    margin: 0 0 7px;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+
+    color: #2C2222;
+}
+
+
+.TeacherLessons-heading p {
+
+    margin: 0;
+
+    font-size: 15px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   CREATE BUTTON
+========================================================= */
+
+.TeacherLessons-create-button {
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 11px 16px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.TeacherLessons-create-button:hover {
+
+    background-color: #B3273F;
+
+    transform: translateY(-1px);
+}
+
+
+.TeacherLessons-create-button:disabled {
+
+    opacity: 0.5;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+.TeacherLessons-create-button i {
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   2. COURSE / SESSION SELECTORS
+========================================================= */
+
+.TeacherLessons-courseSelector {
+
+    width: 100%;
+
+    padding: 20px 22px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   SESSION SELECTOR
+========================================================= */
+
+.TeacherLessons-sessionSelector {
+
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   SELECTOR HEADING
+========================================================= */
+
+.TeacherLessons-selectorHeading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 0;
+}
+
+
+.TeacherLessons-selectorIcon {
+
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 17px;
+}
+
+
+.TeacherLessons-selectorHeading > div:last-child {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.TeacherLessons-selectorHeading span {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+
+.TeacherLessons-selectorHeading p {
+
+    margin: 3px 0 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   SELECT WRAPPER
+========================================================= */
+
+.TeacherLessons-selectWrapper {
+
+    position: relative;
+
+    width: 420px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   COURSE / SESSION CODE
+========================================================= */
+
+.TeacherLessons-courseCode {
+
+    position: absolute;
+
+    left: 14px;
+
+    z-index: 2;
+
+    width: 24px;
+    height: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #CC3650;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    pointer-events: none;
+}
+
+
+.TeacherLessons-courseCode i {
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.TeacherLessons-select {
+
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 40px 0 45px;
+
+    box-sizing: border-box;
+
+    appearance: none;
+
+    border: 1px solid #E6DFDC;
+
+    border-radius: 10px;
+
+    background-color: #FAF8F7;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.TeacherLessons-select:hover {
+
+    background-color: #FFFFFF;
+
+    border-color: rgba(204, 54, 80, 0.25);
+}
+
+
+.TeacherLessons-select:focus {
+
+    background-color: #FFFFFF;
+
+    border-color: #CC3650;
+
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.08);
+}
+
+
+.TeacherLessons-select:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   SELECT ARROW
+========================================================= */
+
+.TeacherLessons-selectWrapper > i {
+
+    position: absolute;
+
+    right: 15px;
+
+    font-size: 11px;
+
+    color: #958B84;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   3. SELECTED COURSE
+========================================================= */
+
+.TeacherLessons-selectedCourse {
+
+    width: 100%;
+
+    padding: 20px 22px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFBFA;
+
+    border: 1px solid rgba(204, 54, 80, 0.12);
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   SELECTED COURSE LEFT
+========================================================= */
+
+.TeacherLessons-selectedCourse-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   SELECTED COURSE ICON
+========================================================= */
+
+.TeacherLessons-selectedCourse-icon {
+
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(204, 54, 80, 0.12);
+
+    overflow: hidden;
+
+    color: #CC3650;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+.TeacherLessons-selectedCourse-left > div:last-child {
+
+    min-width: 0;
+}
+
+
+.TeacherLessons-selectedCourse-left h3 {
+
+    margin: 0 0 5px;
+
+    font-size: 17px;
+
+    font-weight: 750;
+
+    color: #2C2222;
+}
+
+
+.TeacherLessons-selectedCourse-left p {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   COURSE STATS
+========================================================= */
+
+.TeacherLessons-selectedCourse-stats {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-shrink: 0;
+}
+
+
+.TeacherLessons-selectedCourse-stats > div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    min-width: 65px;
+}
+
+
+.TeacherLessons-selectedCourse-stats strong {
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.TeacherLessons-selectedCourse-stats span {
+
+    margin-top: 3px;
+
+    font-size: 10px;
+
+    color: #958B84;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   4. LESSON LIST
+========================================================= */
+
+.TeacherLessons-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   LESSON CARD
+========================================================= */
+
+.TeacherLessons-card {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.TeacherLessons-card:hover {
+
+    transform: translateY(-2px);
+
+    border-color: rgba(204, 54, 80, 0.18);
+
+    box-shadow:
+        0 7px 20px rgba(44, 34, 34, 0.06);
+}
+
+
+.TeacherLessons-card:focus-visible {
+
+    outline: 2px solid #CC3650;
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   LESSON NUMBER
+========================================================= */
+
+.TeacherLessons-number {
+
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #B3273F;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   LESSON CONTENT
+========================================================= */
+
+.TeacherLessons-content {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.TeacherLessons-content h3 {
+
+    margin: 0 0 7px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.TeacherLessons-description {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #726862;
+
+    max-width: 850px;
+}
+
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.TeacherLessons-details {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px 20px;
+
+    margin-top: 13px;
+}
+
+
+.TeacherLessons-details span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    color: #958B84;
+}
+
+
+.TeacherLessons-details i {
+
+    color: #CC3650;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   CARD ARROW
+========================================================= */
+
+.TeacherLessons-card-arrow {
+
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: #FDECEC;
+
+    color: #CC3650;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.TeacherLessons-card:hover
+.TeacherLessons-card-arrow {
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    transform: translateX(3px);
+}
+
+
+.TeacherLessons-card-arrow i {
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   5. EMPTY / LOADING
+========================================================= */
+
+.TeacherLessons-empty {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border: 1px dashed #DED6D2;
+
+    border-radius: 14px;
+}
+
+
+.TeacherLessons-emptyIcon {
+
+    width: 52px;
+    height: 52px;
+
+    margin: 0 auto 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 18px;
+}
+
+
+.TeacherLessons-empty h3 {
+
+    margin: 0 0 6px;
+
+    font-size: 15px;
+
+    color: #2C2222;
+}
+
+
+.TeacherLessons-empty p {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .TeacherLessons-container {
+
+        padding: 28px;
+    }
+
+
+    .TeacherLessons-courseSelector {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+
+    .TeacherLessons-selectorHeading {
+
+        width: auto;
+    }
+
+
+    .TeacherLessons-selectWrapper {
+
+        width: 100%;
+    }
+
+
+    .TeacherLessons-selectedCourse {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+
+    .TeacherLessons-selectedCourse-stats {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        gap: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .TeacherLessons-container {
+
+        padding: 22px 18px;
+    }
+
+
+    .TeacherLessons-heading {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .TeacherLessons-heading h2 {
+
+        font-size: 24px;
+    }
+
+
+    .TeacherLessons-heading p {
+
+        font-size: 14px;
+    }
+
+
+    .TeacherLessons-create-button {
+
+        width: 100%;
+    }
+
+
+    .TeacherLessons-courseSelector {
+
+        padding: 18px;
+    }
+
+
+    .TeacherLessons-selectedCourse {
+
+        padding: 18px;
+    }
+
+
+    .TeacherLessons-selectedCourse-stats {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        padding-top: 16px;
+
+        border-top:
+            1px solid rgba(44, 34, 34, 0.07);
+    }
+
+
+    .TeacherLessons-card {
+
+        align-items: flex-start;
+
+        padding: 17px;
+    }
+
+
+    .TeacherLessons-card-arrow {
+
+        margin-top: 2px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .TeacherLessons-container {
+
+        padding: 18px 14px;
+    }
+
+
+    .TeacherLessons-heading {
+
+        margin-bottom: 22px;
+    }
+
+
+    .TeacherLessons-heading h2 {
+
+        font-size: 21px;
+    }
+
+
+    .TeacherLessons-heading p {
+
+        font-size: 13px;
+    }
+
+
+    .TeacherLessons-selectorHeading {
+
+        gap: 10px;
+    }
+
+
+    .TeacherLessons-selectorIcon {
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 15px;
+    }
+
+
+    .TeacherLessons-selectorHeading span {
+
+        font-size: 13px;
+    }
+
+
+    .TeacherLessons-selectorHeading p {
+
+        font-size: 11px;
+    }
+
+
+    .TeacherLessons-select {
+
+        font-size: 11px;
+    }
+
+
+    .TeacherLessons-selectedCourse-left h3 {
+
+        font-size: 15px;
+    }
+
+
+    .TeacherLessons-selectedCourse-stats {
+
+        gap: 8px;
+    }
+
+
+    .TeacherLessons-selectedCourse-stats strong {
+
+        font-size: 16px;
+    }
+
+
+    .TeacherLessons-selectedCourse-stats span {
+
+        font-size: 9px;
+    }
+
+
+    .TeacherLessons-card {
+
+        gap: 12px;
+
+        padding: 15px;
+    }
+
+
+    .TeacherLessons-number {
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 11px;
+    }
+
+
+    .TeacherLessons-content h3 {
+
+        font-size: 13px;
+    }
+
+
+    .TeacherLessons-description {
+
+        font-size: 11px;
+    }
+
+
+    .TeacherLessons-details {
+
+        gap: 7px 14px;
+
+        margin-top: 10px;
+    }
+
+
+    .TeacherLessons-details span {
+
+        font-size: 10px;
+    }
+
+
+    .TeacherLessons-card-arrow {
+
+        width: 30px;
+        height: 30px;
+    }
+
+}

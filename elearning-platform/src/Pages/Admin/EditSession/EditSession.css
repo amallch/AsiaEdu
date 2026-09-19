@@ -1,0 +1,612 @@
+/* =========================================================
+   EDIT SESSION
+========================================================= */
+
+.EditSession {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.EditSession-header {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+.EditSession-header span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #CC3650;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+.EditSession-header h1 {
+    margin: 0 0 5px;
+
+    color: #2C2222;
+
+    font-size: 26px;
+
+    font-weight: 800;
+}
+
+
+.EditSession-header p {
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   DELETE TOP BUTTON
+========================================================= */
+
+.EditSession-delete-top {
+    height: 38px;
+
+    padding: 0 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    flex-shrink: 0;
+
+    border: 1px solid #F1C9CE;
+
+    border-radius: 8px;
+
+    background-color: #FFFFFF;
+
+    color: #C33A4E;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.EditSession-delete-top:hover {
+    background-color: #FDECEC;
+
+    border-color: #E9AEB7;
+}
+
+
+.EditSession-delete-top:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.EditSession-form {
+    width: 100%;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.EditSession-section {
+    width: 100%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.EditSession-section-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding-bottom: 18px;
+
+    margin-bottom: 18px;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.07);
+}
+
+
+.EditSession-section-icon {
+    width: 36px;
+
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+}
+
+
+.EditSession-section-icon i {
+    font-size: 12px;
+}
+
+
+.EditSession-section-title h2 {
+    margin: 0 0 3px;
+
+    color: #2C2222;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+
+.EditSession-section-title p {
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.EditSession-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.EditSession-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+
+.EditSession-group label {
+    color: #2C2222;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.EditSession-group input,
+.EditSession-group select {
+    width: 100%;
+
+    height: 42px;
+
+    padding: 0 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #E1DAD5;
+
+    border-radius: 8px;
+
+    background-color: #FFFFFF;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.EditSession-group input:focus,
+.EditSession-group select:focus {
+    border-color: #CC3650;
+
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.08);
+}
+
+
+.EditSession-group input::placeholder {
+    color: #B3AAA4;
+}
+
+
+.EditSession-group select {
+    cursor: pointer;
+}
+
+
+.EditSession-group small {
+    margin-top: -1px;
+
+    color: #958B84;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.EditSession-message {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 16px;
+
+    padding: 11px 13px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+.EditSession-message.error {
+    background-color: #FDECEC;
+
+    border: 1px solid #F5CACA;
+
+    color: #B52F3F;
+}
+
+
+.EditSession-message.success {
+    background-color: #EDF8F0;
+
+    border: 1px solid #CBE8D1;
+
+    color: #2F7A43;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.EditSession-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    margin-top: 18px;
+}
+
+
+.EditSession-cancel,
+.EditSession-save {
+    height: 38px;
+
+    padding: 0 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.EditSession-cancel {
+    border: 1px solid #E1DAD5;
+
+    background-color: #FFFFFF;
+
+    color: #6F6661;
+}
+
+
+.EditSession-cancel:hover {
+    background-color: #F8F6F3;
+
+    border-color: #D5CCC6;
+}
+
+
+.EditSession-save {
+    border: 1px solid #CC3650;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+}
+
+
+.EditSession-save:hover {
+    background-color: #B92F48;
+
+    border-color: #B92F48;
+
+    transform: translateY(-1px);
+}
+
+
+.EditSession-cancel:disabled,
+.EditSession-save:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.EditSession-loading {
+    width: 100%;
+
+    min-height: 60vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    color: #958B84;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.EditSession-loading i {
+    color: #CC3650;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .EditSession-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .EditSession-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .EditSession-header h1 {
+        font-size: 23px;
+    }
+
+
+    .EditSession-delete-top {
+        width: 100%;
+    }
+
+
+    .EditSession-section {
+        padding: 16px;
+    }
+
+
+    .EditSession-grid {
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+    }
+
+
+    .EditSession-actions {
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .EditSession-header h1 {
+        font-size: 21px;
+    }
+
+
+    .EditSession-header p {
+        font-size: 12px;
+    }
+
+
+    .EditSession-section {
+        padding: 15px;
+    }
+
+
+    .EditSession-section-title {
+        margin-bottom: 15px;
+
+        padding-bottom: 15px;
+    }
+
+
+    .EditSession-group input,
+    .EditSession-group select {
+        height: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .EditSession-header h1 {
+        font-size: 20px;
+    }
+
+
+    .EditSession-header p {
+        font-size: 11px;
+    }
+
+
+    .EditSession-section {
+        padding: 14px;
+    }
+
+
+    .EditSession-section-title {
+        gap: 9px;
+    }
+
+
+    .EditSession-section-icon {
+        width: 34px;
+
+        height: 34px;
+    }
+
+
+    .EditSession-section-title h2 {
+        font-size: 14px;
+    }
+
+
+    .EditSession-actions {
+        flex-direction: column-reverse;
+
+        width: 100%;
+    }
+
+
+    .EditSession-cancel,
+    .EditSession-save {
+        width: 100%;
+    }
+
+}

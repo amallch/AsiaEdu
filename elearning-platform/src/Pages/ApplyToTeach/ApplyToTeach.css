@@ -1,0 +1,527 @@
+/* =====================================================
+   APPLY TO TEACH
+===================================================== */
+
+.ApplyToTeach {
+    width: 100%;
+    padding-bottom: 70px;
+    background-color: #f8f9fb;
+}
+
+.ApplyToTeach-container {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.ApplyToTeach-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+
+/* =====================================================
+   FORM SECTION
+===================================================== */
+
+.ApplyToTeach-section {
+    width: 100%;
+
+    padding: 28px 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.035);
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.ApplyToTeach-sectionHeader {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 25px;
+}
+
+.ApplyToTeach-sectionIcon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background-color: #fff0f3;
+    color: #d93656;
+
+    border-radius: 11px;
+
+    font-size: 17px;
+}
+
+.ApplyToTeach-sectionHeader h2 {
+    margin: 0 0 4px;
+
+    color: #252525;
+
+    font-size: 19px;
+    font-weight: 650;
+
+    line-height: 1.3;
+}
+
+.ApplyToTeach-sectionHeader p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   FORM GRID
+===================================================== */
+
+.ApplyToTeach-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =====================================================
+   FORM FIELD
+===================================================== */
+
+.ApplyToTeach-field {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.ApplyToTeach-field label {
+    margin-bottom: 7px;
+
+    color: #333;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   INPUT / SELECT / TEXTAREA
+===================================================== */
+
+.ApplyToTeach-field input,
+.ApplyToTeach-field select,
+.ApplyToTeach-field textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 9px;
+
+    color: #333;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.ApplyToTeach-field input {
+    height: 46px;
+}
+
+.ApplyToTeach-field input::placeholder,
+.ApplyToTeach-field textarea::placeholder {
+    color: #aaa;
+}
+
+
+/* =====================================================
+   SELECT
+===================================================== */
+
+.ApplyToTeach-field select {
+    height: 46px;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+
+/* =====================================================
+   TEXTAREA
+===================================================== */
+
+.ApplyToTeach-field textarea {
+    min-height: 120px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   FOCUS STATE
+===================================================== */
+
+.ApplyToTeach-field input:focus,
+.ApplyToTeach-field select:focus,
+.ApplyToTeach-field textarea:focus {
+    border-color: #d93656;
+
+    background-color: #fffdfd;
+
+    box-shadow: 0 0 0 3px rgba(217, 54, 86, 0.08);
+}
+
+
+/* =====================================================
+   FULL WIDTH FIELDS
+===================================================== */
+
+.ApplyToTeach-section > .ApplyToTeach-field {
+    width: 100%;
+}
+
+
+/* =====================================================
+   SUBMIT AREA
+===================================================== */
+
+.ApplyToTeach-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 5px;
+
+    text-align: center;
+}
+
+.ApplyToTeach-submitButton {
+    min-width: 220px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 11px;
+
+    padding: 0 25px;
+
+    background: linear-gradient(
+        135deg,
+        #d93656,
+        #c52f5d
+    );
+
+    border: none;
+    border-radius: 9px;
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 7px 18px rgba(217, 54, 86, 0.20);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.ApplyToTeach-submitButton i {
+    font-size: 13px;
+
+    transition: transform 0.2s ease;
+}
+
+.ApplyToTeach-submitButton:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 11px 23px rgba(217, 54, 86, 0.25);
+}
+
+.ApplyToTeach-submitButton:hover i {
+    transform: translateX(4px);
+}
+
+.ApplyToTeach-submitButton:active {
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   SUBMIT DESCRIPTION
+===================================================== */
+
+.ApplyToTeach-submit p {
+    max-width: 500px;
+
+    margin: 13px 0 0;
+
+    color: #888;
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* =====================================================
+   SUCCESS MESSAGE
+===================================================== */
+
+.ApplyToTeach-success {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin-top: 50px;
+    padding: 55px 45px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    text-align: center;
+
+    animation: ApplyToTeach-successAppear 0.35s ease;
+}
+
+
+.ApplyToTeach-successIcon {
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    background-color: #fff0f3;
+
+    border: 1px solid #ffd9e1;
+    border-radius: 50%;
+
+    color: #d93656;
+
+    font-size: 25px;
+}
+
+
+.ApplyToTeach-success h2 {
+    margin: 0 0 12px;
+
+    color: #252525;
+
+    font-size: 23px;
+    font-weight: 650;
+
+    line-height: 1.35;
+}
+
+
+.ApplyToTeach-success p {
+    max-width: 570px;
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   SUCCESS ANIMATION
+===================================================== */
+
+@keyframes ApplyToTeach-successAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =====================================================
+   SUCCESS MESSAGE — MOBILE
+===================================================== */
+
+@media (max-width: 550px) {
+
+    .ApplyToTeach-success {
+        margin-top: 35px;
+
+        padding: 40px 22px;
+
+        border-radius: 15px;
+    }
+
+    .ApplyToTeach-successIcon {
+        width: 60px;
+        height: 60px;
+
+        margin-bottom: 19px;
+
+        font-size: 22px;
+    }
+
+    .ApplyToTeach-success h2 {
+        font-size: 19px;
+    }
+
+    .ApplyToTeach-success p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .ApplyToTeach {
+        padding: 55px 18px 70px;
+    }
+
+    .ApplyToTeach-section {
+        padding: 25px;
+    }
+
+    .ApplyToTeach-grid {
+        grid-template-columns: 1fr;
+
+        gap: 17px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 550px) {
+
+    .ApplyToTeach {
+        padding: 45px 15px 60px;
+    }
+
+    .ApplyToTeach-section {
+        padding: 20px;
+
+        border-radius: 13px;
+    }
+
+    .ApplyToTeach-sectionHeader {
+        align-items: flex-start;
+
+        gap: 12px;
+
+        margin-bottom: 21px;
+    }
+
+    .ApplyToTeach-sectionIcon {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 10px;
+
+        font-size: 15px;
+    }
+
+    .ApplyToTeach-sectionHeader h2 {
+        font-size: 17px;
+    }
+
+    .ApplyToTeach-sectionHeader p {
+        font-size: 12px;
+    }
+
+    .ApplyToTeach-grid {
+        gap: 15px;
+    }
+
+    .ApplyToTeach-field input,
+    .ApplyToTeach-field select {
+        height: 45px;
+    }
+
+    .ApplyToTeach-submitButton {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+}

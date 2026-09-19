@@ -1,0 +1,661 @@
+/* =========================================================
+   VIEW RESULT
+   AsiaEdu Student Dashboard
+========================================================= */
+
+.ViewResult {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F8F9FB;
+    padding-bottom: 60px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.ViewResult-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ViewResult-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.ViewResult-back-button {
+    border: none;
+    background: transparent;
+    color: #2C2222;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: color 0.2s ease;
+}
+
+
+.ViewResult-back-button i {
+    color: #CC3650;
+    font-size: 12px;
+}
+
+
+.ViewResult-back-button:hover {
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   ASSIGNMENT TITLE SECTION
+========================================================= */
+
+.ViewResult-title-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 15px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 18px;
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+}
+
+
+/* =========================================================
+   TITLE LEFT
+========================================================= */
+
+.ViewResult-title-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   TITLE ICON
+========================================================= */
+
+.ViewResult-title-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+.ViewResult-title-section h1 {
+    margin: 0 0 5px;
+    color: #2C2222;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+
+.ViewResult-title-section p {
+    margin: 0;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   TITLE GRADE
+========================================================= */
+
+.ViewResult-title-grade {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+
+.ViewResult-title-grade strong {
+    font-size: 18px;
+    font-weight: 750;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   MAX SCORE
+   STAYS MUTED
+========================================================= */
+
+.ViewResult-title-grade .ViewResult-max-score {
+    color: #958B84;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PERCENTAGE
+========================================================= */
+
+.ViewResult-title-grade small {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   GRADE COLORS
+========================================================= */
+
+/* 50% OR MORE */
+
+.ViewResult-title-grade.passed strong {
+    color: #2E7D32;
+}
+
+
+.ViewResult-title-grade.passed small {
+    color: #2E7D32;
+}
+
+
+/* BELOW 50% */
+
+.ViewResult-title-grade.failed strong {
+    color: #CC3650;
+}
+
+
+.ViewResult-title-grade.failed small {
+    color: #CC3650;
+}
+
+
+/* MAX SCORE ALWAYS MUTED */
+
+.ViewResult-title-grade.passed .ViewResult-max-score,
+.ViewResult-title-grade.failed .ViewResult-max-score {
+    color: #958B84;
+}
+
+
+/* =========================================================
+   INFORMATION GRID
+========================================================= */
+
+.ViewResult-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   INFORMATION CARD
+========================================================= */
+
+.ViewResult-info-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 14px;
+    padding: 17px;
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+}
+
+
+.ViewResult-info-label {
+    display: block;
+    color: #958B84;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+
+.ViewResult-info-card strong {
+    display: block;
+    color: #2C2222;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SCORE PERCENTAGE
+========================================================= */
+
+.ViewResult-percentage {
+    display: block;
+    margin-top: 4px;
+    color: #958B84;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.ViewResult-status.graded {
+    color: #2E7D32;
+}
+
+
+.ViewResult-status.pending {
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.ViewResult-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 12px;
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.ViewResult-section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+.ViewResult-section-icon {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+
+.ViewResult-section-header h2 {
+    margin: 0;
+    color: #2C2222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.ViewResult-content {
+    padding-left: 45px;
+}
+
+
+.ViewResult-content p {
+    margin: 0;
+    color: #726862;
+    font-size: 14.5px;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.ViewResult-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* =========================================================
+   ATTACHMENT
+========================================================= */
+
+.ViewResult-attachment {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    padding: 9px 11px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    color: #726862;
+    cursor: pointer;
+    font-family: inherit;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.ViewResult-attachment:hover {
+    border-color: rgba(204, 54, 80, 0.25);
+    background-color: #FFFBFA;
+}
+
+
+.ViewResult-attachment:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+
+.ViewResult-attachment:disabled:hover {
+    border-color: #E6DFDC;
+    background-color: #FAF8F7;
+}
+
+
+.ViewResult-attachment span {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.ViewResult-attachment-open {
+    flex-shrink: 0;
+    color: #CC3650;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   ATTACHMENT ICON
+========================================================= */
+
+.ViewResult-attachment-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   EMPTY TEXT
+========================================================= */
+
+.ViewResult-empty-text {
+    margin: 0;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   EMPTY PAGE
+========================================================= */
+
+.ViewResult-empty {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.ViewResult-empty-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 13px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+
+.ViewResult-empty h2 {
+    margin: 0 0 6px;
+    color: #2C2222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.ViewResult-empty p {
+    margin: 0 0 18px;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BACK TO GRADES
+========================================================= */
+
+.ViewResult-back {
+    border: none;
+    background-color: #CC3650;
+    color: #FFFFFF;
+    padding: 11px 16px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.ViewResult-back:hover {
+    background-color: #B3273F;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .ViewResult-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .ViewResult-header {
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+
+    .ViewResult-title-section {
+        padding: 18px;
+        align-items: flex-start;
+    }
+
+
+    .ViewResult-title-left {
+        min-width: 0;
+    }
+
+
+    .ViewResult-title-section h1 {
+        font-size: 16px;
+    }
+
+
+    .ViewResult-title-grade strong {
+        font-size: 17px;
+    }
+
+
+    .ViewResult-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ViewResult-section {
+        padding: 18px;
+    }
+
+
+    .ViewResult-content {
+        padding-left: 0;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .ViewResult-title-section {
+        gap: 12px;
+        padding: 16px;
+    }
+
+
+    .ViewResult-title-left {
+        gap: 12px;
+    }
+
+
+    .ViewResult-title-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 11px;
+        font-size: 16px;
+    }
+
+
+    .ViewResult-title-section h1 {
+        font-size: 15px;
+    }
+
+
+    .ViewResult-title-section p {
+        font-size: 11px;
+    }
+
+
+    .ViewResult-title-grade strong {
+        font-size: 16px;
+    }
+
+
+    .ViewResult-title-grade span {
+        font-size: 11px;
+    }
+
+
+    .ViewResult-info-card {
+        padding: 15px;
+    }
+
+
+    .ViewResult-section {
+        padding: 16px;
+    }
+
+
+    .ViewResult-section-header {
+        gap: 9px;
+    }
+
+
+    .ViewResult-section-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .ViewResult-section-header h2 {
+        font-size: 14px;
+    }
+
+
+    .ViewResult-content p {
+        font-size: 11px;
+    }
+
+}

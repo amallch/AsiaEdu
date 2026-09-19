@@ -1,0 +1,329 @@
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.Statistics {
+
+    width: 100%;
+
+    padding: 40px 0;
+
+    background-color: #2C2222;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.Statistics-container {
+
+    width: 85%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    align-items: center;
+
+}
+
+
+/* =========================================================
+   STAT ITEM
+========================================================= */
+
+.StatItem {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 5px;
+
+    padding: 10px 25px;
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.StatItem > i {
+
+    margin-bottom: 16px;
+
+    color: #F3B6A8;
+
+    font-size: 23px;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.2s ease;
+
+}
+
+
+/* =========================================================
+   INFO
+========================================================= */
+
+.StatItem-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.StatItem-info h3 {
+
+    margin: 0;
+
+    color: #FFF8F3;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: -1px;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.2s ease;
+
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.StatItem-info p {
+
+    margin: 0;
+
+    color: #D8C8C2;
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    line-height: 1.4;
+
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.StatItem:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+.StatItem:hover > i {
+
+    transform: scale(1.1);
+
+    opacity: 0.9;
+
+}
+
+
+.StatItem:hover
+.StatItem-info h3 {
+
+    transform: scale(1.03);
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .Statistics {
+
+        padding: 45px 0;
+
+    }
+
+
+    .Statistics-container {
+
+        width: 90%;
+
+    }
+
+
+    .StatItem {
+
+        padding: 10px 15px;
+
+    }
+
+
+    .StatItem > i {
+
+        font-size: 23px;
+
+        margin-bottom: 13px;
+
+    }
+
+
+    .StatItem-info h3 {
+
+        font-size: 34px;
+
+    }
+
+
+    .StatItem-info p {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .Statistics {
+
+        padding: 40px 0;
+
+    }
+
+
+    .Statistics-container {
+
+        width: 90%;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        row-gap: 35px;
+
+    }
+
+
+    .StatItem {
+
+        padding: 8px 10px;
+
+    }
+
+
+    .StatItem > i {
+
+        font-size: 22px;
+
+        margin-bottom: 12px;
+
+    }
+
+
+    .StatItem-info h3 {
+
+        font-size: 30px;
+
+    }
+
+
+    .StatItem-info p {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .Statistics-container {
+
+        width: 92%;
+
+    }
+
+
+    .Statistics {
+
+        padding: 35px 0;
+
+    }
+
+
+    .StatItem {
+
+        padding: 5px 6px;
+
+    }
+
+
+    .StatItem > i {
+
+        font-size: 20px;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .StatItem-info h3 {
+
+        font-size: 27px;
+
+    }
+
+
+    .StatItem-info p {
+
+        font-size: 10px;
+
+    }
+
+}

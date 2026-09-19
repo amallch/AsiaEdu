@@ -1,0 +1,628 @@
+/* =========================================================
+   NOTIFICATIONS
+========================================================= */
+
+.Notifications {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.Notifications-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.Notifications-header > div:first-child > span {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+.Notifications-header h1 {
+    margin: 4px 0 5px;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+.Notifications-header p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   HEADER ACTION
+========================================================= */
+
+.Notifications-mark-all {
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 14px;
+
+    border: 1px solid rgba(204, 54, 80, 0.15);
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.05);
+
+    color: #CC3650;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.Notifications-mark-all:hover {
+    background-color: rgba(204, 54, 80, 0.09);
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.Notifications-toolbar {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   COUNT
+========================================================= */
+
+.Notifications-count {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.Notifications-count strong {
+    color: #CC3650;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+.Notifications-count span {
+    color: #958B84;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.Notifications-filters {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 4px;
+
+    border-radius: 9px;
+
+    background-color: #F8F9FB;
+}
+
+.Notifications-filter {
+    height: 30px;
+
+    padding: 0 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: transparent;
+
+    color: #958B84;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.Notifications-filter.active {
+    background-color: #FFFFFF;
+
+    color: #CC3650;
+
+    box-shadow: 0 1px 4px rgba(44, 34, 34, 0.06);
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.Notifications-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+/* =========================================================
+   ITEM
+========================================================= */
+
+.Notifications-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 16px 18px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.06);
+
+    border-radius: 11px;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.Notifications-item:hover {
+    border-color: rgba(204, 54, 80, 0.12);
+}
+
+.Notifications-item.unread {
+    background-color: rgba(204, 54, 80, 0.025);
+
+    border-left: 3px solid #CC3650;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.Notifications-icon {
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+}
+
+.Notifications-icon.enrollment {
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+}
+
+.Notifications-icon.submission {
+    background-color: rgba(76, 138, 98, 0.09);
+
+    color: #4C8A62;
+}
+
+.Notifications-icon.teacher {
+    background-color: rgba(74, 104, 145, 0.09);
+
+    color: #4A6891;
+}
+
+.Notifications-icon.system {
+    background-color: rgba(149, 139, 132, 0.12);
+
+    color: #746B66;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.Notifications-content {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.Notifications-title-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.Notifications-title-row strong {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+
+/* =========================================================
+   NEW
+========================================================= */
+
+.Notifications-new {
+    padding: 3px 6px;
+
+    border-radius: 5px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.Notifications-content p {
+    margin: 0;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    color: #746B66;
+}
+
+
+/* =========================================================
+   TIME
+========================================================= */
+
+.Notifications-time {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    color: #A49B95;
+
+    font-size: 9px;
+}
+
+.Notifications-time i {
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.Notifications-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+.Notifications-actions button {
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 7px;
+
+    background-color: #FFFFFF;
+
+    color: #958B84;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.Notifications-actions button:hover {
+    background-color: rgba(204, 54, 80, 0.07);
+
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.Notifications-empty {
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.06);
+
+    border-radius: 13px;
+}
+
+.Notifications-empty-icon {
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 5px;
+
+    border-radius: 12px;
+
+    background-color: rgba(204, 54, 80, 0.07);
+
+    color: #CC3650;
+
+    font-size: 18px;
+}
+
+.Notifications-empty strong {
+    font-size: 14px;
+
+    color: #2C2222;
+}
+
+.Notifications-empty span {
+    font-size: 11px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .Notifications-header {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .Notifications-header h1 {
+        font-size: 23px;
+    }
+
+    .Notifications-header p {
+        font-size: 12px;
+    }
+
+    .Notifications-mark-all {
+        white-space: nowrap;
+    }
+
+    .Notifications-count strong {
+        font-size: 13px;
+    }
+
+    .Notifications-item {
+        padding: 14px 15px;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .Notifications-header {
+        flex-direction: column;
+    }
+
+    .Notifications-header h1 {
+        font-size: 22px;
+    }
+
+    .Notifications-header p {
+        font-size: 11px;
+    }
+
+    .Notifications-header-actions {
+        width: 100%;
+    }
+
+    .Notifications-mark-all {
+        width: 100%;
+
+        justify-content: center;
+
+        height: 36px;
+
+        font-size: 10px;
+    }
+
+    .Notifications-toolbar {
+        align-items: flex-start;
+
+        gap: 10px;
+
+        flex-direction: column;
+    }
+
+    .Notifications-count strong {
+        font-size: 12px;
+    }
+
+    .Notifications-count span {
+        font-size: 10px;
+    }
+
+    .Notifications-filter {
+        font-size: 9px;
+        height: 28px;
+        padding: 0 10px;
+    }
+
+    .Notifications-item {
+        align-items: flex-start;
+
+        padding: 13px 14px;
+    }
+
+    .Notifications-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 12px;
+    }
+
+    .Notifications-title-row strong {
+        font-size: 11px;
+    }
+
+    .Notifications-content p {
+        font-size: 10px;
+    }
+
+    .Notifications-new {
+        font-size: 7px;
+    }
+
+    .Notifications-time {
+        font-size: 8px;
+    }
+
+    .Notifications-actions {
+        flex-direction: column;
+    }
+
+    .Notifications-actions button {
+        width: 28px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .Notifications-empty-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 16px;
+    }
+
+    .Notifications-empty strong {
+        font-size: 13px;
+    }
+
+    .Notifications-empty span {
+        font-size: 10px;
+    }
+
+}

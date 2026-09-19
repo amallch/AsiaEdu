@@ -1,0 +1,237 @@
+/* =========================================================
+   HOME PROGRAMS
+========================================================= */
+
+.HomePrograms {
+
+    width: 100%;
+
+    background-color: white;
+
+    padding: 70px 0;
+
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.HomePrograms-container {
+
+    width: 80%;
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 45px;
+
+}
+
+
+/* =========================================================
+   PROGRAM CARDS
+========================================================= */
+
+.HomePrograms-cards {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+
+    align-items: stretch;
+
+}
+
+
+/* =========================================================
+   CARD ANIMATION
+========================================================= */
+
+.HomePrograms-cards .HomeProgramCard {
+
+    opacity: 0;
+
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+/* =========================================================
+   VISIBLE
+========================================================= */
+
+.HomePrograms-visible
+.HomeProgramCard {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* =========================================================
+   STAGGER
+========================================================= */
+
+.HomePrograms-visible
+.HomeProgramCard:nth-child(1) {
+
+    transition-delay: 0.1s;
+
+}
+
+
+.HomePrograms-visible
+.HomeProgramCard:nth-child(2) {
+
+    transition-delay: 0.25s;
+
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .HomePrograms-container {
+
+        width: 88%;
+
+    }
+
+
+    .HomePrograms-cards {
+
+        gap: 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .HomePrograms {
+
+        padding: 60px 0;
+
+    }
+
+
+    .HomePrograms-container {
+
+        width: 90%;
+
+        gap: 35px;
+
+    }
+
+
+    .HomePrograms-cards {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .HomePrograms {
+
+        padding: 50px 0;
+
+    }
+
+
+    .HomePrograms-container {
+
+        width: 92%;
+
+        gap: 30px;
+
+    }
+
+
+    .HomePrograms-cards {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .HomePrograms {
+
+        padding: 45px 0;
+
+    }
+
+
+    .HomePrograms-container {
+
+        width: 92%;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .HomePrograms-cards .HomeProgramCard {
+
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+
+    }
+
+}

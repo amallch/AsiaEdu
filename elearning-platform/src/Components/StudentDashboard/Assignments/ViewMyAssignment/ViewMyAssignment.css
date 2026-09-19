@@ -1,0 +1,918 @@
+/* =========================================================
+   VIEW MY ASSIGNMENT
+   AsiaEdu Student Dashboard
+========================================================= */
+
+.ViewMyAssignment {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F8F9FB;
+    padding-bottom: 60px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.ViewMyAssignment-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ViewMyAssignment-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   STATUS WRAPPER
+========================================================= */
+
+.ViewMyAssignment-status-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.ViewMyAssignment-back {
+    border: none;
+    background: transparent;
+    color: #2C2222;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: color 0.2s ease;
+}
+
+
+.ViewMyAssignment-back i {
+    color: #CC3650;
+    font-size: 12px;
+}
+
+
+.ViewMyAssignment-back:hover {
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.ViewMyAssignment-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 8px 13px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+}
+
+
+.ViewMyAssignment-status.not-submitted {
+    background-color: rgba(149, 139, 132, 0.10);
+    color: #958B84;
+}
+
+
+.ViewMyAssignment-status.submitted {
+    background-color: rgba(46, 125, 50, 0.08);
+    color: #2E7D32;
+}
+
+
+/* =========================================================
+   TITLE SECTION
+========================================================= */
+
+.ViewMyAssignment-title-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 15px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+}
+
+
+/* =========================================================
+   TITLE ICON
+========================================================= */
+
+.ViewMyAssignment-title-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+.ViewMyAssignment-title-section h1 {
+    margin: 0 0 5px;
+    color: #2C2222;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+
+.ViewMyAssignment-title-section p {
+    margin: 0;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   INFO GRID
+========================================================= */
+
+.ViewMyAssignment-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+
+.ViewMyAssignment-info-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 14px;
+    padding: 17px;
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+}
+
+
+.ViewMyAssignment-info-label {
+    display: block;
+    color: #958B84;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+
+.ViewMyAssignment-info-card strong {
+    display: block;
+    color: #2C2222;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.ViewMyAssignment-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 12px;
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.ViewMyAssignment-section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+.ViewMyAssignment-section-icon {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+
+.ViewMyAssignment-section-header h2 {
+    margin: 0;
+    color: #2C2222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.ViewMyAssignment-content {
+    padding-left: 45px;
+}
+
+
+.ViewMyAssignment-content p {
+    margin: 0;
+    color: #726862;
+    font-size: 14.5px;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.ViewMyAssignment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* =========================================================
+   RESOURCE
+========================================================= */
+
+.ViewMyAssignment-resource {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    padding: 9px 11px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    color: #726862;
+    cursor: pointer;
+    font-family: inherit;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.ViewMyAssignment-resource:hover {
+    border-color: rgba(204, 54, 80, 0.25);
+    background-color: #FFFBFA;
+}
+
+
+.ViewMyAssignment-resource:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+
+.ViewMyAssignment-resource:disabled:hover {
+    border-color: #E6DFDC;
+    background-color: #FAF8F7;
+}
+
+
+.ViewMyAssignment-resource span {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.ViewMyAssignment-resource-open {
+    flex-shrink: 0;
+    color: #CC3650;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   ATTACHMENT
+========================================================= */
+
+.ViewMyAssignment-attachment {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    padding: 9px 11px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    color: #726862;
+    cursor: pointer;
+    font-family: inherit;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.ViewMyAssignment-attachment:hover {
+    border-color: rgba(204, 54, 80, 0.25);
+    background-color: #FFFBFA;
+}
+
+
+.ViewMyAssignment-attachment:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+
+.ViewMyAssignment-attachment:disabled:hover {
+    border-color: #E6DFDC;
+    background-color: #FAF8F7;
+}
+
+
+.ViewMyAssignment-attachment span {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.ViewMyAssignment-attachment-open {
+    flex-shrink: 0;
+    color: #CC3650;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   RESOURCE / ATTACHMENT ICON
+========================================================= */
+
+.ViewMyAssignment-resource-icon,
+.ViewMyAssignment-attachment-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   SUBMISSION
+========================================================= */
+
+.ViewMyAssignment-submission {
+    padding-left: 45px;
+}
+
+
+.ViewMyAssignment-form-group {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+
+.ViewMyAssignment-form-group label {
+    display: block;
+    color: #2C2222;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+
+.ViewMyAssignment-form-group textarea {
+    width: 100%;
+    min-height: 150px;
+    box-sizing: border-box;
+    resize: vertical;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    padding: 12px;
+    color: #2C2222;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 1.5;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.ViewMyAssignment-form-group textarea:focus {
+    border-color: rgba(204, 54, 80, 0.35);
+    background-color: #FFFFFF;
+}
+
+
+.ViewMyAssignment-form-group textarea:disabled {
+    cursor: default;
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   FILE UPLOAD
+========================================================= */
+
+.ViewMyAssignment-form-group .ViewMyAssignment-upload {
+    width: 100%;
+    min-height: 105px;
+    box-sizing: border-box;
+    border: 1px dashed #DED6D2;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #958B84;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: normal;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.ViewMyAssignment-form-group .ViewMyAssignment-upload i {
+    color: #CC3650;
+    font-size: 19px;
+    margin-bottom: 3px;
+}
+
+
+.ViewMyAssignment-form-group .ViewMyAssignment-upload span {
+    color: #726862;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.ViewMyAssignment-form-group .ViewMyAssignment-upload small {
+    color: #958B84;
+    font-size: 10px;
+}
+
+
+.ViewMyAssignment-form-group .ViewMyAssignment-upload input {
+    display: none;
+}
+
+
+.ViewMyAssignment-form-group .ViewMyAssignment-upload:hover {
+    border-color: rgba(204, 54, 80, 0.35);
+    background-color: #FFFBFA;
+}
+
+
+/* =========================================================
+   FILE LIST
+========================================================= */
+
+.ViewMyAssignment-file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 10px;
+}
+
+
+.ViewMyAssignment-file-item {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    padding: 9px 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.ViewMyAssignment-file-item:hover {
+    border-color: rgba(204, 54, 80, 0.2);
+    background-color: #FFFBFA;
+}
+
+
+.ViewMyAssignment-file-item > div {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.ViewMyAssignment-file-item > div i {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+
+.ViewMyAssignment-file-item span {
+    color: #726862;
+    font-size: 12px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.ViewMyAssignment-file-item button {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.ViewMyAssignment-file-item button:hover {
+    background-color: #CC3650;
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.ViewMyAssignment-submit-button {
+    border: none;
+    background-color: #CC3650;
+    color: #FFFFFF;
+    padding: 11px 18px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.ViewMyAssignment-submit-button:hover {
+    background-color: #B3273F;
+    transform: translateY(-1px);
+}
+
+
+.ViewMyAssignment-submit-button:disabled {
+    cursor: default;
+    opacity: 0.65;
+    transform: none;
+}
+
+
+/* =========================================================
+   SUBMITTED MESSAGE
+========================================================= */
+
+.ViewMyAssignment-submitted-message {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(46, 125, 50, 0.15);
+    border-radius: 10px;
+    background-color: rgba(46, 125, 50, 0.05);
+    padding: 13px 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.ViewMyAssignment-submitted-message > i {
+    color: #2E7D32;
+    font-size: 17px;
+    margin-top: 1px;
+}
+
+
+.ViewMyAssignment-submitted-message strong {
+    display: block;
+    color: #2E7D32;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+
+.ViewMyAssignment-submitted-message p {
+    margin: 0;
+    color: #667066;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   EMPTY TEXT
+========================================================= */
+
+.ViewMyAssignment-empty-text {
+    margin: 0;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   EMPTY PAGE
+========================================================= */
+
+.ViewMyAssignment-empty {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.ViewMyAssignment-empty-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 13px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+
+.ViewMyAssignment-empty h2 {
+    margin: 0 0 6px;
+    color: #2C2222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.ViewMyAssignment-empty p {
+    margin: 0 0 18px;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BACK TO ASSIGNMENTS
+========================================================= */
+
+.ViewMyAssignment-back-button {
+    border: none;
+    background-color: #CC3650;
+    color: #FFFFFF;
+    padding: 11px 16px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.ViewMyAssignment-back-button:hover {
+    background-color: #B3273F;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .ViewMyAssignment-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .ViewMyAssignment-header {
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+
+    .ViewMyAssignment-status-wrapper {
+        width: 100%;
+    }
+
+
+    .ViewMyAssignment-status {
+        align-self: flex-start;
+    }
+
+
+    .ViewMyAssignment-title-section {
+        padding: 18px;
+    }
+
+
+    .ViewMyAssignment-title-section h1 {
+        font-size: 16px;
+    }
+
+
+    .ViewMyAssignment-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ViewMyAssignment-section {
+        padding: 18px;
+    }
+
+
+    .ViewMyAssignment-content {
+        padding-left: 0;
+    }
+
+
+    .ViewMyAssignment-submission {
+        padding-left: 0;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .ViewMyAssignment-title-section {
+        gap: 12px;
+        padding: 16px;
+    }
+
+
+    .ViewMyAssignment-title-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 11px;
+        font-size: 16px;
+    }
+
+
+    .ViewMyAssignment-title-section h1 {
+        font-size: 15px;
+    }
+
+
+    .ViewMyAssignment-title-section p {
+        font-size: 11px;
+    }
+
+
+    .ViewMyAssignment-info-card {
+        padding: 15px;
+    }
+
+
+    .ViewMyAssignment-section {
+        padding: 16px;
+    }
+
+
+    .ViewMyAssignment-section-header {
+        gap: 9px;
+    }
+
+
+    .ViewMyAssignment-section-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .ViewMyAssignment-section-header h2 {
+        font-size: 14px;
+    }
+
+
+    .ViewMyAssignment-content p {
+        font-size: 11px;
+    }
+
+
+    .ViewMyAssignment-form-group textarea {
+        min-height: 130px;
+    }
+
+}

@@ -1,0 +1,1450 @@
+/* =========================================================
+   ADMIN GRADES
+   AsiaEdu Admin Dashboard
+========================================================= */
+
+.AdminGrades {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background-color: #F8F9FB;
+}
+
+
+.AdminGrades-container {
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.AdminGrades-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 28px;
+}
+
+.AdminGrades-heading >div > span {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+.AdminGrades-heading h2 {
+
+    margin: 0 0 7px;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+
+    color: #2C2222;
+}
+
+.AdminGrades-heading p {
+
+    margin: 0;
+
+    font-size: 15px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   COURSE + SESSION FILTER BAR
+========================================================= */
+
+.AdminGrades-filterBar {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr auto 1fr;
+
+    align-items: center;
+
+    gap: 22px;
+
+    padding: 20px 22px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 18px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+}
+
+
+/* =========================================================
+   FILTER ITEM
+========================================================= */
+
+.AdminGrades-filterItem {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   FILTER LABEL
+========================================================= */
+
+.AdminGrades-filterLabel {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.AdminGrades-filterLabel > div:last-child {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.AdminGrades-filterLabel span {
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+.AdminGrades-filterLabel p {
+
+    margin: 0;
+
+    font-size: 11px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   FILTER ICON
+========================================================= */
+
+.AdminGrades-filterIcon {
+
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.AdminGrades-filterDivider {
+
+    width: 1px;
+
+    height: 65px;
+
+    background-color: #E8E1DE;
+}
+
+
+/* =========================================================
+   SELECT WRAPPER
+========================================================= */
+
+.AdminGrades-selectWrapper {
+
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   COURSE CODE
+========================================================= */
+
+.AdminGrades-courseCode {
+
+    position: absolute;
+
+    left: 14px;
+
+    z-index: 2;
+
+    width: 24px;
+    height: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #CC3650;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   COURSE / SESSION SELECT
+========================================================= */
+
+.AdminGrades-select {
+
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 40px 0 45px;
+
+    box-sizing: border-box;
+
+    appearance: none;
+
+    border: 1px solid #E6DFDC;
+
+    border-radius: 10px;
+
+    background-color: #FAF8F7;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.AdminGrades-sessionSelect {
+
+    padding-left: 15px;
+}
+
+.AdminGrades-select:hover {
+
+    background-color: #FFFFFF;
+
+    border-color: rgba(204, 54, 80, 0.25);
+}
+
+.AdminGrades-select:focus {
+
+    background-color: #FFFFFF;
+
+    border-color: #CC3650;
+
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.08);
+}
+
+.AdminGrades-select:disabled {
+
+    cursor: not-allowed;
+
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   SELECT ARROW
+========================================================= */
+
+.AdminGrades-selectWrapper > i {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 11px;
+
+    color: #958B84;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   ASSIGNMENT SELECTOR
+========================================================= */
+
+.AdminGrades-assignmentSelector {
+
+    width: 100%;
+
+    padding: 20px 22px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 18px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   ASSIGNMENT HEADING
+========================================================= */
+
+.AdminGrades-assignmentHeading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 0;
+}
+
+.AdminGrades-assignmentHeading > div:last-child {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.AdminGrades-assignmentHeading span {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+.AdminGrades-assignmentHeading p {
+
+    margin: 3px 0 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   ASSIGNMENT ICON
+========================================================= */
+
+.AdminGrades-assignmentIcon {
+
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   ASSIGNMENT SELECT
+========================================================= */
+
+.AdminGrades-assignmentSelectWrapper {
+
+    position: relative;
+
+    width: 320px;
+
+    flex-shrink: 0;
+}
+
+.AdminGrades-assignmentSelect {
+
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 40px 0 15px;
+
+    box-sizing: border-box;
+
+    appearance: none;
+
+    border: 1px solid #E6DFDC;
+
+    border-radius: 10px;
+
+    background-color: #FAF8F7;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.AdminGrades-assignmentSelect:hover {
+
+    background-color: #FFFFFF;
+
+    border-color: rgba(204, 54, 80, 0.25);
+}
+
+.AdminGrades-assignmentSelect:focus {
+
+    background-color: #FFFFFF;
+
+    border-color: #CC3650;
+
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.08);
+}
+
+.AdminGrades-assignmentSelect:disabled {
+
+    cursor: not-allowed;
+
+    opacity: 0.65;
+}
+
+.AdminGrades-assignmentSelectWrapper > i {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 11px;
+
+    color: #958B84;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SELECTED ASSIGNMENT
+========================================================= */
+
+.AdminGrades-selectedAssignment {
+
+    width: 100%;
+
+    padding: 20px 22px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 22px;
+
+    background-color: #FFFBFA;
+
+    border: 1px solid rgba(204, 54, 80, 0.12);
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   SELECTED ASSIGNMENT LEFT
+========================================================= */
+
+.AdminGrades-selectedAssignment-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 0;
+}
+
+.AdminGrades-selectedAssignment-left > div:last-child {
+
+    min-width: 0;
+}
+
+.AdminGrades-selectedAssignment-left h3 {
+
+    margin: 0 0 5px;
+
+    font-size: 17px;
+
+    font-weight: 750;
+
+    color: #2C2222;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+.AdminGrades-selectedAssignment-left p {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   SELECTED ASSIGNMENT ICON
+========================================================= */
+
+.AdminGrades-selectedAssignment-icon {
+
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(204, 54, 80, 0.12);
+
+    color: #CC3650;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   ASSIGNMENT STATS
+========================================================= */
+
+.AdminGrades-selectedAssignment-stats {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-shrink: 0;
+}
+
+.AdminGrades-selectedAssignment-stats > div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    min-width: 65px;
+}
+
+.AdminGrades-selectedAssignment-stats strong {
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+.AdminGrades-selectedAssignment-stats span {
+
+    margin-top: 3px;
+
+    font-size: 10px;
+
+    color: #958B84;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   STUDENT LIST
+========================================================= */
+
+.AdminGrades-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   STUDENT CARD
+========================================================= */
+
+.AdminGrades-card {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.AdminGrades-card:hover {
+
+    transform: translateY(-2px);
+
+    border-color: rgba(204, 54, 80, 0.18);
+
+    box-shadow:
+        0 7px 20px rgba(44, 34, 34, 0.06);
+}
+
+
+/* =========================================================
+   AVATAR
+========================================================= */
+
+.AdminGrades-avatar {
+
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #B3273F;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.AdminGrades-content {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+.AdminGrades-titleRow {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.AdminGrades-titleRow h3 {
+
+    margin: 0 0 7px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+.AdminGrades-titleRow p {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.AdminGrades-details {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px 20px;
+
+    margin-top: 13px;
+}
+
+.AdminGrades-details span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    color: #958B84;
+}
+
+.AdminGrades-details i {
+
+    color: #CC3650;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   SCORE
+========================================================= */
+
+.AdminGrades-score {
+
+    min-width: 70px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.AdminGrades-score strong {
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+.AdminGrades-score strong span {
+
+    font-size: 12px;
+
+    font-weight: 600;
+    color: #958B84;
+}
+
+.AdminGrades-score small {
+
+    margin-top: 3px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+.passed-score {
+
+    color: #16805A;
+}
+
+.passed-percentage {
+
+    color: #16805A;
+}
+
+.failed-score {
+
+    color: #CC3650;
+}
+
+.failed-percentage {
+
+    color: #CC3650;
+}
+
+.pending-score {
+
+    color: #958B84;
+}
+
+.pending-text {
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   CARD RIGHT
+========================================================= */
+
+.AdminGrades-cardRight {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.AdminGrades-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    flex-shrink: 0;
+
+    padding: 7px 11px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.AdminGrades-status.graded {
+
+    background-color: rgba(22, 128, 90, 0.09);
+
+    color: #16805A;
+}
+
+.AdminGrades-status.pending {
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.AdminGrades-empty {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border: 1px dashed #DED6D2;
+
+    border-radius: 14px;
+}
+
+.AdminGrades-emptyIcon {
+
+    width: 52px;
+    height: 52px;
+
+    margin: 0 auto 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 18px;
+}
+
+.AdminGrades-empty h3 {
+
+    margin: 0 0 6px;
+
+    font-size: 15px;
+
+    color: #2C2222;
+}
+
+.AdminGrades-empty p {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.AdminGrades-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 132px;
+
+    padding: 10px 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.AdminGrades-button:hover {
+
+    background-color: #B3273F;
+
+    transform: translateY(-1px);
+}
+
+.AdminGrades-button i {
+
+    font-size: 9px;
+
+    transition: transform 0.2s ease;
+}
+
+.AdminGrades-button:hover i {
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .AdminGrades-filterBar {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .AdminGrades-filterDivider {
+
+        width: 100%;
+
+        height: 1px;
+    }
+
+
+    .AdminGrades-assignmentSelector {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+
+    .AdminGrades-assignmentSelectWrapper {
+
+        width: 100%;
+    }
+
+
+    .AdminGrades-selectedAssignment {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+
+    .AdminGrades-selectedAssignment-stats {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        gap: 14px;
+    }
+
+
+    .AdminGrades-card {
+
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .AdminGrades-heading {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .AdminGrades-heading h2 {
+
+        font-size: 24px;
+    }
+
+
+    .AdminGrades-heading p {
+
+        font-size: 14px;
+    }
+
+
+    .AdminGrades-filterBar {
+
+        padding: 18px;
+    }
+
+
+    .AdminGrades-assignmentSelector {
+
+        padding: 18px;
+    }
+
+
+    .AdminGrades-selectedAssignment {
+
+        padding: 18px;
+    }
+
+
+    .AdminGrades-selectedAssignment-stats {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        padding-top: 16px;
+
+        border-top: 1px solid rgba(44, 34, 34, 0.07);
+    }
+
+
+    .AdminGrades-card {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 16px;
+
+        padding: 17px;
+    }
+
+
+    .AdminGrades-score {
+
+        align-items: flex-start;
+
+        width: 100%;
+    }
+
+
+    .AdminGrades-cardRight {
+
+        width: 100%;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: space-between;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .AdminGrades-heading {
+
+        margin-bottom: 22px;
+    }
+
+
+    .AdminGrades-heading h2 {
+
+        font-size: 21px;
+    }
+
+
+    .AdminGrades-heading p {
+
+        font-size: 13px;
+    }
+
+
+    .AdminGrades-filterBar {
+
+        padding: 15px;
+    }
+
+
+    .AdminGrades-filterIcon {
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 14px;
+    }
+
+
+    .AdminGrades-filterLabel span {
+
+        font-size: 12px;
+    }
+
+
+    .AdminGrades-filterLabel p {
+
+        font-size: 10px;
+    }
+
+
+    .AdminGrades-assignmentSelector {
+
+        padding: 15px;
+    }
+
+
+    .AdminGrades-assignmentHeading {
+
+        gap: 10px;
+    }
+
+
+    .AdminGrades-assignmentIcon {
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 15px;
+    }
+
+
+    .AdminGrades-assignmentHeading span {
+
+        font-size: 13px;
+    }
+
+
+    .AdminGrades-assignmentHeading p {
+
+        font-size: 11px;
+    }
+
+
+    .AdminGrades-selectedAssignment {
+
+        padding: 15px;
+    }
+
+
+    .AdminGrades-selectedAssignment-left {
+
+        width: 100%;
+    }
+
+
+    .AdminGrades-selectedAssignment-left h3 {
+
+        font-size: 15px;
+    }
+
+
+    .AdminGrades-selectedAssignment-stats {
+
+        gap: 8px;
+    }
+
+
+    .AdminGrades-selectedAssignment-stats strong {
+
+        font-size: 16px;
+    }
+
+
+    .AdminGrades-selectedAssignment-stats span {
+
+        font-size: 9px;
+    }
+
+
+    .AdminGrades-card {
+
+        gap: 12px;
+
+        padding: 15px;
+    }
+
+
+    .AdminGrades-avatar {
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 11px;
+    }
+
+
+    .AdminGrades-titleRow h3 {
+
+        font-size: 13px;
+    }
+
+
+    .AdminGrades-titleRow p {
+
+        font-size: 11px;
+    }
+
+
+    .AdminGrades-details {
+
+        gap: 7px 14px;
+
+        margin-top: 10px;
+    }
+
+
+    .AdminGrades-details span {
+
+        font-size: 10px;
+    }
+
+
+    .AdminGrades-score {
+
+        width: 100%;
+
+        align-items: flex-start;
+    }
+
+
+    .AdminGrades-cardRight {
+
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+
+    .AdminGrades-status {
+
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+}

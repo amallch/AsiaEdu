@@ -1,0 +1,459 @@
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.Sidebar {
+
+    width: 245px;
+
+    min-height: calc(100vh - 80px);
+
+    position: sticky;
+
+    top: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    padding: 24px 14px 16px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.06);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 16px rgba(44, 34, 34, 0.05);
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.Sidebar-nav {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+}
+
+
+/* =========================================================
+   NAVIGATION GROUP
+========================================================= */
+
+.Sidebar-group {
+
+    width: 100%;
+
+}
+
+
+/* =========================================================
+   GROUP TITLE
+========================================================= */
+
+.Sidebar-group-title {
+
+    padding: 0 12px;
+
+    margin-bottom: 8px;
+
+    color: #958B84;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.1px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   GROUP ITEMS
+========================================================= */
+
+.Sidebar-group-items {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+}
+
+
+/* =========================================================
+   NAVIGATION LINK
+========================================================= */
+
+.Sidebar-link {
+
+    width: 100%;
+
+    min-height: 43px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 13px;
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    color: #746B66;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.Sidebar-link i {
+
+    width: 19px;
+
+    flex-shrink: 0;
+
+    text-align: center;
+
+    color: #958B84;
+
+    font-size: 14px;
+
+    transition:
+        color 0.2s ease;
+
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.Sidebar-link:hover {
+
+    background-color: rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+
+}
+
+
+.Sidebar-link:hover i {
+
+    color: #CC3650;
+
+}
+
+
+/* =========================================================
+   ACTIVE
+========================================================= */
+
+.Sidebar-link.active {
+
+    background-color: rgba(204, 54, 80, 0.10);
+
+    color: #CC3650;
+
+    font-weight: 700;
+
+}
+
+
+.Sidebar-link.active i {
+
+    color: #CC3650;
+
+}
+
+
+/* =========================================================
+   ACTIVE INDICATOR
+========================================================= */
+
+.Sidebar-link {
+
+    position: relative;
+
+}
+
+
+.Sidebar-link.active::before {
+
+    content: "";
+
+    width: 3px;
+
+    height: 20px;
+
+    position: absolute;
+
+    left: 0;
+
+    border-radius: 0 4px 4px 0;
+
+    background-color: #CC3650;
+
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.Sidebar-bottom {
+
+    margin-top: auto;
+
+    padding-top: 16px;
+
+    border-top: 1px solid rgba(44, 34, 34, 0.07);
+
+}
+
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+.Sidebar-logout {
+
+    width: 100%;
+
+    min-height: 43px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 13px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: transparent;
+
+    color: #746B66;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.Sidebar-logout:hover {
+
+    background-color: rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+
+}
+
+
+.Sidebar-logout i {
+
+    width: 19px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   992px
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .Sidebar {
+
+        width: 220px;
+
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .Sidebar {
+
+        width: 75px;
+
+        min-height: calc(100vh - 40px);
+
+        padding: 20px 10px 14px;
+
+    }
+
+
+    .Sidebar-nav {
+
+        gap: 18px;
+
+    }
+
+
+    .Sidebar-group-title {
+
+        display: none;
+
+    }
+
+
+    .Sidebar-group-items {
+
+        gap: 5px;
+
+    }
+
+
+    .Sidebar-link {
+
+        justify-content: center;
+
+        min-height: 44px;
+
+        padding: 0;
+
+    }
+
+
+    .Sidebar-link span {
+
+        display: none;
+
+    }
+
+
+    .Sidebar-link i {
+
+        width: auto;
+
+        font-size: 15px;
+
+    }
+
+
+    .Sidebar-link.active::before {
+
+        left: -10px;
+
+    }
+
+
+    .Sidebar-logout {
+
+        justify-content: center;
+
+        padding: 0;
+
+    }
+
+
+    .Sidebar-logout span {
+
+        display: none;
+
+    }
+
+
+    .Sidebar-logout i {
+
+        width: auto;
+
+        font-size: 15px;
+
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .Sidebar {
+
+        width: 68px;
+
+        padding-left: 8px;
+
+        padding-right: 8px;
+
+    }
+
+
+    .Sidebar-link {
+
+        min-height: 42px;
+
+    }
+
+
+    .Sidebar-link.active::before {
+
+        left: -8px;
+
+    }
+
+}

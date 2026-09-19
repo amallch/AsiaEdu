@@ -1,0 +1,347 @@
+/* =========================================================
+   COURSE DETAILS HERO
+========================================================= */
+
+.CourseDetailsHero {
+
+    width: 100%;
+
+    background-color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 85px 0 70px;
+
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.CourseDetailsHero-container {
+
+    width: 80%;
+
+    max-width: 1200px;
+
+}
+
+
+.CourseDetailsHero-content {
+
+    max-width: 750px;
+
+}
+
+
+/* =========================================================
+   BADGES
+========================================================= */
+
+.CourseDetailsHero-badges {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+    opacity: 0;
+
+    animation: CourseDetailsHeroFadeUp .7s ease-out .1s forwards;
+
+}
+
+
+/* =========================================================
+   LANGUAGE
+========================================================= */
+
+.CourseDetailsHero-language {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 7px 16px;
+
+    border-radius: 50px;
+
+    background-color: #fdecec;
+
+    color: var(--primary-red);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+}
+
+
+.CourseDetailsHero-languageFlag {
+
+    width: 24px;
+
+    height: 24px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+
+}
+
+
+/* =========================================================
+   LEVEL
+========================================================= */
+
+.CourseDetailsHero-level {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 18px;
+
+    border-radius: 50px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.CourseDetailsHero-levelDot {
+
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.CourseDetailsHero h1 {
+
+    margin: 0 0 20px;
+
+    color: #111111;
+
+    font-size: 50px;
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.8px;
+
+    opacity: 0;
+
+    animation: CourseDetailsHeroFadeUp .7s ease-out .3s forwards;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.CourseDetailsHero p {
+
+    max-width: 640px;
+
+    margin: 0;
+
+    color: #6f6f6f;
+
+    font-size: 17px;
+
+    line-height: 1.85;
+
+    opacity: 0;
+
+    animation: CourseDetailsHeroFadeUp .7s ease-out .5s forwards;
+
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes CourseDetailsHeroFadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .CourseDetailsHero {
+
+        padding: 70px 0 60px;
+
+    }
+
+
+    .CourseDetailsHero-container {
+
+        width: 90%;
+
+    }
+
+
+    .CourseDetailsHero-content {
+
+        max-width: 100%;
+
+    }
+
+
+    .CourseDetailsHero h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .CourseDetailsHero p {
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .CourseDetailsHero {
+
+        padding: 60px 0 50px;
+
+    }
+
+
+    .CourseDetailsHero-container {
+
+        width: 92%;
+
+    }
+
+
+    .CourseDetailsHero-badges {
+
+        flex-wrap: wrap;
+
+        gap: 8px;
+
+    }
+
+
+    .CourseDetailsHero h1 {
+
+        font-size: 30px;
+
+        line-height: 1.2;
+
+    }
+
+
+    .CourseDetailsHero p {
+
+        font-size: 15px;
+
+        line-height: 1.8;
+
+    }
+
+
+    .CourseDetailsHero-language,
+    .CourseDetailsHero-level {
+
+        font-size: 12.5px;
+
+        padding: 7px 15px;
+
+    }
+
+
+    .CourseDetailsHero-languageFlag {
+
+        width: 22px;
+
+        height: 22px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .CourseDetailsHero-badges,
+    .CourseDetailsHero h1,
+    .CourseDetailsHero p {
+
+        animation: none;
+
+        opacity: 1;
+
+        transform: none;
+
+    }
+
+}

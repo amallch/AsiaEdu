@@ -1,0 +1,71 @@
+/* ================================================= */
+/* RELATED COURSES */
+/* ================================================= */
+
+.RelatedCourses{
+
+    background-color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 50px 0px 80px 0px;
+
+}
+
+.RelatedCourses-container{
+
+    width: 80%;
+
+    max-width: 1250px;
+
+}
+
+.RelatedCourses-container h2{
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #111;
+
+    margin-bottom: 26px;
+
+}
+
+/* ================================================= */
+/* GRID */
+/* ================================================= */
+
+.RelatedCourses-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+
+}
+
+/* ================================================= */
+/* Responsive */
+/* ================================================= */
+
+@media (max-width: 900px){
+
+    .RelatedCourses-grid{
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 560px){
+
+    .RelatedCourses-grid{
+
+        grid-template-columns: 1fr;
+
+    }
+}

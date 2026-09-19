@@ -1,0 +1,1182 @@
+/* =========================================================
+   EDIT COURSE
+========================================================= */
+
+.EditCourse {
+
+    width: 100%;
+
+    min-width: 0;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.EditCourse-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.EditCourse-header > div {
+
+    min-width: 0;
+
+}
+
+
+.EditCourse-header span {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+
+}
+
+
+.EditCourse-header h1 {
+
+    margin: 4px 0 5px;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+
+}
+
+
+.EditCourse-header p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #958B84;
+
+}
+
+
+/* =========================================================
+   BACK
+========================================================= */
+
+.EditCourse-back-button {
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 0 16px;
+
+    border: 1px solid #E5DFDB;
+
+    border-radius: 9px;
+
+    background-color: #FFFFFF;
+
+    color: #5F5550;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.EditCourse-back-button:hover {
+
+    background-color: rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.EditCourse-loading {
+
+    min-height: 250px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.EditCourse-error {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    padding: 11px 13px;
+
+    border: 1px solid rgba(180, 74, 74, 0.15);
+
+    border-radius: 9px;
+
+    background-color: rgba(180, 74, 74, 0.06);
+
+    color: #A63E3E;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.EditCourse-error-page {
+
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #EDE7E3;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+}
+
+
+.EditCourse-error-page > i {
+
+    font-size: 28px;
+
+    color: #B44A4A;
+
+}
+
+
+.EditCourse-error-page p {
+
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+}
+
+
+.EditCourse-error-page button {
+
+    height: 38px;
+
+    padding: 0 16px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.EditCourse-error-page button:hover {
+
+    background-color: #B92F47;
+
+    transform: translateY(-1px);
+
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.EditCourse-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.EditCourse-section {
+
+    padding: 25px 26px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #EDE7E3;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 18px rgba(44, 34, 34, 0.05);
+
+}
+
+
+.EditCourse-section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 24px;
+
+}
+
+
+.EditCourse-section-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: rgba(204, 54, 80, 0.07);
+
+    color: #CC3650;
+
+}
+
+
+.EditCourse-section-icon i {
+
+    font-size: 15px;
+
+}
+
+
+.EditCourse-section-title h2 {
+
+    margin: 0 0 4px;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+
+}
+
+
+.EditCourse-section-title p {
+
+    margin: 0;
+
+    font-size: 11px;
+
+    color: #958B84;
+
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.EditCourse-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 17px;
+
+}
+
+
+.EditCourse-group {
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+}
+
+
+.EditCourse-group.full {
+
+    grid-column: 1 / -1;
+
+}
+
+
+.EditCourse-group label {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #5F5550;
+
+}
+
+
+.EditCourse-group input,
+.EditCourse-group select,
+.EditCourse-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #E5DFDB;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background-color: #FFFFFF;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+}
+
+
+.EditCourse-group input,
+.EditCourse-group select {
+
+    height: 42px;
+
+    padding: 0 12px;
+
+}
+
+
+.EditCourse-group textarea {
+
+    padding: 11px 12px;
+
+    resize: vertical;
+
+    line-height: 1.5;
+
+}
+
+
+.EditCourse-group input:focus,
+.EditCourse-group select:focus,
+.EditCourse-group textarea:focus {
+
+    border-color: rgba(204, 54, 80, 0.5);
+
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.06);
+
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.EditCourse-price {
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    box-sizing: border-box;
+
+    border: 1px solid #E5DFDB;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+}
+
+
+.EditCourse-price:focus-within {
+
+    border-color: rgba(204, 54, 80, 0.5);
+
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.06);
+
+}
+
+
+.EditCourse-price input {
+
+    height: 100%;
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 0 12px;
+
+    border: none;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+}
+
+
+.EditCourse-price span {
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 13px;
+
+    border-left: 1px solid #E5DFDB;
+
+    background-color: #F8F9FB;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.EditCourse-subtitle {
+
+    margin: 24px 0 12px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    color: #5F5550;
+
+}
+
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.EditCourse-stat-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 15px;
+
+}
+
+
+/* =========================================================
+   REPEAT LIST
+========================================================= */
+
+.EditCourse-repeat-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+}
+
+
+.EditCourse-repeat-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+}
+
+
+.EditCourse-repeat-row > span {
+
+    width: 28px;
+
+    height: 28px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background-color: rgba(204, 54, 80, 0.07);
+
+    color: #CC3650;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+}
+
+
+.EditCourse-repeat-row input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    height: 40px;
+
+    box-sizing: border-box;
+
+    padding: 0 11px;
+
+    border: 1px solid #E5DFDB;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+}
+
+
+.EditCourse-repeat-row input:focus {
+
+    border-color: rgba(204, 54, 80, 0.5);
+
+}
+
+
+.EditCourse-repeat-row button {
+
+    width: 34px;
+
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: transparent;
+
+    color: #B8ADA7;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.EditCourse-repeat-row button:hover {
+
+    background-color: rgba(180, 74, 74, 0.07);
+
+    color: #A63E3E;
+
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.EditCourse-secondary-button,
+.EditCourse-small-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    border: 1px solid rgba(204, 54, 80, 0.18);
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.05);
+
+    color: #CC3650;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease;
+
+}
+
+
+.EditCourse-secondary-button {
+
+    height: 38px;
+
+    margin-top: 13px;
+
+    padding: 0 14px;
+
+}
+
+
+.EditCourse-small-button {
+
+    height: 36px;
+
+    margin-top: 12px;
+
+    padding: 0 13px;
+
+}
+
+
+.EditCourse-secondary-button:hover,
+.EditCourse-small-button:hover {
+
+    background-color: rgba(204, 54, 80, 0.10);
+
+}
+
+
+/* =========================================================
+   MODULES
+========================================================= */
+
+.EditCourse-modules {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.EditCourse-module {
+
+    padding: 18px;
+
+    border: 1px solid #EEE9E5;
+
+    border-radius: 11px;
+
+    background-color: #FCFBFA;
+
+}
+
+
+.EditCourse-module-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.EditCourse-module-header strong {
+
+    font-size: 13px;
+
+    color: #2C2222;
+
+}
+
+
+.EditCourse-module-header button {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: #B44A4A;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.EditCourse-module-header button:hover {
+
+    color: #A63E3E;
+
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.EditCourse-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding: 4px 0 15px;
+
+}
+
+
+.EditCourse-cancel,
+.EditCourse-save {
+
+    height: 42px;
+
+    padding: 0 18px;
+
+    border-radius: 9px;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.EditCourse-cancel {
+
+    border: 1px solid #E5DFDB;
+
+    background-color: #FFFFFF;
+
+    color: #746B66;
+
+}
+
+
+.EditCourse-cancel:hover {
+
+    background-color: #F8F9FB;
+
+}
+
+
+.EditCourse-save {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.EditCourse-save:hover {
+
+    background-color: #B92F47;
+
+    transform: translateY(-1px);
+
+}
+
+
+.EditCourse-save:disabled {
+
+    opacity: 0.65;
+
+    cursor: not-allowed;
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .EditCourse-header {
+
+        align-items: flex-start;
+
+    }
+
+
+    .EditCourse-header h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .EditCourse-header p {
+
+        font-size: 12px;
+
+    }
+
+
+    .EditCourse-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .EditCourse-group.full {
+
+        grid-column: auto;
+
+    }
+
+
+    .EditCourse-stat-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .EditCourse-section {
+
+        padding: 21px;
+
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .EditCourse-header {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .EditCourse-back-button {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    .EditCourse-section {
+
+        padding: 18px;
+
+    }
+
+
+    .EditCourse-repeat-row {
+
+        align-items: stretch;
+
+    }
+
+
+    .EditCourse-repeat-row > span {
+
+        margin-top: 5px;
+
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .EditCourse-header h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .EditCourse-section {
+
+        padding: 16px;
+
+        border-radius: 12px;
+
+    }
+
+
+    .EditCourse-actions {
+
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+
+    }
+
+
+    .EditCourse-cancel,
+    .EditCourse-save {
+
+        width: 100%;
+
+    }
+
+
+    .EditCourse-repeat-row {
+
+        gap: 6px;
+
+    }
+
+
+    .EditCourse-repeat-row > span {
+
+        width: 26px;
+
+        height: 26px;
+
+        font-size: 10px;
+
+    }
+
+
+    .EditCourse-repeat-row button {
+
+        width: 30px;
+
+    }
+
+
+    .EditCourse-module {
+
+        padding: 13px;
+
+    }
+
+
+    .EditCourse-module-header {
+
+        align-items: flex-start;
+
+    }
+
+
+    .EditCourse-module-header button {
+
+        font-size: 9px;
+
+    }
+
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .EditCourse-section {
+
+        padding: 13px;
+
+    }
+
+
+    .EditCourse-section-icon {
+
+        width: 36px;
+
+        height: 36px;
+
+    }
+
+
+    .EditCourse-section-title {
+
+        gap: 9px;
+
+    }
+
+}

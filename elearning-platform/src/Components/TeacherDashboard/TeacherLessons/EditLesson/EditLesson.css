@@ -1,0 +1,732 @@
+/* =========================================================
+   EDIT LESSON
+   AsiaEdu Teacher Dashboard
+========================================================= */
+
+.EditLesson {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F8F9FB;
+    padding-bottom: 60px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.EditLesson-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.EditLesson-header {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.EditLesson-back {
+    border: none;
+    background: transparent;
+    color: #2C2222;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: color 0.2s ease;
+}
+
+.EditLesson-back i {
+    color: #CC3650;
+    font-size: 12px;
+}
+
+.EditLesson-back:hover {
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   TITLE SECTION
+========================================================= */
+
+.EditLesson-title-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 15px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+}
+
+
+/* =========================================================
+   TITLE ICON
+========================================================= */
+
+.EditLesson-title-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+.EditLesson-title-section h1 {
+    margin: 0 0 5px;
+    color: #2C2222;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+
+.EditLesson-title-section p {
+    margin: 0;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.EditLesson-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 12px;
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.EditLesson-section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+
+.EditLesson-section-icon {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+
+.EditLesson-section-header h2 {
+    margin: 0;
+    color: #2C2222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FIELDS
+========================================================= */
+
+.EditLesson-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+
+.EditLesson-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+.EditLesson-field label {
+    color: #2C2222;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.EditLesson-field input,
+.EditLesson-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    color: #2C2222;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.EditLesson-field input {
+    height: 44px;
+    padding: 0 13px;
+}
+
+
+.EditLesson-field textarea {
+    padding: 12px 13px;
+    resize: vertical;
+    min-height: 105px;
+    line-height: 1.6;
+}
+
+
+.EditLesson-field input:hover,
+.EditLesson-field textarea:hover {
+    background-color: #FFFFFF;
+    border-color: rgba(204, 54, 80, 0.2);
+}
+
+
+.EditLesson-field input:focus,
+.EditLesson-field textarea:focus {
+    background-color: #FFFFFF;
+    border-color: #CC3650;
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.08);
+}
+
+
+.EditLesson-field input::placeholder,
+.EditLesson-field textarea::placeholder {
+    color: #B0AAA7;
+}
+
+
+/* =========================================================
+   RESOURCES
+========================================================= */
+
+.EditLesson-resources {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.EditLesson-resource-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.EditLesson-resource-row input {
+    flex: 1;
+    height: 42px;
+    box-sizing: border-box;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    padding: 0 13px;
+    background-color: #FAF8F7;
+    color: #2C2222;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.EditLesson-resource-row input:hover {
+    background-color: #FFFFFF;
+    border-color: rgba(204, 54, 80, 0.2);
+}
+
+
+.EditLesson-resource-row input:focus {
+    background-color: #FFFFFF;
+    border-color: #CC3650;
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.08);
+}
+
+
+/* =========================================================
+   REMOVE BUTTON
+========================================================= */
+
+.EditLesson-remove-button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 9px;
+    background-color: #FDECEC;
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.EditLesson-remove-button:hover {
+    background-color: #CC3650;
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   ADD RESOURCE
+========================================================= */
+
+.EditLesson-add-resource {
+    width: fit-content;
+    border: none;
+    background: transparent;
+    color: #CC3650;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+
+.EditLesson-add-resource:hover {
+    color: #B3273F;
+}
+
+
+/* =========================================================
+   ATTACHMENTS
+========================================================= */
+
+.EditLesson-attachments {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+
+/* =========================================================
+   UPLOAD
+========================================================= */
+
+.EditLesson-upload {
+    min-height: 105px;
+    border: 1px dashed #DED6D2;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #958B84;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.EditLesson-upload i {
+    color: #CC3650;
+    font-size: 19px;
+    margin-bottom: 3px;
+}
+
+
+.EditLesson-upload span {
+    color: #726862;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.EditLesson-upload small {
+    color: #958B84;
+    font-size: 10px;
+}
+
+
+.EditLesson-upload input {
+    display: none;
+}
+
+
+.EditLesson-upload:hover {
+    border-color: rgba(204, 54, 80, 0.35);
+    background-color: #FFFBFA;
+}
+
+
+/* =========================================================
+   ATTACHMENT LIST
+========================================================= */
+
+.EditLesson-attachment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+
+.EditLesson-attachment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background-color: #FAF8F7;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    padding: 9px 11px;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.EditLesson-attachment:hover {
+    border-color: rgba(204, 54, 80, 0.2);
+    background-color: #FFFBFA;
+}
+
+
+.EditLesson-attachment-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+
+.EditLesson-attachment-info span {
+    color: #726862;
+    font-size: 12px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.EditLesson-attachment-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.EditLesson-error {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background-color: #FDECEC;
+    border: 1px solid rgba(204, 54, 80, 0.18);
+    border-radius: 10px;
+    padding: 11px 13px;
+    margin-bottom: 16px;
+    color: #B3273F;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.EditLesson-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+
+.EditLesson-cancel {
+    height: 42px;
+    padding: 0 18px;
+    border: 1px solid #DCD6D2;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    color: #726862;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.EditLesson-cancel:hover {
+    background-color: #F8F9FB;
+    border-color: #CFC7C3;
+}
+
+
+.EditLesson-save {
+    height: 42px;
+    padding: 0 19px;
+    border: none;
+    border-radius: 9px;
+    background-color: #CC3650;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.EditLesson-save:hover {
+    background-color: #B3273F;
+    transform: translateY(-1px);
+}
+
+
+.EditLesson-save:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.EditLesson-empty {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.EditLesson-empty-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 13px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+
+.EditLesson-empty h2 {
+    margin: 0 0 6px;
+    color: #2C2222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.EditLesson-empty p {
+    margin: 0 0 18px;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+.EditLesson-back-button {
+    border: none;
+    background-color: #CC3650;
+    color: #FFFFFF;
+    padding: 11px 16px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.EditLesson-back-button:hover {
+    background-color: #B3273F;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .EditLesson-title-section {
+        padding: 18px;
+    }
+
+
+    .EditLesson-title-section h1 {
+        font-size: 16px;
+    }
+
+
+    .EditLesson-section {
+        padding: 18px;
+    }
+
+
+    .EditLesson-actions {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+
+    .EditLesson-cancel,
+    .EditLesson-save {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .EditLesson-title-section {
+        gap: 12px;
+        padding: 16px;
+    }
+
+
+    .EditLesson-title-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 11px;
+        font-size: 16px;
+    }
+
+
+    .EditLesson-title-section h1 {
+        font-size: 15px;
+    }
+
+
+    .EditLesson-title-section p {
+        font-size: 11px;
+    }
+
+
+    .EditLesson-section {
+        padding: 16px;
+    }
+
+
+    .EditLesson-section-header {
+        gap: 9px;
+    }
+
+
+    .EditLesson-section-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .EditLesson-section-header h2 {
+        font-size: 14px;
+    }
+
+
+    .EditLesson-field label {
+        font-size: 11px;
+    }
+
+
+    .EditLesson-field input,
+    .EditLesson-field textarea {
+        font-size: 12px;
+    }
+
+
+    .EditLesson-resource-row input {
+        font-size: 12px;
+    }
+}

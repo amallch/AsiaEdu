@@ -1,0 +1,605 @@
+/* =========================================================
+   VIEW CONTACT MESSAGE
+========================================================= */
+
+.ViewContactMessage {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ViewContactMessage-header {
+    margin-bottom: 25px;
+}
+
+
+.ViewContactMessage-back {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 16px;
+
+    padding: 0;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: #958B84;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+
+.ViewContactMessage-back i {
+    font-size: 11px;
+}
+
+
+.ViewContactMessage-back:hover {
+    color: #CC3650;
+}
+
+
+.ViewContactMessage-label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+.ViewContactMessage-header h1 {
+    margin: 0 0 5px;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.ViewContactMessage-header p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.ViewContactMessage-section {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.ViewContactMessage-section-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+
+.ViewContactMessage-section-header h2 {
+    margin: 0 0 4px;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.ViewContactMessage-section-header p {
+    margin: 0;
+
+    font-size: 11px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   CONTACT INFO GRID
+========================================================= */
+
+.ViewContactMessage-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+
+.ViewContactMessage-info-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    min-height: 62px;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 10px;
+}
+
+
+.ViewContactMessage-info-icon {
+    width: 34px;
+
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+}
+
+
+.ViewContactMessage-info-icon i {
+    font-size: 12px;
+}
+
+
+.ViewContactMessage-info-item > div:last-child {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.ViewContactMessage-info-item span {
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.ViewContactMessage-info-item strong {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   MESSAGE CARD
+========================================================= */
+
+.ViewContactMessage-message-card {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 11px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   MESSAGE SUBJECT
+========================================================= */
+
+.ViewContactMessage-message-subject {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 17px;
+
+    background-color: #FBFAFA;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.06);
+}
+
+
+.ViewContactMessage-message-icon {
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+}
+
+
+.ViewContactMessage-message-icon i {
+    font-size: 14px;
+}
+
+
+.ViewContactMessage-message-subject > div:last-child {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.ViewContactMessage-message-subject span {
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.ViewContactMessage-message-subject strong {
+    font-size: 14px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+/* =========================================================
+   MESSAGE CONTENT
+========================================================= */
+
+.ViewContactMessage-message-content {
+    padding: 20px;
+}
+
+
+.ViewContactMessage-message-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+}
+
+
+.ViewContactMessage-message-title i {
+    color: #CC3650;
+
+    font-size: 12px;
+}
+
+
+.ViewContactMessage-message-title span {
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+.ViewContactMessage-message-content p {
+    margin: 0;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 9px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #746B66;
+
+    white-space: pre-wrap;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   EMPTY / ERROR
+========================================================= */
+
+.ViewContactMessage-empty {
+    width: 100%;
+
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+}
+
+
+.ViewContactMessage-empty > i {
+    margin-bottom: 14px;
+
+    font-size: 30px;
+
+    color: #CC3650;
+}
+
+
+.ViewContactMessage-empty h2 {
+    margin: 0 0 7px;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.ViewContactMessage-empty p {
+    max-width: 400px;
+
+    margin: 0 0 18px;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #958B84;
+}
+
+
+.ViewContactMessage-empty button {
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+
+.ViewContactMessage-empty button:hover {
+    background-color: #B92F47;
+}
+
+
+.ViewContactMessage-empty button i {
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .ViewContactMessage-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .ViewContactMessage-section {
+        padding: 16px;
+    }
+
+
+    .ViewContactMessage-message-subject {
+        align-items: flex-start;
+    }
+
+
+    .ViewContactMessage-message-content {
+        padding: 16px;
+    }
+
+
+    .ViewContactMessage-message-content p {
+        font-size: 12px;
+
+        padding: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .ViewContactMessage-header h1 {
+        font-size: 22px;
+    }
+
+
+    .ViewContactMessage-header p {
+        font-size: 12px;
+    }
+
+
+    .ViewContactMessage-section-header h2 {
+        font-size: 14px;
+    }
+
+
+    .ViewContactMessage-section-header p {
+        font-size: 10px;
+    }
+
+
+    .ViewContactMessage-info-item strong {
+        font-size: 12px;
+    }
+
+
+    .ViewContactMessage-message-subject {
+        padding: 14px;
+    }
+
+
+    .ViewContactMessage-message-icon {
+        width: 36px;
+
+        height: 36px;
+    }
+
+
+    .ViewContactMessage-message-subject strong {
+        font-size: 13px;
+    }
+
+}

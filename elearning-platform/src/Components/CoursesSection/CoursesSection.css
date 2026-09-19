@@ -1,0 +1,658 @@
+/* =========================================================
+   COURSES SECTION
+========================================================= */
+
+.CoursesSection {
+
+    width: 100%;
+
+    padding: 80px 0;
+
+    background-color: white;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.CoursesSection-container {
+
+    width: 84%;
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.CourseFilters {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 22px 24px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #EFE5DE;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(44, 34, 34, 0.05);
+
+}
+
+
+/* =========================================================
+   FILTER HEADER
+========================================================= */
+
+.CourseFilters-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+
+}
+
+
+.CourseFilters-header h3 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+}
+
+
+.CourseFilters-header h3 i {
+
+    color: var(--primary-red);
+
+    font-size: 14px;
+
+}
+
+
+.CourseFilters-clear {
+
+    border: none;
+
+    padding: 0;
+
+    background: transparent;
+
+    color: var(--primary-red);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+}
+
+
+.CourseFilters-clear:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.CourseSearch {
+
+    width: 100%;
+
+    height: 44px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    margin-bottom: 18px;
+
+    border: 1.5px solid #EFE5DE;
+
+    border-radius: 11px;
+
+    background-color: #ffffff;
+
+    transition: 0.25s ease;
+
+}
+
+
+.CourseSearch:focus-within {
+
+    border-color: var(--primary-red);
+
+    box-shadow:
+        0 0 0 4px
+        rgba(204, 54, 80, 0.07);
+
+}
+
+
+.CourseSearch i {
+
+    color: #A79E96;
+
+    font-size: 13px;
+
+}
+
+
+.CourseSearch input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-family: inherit;
+
+}
+
+
+.CourseSearch input::placeholder {
+
+    color: #A79E96;
+
+}
+
+
+/* =========================================================
+   FILTER OPTIONS
+========================================================= */
+
+.CourseFilters-options {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 16px;
+
+}
+
+
+.CourseFilters-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+}
+
+
+.CourseFilters-group label {
+
+    color: #2C2222;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.CourseFilters-group select {
+
+    width: 100%;
+
+    height: 42px;
+
+    box-sizing: border-box;
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    padding: 0 34px 0 13px;
+
+    border: 1.5px solid #EFE5DE;
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23A79E96' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+
+    background-position:
+        right 14px center;
+
+    color: #2C2222;
+
+    font-size: 12.5px;
+
+    font-weight: 600;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+
+}
+
+
+.CourseFilters-group select:hover {
+
+    border-color:
+        rgba(204, 54, 80, 0.3);
+
+}
+
+
+.CourseFilters-group select:focus {
+
+    outline: none;
+
+    border-color:
+        var(--primary-red);
+
+    box-shadow:
+        0 0 0 4px
+        rgba(204, 54, 80, 0.07);
+
+}
+
+
+/* =========================================================
+   COURSES LIST
+========================================================= */
+
+.CoursesList {
+
+    width: 100%;
+
+}
+
+
+.CoursesCards {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+.CourseFilters,
+.CoursesCards,
+.CoursesList-empty {
+
+    opacity: 0;
+
+    transform:
+        translateY(45px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+
+}
+
+
+.CoursesSection-visible
+.CourseFilters {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition-delay:
+        0.1s;
+
+}
+
+
+.CoursesSection-visible
+.CoursesCards {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition-delay:
+        0.25s;
+
+}
+
+
+.CoursesSection-visible
+.CoursesList-empty {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition-delay:
+        0.25s;
+
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.CoursesList-empty {
+
+    min-height: 260px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #EFE5DE;
+
+    border-radius: 18px;
+
+    color: #A79E96;
+
+}
+
+
+.CoursesList-empty i {
+
+    font-size: 28px;
+
+}
+
+
+.CoursesList-empty p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+}
+
+
+.CoursesList-empty button {
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--primary-red);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================================
+   1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .CoursesCards {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================================
+   850px
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .CoursesSection {
+
+        padding: 65px 0;
+
+    }
+
+
+    .CoursesSection-container {
+
+        width: 90%;
+
+    }
+
+
+    .CourseFilters-options {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================================
+   700px
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .CoursesCards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* =========================================================
+   640px
+========================================================= */
+
+@media (max-width: 640px) {
+
+    .CoursesSection {
+
+        padding: 55px 0;
+
+    }
+
+
+    .CoursesSection-container {
+
+        width: 92%;
+
+        gap: 18px;
+
+    }
+
+
+    .CourseFilters {
+
+        padding: 18px;
+
+        border-radius: 16px;
+
+    }
+
+
+    .CourseFilters-header {
+
+        margin-bottom: 15px;
+
+    }
+
+
+    .CourseFilters-options {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+    }
+
+
+    .CourseSearch {
+
+        height: 42px;
+
+        margin-bottom: 14px;
+
+    }
+
+}
+
+
+/* =========================================================
+   420px
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .CoursesSection-container {
+
+        width: 94%;
+
+    }
+
+
+    .CourseFilters {
+
+        padding: 16px;
+
+    }
+
+
+    .CourseFilters-header h3 {
+
+        font-size: 14px;
+
+    }
+
+
+    .CourseFilters-clear {
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* =========================================================
+   350px
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .CoursesSection-container {
+
+        width: 95%;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .CourseFilters,
+    .CoursesCards,
+    .CoursesList-empty {
+
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+
+    }
+
+}

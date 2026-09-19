@@ -1,0 +1,647 @@
+/* =========================================================
+   COURSE CARD
+========================================================= */
+
+.CourseCard {
+
+    width: 100%;
+
+    min-height: 365px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 24px 26px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #E9E4E1;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 14px rgba(44, 34, 34, 0.06),
+        0 1px 3px rgba(44, 34, 34, 0.04);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.CourseCard:hover {
+
+    transform: translateY(-4px);
+
+    border-color: rgba(204, 54, 80, 0.18);
+
+    box-shadow:
+        0 14px 30px rgba(44, 34, 34, 0.10),
+        0 4px 10px rgba(44, 34, 34, 0.04);
+}
+
+
+/* =========================================================
+   LANGUAGE ICON
+========================================================= */
+
+.CourseCardIcon {
+
+    width: 56px;
+
+    height: 56px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 14px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+}
+
+
+.CourseCardIcon span {
+
+    font-size: 22px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.CourseCardContent {
+
+    width: 100%;
+
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.CourseCardTitle {
+
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 20px;
+
+    line-height: 1.35;
+
+    font-weight: 800;
+
+    letter-spacing: -0.2px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.CourseCardDescription {
+
+    margin: 9px 0 0;
+
+    height: 65px;
+
+    overflow: hidden;
+
+    color: #958B84;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   COURSE INFO
+========================================================= */
+
+.CourseCardInfo {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+
+.CourseCardInfoItem {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+    line-height: 1.3;
+
+    white-space: nowrap;
+
+    min-width: 0;
+}
+
+
+.CourseCardInfoItem i {
+
+    flex-shrink: 0;
+
+    font-size: 14px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   NEXT START DATE
+========================================================= */
+
+.CourseCardStartDate {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 14px;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+    line-height: 1.3;
+}
+
+
+.CourseCardStartDate i {
+
+    flex-shrink: 0;
+
+    font-size: 14px;
+
+    color: #958B84;
+}
+
+
+.CourseCardStartDate strong {
+
+    color: #2C2222;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.CourseCardDivider {
+
+    width: 100%;
+
+    height: 1px;
+
+    margin: 17px 0;
+
+    background-color: #E9E4E1;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.CourseCardFooter {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.CourseCardPrice {
+
+    color: #2C2222;
+
+    font-size: 20px;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    letter-spacing: -0.2px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   REGISTER BUTTON
+========================================================= */
+
+.CourseCardRegister {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    height: 44px;
+
+    padding: 0 17px;
+
+    border: none;
+
+    border-radius: 22px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        gap 0.2s ease;
+}
+
+
+.CourseCardRegister i {
+
+    font-size: 10px;
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.CourseCardRegister:hover {
+
+    background-color: #B92F47;
+
+    transform: translateY(-1px);
+
+    gap: 10px;
+}
+
+
+.CourseCardRegister:hover i {
+
+    transform: translateX(2px);
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .CourseCard {
+
+        min-height: 350px;
+
+        padding: 22px;
+
+    }
+
+
+    .CourseCardIcon {
+
+        width: 52px;
+
+        height: 52px;
+
+        margin-bottom: 18px;
+
+    }
+
+
+    .CourseCardTitle {
+
+        font-size: 19px;
+
+    }
+
+
+    .CourseCardDescription {
+
+        height: 60px;
+
+        font-size: 13px;
+
+        line-height: 1.55;
+
+    }
+
+
+    .CourseCardInfo {
+
+        gap: 10px;
+
+    }
+
+
+    .CourseCardInfoItem {
+
+        font-size: 11px;
+
+    }
+
+
+    .CourseCardStartDate {
+
+        font-size: 11px;
+
+    }
+
+
+    .CourseCardPrice {
+
+        font-size: 19px;
+
+    }
+
+
+    .CourseCardRegister {
+
+        height: 42px;
+
+        padding: 0 15px;
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* =========================================================
+   520px
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .CourseCard {
+
+        min-height: 340px;
+
+        padding: 20px;
+
+        border-radius: 14px;
+
+    }
+
+
+    .CourseCardIcon {
+
+        width: 50px;
+
+        height: 50px;
+
+        border-radius: 12px;
+
+        margin-bottom: 17px;
+
+    }
+
+
+    .CourseCardIcon span {
+
+        font-size: 20px;
+
+    }
+
+
+    .CourseCardTitle {
+
+        font-size: 18px;
+
+    }
+
+
+    .CourseCardDescription {
+
+        height: 55px;
+
+        font-size: 12px;
+
+        line-height: 1.5;
+
+    }
+
+
+    .CourseCardInfo {
+
+        gap: 8px;
+
+        margin-top: 16px;
+
+    }
+
+
+    .CourseCardInfoItem {
+
+        font-size: 10px;
+
+        gap: 5px;
+
+    }
+
+
+    .CourseCardInfoItem i {
+
+        font-size: 12px;
+
+    }
+
+
+    .CourseCardStartDate {
+
+        margin-top: 12px;
+
+        font-size: 11px;
+
+    }
+
+
+    .CourseCardStartDate i {
+
+        font-size: 13px;
+
+    }
+
+
+    .CourseCardDivider {
+
+        margin: 15px 0;
+
+    }
+
+
+    .CourseCardPrice {
+
+        font-size: 18px;
+
+    }
+
+
+    .CourseCardRegister {
+
+        height: 40px;
+
+        padding: 0 14px;
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* =========================================================
+   420px
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .CourseCard {
+
+        padding: 19px;
+
+    }
+
+
+    .CourseCardTitle {
+
+        font-size: 17px;
+
+    }
+
+
+    .CourseCardDescription {
+
+        height: 54px;
+
+        font-size: 12px;
+
+        line-height: 1.5;
+
+    }
+
+
+    .CourseCardInfo {
+
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+
+    }
+
+
+    .CourseCardInfoItem {
+
+        font-size: 11px;
+
+    }
+
+
+    .CourseCardStartDate {
+
+        font-size: 11px;
+
+    }
+
+
+    .CourseCardFooter {
+
+        gap: 10px;
+
+    }
+
+
+    .CourseCardPrice {
+
+        font-size: 17px;
+
+    }
+
+
+    .CourseCardRegister {
+
+        height: 39px;
+
+        padding: 0 13px;
+
+    }
+
+}

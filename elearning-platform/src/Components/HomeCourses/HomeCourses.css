@@ -1,0 +1,334 @@
+/* =========================================================
+   HOME COURSES
+========================================================= */
+
+.HomeCourses {
+
+    width: 100%;
+
+    padding: 70px 0 150px;
+
+    background-color: #f8f9fb;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.HomeCourses-container {
+
+    width: 80%;
+
+    max-width: 1200px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 40px;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.HomeCourses-headings-container {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+.HomeCourses-headings-container .Hero {
+
+    flex: 1;
+
+}
+
+
+/* =========================================================
+   VIEW MORE BUTTON
+========================================================= */
+
+.HomeCourses-button {
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* =========================================================
+   COURSE CARDS
+========================================================= */
+
+.HomeCourses-cards {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+
+    align-items: stretch;
+
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+.HomeCourses-button,
+.HomeCourses-cards .HomeCourses-card {
+
+    opacity: 0;
+
+    transform:
+        translateY(45px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+
+}
+
+
+.HomeCourses-visible
+.HomeCourses-button {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition-delay:
+        0.1s;
+
+}
+
+
+.HomeCourses-visible
+.HomeCourses-cards
+.HomeCourses-card {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =========================================================
+   COURSE CARD STAGGER
+========================================================= */
+
+.HomeCourses-visible
+.HomeCourses-cards
+.HomeCourses-card:nth-child(1) {
+
+    transition-delay:
+        0.15s;
+
+}
+
+
+.HomeCourses-visible
+.HomeCourses-cards
+.HomeCourses-card:nth-child(2) {
+
+    transition-delay:
+        0.3s;
+
+}
+
+
+.HomeCourses-visible
+.HomeCourses-cards
+.HomeCourses-card:nth-child(3) {
+
+    transition-delay:
+        0.45s;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .HomeCourses {
+
+        padding: 60px 0;
+
+    }
+
+
+    .HomeCourses-container {
+
+        width: 90%;
+
+    }
+
+
+    .HomeCourses-headings-container {
+
+        align-items: flex-end;
+
+    }
+
+
+    .HomeCourses-cards {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+
+    }
+
+
+    /* Hide the third course on tablet */
+
+    .HomeCourses-card-3 {
+
+        display: none;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .HomeCourses {
+
+        padding: 50px 0;
+
+    }
+
+
+    .HomeCourses-container {
+
+        width: 92%;
+
+        gap: 30px;
+
+    }
+
+
+    .HomeCourses-headings-container {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 20px;
+
+    }
+
+
+    .HomeCourses-cards {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 20px;
+
+    }
+
+
+    /* Show the third course again on phones */
+
+    .HomeCourses-card-3 {
+
+        display: block;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .HomeCourses {
+
+        padding: 45px 0;
+
+    }
+
+
+    .HomeCourses-container {
+
+        width: 94%;
+
+    }
+
+
+    .HomeCourses-cards {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .HomeCourses-button,
+    .HomeCourses-cards .HomeCourses-card {
+
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+
+    }
+
+}

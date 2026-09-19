@@ -1,0 +1,590 @@
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.Footer {
+    width: 100%;
+
+    background-color: #241f20;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 55px 0 20px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.Footer-container {
+    width: 85%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 35px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.footerlogo-container {
+    width: fit-content;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    color: #ffffff;
+
+    font-size: 24px;
+
+    font-weight: 700;
+}
+
+
+.footerlogo {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 13px;
+
+    background-color: #ffffff;
+
+    color: #cc3650;
+
+    font-size: 19px;
+
+    transition: transform 0.25s ease;
+}
+
+
+.footerlogo:hover {
+    cursor: pointer;
+
+    transform: translateY(-3px);
+}
+
+
+.webname-footer {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FOOTER TOP
+========================================================= */
+
+.FooterTop {
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1.2fr
+        1fr
+        1fr;
+
+    gap: 55px;
+
+    padding-bottom: 35px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.FooterAbout {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.FooterAbout p {
+    max-width: 330px;
+
+    margin: 0;
+
+    color: #b8aaac;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FOOTER TITLES
+========================================================= */
+
+.FooterTop h3,
+.FooterTop h4 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 650;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.FooterContact {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.Contact-us-footer {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.contact-us-footer-div {
+    width: fit-content;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #b8aaac;
+
+    font-size: 13px;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.contact-us-footer-div:hover {
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transform: translateX(4px);
+}
+
+
+.contact-us-icon {
+    width: 18px;
+
+    color: #cc3650;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.FooterLinks,
+.FooterLanguages {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.FooterLinks ul,
+.FooterLanguages ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.FooterLinks li,
+.FooterLanguages li {
+    list-style: none;
+}
+
+
+.FooterLinks a,
+.FooterLanguages a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: #b8aaac;
+
+    font-size: 13px;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.FooterLinks a:hover,
+.FooterLanguages a:hover {
+    color: #ffffff;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   FOLLOW US
+========================================================= */
+
+.Follow-us-footer {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+}
+
+
+.Follow-us-footer-container {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.Follow-us-footer-icon {
+    width: 37px;
+    height: 37px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    background-color: #30292a;
+
+    color: #d7cacc;
+
+    font-size: 16px;
+
+    border: 1px solid #403638;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.Follow-us-footer-icon:hover {
+    background-color: #cc3650;
+
+    border-color: #cc3650;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   SEPARATOR
+========================================================= */
+
+.footer-seperation {
+    width: 100%;
+
+    height: 1px;
+
+    background-color: #3a3334;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.FooterBottom {
+    min-height: 45px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    color: #887b7e;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .Footer {
+        padding-top: 50px;
+    }
+
+
+    .Footer-container {
+        width: 88%;
+    }
+
+
+    .FooterTop {
+        grid-template-columns: 1.5fr 1fr 1fr;
+
+        gap: 40px;
+    }
+
+
+    .FooterAbout {
+        grid-column: span 3;
+    }
+
+
+    .FooterAbout p {
+        max-width: 500px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .Footer {
+        padding: 45px 0 18px;
+    }
+
+
+    .Footer-container {
+        width: 90%;
+
+        gap: 30px;
+    }
+
+
+    .FooterTop {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px;
+    }
+
+
+    .FooterAbout {
+        grid-column: span 2;
+    }
+
+
+    .FooterAbout p {
+        max-width: 100%;
+    }
+
+
+    .FooterBottom {
+        justify-content: center;
+
+        text-align: center;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .Footer {
+        padding: 40px 0 15px;
+    }
+
+
+    .Footer-container {
+        width: 90%;
+
+        gap: 28px;
+    }
+
+
+    .FooterTop {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 28px;
+    }
+
+
+    .footerlogo-container {
+        font-size: 21px;
+    }
+
+
+    .footerlogo {
+        width: 42px;
+        height: 42px;
+
+        font-size: 18px;
+    }
+
+
+    .FooterAbout {
+        gap: 14px;
+    }
+
+
+    .FooterAbout p {
+        font-size: 13px;
+    }
+
+
+    .FooterContact,
+    .FooterLinks,
+    .FooterLanguages {
+        gap: 15px;
+    }
+
+
+    .FooterTop h3,
+    .FooterTop h4 {
+        font-size: 14px;
+    }
+
+
+    .FooterLinks ul,
+    .FooterLanguages ul {
+        gap: 10px;
+    }
+
+
+    .FooterLinks a,
+    .FooterLanguages a,
+    .contact-us-footer-div {
+        font-size: 12px;
+    }
+
+
+    .Follow-us-footer {
+        gap: 14px;
+    }
+
+
+    .Follow-us-footer-container {
+        gap: 8px;
+    }
+
+
+    .Follow-us-footer-icon {
+        width: 36px;
+        height: 36px;
+
+        font-size: 15px;
+    }
+
+
+    .FooterBottom {
+        min-height: 40px;
+
+        font-size: 11px;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .Footer-container {
+        width: 92%;
+    }
+
+
+    .footerlogo-container {
+        font-size: 19px;
+    }
+
+
+    .footerlogo {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .FooterAbout p {
+        font-size: 12px;
+    }
+
+
+    .Follow-us-footer-icon {
+        width: 34px;
+        height: 34px;
+
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,1467 @@
+/* =========================================================
+   ADMIN LESSONS
+========================================================= */
+
+.MyLessons {
+    width: 100%;
+
+    min-width: 0;
+
+    background-color: #F8F9FB;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.MyLessons-container {
+    width: 100%;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ADMIN PAGE HEADER
+========================================================= */
+
+.Lessons-header {
+    width: 100%;
+
+    margin-bottom: 28px;
+}
+
+.Lessons-header > div {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.Lessons-header span {
+    margin-bottom: 7px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    color: #CC3650;
+
+    letter-spacing: 1px;
+}
+
+.Lessons-header h1 {
+    margin: 0 0 7px;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.6px;
+
+    color: #2C2222;
+}
+
+.Lessons-header p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   COURSE SELECTOR
+========================================================= */
+
+.MyLessons-courseSelector {
+    width: 100%;
+
+    padding: 20px 22px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   SELECTOR HEADING
+========================================================= */
+
+.MyLessons-selectorHeading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 0;
+}
+
+.MyLessons-selectorIcon {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 17px;
+}
+
+.MyLessons-selectorHeading > div:last-child {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.MyLessons-selectorHeading span {
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+.MyLessons-selectorHeading p {
+    margin: 3px 0 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   SELECT WRAPPER
+========================================================= */
+
+.MyLessons-selectWrapper {
+    position: relative;
+
+    width: 320px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   COURSE CODE
+========================================================= */
+
+.MyLessons-courseCode {
+    position: absolute;
+
+    left: 14px;
+
+    z-index: 2;
+
+    width: 24px;
+    height: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #CC3650;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.MyLessons-select {
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 40px 0 45px;
+
+    box-sizing: border-box;
+
+    appearance: none;
+
+    border: 1px solid #E6DFDC;
+
+    border-radius: 10px;
+
+    background-color: #FAF8F7;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.MyLessons-select:hover {
+    background-color: #FFFFFF;
+
+    border-color: rgba(204, 54, 80, 0.25);
+}
+
+.MyLessons-select:focus {
+    background-color: #FFFFFF;
+
+    border-color: #CC3650;
+
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.08);
+}
+
+
+/* =========================================================
+   SELECT ARROW
+========================================================= */
+
+.MyLessons-selectWrapper > i {
+    position: absolute;
+
+    right: 15px;
+
+    font-size: 11px;
+
+    color: #958B84;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SELECTED COURSE
+========================================================= */
+
+.MyLessons-selectedCourse {
+    width: 100%;
+
+    padding: 20px 22px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFBFA;
+
+    border: 1px solid rgba(204, 54, 80, 0.12);
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   SELECTED COURSE LEFT
+========================================================= */
+
+.MyLessons-selectedCourse-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 0;
+}
+
+.MyLessons-selectedCourse-icon {
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(204, 54, 80, 0.12);
+
+    overflow: hidden;
+
+    color: #CC3650;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+.MyLessons-selectedCourse-left > div:last-child {
+    min-width: 0;
+}
+
+.MyLessons-selectedCourse-left h3 {
+    margin: 0 0 5px;
+
+    font-size: 17px;
+
+    font-weight: 750;
+
+    color: #2C2222;
+}
+
+.MyLessons-selectedCourse-left p {
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   COURSE STATS
+========================================================= */
+
+.MyLessons-selectedCourse-stats {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-shrink: 0;
+}
+
+.MyLessons-selectedCourse-stats > div {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    min-width: 65px;
+}
+
+.MyLessons-selectedCourse-stats strong {
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+.MyLessons-selectedCourse-stats span {
+    margin-top: 3px;
+
+    font-size: 10px;
+
+    color: #958B84;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   LESSON LIST
+========================================================= */
+
+.MyLessons-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   LESSON CARD
+========================================================= */
+
+.MyLessons-card {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.MyLessons-card:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(204, 54, 80, 0.18);
+
+    box-shadow:
+        0 7px 20px rgba(44, 34, 34, 0.06);
+}
+
+.MyLessons-card:focus-visible {
+    outline: 2px solid #CC3650;
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   LESSON NUMBER
+========================================================= */
+
+.MyLessons-number {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #B3273F;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   LESSON CONTENT
+========================================================= */
+
+.MyLessons-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.MyLessons-title-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.MyLessons-content h3 {
+    margin: 0 0 7px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.MyLessons-description {
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #726862;
+
+    max-width: 850px;
+}
+
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.MyLessons-details {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px 20px;
+
+    margin-top: 13px;
+}
+
+.MyLessons-details span {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    color: #958B84;
+}
+
+.MyLessons-details i {
+    color: #CC3650;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   CARD ACTIONS
+========================================================= */
+
+.MyLessons-card-actions {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   CARD ARROW
+========================================================= */
+
+.MyLessons-card-arrow {
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background-color: rgba(204, 54, 80, 0.07);
+
+    color: #CC3650;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.MyLessons-card:hover .MyLessons-card-arrow {
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    transform: translateX(3px);
+}
+
+.MyLessons-card-arrow i {
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.MyLessons-empty {
+    padding: 60px 20px;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border: 1px dashed #DED6D2;
+
+    border-radius: 14px;
+}
+
+.MyLessons-emptyIcon {
+    width: 52px;
+    height: 52px;
+
+    margin: 0 auto 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 18px;
+}
+
+.MyLessons-empty h3 {
+    margin: 0 0 6px;
+
+    font-size: 15px;
+
+    color: #2C2222;
+}
+
+.MyLessons-empty p {
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.MyLessons-back-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 22px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #958B84;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.MyLessons-back-button:hover {
+    color: #CC3650;
+}
+
+.MyLessons-back-button i {
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   DETAIL CARD
+========================================================= */
+
+.MyLessons-detail-card {
+    width: 100%;
+
+    padding: 28px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 4px 18px rgba(44, 34, 34, 0.04);
+}
+
+
+/* =========================================================
+   DETAIL HEADER
+========================================================= */
+
+.MyLessons-detail-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-bottom: 24px;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.07);
+}
+
+.MyLessons-detail-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: none;
+
+    letter-spacing: 0.3px;
+}
+
+.MyLessons-detail-header h2 {
+    margin: 0 0 7px;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+
+    letter-spacing: -0.4px;
+}
+
+
+/* =========================================================
+   DETAIL SECTION
+========================================================= */
+
+.MyLessons-detail-section {
+    padding: 22px 0;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.07);
+}
+
+.MyLessons-detail-section:last-child {
+    border-bottom: none;
+
+    padding-bottom: 0;
+}
+
+.MyLessons-detail-section h3 {
+    margin: 0 0 9px;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+.MyLessons-detail-section > p {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #958B84;
+
+    max-width: 900px;
+}
+
+
+/* =========================================================
+   CONTENT BOX
+========================================================= */
+
+.MyLessons-content-box {
+    width: 100%;
+
+    padding: 17px 18px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFBFA;
+
+    border: 1px solid rgba(204, 54, 80, 0.10);
+
+    border-radius: 12px;
+}
+
+.MyLessons-content-text {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+
+    color: #655A55;
+
+    white-space: pre-wrap;
+}
+
+
+/* =========================================================
+   DETAIL ATTACHMENTS
+========================================================= */
+
+.MyLessons-detail-attachments {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   RESOURCE
+========================================================= */
+
+.MyLessons-resource {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 14px 16px;
+
+    box-sizing: border-box;
+
+    background-color: #FAF8F7;
+
+    border: 1px solid #E8E1DE;
+
+    border-radius: 12px;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.MyLessons-resource:hover {
+    background-color: #FFFFFF;
+
+    border-color: rgba(204, 54, 80, 0.20);
+
+    transform: translateY(-1px);
+}
+
+.MyLessons-resource-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    min-width: 0;
+}
+
+.MyLessons-resource-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 14px;
+}
+
+.MyLessons-resource-left > div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    min-width: 0;
+}
+
+.MyLessons-resource-left strong {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+.MyLessons-resource-left span {
+    font-size: 10px;
+
+    color: #958B84;
+}
+
+.MyLessons-resource-action {
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.MyLessons-resource-action i {
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ATTACHMENT
+========================================================= */
+
+.MyLessons-attachment {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 14px 16px;
+
+    box-sizing: border-box;
+
+    background-color: #FAF8F7;
+
+    border: 1px solid #E8E1DE;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.MyLessons-attachment:hover {
+    background-color: #FFFFFF;
+
+    border-color: rgba(204, 54, 80, 0.20);
+
+    transform: translateY(-1px);
+}
+
+.MyLessons-attachment-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    min-width: 0;
+}
+
+.MyLessons-attachment-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 14px;
+}
+
+.MyLessons-attachment-left > div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    min-width: 0;
+}
+
+.MyLessons-attachment-left strong {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+.MyLessons-attachment-left span {
+    font-size: 10px;
+
+    color: #958B84;
+}
+
+.MyLessons-attachment-action {
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.MyLessons-attachment-action i {
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   992px
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .MyLessons-container {
+        padding: 28px;
+    }
+
+    .Lessons-header {
+        margin-bottom: 24px;
+    }
+
+    .Lessons-header h1 {
+        font-size: 28px;
+    }
+
+    .MyLessons-courseSelector {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+    .MyLessons-selectWrapper {
+        width: 100%;
+    }
+
+    .MyLessons-selectedCourse {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .MyLessons-selectedCourse-stats {
+        width: 100%;
+
+        justify-content: space-between;
+
+        gap: 14px;
+    }
+
+    .MyLessons-card {
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .MyLessons-container {
+        padding: 22px 18px;
+    }
+
+    .Lessons-header {
+        margin-bottom: 22px;
+    }
+
+    .Lessons-header span {
+        font-size: 10px;
+    }
+
+    .Lessons-header h1 {
+        font-size: 25px;
+    }
+
+    .Lessons-header p {
+        font-size: 13px;
+    }
+
+
+    .MyLessons-selectedCourse {
+        padding: 18px;
+    }
+
+    .MyLessons-selectedCourse-stats {
+        width: 100%;
+
+        justify-content: space-between;
+
+        padding-top: 16px;
+
+        border-top: 1px solid rgba(44, 34, 34, 0.07);
+    }
+
+
+    .MyLessons-card {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 16px;
+
+        padding: 17px;
+    }
+
+
+    .MyLessons-card-actions {
+        width: 100%;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: flex-end;
+    }
+
+    .MyLessons-card-arrow {
+        margin-top: 2px;
+    }
+
+
+    .MyLessons-detail-card {
+        padding: 22px;
+    }
+
+
+    .MyLessons-resource,
+    .MyLessons-attachment {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .MyLessons-resource-action,
+    .MyLessons-attachment-action {
+        width: 100%;
+
+        justify-content: center;
+
+        box-sizing: border-box;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .MyLessons-container {
+        padding: 18px 14px;
+    }
+
+    .Lessons-header {
+        margin-bottom: 20px;
+    }
+
+    .Lessons-header span {
+        margin-bottom: 6px;
+
+        font-size: 9px;
+    }
+
+    .Lessons-header h1 {
+        margin-bottom: 6px;
+
+        font-size: 23px;
+    }
+
+    .Lessons-header p {
+        font-size: 12px;
+    }
+
+
+    .MyLessons-courseSelector {
+        padding: 17px;
+    }
+
+    .MyLessons-selectorHeading {
+        gap: 10px;
+    }
+
+    .MyLessons-selectorIcon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 15px;
+    }
+
+    .MyLessons-selectorHeading span {
+        font-size: 13px;
+    }
+
+    .MyLessons-selectorHeading p {
+        font-size: 11px;
+    }
+
+
+    .MyLessons-selectedCourse {
+        padding: 17px;
+    }
+
+    .MyLessons-selectedCourse-icon {
+        width: 48px;
+        height: 48px;
+
+        font-size: 13px;
+    }
+
+    .MyLessons-selectedCourse-left h3 {
+        font-size: 15px;
+    }
+
+    .MyLessons-selectedCourse-left p {
+        font-size: 11px;
+    }
+
+    .MyLessons-selectedCourse-stats {
+        gap: 8px;
+    }
+
+    .MyLessons-selectedCourse-stats > div {
+        min-width: 0;
+    }
+
+    .MyLessons-selectedCourse-stats strong {
+        font-size: 16px;
+    }
+
+    .MyLessons-selectedCourse-stats span {
+        font-size: 9px;
+    }
+
+
+    .MyLessons-card {
+        gap: 12px;
+
+        padding: 15px;
+    }
+
+    .MyLessons-number {
+        width: 42px;
+        height: 42px;
+
+        font-size: 11px;
+    }
+
+    .MyLessons-content h3 {
+        font-size: 13px;
+    }
+
+    .MyLessons-description {
+        font-size: 11px;
+    }
+
+
+    .MyLessons-card-actions {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    .MyLessons-card-arrow {
+        align-self: flex-end;
+
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .MyLessons-detail-card {
+        padding: 18px;
+    }
+
+    .MyLessons-detail-header {
+        flex-direction: column;
+
+        gap: 14px;
+    }
+
+    .MyLessons-detail-header h2 {
+        font-size: 21px;
+    }
+
+    .MyLessons-detail-section {
+        padding: 18px 0;
+    }
+
+    .MyLessons-resource-action,
+    .MyLessons-attachment-action {
+        width: 100%;
+
+        justify-content: center;
+
+        box-sizing: border-box;
+    }
+
+}

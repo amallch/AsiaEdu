@@ -1,0 +1,145 @@
+/* =================================================
+   WHY CHOOSE CARD
+================================================= */
+
+.WhyChooseCard {
+
+    background: #FFFFFF;
+
+    border: 1px solid
+        rgba(44, 34, 34, 0.06);
+
+    border-radius: 18px;
+
+    padding: 32px 28px;
+
+    box-shadow:
+        0 8px 24px
+        rgba(44, 34, 34, 0.05);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+
+}
+
+
+/* =================================================
+   HOVER
+================================================= */
+
+.WhyChooseCard:hover {
+
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(204, 54, 80, 0.15);
+
+    box-shadow:
+        0 16px 35px
+        rgba(44, 34, 34, 0.08);
+
+}
+
+
+/* =================================================
+   TOP ROW
+================================================= */
+
+.WhyChooseCard-top {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =================================================
+   ICON
+================================================= */
+
+.WhyChooseCard-icon {
+
+    flex-shrink: 0;
+
+    width: 54px;
+
+    height: 54px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color:
+        rgba(204, 54, 80, 0.10);
+
+    color: #CC3650;
+
+    font-size: 21px;
+
+}
+
+
+/* =================================================
+   TITLE
+================================================= */
+
+.WhyChooseCard h3 {
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    line-height: 1.35;
+
+    color: #2C2222;
+
+    margin: 0;
+
+}
+
+
+/* =================================================
+   LINE
+================================================= */
+
+.WhyChooseCard-line {
+
+    width: 38px;
+
+    height: 4px;
+
+    border-radius: 10px;
+
+    margin-bottom: 16px;
+
+    background-color: #CC3650;
+
+}
+
+
+/* =================================================
+   DESCRIPTION
+================================================= */
+
+.WhyChooseCard p {
+
+    font-size: 14px;
+
+    line-height: 1.75;
+
+    color: #746B66;
+
+    margin: 0;
+
+}

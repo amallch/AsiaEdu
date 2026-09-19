@@ -1,0 +1,520 @@
+/* =========================================================
+   ADD SESSION
+========================================================= */
+
+.AddSession {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding-bottom: 60px;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.AddSession-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+.AddSession-header span {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.6px;
+
+}
+
+
+.AddSession-header h1 {
+
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+}
+
+
+.AddSession-header p {
+
+    margin: 7px 0 0;
+
+    color: #958B84;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.AddSession-form {
+
+    width: 100%;
+
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.AddSession-section {
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #EDE7E3;
+
+    border-radius: 14px;
+
+    padding: 28px;
+
+    box-shadow:
+        0 4px 14px rgba(44, 34, 34, 0.04);
+
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.AddSession-section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding-bottom: 22px;
+
+    margin-bottom: 24px;
+
+    border-bottom: 1px solid #F0EBE7;
+
+}
+
+
+.AddSession-section-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background-color: #FDECEC;
+
+    color: #CC3650;
+
+    font-size: 17px;
+
+}
+
+
+.AddSession-section-title h2 {
+
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+}
+
+
+.AddSession-section-title p {
+
+    margin: 4px 0 0;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.AddSession-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px 24px;
+
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.AddSession-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+.AddSession-group label {
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.AddSession-group input,
+.AddSession-group select {
+
+    width: 100%;
+
+    height: 46px;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #E1DAD5;
+
+    border-radius: 8px;
+
+    background-color: #FFFFFF;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.AddSession-group input:focus,
+.AddSession-group select:focus {
+
+    border-color: #CC3650;
+
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.08);
+
+}
+
+
+.AddSession-group input::placeholder {
+
+    color: #B3AAA4;
+
+}
+
+
+.AddSession-group select {
+
+    cursor: pointer;
+
+}
+
+
+.AddSession-group input:disabled,
+.AddSession-group select:disabled {
+
+    background-color: #F8F6F3;
+
+    cursor: not-allowed;
+
+}
+
+
+.AddSession-group small {
+
+    margin-top: -2px;
+
+    color: #958B84;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.AddSession-message {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    padding: 13px 15px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.AddSession-message.error {
+
+    background-color: #FDECEC;
+
+    border: 1px solid #F5CACA;
+
+    color: #B52F3F;
+
+}
+
+
+.AddSession-message.success {
+
+    background-color: #EDF8F0;
+
+    border: 1px solid #CBE8D1;
+
+    color: #2F7A43;
+
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.AddSession-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 24px;
+
+}
+
+
+.AddSession-cancel,
+.AddSession-save {
+
+    height: 44px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.AddSession-cancel {
+
+    border: 1px solid #E1DAD5;
+
+    background-color: #FFFFFF;
+
+    color: #6F6661;
+
+}
+
+
+.AddSession-cancel:hover {
+
+    background-color: #F8F6F3;
+
+    border-color: #D5CCC6;
+
+}
+
+
+.AddSession-save {
+
+    border: 1px solid #CC3650;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+}
+
+
+.AddSession-save:hover {
+
+    background-color: #B92F48;
+
+    border-color: #B92F48;
+
+    transform: translateY(-1px);
+
+}
+
+
+.AddSession-cancel:disabled,
+.AddSession-save:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .AddSession-header h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .AddSession-section {
+
+        padding: 22px;
+
+    }
+
+
+    .AddSession-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .AddSession-header h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .AddSession-header p {
+
+        font-size: 13px;
+
+    }
+
+
+    .AddSession-section {
+
+        padding: 18px;
+
+    }
+
+
+    .AddSession-actions {
+
+        flex-direction: column-reverse;
+
+        width: 100%;
+
+    }
+
+
+    .AddSession-cancel,
+    .AddSession-save {
+
+        width: 100%;
+
+    }
+
+}

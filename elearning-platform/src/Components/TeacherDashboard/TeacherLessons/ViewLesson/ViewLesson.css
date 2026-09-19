@@ -1,0 +1,651 @@
+/* =========================================================
+   VIEW LESSON
+   AsiaEdu Teacher Dashboard
+========================================================= */
+
+.ViewLesson {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F8F9FB;
+    padding-bottom: 60px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.ViewLesson-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ViewLesson-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
+
+.ViewLesson-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.ViewLesson-back {
+    border: none;
+    background: transparent;
+    color: #2C2222;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: color 0.2s ease;
+}
+
+.ViewLesson-back i {
+    color: #CC3650;
+    font-size: 12px;
+}
+
+.ViewLesson-back:hover {
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   EDIT BUTTON
+========================================================= */
+
+.ViewLesson-edit {
+    border: none;
+    background-color: #CC3650;
+    color: #FFFFFF;
+    padding: 11px 16px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.ViewLesson-edit:hover {
+    background-color: #B3273F;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   DELETE BUTTON
+========================================================= */
+
+.ViewLesson-delete {
+    border: none;
+    background-color: #FDECEC;
+    color: #CC3650;
+    padding: 11px 16px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.ViewLesson-delete:hover {
+    background-color: #CC3650;
+    color: #FFFFFF;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   TITLE SECTION
+========================================================= */
+
+.ViewLesson-title-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 15px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+}
+
+
+/* =========================================================
+   TITLE ICON
+========================================================= */
+
+.ViewLesson-title-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+.ViewLesson-title-section h1 {
+    margin: 0 0 5px;
+    color: #2C2222;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+
+.ViewLesson-title-section p {
+    margin: 0;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   INFO GRID
+========================================================= */
+
+.ViewLesson-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+
+.ViewLesson-info-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 14px;
+    padding: 17px;
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+}
+
+
+.ViewLesson-info-label {
+    display: block;
+    color: #958B84;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+
+.ViewLesson-info-card strong {
+    display: block;
+    color: #2C2222;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.ViewLesson-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(44, 34, 34, 0.07);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 12px;
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.ViewLesson-section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+.ViewLesson-section-icon {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+
+.ViewLesson-section-header h2 {
+    margin: 0;
+    color: #2C2222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.ViewLesson-content {
+    padding-left: 45px;
+}
+
+
+.ViewLesson-content p {
+    margin: 0;
+    color: #726862;
+    font-size: 14.5px;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.ViewLesson-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* =========================================================
+   RESOURCE
+========================================================= */
+
+.ViewLesson-resource {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    padding: 9px 11px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    color: #726862;
+    cursor: pointer;
+    font-family: inherit;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.ViewLesson-resource:hover {
+    border-color: rgba(204, 54, 80, 0.25);
+    background-color: #FFFBFA;
+}
+
+
+.ViewLesson-resource:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+
+.ViewLesson-resource:disabled:hover {
+    border-color: #E6DFDC;
+    background-color: #FAF8F7;
+}
+
+
+.ViewLesson-resource span {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.ViewLesson-resource-open {
+    flex-shrink: 0;
+    color: #CC3650;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   ATTACHMENT
+========================================================= */
+
+.ViewLesson-attachment {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E6DFDC;
+    border-radius: 10px;
+    background-color: #FAF8F7;
+    padding: 9px 11px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    color: #726862;
+    cursor: pointer;
+    font-family: inherit;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.ViewLesson-attachment:hover {
+    border-color: rgba(204, 54, 80, 0.25);
+    background-color: #FFFBFA;
+}
+
+
+.ViewLesson-attachment:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+
+.ViewLesson-attachment:disabled:hover {
+    border-color: #E6DFDC;
+    background-color: #FAF8F7;
+}
+
+
+.ViewLesson-attachment span {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.ViewLesson-attachment-open {
+    flex-shrink: 0;
+    color: #CC3650;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   RESOURCE / ATTACHMENT ICON
+========================================================= */
+
+.ViewLesson-resource-icon,
+.ViewLesson-attachment-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   EMPTY TEXT
+========================================================= */
+
+.ViewLesson-empty-text {
+    margin: 0;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   EMPTY PAGE
+========================================================= */
+
+.ViewLesson-empty {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.ViewLesson-empty-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 13px;
+    background-color: rgba(204, 54, 80, 0.08);
+    color: #CC3650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+
+.ViewLesson-empty h2 {
+    margin: 0 0 6px;
+    color: #2C2222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.ViewLesson-empty p {
+    margin: 0 0 18px;
+    color: #958B84;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BACK TO LESSONS
+========================================================= */
+
+.ViewLesson-back-button {
+    border: none;
+    background-color: #CC3650;
+    color: #FFFFFF;
+    padding: 11px 16px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.ViewLesson-back-button:hover {
+    background-color: #B3273F;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .ViewLesson-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .ViewLesson-header {
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+
+    .ViewLesson-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    .ViewLesson-edit,
+    .ViewLesson-delete {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .ViewLesson-title-section {
+        padding: 18px;
+    }
+
+
+    .ViewLesson-title-section h1 {
+        font-size: 16px;
+    }
+
+
+    .ViewLesson-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ViewLesson-section {
+        padding: 18px;
+    }
+
+
+    .ViewLesson-content {
+        padding-left: 0;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .ViewLesson-title-section {
+        gap: 12px;
+        padding: 16px;
+    }
+
+
+    .ViewLesson-title-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 11px;
+        font-size: 16px;
+    }
+
+
+    .ViewLesson-title-section h1 {
+        font-size: 15px;
+    }
+
+
+    .ViewLesson-title-section p {
+        font-size: 11px;
+    }
+
+
+    .ViewLesson-info-card {
+        padding: 15px;
+    }
+
+
+    .ViewLesson-section {
+        padding: 16px;
+    }
+
+
+    .ViewLesson-section-header {
+        gap: 9px;
+    }
+
+
+    .ViewLesson-section-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .ViewLesson-section-header h2 {
+        font-size: 14px;
+    }
+
+
+    .ViewLesson-content p {
+        font-size: 11px;
+    }
+}

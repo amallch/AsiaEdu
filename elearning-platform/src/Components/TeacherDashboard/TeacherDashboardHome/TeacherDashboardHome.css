@@ -1,0 +1,1373 @@
+/* =========================================================
+   TEACHER DASHBOARD HOME
+========================================================= */
+
+.TeacherDashboardHome {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F8F9FB;
+    padding-bottom: 50px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.TeacherDashboardHome-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   WELCOME
+========================================================= */
+
+.TeacherDashboardHome-welcome {
+    width: 100%;
+    min-height: 205px;
+
+    padding: 32px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFF7F7 0%,
+            #FFFFFF 58%,
+            #FFF9FA 100%
+        );
+
+    border: 1px solid
+        rgba(204, 54, 80, 0.10);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 6px 24px
+        rgba(44, 34, 34, 0.045);
+
+    margin-bottom: 22px;
+}
+
+
+.TeacherDashboardHome-welcomeContent {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+
+.TeacherDashboardHome-welcome-label {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 11px;
+
+    margin-bottom: 12px;
+
+    border-radius: 8px;
+
+    background-color:
+        rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+
+.TeacherDashboardHome-welcome-label i {
+    font-size: 11px;
+}
+
+
+.TeacherDashboardHome-welcome h2 {
+    margin: 0 0 8px;
+
+    color: #2C2222;
+
+    font-size: 30px;
+    font-weight: 800;
+
+    letter-spacing: -0.7px;
+}
+
+
+.TeacherDashboardHome-welcome p {
+    max-width: 590px;
+
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+.TeacherDashboardHome-welcomeDecoration {
+    width: 120px;
+    height: 120px;
+
+    flex-shrink: 0;
+
+    margin-right: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color:
+        rgba(204, 54, 80, 0.07);
+
+    color:
+        rgba(204, 54, 80, 0.22);
+
+    font-size: 48px;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.TeacherDashboardHome-statistics {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 16px;
+
+    margin-bottom: 22px;
+}
+
+
+.TeacherDashboardHome-statCard {
+    min-height: 105px;
+
+    padding: 19px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid
+        rgba(44, 34, 34, 0.07);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 16px
+        rgba(44, 34, 34, 0.035);
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.TeacherDashboardHome-statCard:hover {
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(204, 54, 80, 0.16);
+
+    box-shadow:
+        0 8px 22px
+        rgba(44, 34, 34, 0.06);
+}
+
+
+.TeacherDashboardHome-statIcon {
+    width: 46px;
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color:
+        rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 17px;
+}
+
+
+.TeacherDashboardHome-statInfo {
+    min-width: 0;
+}
+
+
+.TeacherDashboardHome-statInfo p {
+    margin: 0 0 4px;
+
+    color: #958B84;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.TeacherDashboardHome-statInfo h3 {
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.TeacherDashboardHome-section {
+    width: 100%;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid
+        rgba(44, 34, 34, 0.07);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(44, 34, 34, 0.035);
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.TeacherDashboardHome-sectionHeading,
+.TeacherDashboardHome-smallHeading {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+
+.TeacherDashboardHome-sectionHeading h3,
+.TeacherDashboardHome-smallHeading h3 {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+.TeacherDashboardHome-sectionHeading p,
+.TeacherDashboardHome-smallHeading p {
+    margin: 7px 0 0 45px;
+
+    color: #958B84;
+
+    font-size: 12px;
+}
+
+
+.TeacherDashboardHome-headingIcon {
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background-color:
+        rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   COURSE LIST
+========================================================= */
+
+.TeacherDashboardHome-courseList {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+
+/* =========================================================
+   COURSE CARD
+========================================================= */
+
+.TeacherDashboardHome-courseCard {
+    width: 100%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid
+        rgba(44, 34, 34, 0.08);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 16px
+        rgba(44, 34, 34, 0.035);
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.TeacherDashboardHome-courseCard:hover {
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(204, 54, 80, 0.16);
+
+    box-shadow:
+        0 8px 22px
+        rgba(44, 34, 34, 0.055);
+}
+
+
+/* =========================================================
+   COURSE HEADER
+========================================================= */
+
+.TeacherDashboardHome-courseHeader {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 7px;
+
+    margin-bottom: 20px;
+}
+
+
+.TeacherDashboardHome-courseHeader h4 {
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   LEVEL
+========================================================= */
+
+.TeacherDashboardHome-level {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 5px 9px;
+
+    border-radius: 7px;
+
+    font-size: 10.5px;
+    font-weight: 700;
+}
+
+
+.TeacherDashboardHome-level-beginner {
+    background-color: #E8F7EF;
+
+    color: #16805A;
+}
+
+
+.TeacherDashboardHome-level-intermediate {
+    background-color: #FFF3DC;
+
+    color: #B7791F;
+}
+
+
+.TeacherDashboardHome-level-advanced {
+    background-color: #F9E7EA;
+
+    color: #B3273F;
+}
+
+
+/* =========================================================
+   SESSION TABLE HEADER
+========================================================= */
+
+.TeacherDashboardHome-sessionHeader {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap: 15px;
+
+    padding: 0 12px 9px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid
+        rgba(44, 34, 34, 0.07);
+}
+
+
+.TeacherDashboardHome-sessionHeader span {
+    color: #958B84;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   SESSION LIST
+========================================================= */
+
+.TeacherDashboardHome-sessionList {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   SESSION ROW
+========================================================= */
+
+.TeacherDashboardHome-sessionRow {
+    width: 100%;
+
+    min-height: 48px;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 10px 12px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid
+        rgba(44, 34, 34, 0.06);
+}
+
+
+.TeacherDashboardHome-sessionRow:last-child {
+    border-bottom: none;
+}
+
+
+.TeacherDashboardHome-sessionName {
+    min-width: 0;
+
+    color: #2C2222;
+
+    font-size: 12.5px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.TeacherDashboardHome-sessionDay {
+    color: #55504C;
+
+    font-size: 11.5px;
+
+    font-weight: 500;
+}
+
+
+.TeacherDashboardHome-sessionStudents {
+    color: #55504C;
+
+    font-size: 11.5px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   NO SESSION
+========================================================= */
+
+.TeacherDashboardHome-noSession {
+    padding: 14px 12px;
+
+    text-align: center;
+
+    background-color: #FCFAFA;
+
+    border-radius: 9px;
+
+    color: #958B84;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   TWO COLUMNS
+========================================================= */
+
+.TeacherDashboardHome-twoColumns {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 22px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   SMALL SECTION
+========================================================= */
+
+.TeacherDashboardHome-smallSection {
+    min-width: 0;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid
+        rgba(44, 34, 34, 0.07);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(44, 34, 34, 0.035);
+}
+
+
+/* =========================================================
+   RECENT LIST
+========================================================= */
+
+.TeacherDashboardHome-recentList {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.TeacherDashboardHome-recentItem {
+    width: 100%;
+
+    min-height: 67px;
+
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    background-color: #FFFAFB;
+
+    border: 1px solid
+        rgba(204, 54, 80, 0.09);
+
+    border-radius: 11px;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.TeacherDashboardHome-recentItem:hover {
+    background-color: #FFFFFF;
+
+    border-color:
+        rgba(204, 54, 80, 0.16);
+
+    transform: translateY(-1px);
+}
+
+
+.TeacherDashboardHome-recentIcon {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background-color:
+        rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 13px;
+}
+
+
+.TeacherDashboardHome-recentInfo {
+    min-width: 0;
+
+    flex: 1;
+}
+
+
+.TeacherDashboardHome-recentInfo h4 {
+    margin: 0 0 4px;
+
+    color: #2C2222;
+
+    font-size: 12.5px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.TeacherDashboardHome-recentInfo span {
+    display: block;
+
+    color: #958B84;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.TeacherDashboardHome-recentDate {
+    flex-shrink: 0;
+
+    color: #958B84;
+
+    font-size: 10.5px;
+    font-weight: 600;
+
+    text-align: right;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.TeacherDashboardHome-empty {
+    min-height: 145px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    background-color: #FFFAFB;
+
+    border: 1px dashed
+        rgba(204, 54, 80, 0.16);
+}
+
+
+.TeacherDashboardHome-emptyIcon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+
+    border-radius: 11px;
+
+    background-color:
+        rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 15px;
+}
+
+
+.TeacherDashboardHome-empty h4 {
+    margin: 0 0 5px;
+
+    color: #2C2222;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.TeacherDashboardHome-empty p {
+    max-width: 300px;
+
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   RECENT SUBMISSIONS
+========================================================= */
+
+.TeacherDashboardHome-submissionsSection {
+    margin-bottom: 0;
+}
+
+
+.TeacherDashboardHome-submissionList {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   SIMPLE SUBMISSION CARD
+========================================================= */
+
+.TeacherDashboardHome-submissionItem {
+    width: 100%;
+
+    min-height: 76px;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background-color: #FFFAFB;
+
+    border: 1px solid
+        rgba(204, 54, 80, 0.09);
+
+    border-radius: 12px;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.TeacherDashboardHome-submissionItem:hover {
+    background-color: #FFFFFF;
+
+    border-color:
+        rgba(204, 54, 80, 0.16);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   SUBMISSION ICON
+========================================================= */
+
+.TeacherDashboardHome-submissionIcon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color:
+        rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   SUBMISSION INFORMATION
+========================================================= */
+
+.TeacherDashboardHome-submissionInfo {
+    min-width: 0;
+
+    flex: 1;
+}
+
+
+.TeacherDashboardHome-submissionInfo h4 {
+    margin: 0 0 4px;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.TeacherDashboardHome-submissionInfo span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #55504C;
+
+    font-size: 11.5px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.TeacherDashboardHome-submissionInfo small {
+    display: block;
+
+    color: #958B84;
+
+    font-size: 10.5px;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.TeacherDashboardHome-errorCard {
+    width: 100%;
+
+    min-height: 300px;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid
+        rgba(204, 54, 80, 0.12);
+
+    border-radius: 18px;
+}
+
+
+.TeacherDashboardHome-errorIcon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    border-radius: 12px;
+
+    background-color: #FDECEC;
+
+    color: #CC3650;
+
+    font-size: 18px;
+}
+
+
+.TeacherDashboardHome-errorCard h3 {
+    margin: 0 0 7px;
+
+    color: #2C2222;
+
+    font-size: 17px;
+}
+
+
+.TeacherDashboardHome-errorCard p {
+    max-width: 450px;
+
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .TeacherDashboardHome-statistics {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .TeacherDashboardHome-twoColumns {
+        grid-template-columns: 1fr;
+    }
+
+
+    .TeacherDashboardHome-welcomeDecoration {
+        width: 95px;
+        height: 95px;
+
+        margin-right: 10px;
+
+        font-size: 38px;
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .TeacherDashboardHome-welcome {
+        min-height: 185px;
+
+        padding: 25px;
+    }
+
+
+    .TeacherDashboardHome-welcome h2 {
+        font-size: 25px;
+    }
+
+
+    .TeacherDashboardHome-welcome p {
+        font-size: 13px;
+    }
+
+
+    .TeacherDashboardHome-welcomeDecoration {
+        width: 80px;
+        height: 80px;
+
+        font-size: 31px;
+    }
+
+
+    .TeacherDashboardHome-section,
+    .TeacherDashboardHome-smallSection {
+        padding: 21px;
+    }
+
+
+    .TeacherDashboardHome-submissionItem {
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .TeacherDashboardHome-statistics {
+        grid-template-columns: 1fr;
+    }
+
+
+    .TeacherDashboardHome-welcomeDecoration {
+        display: none;
+    }
+
+
+    .TeacherDashboardHome-welcome {
+        min-height: auto;
+
+        padding: 23px;
+    }
+
+
+    .TeacherDashboardHome-welcome h2 {
+        font-size: 23px;
+    }
+
+
+    .TeacherDashboardHome-sectionHeading h3,
+    .TeacherDashboardHome-smallHeading h3 {
+        font-size: 17px;
+    }
+
+
+    .TeacherDashboardHome-sectionHeading p,
+    .TeacherDashboardHome-smallHeading p {
+        margin-left: 44px;
+
+        font-size: 11px;
+    }
+
+
+    /* =========================================
+       COURSE SESSION TABLE
+    ========================================= */
+
+    .TeacherDashboardHome-sessionHeader,
+    .TeacherDashboardHome-sessionRow {
+        grid-template-columns:
+            1.6fr 1fr 1fr;
+
+        gap: 8px;
+
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+
+    .TeacherDashboardHome-sessionHeader span {
+        font-size: 9px;
+    }
+
+
+    .TeacherDashboardHome-sessionName,
+    .TeacherDashboardHome-sessionDay,
+    .TeacherDashboardHome-sessionStudents {
+        font-size: 10.5px;
+    }
+
+
+    /* =========================================
+       SUBMISSIONS
+    ========================================= */
+
+    .TeacherDashboardHome-submissionItem {
+        align-items: flex-start;
+    }
+
+
+    .TeacherDashboardHome-submissionInfo {
+        min-width: 0;
+
+        flex: 1;
+    }
+
+
+    .TeacherDashboardHome-recentDate {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   400px
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .TeacherDashboardHome-welcome {
+        padding: 20px;
+    }
+
+
+    .TeacherDashboardHome-welcome h2 {
+        font-size: 21px;
+    }
+
+
+    .TeacherDashboardHome-welcome-label {
+        font-size: 10px;
+    }
+
+
+    .TeacherDashboardHome-section,
+    .TeacherDashboardHome-smallSection {
+        padding: 17px;
+    }
+
+
+    .TeacherDashboardHome-statCard {
+        min-height: 95px;
+
+        padding: 17px;
+    }
+
+
+    .TeacherDashboardHome-statIcon {
+        width: 43px;
+        height: 43px;
+
+        font-size: 16px;
+    }
+
+
+    .TeacherDashboardHome-statInfo h3 {
+        font-size: 23px;
+    }
+
+
+    /* =========================================
+       COURSE TABLE ON SMALL SCREENS
+    ========================================= */
+
+    .TeacherDashboardHome-sessionHeader {
+        display: none;
+    }
+
+
+    .TeacherDashboardHome-sessionRow {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 4px;
+
+        padding: 11px 8px;
+    }
+
+
+    .TeacherDashboardHome-sessionName {
+        font-size: 12px;
+    }
+
+
+    .TeacherDashboardHome-sessionDay {
+        font-size: 10.5px;
+    }
+
+
+    .TeacherDashboardHome-sessionDay::before {
+        content: "Start day: ";
+
+        color: #958B84;
+
+        font-weight: 500;
+    }
+
+
+    .TeacherDashboardHome-sessionStudents {
+        font-size: 10.5px;
+    }
+
+
+    .TeacherDashboardHome-sessionStudents::before {
+        content: "Students: ";
+
+        color: #958B84;
+
+        font-weight: 500;
+    }
+
+
+    /* =========================================
+       SUBMISSION CARD
+    ========================================= */
+
+    .TeacherDashboardHome-submissionItem {
+        padding: 10px;
+    }
+
+
+    .TeacherDashboardHome-submissionIcon {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .TeacherDashboardHome-submissionInfo h4 {
+        font-size: 12px;
+    }
+
+
+    .TeacherDashboardHome-submissionInfo span {
+        font-size: 10.5px;
+    }
+
+
+    .TeacherDashboardHome-submissionInfo small {
+        font-size: 10px;
+    }
+
+
+    .TeacherDashboardHome-recentItem {
+        padding: 10px;
+    }
+
+
+    .TeacherDashboardHome-recentIcon {
+        width: 34px;
+        height: 34px;
+    }
+
+}

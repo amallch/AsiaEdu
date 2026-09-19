@@ -1,0 +1,1251 @@
+/* =========================================================
+   MY GRADES
+   AsiaEdu Student Dashboard
+========================================================= */
+
+.MyGrades {
+
+    width: 100%;
+
+    background-color: #F8F9FB;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.MyGrades-container {
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.MyGrades-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 28px;
+}
+
+.MyGrades-heading h2 {
+
+    margin: 0 0 7px;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+
+    color: #2C2222;
+}
+
+.MyGrades-heading p {
+
+    margin: 0;
+
+    font-size: 15px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   COURSE SELECTOR
+========================================================= */
+
+.MyGrades-courseSelector {
+
+    width: 100%;
+
+    padding: 20px 22px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   SELECTOR HEADING
+========================================================= */
+
+.MyGrades-selectorHeading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 0;
+}
+
+.MyGrades-selectorIcon {
+
+    width: 44px;
+
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 17px;
+}
+
+.MyGrades-selectorHeading > div:last-child {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.MyGrades-selectorHeading span {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+.MyGrades-selectorHeading p {
+
+    margin: 3px 0 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   SELECT WRAPPER
+========================================================= */
+
+.MyGrades-selectWrapper {
+
+    position: relative;
+
+    width: 420px;
+
+    min-width: 420px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   COURSE CODE
+========================================================= */
+
+.MyGrades-courseCode {
+
+    position: absolute;
+
+    left: 14px;
+
+    z-index: 2;
+
+    width: 24px;
+
+    height: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #CC3650;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.MyGrades-select {
+
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 40px 0 45px;
+
+    box-sizing: border-box;
+
+    appearance: none;
+
+    border: 1px solid #E6DFDC;
+
+    border-radius: 10px;
+
+    background-color: #FAF8F7;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.MyGrades-select:hover {
+
+    background-color: #FFFFFF;
+
+    border-color: rgba(204, 54, 80, 0.25);
+}
+
+.MyGrades-select:focus {
+
+    background-color: #FFFFFF;
+
+    border-color: #CC3650;
+
+    box-shadow:
+        0 0 0 3px rgba(204, 54, 80, 0.08);
+}
+
+
+/* =========================================================
+   SELECT ARROW
+========================================================= */
+
+.MyGrades-selectWrapper > i {
+
+    position: absolute;
+
+    right: 15px;
+
+    font-size: 11px;
+
+    color: #958B84;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SELECTED COURSE
+========================================================= */
+
+.MyGrades-selectedCourse {
+
+    width: 100%;
+
+    padding: 20px 22px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFBFA;
+
+    border: 1px solid rgba(204, 54, 80, 0.12);
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   SELECTED COURSE LEFT
+========================================================= */
+
+.MyGrades-selectedCourse-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 0;
+}
+
+.MyGrades-selectedCourse-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 13px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(204, 54, 80, 0.12);
+
+    color: #CC3650;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+.MyGrades-selectedCourse-left > div:last-child {
+
+    min-width: 0;
+}
+
+.MyGrades-selectedCourse-left h3 {
+
+    margin: 0 0 5px;
+
+    font-size: 17px;
+
+    font-weight: 750;
+
+    color: #2C2222;
+}
+
+.MyGrades-selectedCourse-left p {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   SELECTED COURSE STATS
+========================================================= */
+
+.MyGrades-selectedCourse-stats {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-shrink: 0;
+}
+
+.MyGrades-selectedCourse-stats > div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    min-width: 55px;
+}
+
+.MyGrades-selectedCourse-stats strong {
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+.MyGrades-selectedCourse-stats span {
+
+    margin-top: 3px;
+
+    font-size: 10px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.MyGrades-filters {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+}
+
+.MyGrades-filter {
+
+    padding: 9px 15px;
+
+    border: 1px solid #E6DFDC;
+
+    border-radius: 9px;
+
+    background-color: #FFFFFF;
+
+    color: #756B65;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.MyGrades-filter:hover {
+
+    border-color: rgba(204, 54, 80, 0.25);
+
+    color: #CC3650;
+}
+
+.MyGrades-filter.active {
+
+    background-color: #CC3650;
+
+    border-color: #CC3650;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   RESULTS LIST
+========================================================= */
+
+.MyGrades-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   RESULT CARD
+========================================================= */
+
+.MyGrades-card {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.MyGrades-card:hover {
+
+    transform: translateY(-2px);
+
+    border-color: rgba(204, 54, 80, 0.18);
+
+    box-shadow:
+        0 7px 20px rgba(44, 34, 34, 0.06);
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.MyGrades-number {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #B3273F;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.MyGrades-content {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+.MyGrades-title-row {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.MyGrades-title-row h3 {
+
+    margin: 0 0 7px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+.MyGrades-description {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #726862;
+
+    max-width: 700px;
+}
+
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.MyGrades-details {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 14px 20px;
+
+    margin-top: 13px;
+}
+
+.MyGrades-details span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    color: #958B84;
+}
+
+.MyGrades-details i {
+
+    color: #CC3650;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   SCORE
+========================================================= */
+
+.MyGrades-score {
+
+    min-width: 70px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 4px 8px;
+
+    flex-shrink: 0;
+}
+
+
+.MyGrades-score strong {
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.MyGrades-score strong span {
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   PASSED SCORE
+   50% OR MORE
+========================================================= */
+
+.MyGrades-score .passed-score {
+
+    color: #16805A;
+}
+
+
+.MyGrades-score .passed-score span {
+
+    color: #958B84;
+}
+
+
+.MyGrades-score .passed-percentage {
+
+    margin-top: 2px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: #16805A;
+}
+
+
+/* =========================================================
+   FAILED SCORE
+   BELOW 50%
+========================================================= */
+
+.MyGrades-score .failed-score {
+
+    color: #CC3650;
+}
+
+
+.MyGrades-score .failed-score span {
+
+    color: #958B84;
+}
+
+
+.MyGrades-score .failed-percentage {
+
+    margin-top: 2px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   PENDING
+========================================================= */
+
+.MyGrades-score .pending-score {
+
+    color: #958B84;
+}
+
+
+.MyGrades-score .pending-text {
+
+    color: #958B84;
+}
+
+/* =========================================================
+   CARD ACTIONS
+========================================================= */
+
+.MyGrades-card-actions {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.MyGrades-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 7px 11px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.MyGrades-status.graded {
+
+    background-color: rgba(22, 128, 90, 0.09);
+
+    color: #16805A;
+}
+
+.MyGrades-status.pending {
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   ACTION BUTTON
+========================================================= */
+
+.MyGrades-action-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 125px;
+
+    padding: 10px 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.MyGrades-action-button:hover {
+
+    background-color: #B3273F;
+
+    transform: translateY(-1px);
+}
+
+.MyGrades-action-button i {
+
+    font-size: 9px;
+
+    transition: transform 0.2s ease;
+}
+
+.MyGrades-action-button:hover i {
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.MyGrades-empty {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border: 1px dashed #DED6D2;
+
+    border-radius: 14px;
+}
+
+.MyGrades-emptyIcon {
+
+    width: 52px;
+
+    height: 52px;
+
+    margin: 0 auto 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 18px;
+}
+
+.MyGrades-empty h3 {
+
+    margin: 0 0 6px;
+
+    font-size: 15px;
+
+    color: #2C2222;
+}
+
+.MyGrades-empty p {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .MyGrades-container {
+
+        padding: 28px;
+    }
+
+    .MyGrades-courseSelector {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+    .MyGrades-selectWrapper {
+
+        width: 100%;
+
+        min-width: 0;
+    }
+
+    .MyGrades-selectedCourse {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .MyGrades-selectedCourse-stats {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        gap: 14px;
+    }
+
+    .MyGrades-card {
+
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .MyGrades-container {
+
+        padding: 22px 18px;
+    }
+
+    .MyGrades-heading {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .MyGrades-heading h2 {
+
+        font-size: 24px;
+    }
+
+    .MyGrades-heading p {
+
+        font-size: 14px;
+    }
+
+    .MyGrades-courseSelector {
+
+        padding: 18px;
+    }
+
+    .MyGrades-selectedCourse {
+
+        padding: 18px;
+    }
+
+    .MyGrades-selectedCourse-stats {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        padding-top: 16px;
+
+        border-top: 1px solid rgba(44, 34, 34, 0.07);
+    }
+
+    .MyGrades-filters {
+
+        flex-wrap: wrap;
+    }
+
+    .MyGrades-card {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 16px;
+
+        padding: 17px;
+    }
+
+    .MyGrades-score {
+
+        align-items: flex-start;
+
+        width: 100%;
+
+        padding: 0;
+    }
+
+    .MyGrades-card-actions {
+
+        width: 100%;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: space-between;
+    }
+
+    .MyGrades-action-button {
+
+        min-width: 120px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .MyGrades-container {
+
+        padding: 18px 14px;
+    }
+
+    .MyGrades-heading {
+
+        margin-bottom: 22px;
+    }
+
+    .MyGrades-heading h2 {
+
+        font-size: 21px;
+    }
+
+    .MyGrades-heading p {
+
+        font-size: 13px;
+    }
+
+    .MyGrades-selectorHeading {
+
+        gap: 10px;
+    }
+
+    .MyGrades-selectorIcon {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 15px;
+    }
+
+    .MyGrades-selectorHeading span {
+
+        font-size: 13px;
+    }
+
+    .MyGrades-selectorHeading p {
+
+        font-size: 11px;
+    }
+
+    .MyGrades-selectedCourse-left h3 {
+
+        font-size: 15px;
+    }
+
+    .MyGrades-selectedCourse-stats {
+
+        gap: 8px;
+    }
+
+    .MyGrades-selectedCourse-stats strong {
+
+        font-size: 16px;
+    }
+
+    .MyGrades-selectedCourse-stats span {
+
+        font-size: 9px;
+    }
+
+    .MyGrades-filters {
+
+        gap: 6px;
+    }
+
+    .MyGrades-filter {
+
+        padding: 8px 10px;
+
+        font-size: 10px;
+    }
+
+    .MyGrades-card {
+
+        gap: 12px;
+
+        padding: 15px;
+    }
+
+    .MyGrades-number {
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 11px;
+    }
+
+    .MyGrades-title-row h3 {
+
+        font-size: 13px;
+    }
+
+    .MyGrades-description {
+
+        font-size: 11px;
+    }
+
+    .MyGrades-details {
+
+        gap: 7px 14px;
+
+        margin-top: 10px;
+    }
+
+    .MyGrades-details span {
+
+        font-size: 10px;
+    }
+
+    .MyGrades-score strong {
+
+        font-size: 18px;
+    }
+
+    .MyGrades-card-actions {
+
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    .MyGrades-status {
+
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+    .MyGrades-action-button {
+
+        width: 100%;
+    }
+
+    .MyGrades-empty {
+
+        padding: 45px 16px;
+    }
+
+}

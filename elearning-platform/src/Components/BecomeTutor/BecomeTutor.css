@@ -1,0 +1,520 @@
+/* =========================================================
+   BECOME TUTOR
+========================================================= */
+
+.BecomeTutor {
+
+    width: 100%;
+
+    padding: 90px 0;
+
+    background-color: #F8F9FB;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.BecomeTutor-container {
+
+    width: 85%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.15fr
+        0.85fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.BecomeTutor-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    opacity: 0;
+
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+
+}
+
+
+.BecomeTutor-visible .BecomeTutor-content {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.BecomeTutor-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 7px 14px;
+
+    margin-bottom: 16px;
+
+    border-radius: 30px;
+
+    background-color:
+        rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.BecomeTutor-content h2 {
+
+    max-width: 600px;
+
+    margin: 0 0 17px;
+
+    color: #2C2222;
+
+    font-size: 40px;
+
+    line-height: 1.12;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+}
+
+
+.BecomeTutor-content h2 span {
+
+    color: #CC3650;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.BecomeTutor-content > p {
+
+    max-width: 570px;
+
+    margin: 0 0 30px;
+
+    color: #746B66;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.BecomeTutor-benefits {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    opacity: 0;
+
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+
+}
+
+
+.BecomeTutor-visible .BecomeTutor-benefits {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.15s;
+
+}
+
+
+/* =========================================================
+   BENEFIT
+========================================================= */
+
+.BecomeTutor-benefit {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid
+        rgba(44, 34, 34, 0.06);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 16px
+        rgba(44, 34, 34, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+
+}
+
+
+.BecomeTutor-benefit:hover {
+
+    transform: translateY(-4px);
+
+    border-color:
+        rgba(204, 54, 80, 0.14);
+
+    box-shadow:
+        0 10px 24px
+        rgba(44, 34, 34, 0.08);
+
+}
+
+
+/* =========================================================
+   BENEFIT ICON
+========================================================= */
+
+.BecomeTutor-benefit-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background-color:
+        rgba(204, 54, 80, 0.10);
+
+    color: #CC3650;
+
+    font-size: 18px;
+
+}
+
+
+/* =========================================================
+   BENEFIT TEXT
+========================================================= */
+
+.BecomeTutor-benefit h3 {
+
+    margin: 0 0 5px;
+
+    color: #2C2222;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+}
+
+
+.BecomeTutor-benefit p {
+
+    margin: 0;
+
+    color: #746B66;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .BecomeTutor-container {
+
+        width: 88%;
+
+        gap: 55px;
+
+    }
+
+
+    .BecomeTutor-content h2 {
+
+        font-size: 36px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .BecomeTutor {
+
+        padding: 75px 0;
+
+    }
+
+
+    .BecomeTutor-container {
+
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+
+    .BecomeTutor-content {
+
+        align-items: center;
+
+        text-align: center;
+
+    }
+
+
+    .BecomeTutor-content h2 {
+
+        max-width: 700px;
+
+        font-size: 36px;
+
+    }
+
+
+    .BecomeTutor-content > p {
+
+        max-width: 650px;
+
+    }
+
+
+    .BecomeTutor-benefits {
+
+        max-width: 650px;
+
+        margin: 0 auto;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .BecomeTutor {
+
+        padding: 60px 0;
+
+    }
+
+
+    .BecomeTutor-container {
+
+        width: 92%;
+
+        gap: 30px;
+
+    }
+
+
+    .BecomeTutor-content h2 {
+
+        font-size: 30px;
+
+        line-height: 1.2;
+
+        letter-spacing: -0.5px;
+
+    }
+
+
+    .BecomeTutor-content > p {
+
+        font-size: 13px;
+
+        line-height: 1.75;
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .BecomeTutor-benefit {
+
+        padding: 17px;
+
+        gap: 14px;
+
+    }
+
+
+    .BecomeTutor-benefit-icon {
+
+        width: 44px;
+
+        height: 44px;
+
+        font-size: 16px;
+
+    }
+
+
+    .BecomeTutor-benefit h3 {
+
+        font-size: 14px;
+
+    }
+
+
+    .BecomeTutor-benefit p {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .BecomeTutor {
+
+        padding: 50px 0;
+
+    }
+
+
+    .BecomeTutor-content h2 {
+
+        font-size: 26px;
+
+    }
+
+
+    .BecomeTutor-content > p {
+
+        font-size: 12px;
+
+    }
+
+
+    .BecomeTutor-benefit {
+
+        padding: 15px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .BecomeTutor-content,
+    .BecomeTutor-benefits {
+
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+
+    }
+
+}

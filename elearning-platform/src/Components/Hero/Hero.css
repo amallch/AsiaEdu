@@ -1,0 +1,133 @@
+.Hero {
+    background-color: transparent;
+
+    display: flex;
+
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 25px;
+
+    box-sizing: border-box;
+}
+
+
+.Hero-container {
+    width: 100%;
+}
+
+
+.Hero-headings {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    /* Bottom → Top starting position */
+    opacity: 0;
+
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+/* =========================================================
+   HERO VISIBLE ANIMATION
+========================================================= */
+
+.Hero-visible .Hero-headings {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   CENTER VERSION
+========================================================= */
+
+.Hero-headings.center {
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.Hero-badge {
+    width: fit-content;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    background: #FCEDEE;
+
+    color: var(--primary-red);
+
+    font-size: 12px;
+
+    font-weight: 750;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.Hero-headings h2 {
+    font-size: 37px;
+
+    font-weight: 800;
+
+    margin: 0;
+}
+
+
+.Hero-headings h2 span {
+    color: var(--primary-red);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.Hero-headings p {
+    max-width: 600px;
+
+    font-size: 16px;
+
+    color: gray;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .Hero-headings {
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+    }
+
+}

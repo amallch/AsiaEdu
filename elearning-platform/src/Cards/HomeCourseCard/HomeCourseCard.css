@@ -1,0 +1,466 @@
+/* =========================================================
+   HOME COURSE CARD
+========================================================= */
+
+.HomeCourseCard {
+    width: 100%;
+    max-width: 380px;
+
+    background-color: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    border: 1px solid #F1E7E9;
+
+    box-shadow: 0 10px 30px rgba(70, 40, 45, 0.07);
+
+    transition: 0.35s ease;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.HomeCourseCard:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 40px rgba(204, 54, 80, 0.14);
+
+    border-color: #F0CDD2;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.HomeCourseCardImage {
+    width: 100%;
+
+    height: 215px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.HomeCourseCardImageOverlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.02),
+            rgba(0, 0, 0, 0.25)
+        );
+
+    transition: 0.35s ease;
+}
+
+
+.HomeCourseCard:hover
+.HomeCourseCardImageOverlay {
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(204, 54, 80, 0.05),
+            rgba(204, 54, 80, 0.28)
+        );
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.HomeCourseCardBadge {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    background-color: white;
+
+    color: #CC3650;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    padding: 6px 13px;
+
+    border-radius: 50px;
+
+    letter-spacing: 0.4px;
+
+    text-transform: uppercase;
+
+    z-index: 2;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.HomeCourseCardContent {
+    padding: 22px 22px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    flex: 1;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.HomeCourseCardHeader {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.HomeCourseCardTitle {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.HomeCourseCardLanguage {
+    font-size: 23px;
+
+    font-weight: 750;
+
+    color: #2E2929;
+
+    margin: 0;
+
+    line-height: 1.2;
+}
+
+
+.HomeCourseCardFlag {
+    width: 36px;
+
+    height: 25px;
+
+    border-radius: 7px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    border: 1px solid #EEE4E5;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.HomeCourseCardRating {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    background-color: #FFF5F6;
+
+    padding: 5px 10px;
+
+    border-radius: 50px;
+
+    flex-shrink: 0;
+}
+
+
+.HomeCourseCardRating i {
+    color: #F5A623;
+
+    font-size: 11px;
+}
+
+
+.HomeCourseCardRating span {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #5E5555;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.HomeCourseCardDescription {
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #817777;
+
+    margin: 0;
+
+    display: -webkit-box;
+
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.HomeCourseCardFooter {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 6px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #F1E8E9;
+}
+
+
+.HomeCourseCardPrice {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.HomeCourseCardPrice span {
+    font-size: 10px;
+
+    font-weight: 600;
+
+    color: #9B9090;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+.HomeCourseCardPrice strong {
+    font-size: 22px;
+
+    font-weight: 800;
+
+    color: #CC3650;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.HomeCourseCardArrow {
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background-color: #FFF0F2;
+
+    color: #CC3650;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+
+.HomeCourseCard:hover
+.HomeCourseCardArrow {
+    background-color: #CC3650;
+
+    color: white;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .HomeCourseCard {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .HomeCourseCardImage {
+        height: 180px;
+    }
+
+
+    .HomeCourseCardContent {
+        padding: 19px 18px 18px;
+    }
+
+
+    .HomeCourseCardLanguage {
+        font-size: 21px;
+    }
+
+
+    .HomeCourseCardDescription {
+        font-size: 13px;
+    }
+
+
+    .HomeCourseCardFlag {
+        width: 32px;
+        height: 23px;
+    }
+
+
+    .HomeCourseCardRating {
+        padding: 4px 9px;
+    }
+
+
+    .HomeCourseCardPrice strong {
+        font-size: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .HomeCourseCard {
+        border-radius: 18px;
+    }
+
+
+    .HomeCourseCardImage {
+        height: 160px;
+    }
+
+
+    .HomeCourseCardContent {
+        padding: 16px;
+    }
+
+
+    .HomeCourseCardLanguage {
+        font-size: 19px;
+    }
+
+
+    .HomeCourseCardDescription {
+        font-size: 12px;
+    }
+
+
+    .HomeCourseCardFlag {
+        width: 29px;
+        height: 21px;
+    }
+
+
+    .HomeCourseCardRating {
+        padding: 4px 8px;
+    }
+
+
+    .HomeCourseCardRating span {
+        font-size: 11px;
+    }
+
+
+    .HomeCourseCardPrice strong {
+        font-size: 19px;
+    }
+
+
+    .HomeCourseCardArrow {
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+
+    .HomeCourseCardBadge {
+        top: 12px;
+        left: 12px;
+
+        font-size: 9px;
+
+        padding: 5px 11px;
+    }
+
+}

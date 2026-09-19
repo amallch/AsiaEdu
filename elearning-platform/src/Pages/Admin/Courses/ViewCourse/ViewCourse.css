@@ -1,0 +1,980 @@
+/* =========================================================
+   VIEW COURSE
+========================================================= */
+
+.ViewCourse {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ViewCourse-header {
+    margin-bottom: 25px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+
+.ViewCourse-header > div:first-child span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #CC3650;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+.ViewCourse-header h1 {
+    margin: 0 0 5px;
+
+    color: #2C2222;
+
+    font-size: 26px;
+
+    font-weight: 800;
+}
+
+
+.ViewCourse-header p {
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
+
+.ViewCourse-header-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.ViewCourse-back-button,
+.ViewCourse-edit-button {
+    height: 38px;
+
+    padding: 0 13px;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.ViewCourse-back-button {
+    border: 1px solid #E5DDD8;
+
+    background-color: #FFFFFF;
+
+    color: #2C2222;
+}
+
+
+.ViewCourse-back-button:hover {
+    background-color: #F7F3EA;
+
+    border-color: #D9CEC8;
+}
+
+
+.ViewCourse-edit-button {
+    border: none;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+}
+
+
+.ViewCourse-edit-button:hover {
+    background-color: #B92F47;
+}
+
+
+/* =========================================================
+   OVERVIEW
+========================================================= */
+
+.ViewCourse-overview {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+/* =========================================================
+   OVERVIEW ICON
+========================================================= */
+
+.ViewCourse-overview-icon {
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+}
+
+
+.ViewCourse-overview-icon span {
+    font-size: 19px;
+
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   OVERVIEW MAIN
+========================================================= */
+
+.ViewCourse-overview-main {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.ViewCourse-language {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #CC3650;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+.ViewCourse-overview-main h2 {
+    margin: 0 0 3px;
+
+    color: #2C2222;
+
+    font-size: 17px;
+
+    font-weight: 800;
+}
+
+
+.ViewCourse-overview-main p {
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.ViewCourse-price {
+    min-width: 120px;
+
+    padding-left: 18px;
+
+    border-left: 1px solid rgba(44, 34, 34, 0.07);
+}
+
+
+.ViewCourse-price span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #958B84;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.ViewCourse-price strong {
+    color: #CC3650;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.ViewCourse-sections {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.ViewCourse-section {
+    width: 100%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.ViewCourse-section-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    margin-bottom: 18px;
+}
+
+
+.ViewCourse-section-icon {
+    width: 36px;
+
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+}
+
+
+.ViewCourse-section-icon i {
+    font-size: 12px;
+}
+
+
+.ViewCourse-section-title h2 {
+    margin: 0 0 3px;
+
+    color: #2C2222;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+
+.ViewCourse-section-title p {
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   INFORMATION GRID
+========================================================= */
+
+.ViewCourse-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+
+.ViewCourse-info-item {
+    min-height: 62px;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 4px;
+}
+
+
+.ViewCourse-info-item span {
+    color: #958B84;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.ViewCourse-info-item strong {
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.ViewCourse-description {
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 10px;
+}
+
+
+.ViewCourse-description p {
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   LEARNING POINTS
+========================================================= */
+
+.ViewCourse-learning-points {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 9px;
+}
+
+
+.ViewCourse-learning-point {
+    min-height: 48px;
+
+    padding: 10px 12px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.ViewCourse-learning-point > div {
+    width: 25px;
+
+    height: 25px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+}
+
+
+.ViewCourse-learning-point i {
+    font-size: 10px;
+}
+
+
+.ViewCourse-learning-point span {
+    color: #2C2222;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   SYLLABUS
+========================================================= */
+
+.ViewCourse-syllabus {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.ViewCourse-module {
+    padding: 15px;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 10px;
+}
+
+
+.ViewCourse-module-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 11px;
+
+    margin-bottom: 13px;
+}
+
+
+.ViewCourse-module-number {
+    width: 30px;
+
+    height: 30px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+.ViewCourse-module-header h3 {
+    margin: 0 0 3px;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+.ViewCourse-module-header p {
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   LESSONS
+========================================================= */
+
+.ViewCourse-lessons {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding-left: 41px;
+}
+
+
+.ViewCourse-lesson {
+    min-height: 38px;
+
+    padding: 8px 10px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.05);
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.ViewCourse-lesson > span {
+    width: 22px;
+
+    height: 22px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 6px;
+
+    background-color: #FDECEC;
+
+    color: #CC3650;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+.ViewCourse-lesson p {
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+.ViewCourse-module-empty {
+    margin-left: 41px;
+
+    padding: 10px;
+
+    color: #958B84;
+
+    font-size: 11px;
+
+    background-color: #FFFFFF;
+
+    border: 1px dashed #DDD4CF;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.ViewCourse-empty {
+    padding: 28px 20px;
+
+    border: 1px dashed #DDD4CF;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+.ViewCourse-empty i {
+    margin-bottom: 8px;
+
+    color: #CC3650;
+
+    font-size: 22px;
+}
+
+
+.ViewCourse-empty p {
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.ViewCourse-loading {
+    min-height: 60vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    color: #958B84;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.ViewCourse-loading i {
+    color: #CC3650;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   ERROR PAGE
+========================================================= */
+
+.ViewCourse-error-page {
+    min-height: 60vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.ViewCourse-error-page > i {
+    margin-bottom: 13px;
+
+    color: #CC3650;
+
+    font-size: 28px;
+}
+
+
+.ViewCourse-error-page h2 {
+    margin: 0 0 7px;
+
+    color: #2C2222;
+
+    font-size: 19px;
+
+    font-weight: 800;
+}
+
+
+.ViewCourse-error-page p {
+    margin: 0 0 18px;
+
+    color: #958B84;
+
+    font-size: 12px;
+}
+
+
+.ViewCourse-error-page button {
+    height: 38px;
+
+    padding: 0 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   1000px
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .ViewCourse-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .ViewCourse-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .ViewCourse-header-actions {
+        width: 100%;
+    }
+
+
+    .ViewCourse-back-button,
+    .ViewCourse-edit-button {
+        flex: 1;
+    }
+
+
+    .ViewCourse-overview {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .ViewCourse-price {
+        width: 100%;
+
+        padding: 13px 0 0;
+
+        border-left: none;
+
+        border-top: 1px solid rgba(44, 34, 34, 0.07);
+    }
+
+
+    .ViewCourse-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ViewCourse-learning-points {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ViewCourse-lessons {
+        padding-left: 0;
+    }
+
+
+    .ViewCourse-module-empty {
+        margin-left: 0;
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .ViewCourse-section {
+        padding: 16px;
+    }
+
+
+    .ViewCourse-overview {
+        padding: 16px;
+    }
+
+
+    .ViewCourse-header h1 {
+        font-size: 23px;
+    }
+
+
+    .ViewCourse-header p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .ViewCourse-header h1 {
+        font-size: 21px;
+    }
+
+
+    .ViewCourse-header-actions {
+        flex-direction: column;
+    }
+
+
+    .ViewCourse-back-button,
+    .ViewCourse-edit-button {
+        width: 100%;
+
+        flex: none;
+    }
+
+
+    .ViewCourse-overview-main h2 {
+        font-size: 15px;
+    }
+
+
+    .ViewCourse-section-title h2 {
+        font-size: 14px;
+    }
+
+}

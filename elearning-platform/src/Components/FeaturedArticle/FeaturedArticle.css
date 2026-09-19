@@ -1,0 +1,92 @@
+.FeaturedArticle{
+    background-color: #FFF8F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.FeaturedArticle-container:hover{
+    cursor: pointer;
+    transform: translateY(-6px);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.FeaturedArticle-container{
+    width: 80%;
+    height: 400px;
+    display: flex;
+   background-color: white;
+    border: 1px solid #e8e8e8;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.FeaturedArticleImage{
+    width: 50%;
+    min-height: 450px;
+    background-image: url("../../assets/featuredarticle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.FeaturedArticleContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    padding: 55px;
+}
+
+.FeaturedArticleBadge{
+    width: fit-content;
+    background: var(--red-gradient);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.FeaturedArticleTitle h2{
+    font-size: 34px;
+    line-height: 1.25;
+    color: #111;
+}
+
+.FeaturedArticleDescription p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.FeaturedArticleInfo{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    color: #666;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.FeaturedArticleAuthor,
+.FeaturedArticleDate{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 12px;
+}
+
+.FeaturedArticleAuthor i,
+.FeaturedArticleDate i{
+    color: var(--primary-red);
+    font-size: 16px;
+}
+
+.FeaturedArticleButton .ReadMore{
+    padding: 12px 22px;
+    font-size: 16px;
+}

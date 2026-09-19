@@ -1,0 +1,802 @@
+/* =========================================================
+   ADMIN SUBMISSION DETAILS
+   AsiaEdu Admin Dashboard
+========================================================= */
+
+.AdminSubmissionDetails {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background-color: #F8F9FB;
+
+    padding-bottom: 60px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.AdminSubmissionDetails-container {
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.AdminSubmissionDetails-header {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.AdminSubmissionDetails-back {
+
+    border: none;
+
+    background: transparent;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+    padding: 8px 0;
+
+    transition: color 0.2s ease;
+}
+
+
+.AdminSubmissionDetails-back i {
+
+    color: #CC3650;
+
+    font-size: 12px;
+}
+
+
+.AdminSubmissionDetails-back:hover {
+
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   TITLE SECTION
+========================================================= */
+
+.AdminSubmissionDetails-title-section {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 15px;
+
+    padding: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 18px;
+
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+}
+
+
+/* =========================================================
+   TITLE ICON
+========================================================= */
+
+.AdminSubmissionDetails-title-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    flex-shrink: 0;
+
+    border-radius: 13px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+}
+
+
+.AdminSubmissionDetails-title-section h1 {
+
+    margin: 0 0 5px;
+
+    color: #2C2222;
+
+    font-size: 17px;
+
+    font-weight: 750;
+}
+
+
+.AdminSubmissionDetails-title-section p {
+
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   INFO GRID
+========================================================= */
+
+.AdminSubmissionDetails-info-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+
+.AdminSubmissionDetails-info-card {
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 14px;
+
+    padding: 17px;
+
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+}
+
+
+.AdminSubmissionDetails-info-label {
+
+    display: block;
+
+    color: #958B84;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    margin-bottom: 6px;
+}
+
+
+.AdminSubmissionDetails-info-card strong {
+
+    display: block;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.AdminSubmissionDetails-status {
+
+    font-size: 12px !important;
+}
+
+
+.AdminSubmissionDetails-status.pending {
+
+    color: #CC3650 !important;
+}
+
+
+.AdminSubmissionDetails-status.graded {
+
+    color: #3B7A57 !important;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.AdminSubmissionDetails-section {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    margin-bottom: 12px;
+
+    box-shadow:
+        0 3px 14px rgba(44, 34, 34, 0.025);
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.AdminSubmissionDetails-section-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+.AdminSubmissionDetails-section-icon {
+
+    width: 35px;
+
+    height: 35px;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 13px;
+}
+
+
+.AdminSubmissionDetails-section-header h2 {
+
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.AdminSubmissionDetails-content {
+
+    padding-left: 45px;
+}
+
+
+.AdminSubmissionDetails-content p {
+
+    margin: 0;
+
+    color: #726862;
+
+    font-size: 14.5px;
+
+    line-height: 1.6;
+
+    white-space: pre-line;
+}
+
+
+/* =========================================================
+   ATTACHMENT
+========================================================= */
+
+.AdminSubmissionDetails-attachment {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #E6DFDC;
+
+    border-radius: 10px;
+
+    background-color: #FAF8F7;
+
+    padding: 9px 11px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-align: left;
+
+    color: #726862;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.AdminSubmissionDetails-attachment:hover {
+
+    border-color: rgba(204, 54, 80, 0.25);
+
+    background-color: #FFFBFA;
+}
+
+
+.AdminSubmissionDetails-attachment:disabled {
+
+    cursor: default;
+
+    opacity: 0.6;
+}
+
+
+.AdminSubmissionDetails-attachment:disabled:hover {
+
+    border-color: #E6DFDC;
+
+    background-color: #FAF8F7;
+}
+
+
+.AdminSubmissionDetails-attachment-icon {
+
+    width: 32px;
+
+    height: 32px;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+}
+
+
+.AdminSubmissionDetails-attachment span {
+
+    flex: 1;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+.AdminSubmissionDetails-attachment-open {
+
+    flex-shrink: 0;
+
+    color: #CC3650;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   EMPTY TEXT
+========================================================= */
+
+.AdminSubmissionDetails-empty-text {
+
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.AdminSubmissionDetails-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   BACK / CANCEL BUTTON
+========================================================= */
+
+.AdminSubmissionDetails-cancel {
+
+    border: 1px solid #E6DFDC;
+
+    background-color: #FFFFFF;
+
+    color: #726862;
+
+    padding: 11px 18px;
+
+    border-radius: 9px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.AdminSubmissionDetails-cancel:hover {
+
+    background-color: #FAF8F7;
+
+    color: #2C2222;
+}
+
+
+/* =========================================================
+   EMPTY PAGE
+========================================================= */
+
+.AdminSubmissionDetails-empty {
+
+    min-height: 500px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.AdminSubmissionDetails-empty-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 13px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+    margin-bottom: 14px;
+}
+
+
+.AdminSubmissionDetails-empty h2 {
+
+    margin: 0 0 6px;
+
+    color: #2C2222;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.AdminSubmissionDetails-empty p {
+
+    margin: 0 0 18px;
+
+    color: #958B84;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BACK TO SUBMISSIONS
+========================================================= */
+
+.AdminSubmissionDetails-back-button {
+
+    border: none;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    padding: 11px 16px;
+
+    border-radius: 9px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.AdminSubmissionDetails-back-button:hover {
+
+    background-color: #B3273F;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .AdminSubmissionDetails-info-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .AdminSubmissionDetails-title-section {
+
+        padding: 18px;
+
+    }
+
+
+    .AdminSubmissionDetails-title-section h1 {
+
+        font-size: 16px;
+
+    }
+
+
+    .AdminSubmissionDetails-info-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .AdminSubmissionDetails-section {
+
+        padding: 18px;
+
+    }
+
+
+    .AdminSubmissionDetails-content {
+
+        padding-left: 0;
+
+    }
+
+
+    .AdminSubmissionDetails-footer {
+
+        justify-content: stretch;
+
+    }
+
+
+    .AdminSubmissionDetails-cancel {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .AdminSubmissionDetails-title-section {
+
+        gap: 12px;
+
+        padding: 16px;
+
+    }
+
+
+    .AdminSubmissionDetails-title-icon {
+
+        width: 44px;
+
+        height: 44px;
+
+        border-radius: 11px;
+
+        font-size: 16px;
+
+    }
+
+
+    .AdminSubmissionDetails-title-section h1 {
+
+        font-size: 15px;
+
+    }
+
+
+    .AdminSubmissionDetails-title-section p {
+
+        font-size: 11px;
+
+    }
+
+
+    .AdminSubmissionDetails-info-card {
+
+        padding: 15px;
+
+    }
+
+
+    .AdminSubmissionDetails-section {
+
+        padding: 16px;
+
+    }
+
+
+    .AdminSubmissionDetails-section-header {
+
+        gap: 9px;
+
+    }
+
+
+    .AdminSubmissionDetails-section-icon {
+
+        width: 32px;
+
+        height: 32px;
+
+    }
+
+
+    .AdminSubmissionDetails-section-header h2 {
+
+        font-size: 14px;
+
+    }
+
+
+    .AdminSubmissionDetails-content p {
+
+        font-size: 11px;
+
+    }
+
+}

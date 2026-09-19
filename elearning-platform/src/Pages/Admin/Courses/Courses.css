@@ -1,0 +1,616 @@
+/* =========================================================
+   COURSES
+========================================================= */
+
+.Courses {
+
+    width: 100%;
+
+    min-width: 0;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.Courses-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.Courses-header > div {
+
+    min-width: 0;
+
+}
+
+
+.Courses-header > div > span {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+
+}
+
+
+.Courses-header h1 {
+
+    margin: 4px 0 5px;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+
+}
+
+
+.Courses-header p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #958B84;
+
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.Courses-add-button {
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 16px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.Courses-add-button:hover {
+
+    background-color: #B92F47;
+
+    transform: translateY(-1px);
+
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.Courses-error {
+
+    min-height: 44px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    padding: 10px 13px;
+
+    border: 1px solid rgba(180, 74, 74, 0.15);
+
+    border-radius: 9px;
+
+    background-color: rgba(180, 74, 74, 0.06);
+
+    color: #A63E3E;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.Courses-filters {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.Courses-search {
+
+    height: 44px;
+
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+
+}
+
+
+.Courses-search i {
+
+    flex-shrink: 0;
+
+    color: #958B84;
+
+    font-size: 14px;
+
+}
+
+
+.Courses-search input {
+
+    width: 100%;
+
+    min-width: 0;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+}
+
+
+.Courses-search input::placeholder {
+
+    color: #B0A8A2;
+
+}
+
+
+/* =========================================================
+   LEVEL FILTER
+========================================================= */
+
+.Courses-level-filter {
+
+    height: 44px;
+
+    width: 190px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+
+}
+
+
+.Courses-level-filter i {
+
+    color: #958B84;
+
+    font-size: 13px;
+
+}
+
+
+.Courses-level-filter select {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #746B66;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.Courses-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+
+}
+
+
+/* =========================================================
+   ADMIN COURSE CARD WRAPPER
+========================================================= */
+
+.Courses-admin-card-wrapper {
+
+    position: relative;
+
+    min-width: 0;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================================
+   DELETE
+========================================================= */
+
+.Courses-delete-button {
+
+    position: absolute;
+
+    right: 18px;
+
+    top: 18px;
+
+    z-index: 5;
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #FFFFFF;
+
+    color: #B8ADA7;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    box-shadow:
+        0 3px 10px rgba(44, 34, 34, 0.08);
+
+    transition:
+        opacity 0.2s ease,
+        background-color 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.Courses-admin-card-wrapper:hover
+.Courses-delete-button {
+
+    opacity: 1;
+
+}
+
+
+.Courses-delete-button:hover {
+
+    background-color: #FDECEC;
+
+    color: #A63E3E;
+
+}
+
+
+.Courses-delete-button i {
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.Courses-empty {
+
+    grid-column: 1 / -1;
+
+    min-height: 160px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   992px
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .Courses-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .Courses-header {
+
+        align-items: flex-start;
+
+        gap: 18px;
+
+    }
+
+
+    .Courses-header h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .Courses-header p {
+
+        font-size: 12px;
+
+    }
+
+
+    .Courses-filters {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .Courses-search {
+
+        width: 100%;
+
+    }
+
+
+    .Courses-level-filter {
+
+        width: 100%;
+
+    }
+
+
+    .Courses-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .Courses-header h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .Courses-header p {
+
+        font-size: 11px;
+
+        line-height: 1.5;
+
+    }
+
+
+    .Courses-add-button {
+
+        padding: 0 12px;
+
+        height: 38px;
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .Courses-header {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .Courses-add-button {
+
+        width: 100%;
+
+    }
+
+
+    .Courses-delete-button {
+
+        opacity: 1;
+
+        right: 14px;
+
+        top: 14px;
+
+    }
+
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .Courses-header h1 {
+
+        font-size: 21px;
+
+    }
+
+
+    .Courses-header p {
+
+        font-size: 10px;
+
+    }
+
+}

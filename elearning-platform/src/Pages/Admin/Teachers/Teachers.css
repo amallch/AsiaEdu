@@ -1,0 +1,1115 @@
+/* =========================================================
+   TEACHERS
+========================================================= */
+
+.Teachers {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.Teachers-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.Teachers-header span {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+.Teachers-header h1 {
+    margin: 4px 0 5px;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+.Teachers-header p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   TOTAL
+========================================================= */
+
+.Teachers-total {
+    min-width: 130px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 3px;
+}
+
+.Teachers-total strong {
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #CC3650;
+}
+
+.Teachers-total span {
+    font-size: 11px;
+
+    color: #958B84;
+
+    text-transform: none;
+
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   HEADER RIGHT
+========================================================= */
+
+.Teachers-header-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.Teachers-filters {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.Teachers-search {
+    height: 44px;
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+}
+
+.Teachers-search i {
+    color: #958B84;
+
+    font-size: 14px;
+}
+
+.Teachers-search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 13px;
+}
+
+.Teachers-search input::placeholder {
+    color: #B0A8A2;
+}
+
+
+/* =========================================================
+   LANGUAGE FILTER
+========================================================= */
+
+.Teachers-language-filter {
+    height: 44px;
+
+    min-width: 195px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+}
+
+.Teachers-language-filter i {
+    color: #958B84;
+
+    font-size: 13px;
+}
+
+.Teachers-language-filter select {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #746B66;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+/* =========================================================
+   YEAR FILTER
+========================================================= */
+
+.Teachers-year-filter {
+    height: 44px;
+
+    min-width: 150px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+}
+
+.Teachers-year-filter i {
+    color: #958B84;
+
+    font-size: 13px;
+}
+
+.Teachers-year-filter select {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #746B66;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   TABLE CARD
+========================================================= */
+
+.Teachers-card {
+    width: 100%;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.Teachers-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.Teachers-table {
+    width: 100%;
+
+    min-width: 900px;
+
+    border-collapse: collapse;
+
+    table-layout: auto;
+}
+
+
+/* =========================================================
+   TABLE HEAD
+========================================================= */
+
+.Teachers-table thead {
+    background-color: #FBFAFA;
+}
+
+.Teachers-table th {
+    padding: 15px 18px;
+
+    text-align: left;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: #958B84;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.07);
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TABLE BODY
+========================================================= */
+
+.Teachers-table td {
+    padding: 15px 18px;
+
+    font-size: 12px;
+
+    color: #746B66;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.05);
+
+    vertical-align: middle;
+}
+
+.Teachers-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.Teachers-table tbody tr:hover {
+    background-color: rgba(204, 54, 80, 0.025);
+}
+
+
+/* =========================================================
+   USER
+========================================================= */
+
+.Teachers-user {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.Teachers-avatar {
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   USER INFO
+========================================================= */
+
+.Teachers-user-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.Teachers-user-info strong {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+
+    white-space: nowrap;
+}
+
+.Teachers-user-info span {
+    font-size: 11px;
+
+    color: #958B84;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   LANGUAGE
+========================================================= */
+
+.Teachers-language {
+    display: inline-block;
+
+    padding: 5px 8px;
+
+    border-radius: 7px;
+
+    background-color: rgba(204, 54, 80, 0.06);
+
+    color: #CC3650;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.Teachers-date {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    white-space: nowrap;
+}
+
+.Teachers-date i {
+    color: #CC3650;
+
+    font-size: 12px;
+}
+
+.Teachers-date span {
+    font-size: 12px;
+
+    color: #746B66;
+}
+
+
+/* =========================================================
+   COURSES
+========================================================= */
+
+.Teachers-courses {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    white-space: nowrap;
+}
+
+.Teachers-courses strong {
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+.Teachers-courses span {
+    font-size: 11px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   STUDENTS
+========================================================= */
+
+.Teachers-students {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.Teachers-students i {
+    color: #958B84;
+
+    font-size: 12px;
+}
+
+.Teachers-students span {
+    color: #746B66;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.Teachers-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.Teachers-status.active {
+    color: #4C8A62;
+}
+
+.Teachers-status.inactive {
+    color: #958B84;
+}
+
+.Teachers-status-dot {
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: currentColor;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.Teachers-action-wrapper {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    width: fit-content;
+}
+
+
+/* =========================================================
+   VIEW BUTTON
+========================================================= */
+
+.Teachers-action {
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(204, 54, 80, 0.15);
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.05);
+
+    color: #CC3650;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.Teachers-action:hover {
+    background-color: rgba(204, 54, 80, 0.10);
+
+    color: #B92F47;
+
+    transform: translateX(2px);
+}
+
+
+/* =========================================================
+   DELETE BUTTON
+========================================================= */
+
+.Teachers-delete {
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(182, 92, 92, 0.15);
+
+    border-radius: 8px;
+
+    background-color: rgba(182, 92, 92, 0.05);
+
+    color: #B65C5C;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.Teachers-delete:hover {
+    background-color: rgba(182, 92, 92, 0.10);
+
+    color: #A74444;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   DELETE MODAL OVERLAY
+========================================================= */
+
+.Teachers-modal-overlay {
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: rgba(44, 34, 34, 0.35);
+
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   DELETE MODAL
+========================================================= */
+
+.Teachers-delete-modal {
+    width: 100%;
+
+    max-width: 395px;
+
+    padding: 26px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 35px rgba(44, 34, 34, 0.15);
+}
+
+
+/* =========================================================
+   DELETE ICON
+========================================================= */
+
+.Teachers-delete-icon {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 13px;
+
+    border-radius: 12px;
+
+    background-color: rgba(182, 92, 92, 0.09);
+
+    color: #B65C5C;
+}
+
+.Teachers-delete-icon i {
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   DELETE MODAL TITLE
+========================================================= */
+
+.Teachers-delete-modal h2 {
+    margin: 0 0 7px;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+/* =========================================================
+   DELETE MODAL TEXT
+========================================================= */
+
+.Teachers-delete-modal p {
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #958B84;
+}
+
+.Teachers-delete-modal p strong {
+    color: #2C2222;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   DELETE ACTIONS
+========================================================= */
+
+.Teachers-delete-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   CANCEL DELETE
+========================================================= */
+
+.Teachers-cancel-delete {
+    height: 36px;
+
+    padding: 0 16px;
+
+    border: 1px solid rgba(44, 34, 34, 0.10);
+
+    border-radius: 8px;
+
+    background-color: #FFFFFF;
+
+    color: #746B66;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.Teachers-cancel-delete:hover {
+    background-color: #FAF9F8;
+
+    color: #2C2222;
+}
+
+
+/* =========================================================
+   CONFIRM DELETE
+========================================================= */
+
+.Teachers-confirm-delete {
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 16px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.Teachers-confirm-delete:hover {
+    background-color: #B92F47;
+
+    transform: translateY(-1px);
+}
+
+.Teachers-confirm-delete i {
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.Teachers-empty {
+    height: 130px;
+
+    text-align: center !important;
+
+    color: #958B84 !important;
+
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .Teachers-header {
+        align-items: flex-start;
+    }
+
+    .Teachers-header h1 {
+        font-size: 23px;
+    }
+
+    .Teachers-header p {
+        font-size: 12px;
+    }
+
+    .Teachers-header-right {
+        flex-direction: column;
+
+        align-items: flex-end;
+
+        gap: 10px;
+    }
+
+    .Teachers-total {
+        min-width: auto;
+    }
+
+    .Teachers-total strong {
+        font-size: 23px;
+    }
+
+    .Teachers-filters {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .Teachers-language-filter {
+        width: 100%;
+
+        min-width: auto;
+    }
+
+    .Teachers-table {
+        min-width: 850px;
+    }
+
+    .Teachers-table th {
+        font-size: 9px;
+        padding: 13px 14px;
+    }
+
+    .Teachers-table td {
+        font-size: 11px;
+        padding: 13px 14px;
+    }
+
+    .Teachers-user-info strong {
+        font-size: 12px;
+    }
+
+    .Teachers-user-info span {
+        font-size: 10px;
+    }
+
+    .Teachers-language {
+        font-size: 10px;
+    }
+
+    .Teachers-date span {
+        font-size: 11px;
+    }
+
+    .Teachers-courses strong {
+        font-size: 12px;
+    }
+
+    .Teachers-students span {
+        font-size: 11px;
+    }
+
+        .Teachers-year-filter {
+        width: 100%;
+
+        min-width: auto;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .Teachers-header h1 {
+        font-size: 22px;
+    }
+
+    .Teachers-header p {
+        font-size: 11px;
+    }
+
+    .Teachers-total strong {
+        font-size: 22px;
+    }
+
+    .Teachers-total span {
+        font-size: 10px;
+    }
+
+    .Teachers-avatar {
+        width: 32px;
+        height: 32px;
+        font-size: 10px;
+    }
+
+    .Teachers-user-info strong {
+        font-size: 11px;
+    }
+
+    .Teachers-user-info span {
+        font-size: 9px;
+    }
+
+    .Teachers-language {
+        font-size: 9px;
+        padding: 4px 7px;
+    }
+
+    .Teachers-date span {
+        font-size: 10px;
+    }
+
+    .Teachers-courses strong {
+        font-size: 11px;
+    }
+
+    .Teachers-courses span {
+        font-size: 9px;
+    }
+
+    .Teachers-students span {
+        font-size: 10px;
+    }
+
+    .Teachers-status {
+        font-size: 10px;
+    }
+
+    .Teachers-action {
+        width: 28px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .Teachers-delete {
+        width: 28px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .Teachers-delete-modal {
+        padding: 20px;
+        max-width: 340px;
+    }
+
+    .Teachers-delete-modal h2 {
+        font-size: 16px;
+    }
+
+    .Teachers-delete-modal p {
+        font-size: 11px;
+    }
+
+    .Teachers-cancel-delete,
+    .Teachers-confirm-delete {
+        height: 34px;
+        font-size: 10px;
+        padding: 0 12px;
+    }
+
+    .Teachers-table th {
+        font-size: 8px;
+        padding: 11px 10px;
+    }
+
+    .Teachers-table td {
+        font-size: 10px;
+        padding: 11px 10px;
+    }
+
+}

@@ -1,0 +1,286 @@
+/* =========================================================
+   TOPBAR
+========================================================= */
+
+.Topbar {
+    width: 100%;
+
+    min-height: 90px;
+
+    padding: 20px 32px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: #FFFFFF;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.07);
+}
+
+
+/* =========================================================
+   PAGE INFO
+========================================================= */
+
+.Topbar-pageInfo {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.Topbar-pageInfo span {
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+}
+
+
+.Topbar-pageInfo h2 {
+    margin: 0;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+/* =========================================================
+   RIGHT
+========================================================= */
+
+.Topbar-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+/* =========================================================
+   NOTIFICATION
+========================================================= */
+
+.Topbar-notification {
+    width: 40px;
+
+    height: 40px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 10px;
+
+    background-color: #FFFFFF;
+
+    color: #746B66;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.Topbar-notification:hover {
+    background-color: rgba(204, 54, 80, 0.07);
+
+    color: #CC3650;
+}
+
+
+/* =========================================================
+   NOTIFICATION DOT
+========================================================= */
+
+.Topbar-notification-dot {
+    width: 6px;
+
+    height: 6px;
+
+    position: absolute;
+
+    top: 7px;
+
+    right: 7px;
+
+    border-radius: 50%;
+
+    background-color: #CC3650;
+
+    border: 2px solid #FFFFFF;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.Topbar-divider {
+    width: 1px;
+
+    height: 34px;
+
+    background-color: rgba(44, 34, 34, 0.08);
+}
+
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.Topbar-profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   AVATAR
+========================================================= */
+
+.Topbar-avatar {
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   PROFILE INFO
+========================================================= */
+
+.Topbar-profile-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.Topbar-profile-info strong {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #2C2222;
+}
+
+
+.Topbar-profile-info span {
+    font-size: 10px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   PROFILE ARROW
+========================================================= */
+
+.Topbar-profile-arrow {
+    margin-left: 3px;
+
+    color: #958B84;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .Topbar {
+        min-height: 80px;
+
+        padding: 18px 20px;
+    }
+
+
+    .Topbar-profile-info,
+    .Topbar-profile-arrow {
+        display: none;
+    }
+
+
+    .Topbar-right {
+        gap: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .Topbar {
+        padding: 16px 15px;
+    }
+
+
+    .Topbar-pageInfo h2 {
+        font-size: 18px;
+    }
+
+
+    .Topbar-pageInfo span {
+        font-size: 9px;
+    }
+
+}

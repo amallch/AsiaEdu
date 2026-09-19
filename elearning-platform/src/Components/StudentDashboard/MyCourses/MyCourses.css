@@ -1,0 +1,157 @@
+.MyCourses {
+  width: 100%;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+/* Header */
+.MyCourses-header {
+  margin-bottom: 28px;
+}
+
+.MyCourses-header h2 {
+  margin: 0 0 6px 0;
+  font-size: 26px;
+  font-weight: 800;
+  color: #2c2222;
+}
+
+.MyCourses-header p {
+  margin: 0;
+  font-size: 14px;
+  color: #887e76;
+}
+
+/* Grid Layout */
+.MyCourses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card Container */
+.CourseCard {
+  background: #ffffff;
+  border: 1px solid rgba(44, 34, 34, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.CourseCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(44, 34, 34, 0.06);
+}
+
+/* Card Header */
+.CourseCard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.CourseCard-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(216, 69, 93, 0.08);
+  color: #d8455d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.CourseCard-level {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #faf8ee;
+  color: #a82238;
+}
+
+/* Card Content */
+.CourseCard-body h3 {
+  margin: 0 0 4px 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #2c2222;
+}
+
+.CourseCard-instructor {
+  margin: 0 0 16px 0;
+  font-size: 13px;
+  color: #887e76;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Progress Bar */
+.CourseCard-progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #887e76;
+  margin-bottom: 6px;
+}
+
+.CourseCard-progress-info strong {
+  color: #a82238;
+}
+
+.CourseCard-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #f1edec;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.CourseCard-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #d8455d, #a82238);
+  border-radius: 10px;
+}
+
+/* Footer Action */
+.CourseCard-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid rgba(44, 34, 34, 0.06);
+  font-size: 12px;
+  color: #887e76;
+}
+
+.CourseCard-btn {
+  background: #d8455d;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s ease;
+}
+
+.CourseCard-btn:hover {
+  background: #a82238;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .MyCourses {
+    padding: 20px;
+  }
+}

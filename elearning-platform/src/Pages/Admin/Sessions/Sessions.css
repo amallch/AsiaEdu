@@ -1,0 +1,1220 @@
+/* =========================================================
+   SESSIONS
+========================================================= */
+
+.Sessions {
+
+    width: 100%;
+
+    min-width: 0;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.Sessions-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.Sessions-header > div {
+
+    min-width: 0;
+
+}
+
+
+.Sessions-header > div > span {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+
+}
+
+
+.Sessions-header h1 {
+
+    margin: 4px 0 5px;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+
+}
+
+
+.Sessions-header p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #958B84;
+
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.Sessions-add-button {
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 16px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.Sessions-add-button:hover {
+
+    background-color: #B92F47;
+
+    transform: translateY(-1px);
+
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.Sessions-error {
+
+    min-height: 44px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    padding: 10px 13px;
+
+    border: 1px solid rgba(180, 74, 74, 0.15);
+
+    border-radius: 9px;
+
+    background-color: rgba(180, 74, 74, 0.06);
+
+    color: #A63E3E;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.Sessions-filters {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.Sessions-search {
+
+    height: 44px;
+
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+
+}
+
+
+.Sessions-search i {
+
+    flex-shrink: 0;
+
+    color: #958B84;
+
+    font-size: 14px;
+
+}
+
+
+.Sessions-search input {
+
+    width: 100%;
+
+    min-width: 0;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+}
+
+
+.Sessions-search input::placeholder {
+
+    color: #B0A8A2;
+
+}
+
+
+/* =========================================================
+   CLASS TYPE FILTER
+========================================================= */
+
+.Sessions-class-filter {
+
+    height: 44px;
+
+    width: 190px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+
+}
+
+
+.Sessions-class-filter i {
+
+    color: #958B84;
+
+    font-size: 13px;
+
+}
+
+
+.Sessions-class-filter select {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #746B66;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+}
+
+/* =========================================================
+   YEAR FILTER
+========================================================= */
+
+.Sessions-year-filter {
+
+    height: 44px;
+
+    width: 150px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+
+}
+
+
+.Sessions-year-filter i {
+
+    color: #958B84;
+
+    font-size: 13px;
+
+}
+
+
+.Sessions-year-filter select {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #746B66;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.Sessions-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+
+}
+
+
+/* =========================================================
+   SIMPLE CARD
+========================================================= */
+
+.Sessions-simple-card {
+
+    position: relative;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    padding: 21px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #EDE7E3;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 18px rgba(44, 34, 34, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+
+}
+
+
+.Sessions-simple-card:hover {
+
+    transform: translateY(-4px);
+
+    border-color:
+        rgba(204, 54, 80, 0.18);
+
+    box-shadow:
+        0 14px 30px rgba(44, 34, 34, 0.10);
+
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.Sessions-simple-card-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.Sessions-session-icon {
+
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    background-color:
+        rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+}
+
+
+.Sessions-session-icon i {
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================================
+   GROUP
+========================================================= */
+
+.Sessions-group {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 75px;
+
+    padding: 7px 11px;
+
+    box-sizing: border-box;
+
+    border-radius: 7px;
+
+    background-color: #FDECEC;
+
+    color: #CC3650;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.Sessions-simple-card-content {
+
+    min-width: 0;
+
+}
+
+
+.Sessions-course-language {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+
+}
+
+
+.Sessions-simple-card-content h2 {
+
+    margin: 0 0 9px;
+
+    padding-right: 25px;
+
+    font-size: 19px;
+
+    line-height: 1.3;
+
+    font-weight: 800;
+
+    color: #2C2222;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+/* =========================================================
+   INSTRUCTOR
+========================================================= */
+
+.Sessions-instructor {
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+}
+
+
+.Sessions-instructor i {
+
+    flex-shrink: 0;
+
+    color: #958B84;
+
+    font-size: 11px;
+
+}
+
+
+.Sessions-instructor span {
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    font-size: 12px;
+
+    color: #958B84;
+
+}
+
+
+/* =========================================================
+   SESSION INFO
+========================================================= */
+
+.Sessions-simple-card-info {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 9px;
+
+    margin-top: 20px;
+
+    padding-top: 17px;
+
+    border-top: 1px solid #EEE9E5;
+
+}
+
+
+.Sessions-simple-card-info > div {
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.Sessions-simple-card-info span {
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #A09690;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+.Sessions-simple-card-info strong {
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #332929;
+
+}
+
+
+/* =========================================================
+   CAPACITY
+========================================================= */
+
+.Sessions-capacity {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 9px;
+
+    margin-top: 14px;
+
+    padding: 13px;
+
+    box-sizing: border-box;
+
+    border-radius: 9px;
+
+    background-color: #FAF8F6;
+
+}
+
+
+.Sessions-capacity-item {
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.Sessions-capacity-item span {
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    color: #A09690;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+
+}
+
+
+.Sessions-capacity-item strong {
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    color: #332929;
+
+}
+
+
+.Sessions-capacity-item.available strong {
+
+    color: #4C8A62;
+
+}
+
+
+.Sessions-capacity-item.full strong {
+
+    color: #A63E3E;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.Sessions-simple-card-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 17px;
+
+    padding-top: 13px;
+
+    border-top: 1px solid #F0ECE9;
+
+}
+
+
+.Sessions-simple-card-footer span {
+
+    min-width: 0;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.Sessions-open-label {
+
+    color: #4C8A62;
+
+}
+
+
+.Sessions-full-label {
+
+    color: #A63E3E;
+
+}
+
+
+.Sessions-simple-card-footer i {
+
+    flex-shrink: 0;
+
+    color: #CC3650;
+
+    font-size: 12px;
+
+    transition:
+        transform 0.2s ease;
+
+}
+
+
+.Sessions-simple-card:hover
+.Sessions-simple-card-footer i {
+
+    transform: translateX(3px);
+
+}
+
+
+/* =========================================================
+   DELETE
+========================================================= */
+
+.Sessions-delete-button {
+
+    position: absolute;
+
+    right: 17px;
+
+    top: 68px;
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: transparent;
+
+    color: #B8ADA7;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    transition:
+        opacity 0.2s ease,
+        background-color 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.Sessions-simple-card:hover
+.Sessions-delete-button {
+
+    opacity: 1;
+
+}
+
+
+.Sessions-delete-button:hover {
+
+    background-color:
+        rgba(180, 74, 74, 0.08);
+
+    color: #A63E3E;
+
+}
+
+
+.Sessions-delete-button i {
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.Sessions-empty {
+
+    grid-column: 1 / -1;
+
+    min-height: 160px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid
+        rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   992px
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .Sessions-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .Sessions-header {
+
+        align-items: flex-start;
+
+        gap: 18px;
+
+    }
+
+
+    .Sessions-header h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .Sessions-header p {
+
+        font-size: 12px;
+
+    }
+
+
+    .Sessions-filters {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .Sessions-search {
+
+        width: 100%;
+
+    }
+
+
+    .Sessions-class-filter {
+
+        width: 100%;
+
+    }
+
+
+    .Sessions-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+
+    }
+
+
+    .Sessions-simple-card {
+
+        padding: 20px;
+
+    }
+
+        .Sessions-year-filter {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .Sessions-header h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .Sessions-header p {
+
+        font-size: 11px;
+
+    }
+
+
+    .Sessions-add-button {
+
+        padding: 0 12px;
+
+        height: 38px;
+
+        font-size: 11px;
+
+    }
+
+
+    .Sessions-capacity {
+
+        gap: 7px;
+
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .Sessions-header {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .Sessions-add-button {
+
+        width: 100%;
+
+    }
+
+
+    .Sessions-simple-card {
+
+        padding: 17px;
+
+    }
+
+
+    .Sessions-session-icon {
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+
+    .Sessions-simple-card-content h2 {
+
+        font-size: 17px;
+
+    }
+
+
+    .Sessions-simple-card-info {
+
+        grid-template-columns: 1fr;
+
+        gap: 11px;
+
+    }
+
+
+    .Sessions-simple-card-info > div {
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        gap: 10px;
+
+    }
+
+
+    .Sessions-simple-card-info strong {
+
+        text-align: right;
+
+    }
+
+
+    .Sessions-capacity {
+
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+
+    }
+
+
+    .Sessions-capacity-item {
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+    }
+
+
+    .Sessions-delete-button {
+
+        opacity: 1;
+
+        right: 14px;
+
+        top: 62px;
+
+    }
+
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .Sessions-header h1 {
+
+        font-size: 21px;
+
+    }
+
+
+    .Sessions-header p {
+
+        font-size: 10px;
+
+    }
+
+
+    .Sessions-simple-card {
+
+        padding: 15px;
+
+    }
+
+
+    .Sessions-simple-card-top {
+
+        margin-bottom: 15px;
+
+    }
+
+
+    .Sessions-simple-card-content h2 {
+
+        font-size: 16px;
+
+    }
+
+
+    .Sessions-simple-card-footer span {
+
+        font-size: 10px;
+
+    }
+
+}

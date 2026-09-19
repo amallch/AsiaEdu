@@ -1,0 +1,1626 @@
+/* =========================================================
+   STUDENT DASHBOARD
+========================================================= */
+
+.Dashboard {
+    width: 100%;
+
+    min-height: 100vh;
+
+    background-color: #F8F9FB;
+
+    padding-bottom: 50px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.Dashboard-container {
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   WELCOME
+========================================================= */
+
+.Dashboard-welcome {
+    width: 100%;
+
+    min-height: 205px;
+
+    padding: 32px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFF7F7 0%,
+            #FFFFFF 58%,
+            #FFF9FA 100%
+        );
+
+    border: 1px solid rgba(204, 54, 80, 0.10);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 6px 24px rgba(44, 34, 34, 0.045);
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   WELCOME CONTENT
+========================================================= */
+
+.Dashboard-welcome-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 650px;
+}
+
+
+/* =========================================================
+   WELCOME LABEL
+========================================================= */
+
+.Dashboard-welcome-label {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 11px;
+
+    margin-bottom: 12px;
+
+    border-radius: 8px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+
+.Dashboard-welcome-label i {
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   WELCOME TITLE
+========================================================= */
+
+.Dashboard-welcome h2 {
+    margin: 0 0 8px;
+
+    color: #2C2222;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.7px;
+}
+
+
+/* =========================================================
+   WELCOME DESCRIPTION
+========================================================= */
+
+.Dashboard-welcome p {
+    max-width: 570px;
+
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   WELCOME DECORATION
+========================================================= */
+
+.Dashboard-welcome-decoration {
+    width: 120px;
+
+    height: 120px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 25px;
+
+    border-radius: 50%;
+
+    background-color: rgba(204, 54, 80, 0.07);
+
+    color: rgba(204, 54, 80, 0.22);
+
+    font-size: 48px;
+}
+
+
+/* =========================================================
+   UPCOMING ASSIGNMENT DEADLINES
+========================================================= */
+
+.Dashboard-dueAlert {
+    width: 100%;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 22px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(204, 54, 80, 0.14);
+
+    border-left: 4px solid #CC3650;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 15px rgba(44, 34, 34, 0.035);
+}
+
+
+/* =========================================================
+   ALERT HEADER
+========================================================= */
+
+.Dashboard-dueAlertHeader {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 12px;
+}
+
+
+.Dashboard-dueAlertHeader i {
+    color: #CC3650;
+
+    font-size: 14px;
+}
+
+
+.Dashboard-dueAlertHeader h4 {
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   ALERT LIST
+========================================================= */
+
+.Dashboard-dueAlertList {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+/* =========================================================
+   DUE ASSIGNMENT
+========================================================= */
+
+.Dashboard-dueAssignment {
+    width: 100%;
+
+    min-height: 58px;
+
+    padding: 10px 12px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    background-color: #FFF8F4;
+
+    border: 1px solid rgba(204, 54, 80, 0.09);
+
+    border-radius: 10px;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.Dashboard-dueAssignment:hover {
+    background-color: #FFFCFC;
+
+    border-color: rgba(204, 54, 80, 0.17);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   ASSIGNMENT ICON
+========================================================= */
+
+.Dashboard-dueAssignmentIcon {
+    width: 34px;
+
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   ASSIGNMENT INFORMATION
+========================================================= */
+
+.Dashboard-dueAssignmentInfo {
+    min-width: 0;
+
+    flex: 1;
+}
+
+
+.Dashboard-dueAssignmentInfo h5 {
+    margin: 0 0 4px;
+
+    color: #2C2222;
+
+    font-size: 12.5px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.Dashboard-dueAssignmentInfo p {
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   DUE DATE
+========================================================= */
+
+.Dashboard-dueAssignmentDate {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    flex-shrink: 0;
+
+    padding: 6px 9px;
+
+    border-radius: 7px;
+
+    background-color: rgba(204, 54, 80, 0.07);
+
+    color: #CC3650;
+
+    font-size: 10.5px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.Dashboard-dueAssignmentDate i {
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.Dashboard-dueAssignmentArrow {
+    width: 27px;
+
+    height: 27px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 7px;
+
+    color: #958B84;
+
+    font-size: 10px;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.Dashboard-dueAssignment:hover
+.Dashboard-dueAssignmentArrow {
+    color: #CC3650;
+
+    background-color: rgba(204, 54, 80, 0.07);
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.Dashboard-statistics {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 16px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   STAT CARD
+========================================================= */
+
+.Dashboard-statCard {
+    min-height: 105px;
+
+    padding: 19px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 16px rgba(44, 34, 34, 0.035);
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.Dashboard-statCard:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(204, 54, 80, 0.16);
+
+    box-shadow:
+        0 8px 22px rgba(44, 34, 34, 0.06);
+}
+
+
+/* =========================================================
+   STAT ICON
+========================================================= */
+
+.Dashboard-statIcon {
+    width: 46px;
+
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   STAT INFO
+========================================================= */
+
+.Dashboard-statInfo {
+    min-width: 0;
+}
+
+
+.Dashboard-statInfo p {
+    margin: 0 0 4px;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+    font-weight: 500;
+}
+
+
+.Dashboard-statInfo h3 {
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.Dashboard-section {
+    width: 100%;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(44, 34, 34, 0.035);
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.Dashboard-sectionHeading,
+.Dashboard-smallHeading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+
+.Dashboard-sectionHeading h3,
+.Dashboard-smallHeading h3 {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+
+.Dashboard-sectionHeading p,
+.Dashboard-smallHeading p {
+    margin: 7px 0 0 45px;
+
+    color: #958B84;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   HEADING ICON
+========================================================= */
+
+.Dashboard-headingIcon {
+    width: 34px;
+
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   COURSE LIST
+========================================================= */
+
+.Dashboard-courseList {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   COURSE
+========================================================= */
+
+.Dashboard-course {
+    width: 100%;
+
+    min-height: 76px;
+
+    padding: 15px 17px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 13px;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.Dashboard-course:hover {
+    background-color: #FFFCFC;
+
+    border-color: rgba(204, 54, 80, 0.16);
+
+    box-shadow:
+        0 5px 16px rgba(44, 34, 34, 0.045);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   COURSE LEFT
+========================================================= */
+
+.Dashboard-course-left {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex: 1;
+}
+
+
+/* =========================================================
+   COURSE ICON
+========================================================= */
+
+.Dashboard-courseIcon {
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   COURSE INFO
+========================================================= */
+
+.Dashboard-courseInfo {
+    min-width: 0;
+}
+
+
+.Dashboard-courseInfo h4 {
+    margin: 0 0 5px;
+
+    color: #2C2222;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.Dashboard-courseInfo span {
+    display: block;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   COURSE DETAILS
+========================================================= */
+
+.Dashboard-course-details {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 18px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   LEVEL
+========================================================= */
+
+.Dashboard-level {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 6px 10px;
+
+    border-radius: 7px;
+
+    background-color: #E8F7EF;
+
+    color: #16805A;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   SCHEDULE
+========================================================= */
+
+.Dashboard-schedule {
+    min-width: 135px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #55504C;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+.Dashboard-schedule i {
+    color: #CC3650;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.Dashboard-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    background-color: rgba(22, 128, 90, 0.09);
+
+    color: #16805A;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.Dashboard-status-dot {
+    width: 6px;
+
+    height: 6px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: #16805A;
+}
+
+
+/* =========================================================
+   LESSONS + ASSIGNMENTS
+========================================================= */
+
+.Dashboard-twoColumns {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   SMALL SECTION
+========================================================= */
+
+.Dashboard-smallSection {
+    min-width: 0;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(44, 34, 34, 0.035);
+}
+
+
+/* =========================================================
+   RECENT LESSONS + ASSIGNMENTS LIST
+========================================================= */
+
+.Dashboard-recentList {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   RECENT ITEM
+========================================================= */
+
+.Dashboard-recentItem {
+    width: 100%;
+
+    min-height: 67px;
+
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    background-color: #FFFAFB;
+
+    border: 1px solid rgba(204, 54, 80, 0.09);
+
+    border-radius: 11px;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.Dashboard-recentItem:hover {
+    background-color: #FFFFFF;
+
+    border-color: rgba(204, 54, 80, 0.16);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   RECENT ITEM ICON
+========================================================= */
+
+.Dashboard-recentIcon {
+    width: 36px;
+
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RECENT ITEM INFO
+========================================================= */
+
+.Dashboard-recentInfo {
+    min-width: 0;
+
+    flex: 1;
+}
+
+
+.Dashboard-recentInfo h4 {
+    margin: 0 0 4px;
+
+    color: #2C2222;
+
+    font-size: 12.5px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.Dashboard-recentInfo span {
+    display: block;
+
+    color: #958B84;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   RECENT ITEM DATE
+========================================================= */
+
+.Dashboard-recentDate {
+    flex-shrink: 0;
+
+    color: #958B84;
+
+    font-size: 10.5px;
+
+    font-weight: 600;
+
+    text-align: right;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.Dashboard-empty {
+    min-height: 145px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    background-color: #FFFAFB;
+
+    border: 1px dashed rgba(204, 54, 80, 0.16);
+}
+
+
+.Dashboard-emptyIcon {
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 10px;
+
+    border-radius: 11px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 15px;
+}
+
+
+.Dashboard-empty h4 {
+    margin: 0 0 5px;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.Dashboard-empty p {
+    max-width: 300px;
+
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   SMALL EMPTY
+========================================================= */
+
+.Dashboard-smallEmpty {
+    min-height: 170px;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.Dashboard-loading {
+    width: 100%;
+
+    min-height: 400px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 13px;
+
+    color: #958B84;
+
+    font-size: 13px;
+}
+
+
+.Dashboard-loading p {
+    margin: 0;
+}
+
+
+/* =========================================================
+   LOADER
+========================================================= */
+
+.Dashboard-loader {
+    width: 28px;
+
+    height: 28px;
+
+    border: 3px solid #F3DCE1;
+
+    border-top-color: #CC3650;
+
+    border-radius: 50%;
+
+    animation:
+        DashboardSpin 0.8s linear infinite;
+}
+
+
+@keyframes DashboardSpin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================================
+   ERROR CARD
+========================================================= */
+
+.Dashboard-errorCard {
+    width: 100%;
+
+    min-height: 300px;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(204, 54, 80, 0.12);
+
+    border-radius: 18px;
+}
+
+
+.Dashboard-errorIcon {
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    border-radius: 12px;
+
+    background-color: #FDECEC;
+
+    color: #CC3650;
+
+    font-size: 18px;
+}
+
+
+.Dashboard-errorCard h3 {
+    margin: 0 0 7px;
+
+    color: #2C2222;
+
+    font-size: 17px;
+}
+
+
+.Dashboard-errorCard p {
+    max-width: 450px;
+
+    margin: 0;
+
+    color: #958B84;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .Dashboard-statistics {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .Dashboard-course {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .Dashboard-course-details {
+        width: 100%;
+
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .Dashboard-twoColumns {
+        grid-template-columns: 1fr;
+    }
+
+
+    .Dashboard-welcome-decoration {
+        width: 95px;
+
+        height: 95px;
+
+        margin-right: 10px;
+
+        font-size: 38px;
+    }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .Dashboard-welcome {
+        min-height: 185px;
+
+        padding: 25px;
+    }
+
+
+    .Dashboard-welcome h2 {
+        font-size: 25px;
+    }
+
+
+    .Dashboard-welcome p {
+        font-size: 13px;
+    }
+
+
+    .Dashboard-welcome-decoration {
+        width: 80px;
+
+        height: 80px;
+
+        font-size: 31px;
+    }
+
+
+    .Dashboard-section,
+    .Dashboard-smallSection {
+        padding: 21px;
+    }
+
+
+    .Dashboard-course-details {
+        flex-wrap: wrap;
+
+        gap: 10px 18px;
+    }
+
+
+    .Dashboard-dueAlert {
+        padding: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .Dashboard-statistics {
+        grid-template-columns: 1fr;
+    }
+
+
+    .Dashboard-welcome-decoration {
+        display: none;
+    }
+
+
+    .Dashboard-welcome {
+        min-height: auto;
+
+        padding: 23px;
+    }
+
+
+    .Dashboard-welcome h2 {
+        font-size: 23px;
+    }
+
+
+    .Dashboard-sectionHeading h3,
+    .Dashboard-smallHeading h3 {
+        font-size: 17px;
+    }
+
+
+    .Dashboard-sectionHeading p,
+    .Dashboard-smallHeading p {
+        margin-left: 44px;
+
+        font-size: 11px;
+    }
+
+
+    .Dashboard-course {
+        padding: 15px;
+    }
+
+
+    .Dashboard-course-left {
+        width: 100%;
+    }
+
+
+    .Dashboard-course-details {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 9px;
+    }
+
+
+    .Dashboard-schedule {
+        min-width: 0;
+    }
+
+
+    /* =====================================================
+       DUE ALERT MOBILE
+    ===================================================== */
+
+    .Dashboard-dueAlert {
+        padding: 14px;
+    }
+
+
+    .Dashboard-dueAssignment {
+        align-items: flex-start;
+
+        padding: 11px;
+
+        gap: 9px;
+    }
+
+
+    .Dashboard-dueAssignmentDate {
+        margin-left: auto;
+
+        font-size: 10px;
+    }
+
+
+    .Dashboard-dueAssignmentArrow {
+        display: none;
+    }
+
+
+    /* =====================================================
+       RECENT ITEMS MOBILE
+    ===================================================== */
+
+    .Dashboard-recentDate {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   400px
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .Dashboard-welcome {
+        padding: 20px;
+    }
+
+
+    .Dashboard-welcome h2 {
+        font-size: 21px;
+    }
+
+
+    .Dashboard-welcome-label {
+        font-size: 10px;
+    }
+
+
+    .Dashboard-section,
+    .Dashboard-smallSection {
+        padding: 17px;
+    }
+
+
+    .Dashboard-statCard {
+        min-height: 95px;
+
+        padding: 17px;
+    }
+
+
+    .Dashboard-statIcon {
+        width: 43px;
+
+        height: 43px;
+
+        font-size: 16px;
+    }
+
+
+    .Dashboard-statInfo h3 {
+        font-size: 23px;
+    }
+
+
+    .Dashboard-courseIcon {
+        width: 37px;
+
+        height: 37px;
+    }
+
+
+    .Dashboard-courseInfo h4 {
+        font-size: 13px;
+    }
+
+
+    .Dashboard-courseInfo span {
+        font-size: 11px;
+    }
+
+
+    .Dashboard-dueAlert {
+        gap: 10px;
+    }
+
+
+    .Dashboard-dueAssignmentIcon {
+        width: 34px;
+
+        height: 34px;
+
+        font-size: 13px;
+    }
+
+
+    .Dashboard-recentItem {
+        padding: 10px;
+    }
+
+
+    .Dashboard-recentIcon {
+        width: 34px;
+
+        height: 34px;
+    }
+
+}

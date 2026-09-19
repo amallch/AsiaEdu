@@ -1,0 +1,244 @@
+/* ================================================= */
+/* TEACHERS SECTION */
+/* ================================================= */
+
+.TeachersSection {
+    background-color: #f8f9fb;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.TeachersSection-container {
+    width: 84%;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+/* ================================================= */
+/* GRID - 3 CARDS IN A ROW ON DESKTOP */
+/* ================================================= */
+
+.TeachersGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* ================================================= */
+/* TEACHER CARD */
+/* ================================================= */
+
+.TeacherCard {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 20px 24px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.TeacherCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    border-color: rgba(168, 34, 56, 0.1);
+}
+
+/* ================================================= */
+/* AVATAR */
+/* ================================================= */
+
+.TeacherCard-avatar {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 18px;
+}
+
+.TeacherCard-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f0ebe4;
+    transition: border-color 0.3s ease;
+}
+
+.TeacherCard:hover .TeacherCard-avatar img {
+    border-color: #A82238;
+}
+
+/* Flag Badge */
+.TeacherCard-flag {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.TeacherCard-flag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================================================= */
+/* BODY */
+/* ================================================= */
+
+.TeacherCard-body h3 {
+    font-size: 19px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 2px;
+}
+
+.TeacherCard-role {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #A82238;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+/* Info */
+.TeacherCard-info {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #f0ebe4;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #666;
+}
+
+.info-item i {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* ================================================= */
+/* RESPONSIVE */
+/* ================================================= */
+
+/* Tablet: 2 columns */
+@media (max-width: 992px) {
+    .TeachersGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .TeacherCard-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .TeacherCard-flag {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Mobile: 2 columns */
+@media (max-width: 768px) {
+    .TeachersSection {
+        padding: 60px 0;
+    }
+
+    .TeachersSection-container {
+        width: 90%;
+        gap: 40px;
+    }
+
+    .TeachersGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .TeacherCard {
+        padding: 24px 16px 20px;
+    }
+
+    .TeacherCard-avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .TeacherCard-flag {
+        width: 26px;
+        height: 26px;
+    }
+
+    .TeacherCard-body h3 {
+        font-size: 17px;
+    }
+
+    .TeacherCard-info {
+        gap: 16px;
+    }
+
+    .info-item {
+        font-size: 12px;
+    }
+}
+
+/* Small Mobile: 1 column */
+@media (max-width: 480px) {
+    .TeachersSection {
+        padding: 40px 0;
+    }
+
+    .TeachersGrid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .TeacherCard {
+        padding: 24px 16px 20px;
+        border-radius: 16px;
+    }
+
+    .TeacherCard-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .TeacherCard-flag {
+        width: 28px;
+        height: 28px;
+    }
+
+    .TeacherCard-body h3 {
+        font-size: 18px;
+    }
+
+    .TeacherCard-role {
+        font-size: 12px;
+    }
+
+    .TeacherCard-info {
+        gap: 20px;
+    }
+
+    .info-item {
+        font-size: 13px;
+    }
+}

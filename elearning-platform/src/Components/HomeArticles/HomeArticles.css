@@ -1,0 +1,129 @@
+/* =========================================================
+   HOME ARTICLES
+========================================================= */
+
+.HomeArticles {
+
+    width: 100%;
+
+    padding: 80px 0;
+
+    background-color: #f8f9fb;
+
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.HomeArticles-container {
+
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================================
+   ARTICLES
+========================================================= */
+
+.HomeArticles-cards {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.HomeArticles-button {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 35px;
+
+}
+
+
+/* =========================================================
+   1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .HomeArticles-cards {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================================
+   700px
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .HomeArticles {
+
+        padding: 65px 0;
+
+    }
+
+
+    .HomeArticles-container {
+
+        width: 90%;
+
+    }
+
+
+    .HomeArticles-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .HomeArticles {
+
+        padding: 55px 0;
+
+    }
+
+
+    .HomeArticles-container {
+
+        width: 92%;
+
+    }
+
+}

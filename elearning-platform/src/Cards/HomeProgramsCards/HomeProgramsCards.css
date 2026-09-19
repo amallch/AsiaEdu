@@ -1,0 +1,309 @@
+/* =========================================================
+   HOME PROGRAM CARD
+========================================================= */
+
+.HomeProgramCard {
+
+    width: 100%;
+
+    min-height: 280px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 24px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid
+        rgba(44, 34, 34, 0.06);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 16px
+        rgba(44, 34, 34, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.HomeProgramCard:hover {
+
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(204, 54, 80, 0.15);
+
+    box-shadow:
+        0 12px 28px
+        rgba(44, 34, 34, 0.08);
+
+}
+
+
+/* =========================================================
+   TOP
+========================================================= */
+
+.HomeProgramCard-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.HomeProgramCard-icon {
+
+    width: 46px;
+
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color:
+        rgba(204, 54, 80, 0.10);
+
+    color: #CC3650;
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.HomeProgramCard-badge {
+
+    padding: 5px 10px;
+
+    border-radius: 18px;
+
+    background-color:
+        rgba(204, 54, 80, 0.07);
+
+    color: #CC3650;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.HomeProgramCard-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.HomeProgramCard-label {
+
+    margin-bottom: 7px;
+
+    color: #958B84;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.HomeProgramCard-content h3 {
+
+    margin: 0 0 10px;
+
+    color: #2C2222;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    line-height: 1.25;
+
+    letter-spacing: -0.2px;
+
+}
+
+
+.HomeProgramCard-content h3 span {
+
+    color: #CC3650;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.HomeProgramCard-content p {
+
+    max-width: 480px;
+
+    margin: 0;
+
+    color: #746B66;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .HomeProgramCard {
+
+        min-height: 270px;
+
+        padding: 22px;
+
+    }
+
+
+    .HomeProgramCard-content h3 {
+
+        font-size: 21px;
+
+    }
+
+
+    .HomeProgramCard-content p {
+
+        font-size: 12.5px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .HomeProgramCard {
+
+        min-height: 0;
+
+    }
+
+
+    .HomeProgramCard-top {
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .HomeProgramCard-content h3 {
+
+        font-size: 21px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .HomeProgramCard {
+
+        padding: 22px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .HomeProgramCard-icon {
+
+        width: 44px;
+
+        height: 44px;
+
+        font-size: 16px;
+
+    }
+
+
+    .HomeProgramCard-content h3 {
+
+        font-size: 20px;
+
+    }
+
+
+    .HomeProgramCard-content p {
+
+        font-size: 12.5px;
+
+    }
+
+}

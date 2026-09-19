@@ -1,0 +1,1590 @@
+/* ================================================= */
+/* CONTACT SECTION */
+/* ================================================= */
+
+.ContactSection {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #FFFFFF;
+
+    padding: 85px 0 100px;
+
+    overflow: hidden;
+}
+
+
+.ContactSection-container {
+
+    width: 80%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+
+/* ================================================= */
+/* MAIN GRID */
+/* ================================================= */
+
+.ContactSection-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.6fr)
+        minmax(320px, 0.9fr);
+
+    align-items: start;
+
+    gap: 28px;
+}
+
+
+/* ================================================= */
+/* SCROLL ANIMATION */
+/* ================================================= */
+
+.ContactForm,
+.ContactInfo,
+.FollowUs,
+.QuickFAQ {
+
+    opacity: 0;
+
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.ContactSection-visible .ContactForm {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.05s;
+}
+
+
+.ContactSection-visible .ContactInfo {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.18s;
+}
+
+
+.ContactSection-visible .FollowUs {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.30s;
+}
+
+
+.ContactSection-visible .QuickFAQ {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.42s;
+}
+
+
+/* ================================================= */
+/* LEFT - CONTACT FORM */
+/* ================================================= */
+
+.ContactForm {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 32px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #EDE5DF;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(44, 34, 34, 0.05),
+        0 2px 6px rgba(44, 34, 34, 0.03);
+}
+
+
+.ContactForm:hover {
+
+    box-shadow:
+        0 16px 36px rgba(44, 34, 34, 0.09),
+        0 4px 10px rgba(44, 34, 34, 0.04);
+}
+
+
+/* ================================================= */
+/* FORM HEADING */
+/* ================================================= */
+
+.ContactForm-heading {
+
+    margin-bottom: 27px;
+}
+
+
+.ContactForm-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 6px 12px;
+
+    margin-bottom: 11px;
+
+    border-radius: 20px;
+
+    background-color: rgba(204, 54, 80, 0.07);
+
+    color: #CC3650;
+
+    font-size: 10px;
+
+    font-weight: 750;
+
+    letter-spacing: 0.8px;
+
+    text-transform: uppercase;
+}
+
+
+.ContactForm-heading h3 {
+
+    margin: 0 0 7px;
+
+    color: #2C2222;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+    letter-spacing: -0.3px;
+}
+
+
+.ContactForm-heading p {
+
+    max-width: 620px;
+
+    margin: 0;
+
+    color: #746B66;
+
+    font-size: 13.5px;
+
+    line-height: 1.65;
+}
+
+
+/* ================================================= */
+/* FORM CONTENT */
+/* ================================================= */
+
+.ContactForm-content {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 19px 20px;
+}
+
+
+/* ================================================= */
+/* INPUT */
+/* ================================================= */
+
+.ContactInput {
+
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.ContactInput label {
+
+    color: #2C2222;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+.ContactInput input,
+.ContactInput textarea {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #E9E1DB;
+
+    outline: none;
+
+    border-radius: 10px;
+
+    background-color: #FAF8F6;
+
+    padding: 11px 13px;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.ContactInput input {
+
+    height: 44px;
+}
+
+
+.ContactInput textarea {
+
+    height: 125px;
+
+    resize: vertical;
+
+    min-height: 110px;
+
+    line-height: 1.6;
+}
+
+
+.ContactInput input::placeholder,
+.ContactInput textarea::placeholder {
+
+    color: #A79E96;
+}
+
+
+.ContactInput input:hover,
+.ContactInput textarea:hover {
+
+    border-color: #DCCFC7;
+
+    background-color: #FFFFFF;
+}
+
+
+.ContactInput input:focus,
+.ContactInput textarea:focus {
+
+    background-color: #FFFFFF;
+
+    border-color: #CC3650;
+
+    box-shadow:
+        0 0 0 4px rgba(204, 54, 80, 0.07);
+}
+
+
+/* ================================================= */
+/* FULL WIDTH */
+/* ================================================= */
+
+.ContactFull {
+
+    grid-column: 1 / -1;
+}
+
+
+/* ================================================= */
+/* SEND BUTTON */
+/* ================================================= */
+
+.ContactButton {
+
+    width: 100%;
+
+    margin-top: 4px;
+}
+
+
+.ContactButton button {
+
+    width: 100%;
+
+    min-height: 46px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 9px;
+
+    border: 1px solid #CC3650;
+
+    border-radius: 10px;
+
+    padding: 12px 20px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 18px rgba(204, 54, 80, 0.18);
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.ContactButton button:hover:not(:disabled) {
+
+    background-color: #B92F48;
+
+    border-color: #B92F48;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 11px 24px rgba(204, 54, 80, 0.24);
+}
+
+
+.ContactButton button:disabled {
+
+    opacity: 0.7;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+.ContactButton button i {
+
+    font-size: 12px;
+}
+
+
+/* ================================================= */
+/* RIGHT COLUMN */
+/* ================================================= */
+
+.ContactRight {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* ================================================= */
+/* SHARED RIGHT CARDS */
+/* ================================================= */
+
+.ContactInfo,
+.FollowUs,
+.QuickFAQ {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #EDE5DF;
+
+    border-radius: 17px;
+
+    box-shadow:
+        0 8px 25px rgba(44, 34, 34, 0.05),
+        0 2px 6px rgba(44, 34, 34, 0.03);
+}
+
+
+/* ================================================= */
+/* CONTACT INFORMATION */
+/* ================================================= */
+
+.ContactInfo {
+
+    padding: 25px;
+}
+
+
+.ContactInfo:hover,
+.FollowUs:hover,
+.QuickFAQ:hover {
+
+    box-shadow:
+        0 15px 34px rgba(44, 34, 34, 0.09),
+        0 4px 10px rgba(44, 34, 34, 0.04);
+}
+
+
+/* ================================================= */
+/* CONTACT HEADING */
+/* ================================================= */
+
+.ContactCard-heading {
+
+    margin-bottom: 19px;
+}
+
+
+.ContactCard-heading span {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #958B84;
+
+    font-size: 9px;
+
+    font-weight: 750;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.ContactCard-heading h3 {
+
+    margin: 0;
+
+    color: #2C2222;
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+
+/* ================================================= */
+/* CONTACT INFO LIST */
+/* ================================================= */
+
+.ContactInfo-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* ================================================= */
+/* CONTACT INFO ITEM */
+/* ================================================= */
+
+.ContactInfoItem {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    padding: 13px;
+
+    border: 1px solid #EEE7E1;
+
+    border-radius: 12px;
+
+    background-color: #FFFFFF;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.ContactInfoItem:hover {
+
+    transform: translateY(-2px);
+
+    border-color: rgba(204, 54, 80, 0.16);
+
+    background-color: #FFFCFB;
+
+    box-shadow:
+        0 7px 17px rgba(44, 34, 34, 0.05);
+}
+
+
+/* ================================================= */
+/* CONTACT ICON */
+/* ================================================= */
+
+.ContactInfoIcon {
+
+    width: 42px;
+    height: 42px;
+
+    min-width: 42px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 11px;
+
+    background-color: rgba(204, 54, 80, 0.08);
+
+    color: #CC3650;
+
+    font-size: 15px;
+}
+
+
+/* ================================================= */
+/* CONTACT CONTENT */
+/* ================================================= */
+
+.ContactInfoContent {
+
+    min-width: 0;
+
+    padding-top: 1px;
+}
+
+
+.ContactInfoContent h4 {
+
+    margin: 0 0 4px;
+
+    color: #2C2222;
+
+    font-size: 14px;
+
+    font-weight: 750;
+
+    line-height: 1.35;
+}
+
+
+.ContactInfoContent p {
+
+    margin: 0;
+
+    color: #746B66;
+
+    font-size: 12px;
+
+    line-height: 1.55;
+
+    word-break: break-word;
+}
+
+
+/* ================================================= */
+/* FOLLOW US */
+/* ================================================= */
+
+.FollowUs {
+
+    padding: 22px 25px;
+}
+
+
+.FollowUs h3 {
+
+    margin: 0 0 5px;
+
+    color: #2C2222;
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+
+.FollowUs > p {
+
+    margin: 0 0 15px;
+
+    color: #958B84;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.FollowUs-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.FollowUs-icon {
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(204, 54, 80, 0.12);
+
+    border-radius: 10px;
+
+    background-color: rgba(204, 54, 80, 0.07);
+
+    color: #CC3650;
+
+    font-size: 15px;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.FollowUs-icon:hover {
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(204, 54, 80, 0.18);
+}
+
+
+/* ================================================= */
+/* QUICK FAQ */
+/* ================================================= */
+
+.QuickFAQ {
+
+    padding: 22px 25px;
+}
+
+
+.QuickFAQ h3 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin: 0 0 17px;
+
+    color: #2C2222;
+
+    font-size: 17px;
+
+    font-weight: 800;
+}
+
+
+.QuickFAQ h3 i {
+
+    color: #CC3650;
+
+    font-size: 15px;
+}
+
+
+.QuickFAQ-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+.FAQItem {
+
+    padding-left: 13px;
+
+    border-left: 2px solid rgba(204, 54, 80, 0.25);
+}
+
+
+.FAQItem h4 {
+
+    margin: 0 0 5px;
+
+    color: #2C2222;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    line-height: 1.45;
+}
+
+
+.FAQItem p {
+
+    margin: 0;
+
+    color: #746B66;
+
+    font-size: 12px;
+
+    line-height: 1.55;
+}
+
+
+/* ================================================= */
+/* MODAL OVERLAY */
+/* ================================================= */
+
+.ContactModalOverlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: rgba(20, 15, 15, 0.45);
+
+    backdrop-filter: blur(3px);
+
+    z-index: 9999;
+
+    animation:
+        contactModalOverlayAppear 0.25s ease;
+}
+
+
+/* ================================================= */
+/* MODALS */
+/* ================================================= */
+
+.ContactSuccessModal,
+.ContactErrorModal {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 420px;
+
+    box-sizing: border-box;
+
+    padding: 35px 32px 30px;
+
+    border-radius: 16px;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+
+    box-shadow:
+        0 24px 70px rgba(44, 34, 34, 0.20);
+
+    animation:
+        contactModalAppear 0.3s ease;
+}
+
+
+.ContactSuccessModal,
+.ContactErrorModal {
+
+    border-top: 4px solid #CC3650;
+}
+
+
+/* ================================================= */
+/* MODAL CLOSE */
+/* ================================================= */
+
+.ContactModalClose {
+
+    position: absolute;
+
+    top: 14px;
+    right: 14px;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #F8F5F3;
+
+    color: #746B66;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.ContactModalClose:hover {
+
+    background-color: #FDECEC;
+
+    color: #CC3650;
+
+    transform: rotate(90deg);
+}
+
+
+/* ================================================= */
+/* MODAL ICONS */
+/* ================================================= */
+
+.ContactSuccessIcon,
+.ContactErrorIcon {
+
+    width: 68px;
+    height: 68px;
+
+    margin: 5px auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #FDECEC;
+
+    color: #CC3650;
+}
+
+
+.ContactSuccessIcon {
+
+    font-size: 30px;
+}
+
+
+.ContactErrorIcon {
+
+    font-size: 27px;
+}
+
+
+/* ================================================= */
+/* MODAL TEXT */
+/* ================================================= */
+
+.ContactSuccessModal h3,
+.ContactErrorModal h3 {
+
+    margin: 0 0 10px;
+
+    color: #2C2222;
+
+    font-size: 23px;
+
+    font-weight: 800;
+}
+
+
+.ContactSuccessModal p,
+.ContactErrorModal p {
+
+    max-width: 340px;
+
+    margin: 0 auto 24px;
+
+    color: #746B66;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* ================================================= */
+/* SUCCESS BUTTON */
+/* ================================================= */
+
+.ContactModalButton {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 9px;
+
+    border: 1px solid #CC3650;
+
+    border-radius: 10px;
+
+    padding: 12px 20px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(204, 54, 80, 0.18);
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.ContactModalButton:hover {
+
+    background-color: #B92F48;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(204, 54, 80, 0.25);
+}
+
+
+/* ================================================= */
+/* ERROR BUTTON */
+/* ================================================= */
+
+.ContactModalErrorButton {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(204, 54, 80, 0.20);
+
+    border-radius: 10px;
+
+    padding: 11px 20px;
+
+    background-color: rgba(204, 54, 80, 0.05);
+
+    color: #CC3650;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.ContactModalErrorButton:hover {
+
+    background-color: #FDECEC;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================================= */
+/* MODAL ANIMATIONS */
+/* ================================================= */
+
+@keyframes contactModalOverlayAppear {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes contactModalAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(15px)
+            scale(0.97);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* ================================================= */
+/* LARGE TABLET */
+/* ================================================= */
+
+@media (max-width: 1100px) {
+
+    .ContactSection {
+
+        padding: 75px 0 85px;
+    }
+
+    .ContactSection-container {
+
+        width: 88%;
+    }
+
+    .ContactSection-grid {
+
+        grid-template-columns:
+            minmax(0, 1.45fr)
+            minmax(300px, 0.9fr);
+
+        gap: 22px;
+    }
+
+    .ContactForm {
+
+        padding: 28px;
+    }
+
+    .ContactInfo,
+    .FollowUs,
+    .QuickFAQ {
+
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+}
+
+
+/* ================================================= */
+/* TABLET */
+/* ================================================= */
+
+@media (max-width: 900px) {
+
+    .ContactSection {
+
+        padding: 65px 0 75px;
+    }
+
+    .ContactSection-container {
+
+        width: 88%;
+    }
+
+    .ContactSection-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .ContactRight {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+    }
+
+    .ContactInfo {
+
+        grid-column: 1 / -1;
+    }
+
+    .FollowUs,
+    .QuickFAQ {
+
+        width: 100%;
+    }
+}
+
+
+/* ================================================= */
+/* SMALL TABLET */
+/* ================================================= */
+
+@media (max-width: 700px) {
+
+    .ContactSection {
+
+        padding: 55px 0 65px;
+    }
+
+    .ContactSection-container {
+
+        width: 90%;
+    }
+
+    .ContactForm {
+
+        padding: 24px;
+    }
+
+    .ContactForm-heading h3 {
+
+        font-size: 22px;
+    }
+
+    .ContactForm-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 17px;
+    }
+
+    .ContactFull {
+
+        grid-column: auto;
+    }
+
+    .ContactRight {
+
+        grid-template-columns: 1fr;
+
+        gap: 17px;
+    }
+
+    .ContactInfo {
+
+        grid-column: auto;
+    }
+}
+
+
+/* ================================================= */
+/* MOBILE */
+/* ================================================= */
+
+@media (max-width: 550px) {
+
+    .ContactSection {
+
+        padding: 45px 0 55px;
+    }
+
+    .ContactSection-container {
+
+        width: 92%;
+    }
+
+    .ContactSection-grid {
+
+        gap: 17px;
+    }
+
+    .ContactForm {
+
+        padding: 20px;
+
+        border-radius: 15px;
+    }
+
+    .ContactForm-heading {
+
+        margin-bottom: 22px;
+    }
+
+    .ContactForm-heading h3 {
+
+        font-size: 20px;
+    }
+
+    .ContactForm-heading p {
+
+        font-size: 12.5px;
+    }
+
+    .ContactForm-content {
+
+        gap: 15px;
+    }
+
+    .ContactInput label {
+
+        font-size: 12px;
+    }
+
+    .ContactInput input,
+    .ContactInput textarea {
+
+        font-size: 13px;
+
+        padding: 10px 12px;
+
+        border-radius: 9px;
+    }
+
+    .ContactInput input {
+
+        height: 42px;
+    }
+
+    .ContactInput textarea {
+
+        height: 120px;
+
+        min-height: 105px;
+    }
+
+    .ContactButton button {
+
+        min-height: 44px;
+
+        font-size: 13px;
+    }
+
+    .ContactInfo,
+    .FollowUs,
+    .QuickFAQ {
+
+        padding: 20px;
+
+        border-radius: 15px;
+    }
+
+    .ContactCard-heading h3 {
+
+        font-size: 18px;
+    }
+
+    .ContactInfoItem {
+
+        padding: 12px;
+
+        gap: 11px;
+    }
+
+    .ContactInfoIcon {
+
+        width: 40px;
+        height: 40px;
+
+        min-width: 40px;
+    }
+
+    .ContactInfoContent h4 {
+
+        font-size: 13.5px;
+    }
+
+    .ContactInfoContent p {
+
+        font-size: 11.5px;
+    }
+
+    .FollowUs h3 {
+
+        font-size: 17px;
+    }
+
+    .QuickFAQ h3 {
+
+        font-size: 16px;
+    }
+
+
+    /* ================================================= */
+    /* MOBILE MODAL */
+    /* ================================================= */
+
+    .ContactModalOverlay {
+
+        padding: 18px;
+    }
+
+    .ContactSuccessModal,
+    .ContactErrorModal {
+
+        max-width: 100%;
+
+        padding: 32px 22px 24px;
+
+        border-radius: 14px;
+    }
+
+    .ContactSuccessIcon,
+    .ContactErrorIcon {
+
+        width: 60px;
+        height: 60px;
+
+        margin-bottom: 17px;
+
+        font-size: 25px;
+    }
+
+    .ContactSuccessModal h3,
+    .ContactErrorModal h3 {
+
+        font-size: 20px;
+    }
+
+    .ContactSuccessModal p,
+    .ContactErrorModal p {
+
+        font-size: 13px;
+
+        margin-bottom: 20px;
+    }
+
+    .ContactModalButton,
+    .ContactModalErrorButton {
+
+        font-size: 13px;
+
+        padding: 11px 18px;
+    }
+}
+
+
+/* ================================================= */
+/* EXTRA SMALL MOBILE */
+/* ================================================= */
+
+@media (max-width: 380px) {
+
+    .ContactSection {
+
+        padding: 40px 0 50px;
+    }
+
+    .ContactSection-container {
+
+        width: 94%;
+    }
+
+    .ContactForm {
+
+        padding: 17px;
+    }
+
+    .ContactForm-heading h3 {
+
+        font-size: 19px;
+    }
+
+    .ContactForm-content {
+
+        gap: 14px;
+    }
+
+    .ContactInput input,
+    .ContactInput textarea {
+
+        font-size: 12.5px;
+
+        padding: 9px 11px;
+    }
+
+    .ContactInput textarea {
+
+        height: 110px;
+    }
+
+    .ContactInfo,
+    .FollowUs,
+    .QuickFAQ {
+
+        padding: 17px;
+    }
+
+    .ContactInfoItem {
+
+        padding: 10px;
+
+        gap: 9px;
+    }
+
+    .ContactInfoIcon {
+
+        width: 38px;
+        height: 38px;
+
+        min-width: 38px;
+    }
+
+
+    /* ================================================= */
+    /* EXTRA SMALL MODAL */
+    /* ================================================= */
+
+    .ContactSuccessModal,
+    .ContactErrorModal {
+
+        padding: 30px 18px 22px;
+    }
+
+    .ContactSuccessIcon,
+    .ContactErrorIcon {
+
+        width: 55px;
+        height: 55px;
+
+        font-size: 23px;
+    }
+
+    .ContactSuccessModal h3,
+    .ContactErrorModal h3 {
+
+        font-size: 19px;
+    }
+
+    .ContactModalClose {
+
+        width: 29px;
+        height: 29px;
+
+        font-size: 12px;
+    }
+}
+
+
+/* ================================================= */
+/* REDUCED MOTION */
+/* ================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .ContactForm,
+    .ContactInfo,
+    .FollowUs,
+    .QuickFAQ {
+
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+    }
+}

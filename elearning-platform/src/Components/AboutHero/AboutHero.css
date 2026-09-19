@@ -1,0 +1,97 @@
+/* ================================================= */
+/* ABOUT HERO */
+/* ================================================= */
+
+.AboutHero {
+
+    width: 100%;
+
+    background-color: white;
+    padding-bottom: 100px;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+/* ================================================= */
+/* CONTAINER */
+/* ================================================= */
+
+.AboutHero-container {
+
+    width: 82%;
+
+    max-width: 1200px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+    gap: 10px;
+
+}
+
+
+/* ================================================= */
+/* BUTTONS */
+/* ================================================= */
+
+.AboutHero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 13px;
+
+}
+
+
+/* ================================================= */
+/* MOBILE */
+/* ================================================= */
+
+@media (max-width: 640px) {
+
+    .AboutHero {
+
+        padding: 65px 0 55px;
+
+    }
+
+
+    .AboutHero-container {
+
+        width: 92%;
+
+    }
+
+
+    .AboutHero-buttons {
+
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .AboutHero-buttons .Button {
+
+        width: 100%;
+
+        max-width: 280px;
+
+    }
+
+}

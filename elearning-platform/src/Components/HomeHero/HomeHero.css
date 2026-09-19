@@ -1,0 +1,1609 @@
+/* ================================================= */
+/* HOME HERO */
+/* ================================================= */
+
+.HomeHero {
+
+    width: 100%;
+    min-height: 88vh;
+
+    background-color: #f8f9fb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* ================================================= */
+/* CONTAINER */
+/* ================================================= */
+
+.HomeHero-container {
+
+    width: 82%;
+    max-width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ================================================= */
+/* LEFT SIDE */
+/* ================================================= */
+
+.HomeHero-left {
+
+    width: 55%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* ================================================= */
+/* SUBTITLE */
+/* ================================================= */
+
+.HomeHeroSubtitle {
+
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 7px 11px;
+
+    border: 1.5px solid var(--primary-red);
+    border-radius: 40px;
+
+    background-color: #ffffff;
+
+    color: var(--primary-red);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    /* ONE-BY-ONE ANIMATION */
+
+    opacity: 0;
+
+    animation:
+        heroContentEnter
+        0.7s
+        ease-out
+        0.1s
+        forwards;
+}
+
+
+.HomeHeroSubtitle p {
+
+    margin: 0;
+}
+
+
+.HomeHeroSubtitle i {
+
+    font-size: 13px;
+}
+
+
+/* ================================================= */
+/* TITLE */
+/* ================================================= */
+
+.HomeHero h1 {
+
+    margin: 18px 0 0;
+
+    color: #111111;
+
+    font-size: 48px;
+    font-weight: 800;
+
+    line-height: 1.12;
+
+    /* ONE-BY-ONE ANIMATION */
+
+    opacity: 0;
+
+    animation:
+        heroContentEnter
+        0.7s
+        ease-out
+        0.3s
+        forwards;
+}
+
+
+.HomeHero h1 span {
+
+    color: var(--primary-red);
+}
+
+
+/* ================================================= */
+/* DESCRIPTION */
+/* ================================================= */
+
+.HomeHeroDescription {
+
+    width: 82%;
+
+    margin-top: 13px;
+
+    color: #6B6864;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    /* ONE-BY-ONE ANIMATION */
+
+    opacity: 0;
+
+    animation:
+        heroContentEnter
+        0.7s
+        ease-out
+        0.5s
+        forwards;
+}
+
+
+.HomeHeroDescription p {
+
+    margin: 0;
+}
+
+
+/* ================================================= */
+/* BUTTONS */
+/* ================================================= */
+
+.HomeHeroButtons {
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: 24px;
+
+    /* ONE-BY-ONE ANIMATION */
+
+    opacity: 0;
+
+    animation:
+        heroContentEnter
+        0.7s
+        ease-out
+        0.7s
+        forwards;
+}
+
+
+/* ================================================= */
+/* RIGHT SIDE */
+/* ================================================= */
+
+.HomeHero-right {
+
+    width: 45%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    animation:
+        heroRightEnter
+        1s
+        ease-out
+        0.15s
+        forwards;
+}
+
+
+/* ================================================= */
+/* HERO VISUAL */
+/* ================================================= */
+
+.HeroVisual {
+
+    position: relative;
+
+    width: 420px;
+    height: 420px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ================================================= */
+/* BLOB BACKGROUND */
+/* ================================================= */
+
+.HeroVisualBlob {
+
+    position: absolute;
+
+    top: 18px;
+    left: 50px;
+
+    width: 330px;
+    height: 330px;
+
+    border-radius: 75px;
+
+    transform: rotate(8deg);
+
+    background: linear-gradient(
+        160deg,
+        #E4DEFB 0%,
+        #CC3650 100%
+    );
+
+    z-index: 1;
+
+    animation:
+        heroBlobFloat
+        5s
+        ease-in-out
+        infinite;
+}
+
+
+/* ================================================= */
+/* STUDENT IMAGE */
+/* ================================================= */
+
+.HeroVisualImage {
+
+    position: relative;
+
+    width: 260px;
+    height: 365px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    z-index: 2;
+
+    opacity: 0;
+
+    animation:
+        heroImageEnter
+        1s
+        ease-out
+        0.3s
+        forwards;
+}
+
+
+/* ================================================= */
+/* FLOATING CARDS */
+/* ================================================= */
+
+.HeroVisualCard {
+
+    position: absolute;
+
+    padding: 13px 15px;
+
+    background-color: #ffffff;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 12px 26px rgba(46, 33, 110, 0.11);
+
+    z-index: 3;
+}
+
+
+.HeroVisualCard h4 {
+
+    margin: 0;
+
+    color: #1C1B2E;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.HeroVisualCard p {
+
+    margin: 2px 0 0;
+
+    color: #83809A;
+
+    font-size: 12px;
+}
+
+
+/* ================================================= */
+/* LIVE & INTERACTIVE CLASSES CARD */
+/* ================================================= */
+
+.HeroVisualCardFeature {
+
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    top: 65px;
+    left: -45px;
+
+    max-width: 190px;
+
+    opacity: 0;
+
+    animation:
+        heroFeatureCardEnter
+        0.8s
+        ease-out
+        0.7s
+        forwards,
+        heroFeatureFloat
+        4.5s
+        ease-in-out
+        1.6s
+        infinite;
+}
+
+
+/* ================================================= */
+/* FEATURE ICON */
+/* ================================================= */
+
+.HeroVisualIconBox {
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background-color: #FFE4E9;
+
+    color: var(--primary-red);
+
+    font-size: 14px;
+}
+
+
+/* ================================================= */
+/* LANGUAGE COURSES CARD */
+/* ================================================= */
+
+.HeroVisualCardRing {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4px;
+
+    top: 15px;
+    right: -20px;
+
+    padding: 23px 13px;
+
+    opacity: 0;
+
+    animation:
+        heroRingCardEnter
+        0.8s
+        ease-out
+        0.85s
+        forwards,
+        heroRingFloat
+        5s
+        ease-in-out
+        1.8s
+        infinite;
+}
+
+
+.HeroVisualCardRing h4 {
+
+    margin: 0;
+
+    color: var(--primary-red);
+
+    font-size: 17px;
+}
+
+
+.HeroVisualCardRing p {
+
+    margin: 0;
+
+    white-space: nowrap;
+}
+
+
+/* ================================================= */
+/* RING */
+/* ================================================= */
+
+.HeroVisualRing {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 3px;
+
+    border-radius: 50%;
+
+    background:
+        conic-gradient(
+            var(--primary-red) 0deg 260deg,
+            #F4DCE0 260deg 360deg
+        );
+}
+
+
+.HeroVisualRing::before {
+
+    content: "";
+
+    width: 27px;
+    height: 27px;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+}
+
+
+/* ================================================= */
+/* ONLINE SUPPORT CARD */
+/* ================================================= */
+
+.HeroVisualCardSupport {
+
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    right: 5px;
+    bottom: 20px;
+
+    opacity: 0;
+
+    animation:
+        heroSupportCardEnter
+        0.8s
+        ease-out
+        1s
+        forwards,
+        heroSupportFloat
+        4.7s
+        ease-in-out
+        2s
+        infinite;
+}
+
+
+.HeroVisualIconCircle {
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: #FFE4E9;
+
+    color: var(--primary-red);
+
+    font-size: 15px;
+}
+
+
+.HeroVisualCardSupport h4 {
+
+    color: var(--primary-red);
+}
+
+
+/* ================================================= */
+/* ANIMATIONS */
+/* ================================================= */
+
+
+/* ================================================= */
+/* LEFT CONTENT - ONE BY ONE */
+/* ================================================= */
+
+@keyframes heroContentEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ================================================= */
+/* LEFT CONTENT */
+/* ================================================= */
+
+@keyframes heroLeftEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ================================================= */
+/* RIGHT CONTENT */
+/* ================================================= */
+
+@keyframes heroRightEnter {
+
+    from {
+        opacity: 0;
+        transform: translateX(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* ================================================= */
+/* BLOB */
+/* ================================================= */
+
+@keyframes heroBlobFloat {
+
+    0%,
+    100% {
+        transform: rotate(8deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(10deg) translateY(-8px);
+    }
+
+}
+
+
+/* ================================================= */
+/* STUDENT IMAGE */
+/* ================================================= */
+
+@keyframes heroImageEnter {
+
+    from {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* ================================================= */
+/* FEATURE CARD ENTRANCE */
+/* ================================================= */
+
+@keyframes heroFeatureCardEnter {
+
+    from {
+        opacity: 0;
+        transform: translateX(-18px) translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+
+}
+
+
+/* ================================================= */
+/* RING CARD ENTRANCE */
+/* ================================================= */
+
+@keyframes heroRingCardEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(-14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ================================================= */
+/* SUPPORT CARD ENTRANCE */
+/* ================================================= */
+
+@keyframes heroSupportCardEnter {
+
+    from {
+        opacity: 0;
+        transform: translateX(18px) translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+
+}
+
+
+/* ================================================= */
+/* FEATURE CARD FLOAT */
+/* ================================================= */
+
+@keyframes heroFeatureFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+}
+
+
+/* ================================================= */
+/* RING CARD FLOAT */
+/* ================================================= */
+
+@keyframes heroRingFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+}
+
+
+/* ================================================= */
+/* SUPPORT CARD FLOAT */
+/* ================================================= */
+
+@keyframes heroSupportFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+}
+
+
+/* ================================================= */
+/* LARGE DESKTOP */
+/* ================================================= */
+
+@media (max-width: 1200px) {
+
+    .HomeHero-container {
+        width: 88%;
+        gap: 30px;
+    }
+
+
+    .HomeHero h1 {
+        font-size: 44px;
+    }
+
+
+    .HomeHeroDescription {
+        width: 90%;
+    }
+
+
+    .HeroVisual {
+        width: 390px;
+        height: 390px;
+    }
+
+
+    .HeroVisualBlob {
+        width: 305px;
+        height: 305px;
+
+        left: 42px;
+    }
+
+
+    .HeroVisualImage {
+        width: 245px;
+        height: 340px;
+    }
+
+
+    .HeroVisualCardFeature {
+        left: -25px;
+    }
+
+
+    .HeroVisualCardRing {
+        right: -10px;
+    }
+
+}
+
+
+/* ================================================= */
+/* SMALL DESKTOP / LARGE TABLET */
+/* ================================================= */
+
+@media (max-width: 1050px) {
+
+    .HomeHero-container {
+        width: 90%;
+
+        gap: 20px;
+    }
+
+
+    .HomeHero h1 {
+        font-size: 40px;
+    }
+
+
+    .HomeHeroDescription {
+        width: 100%;
+
+        font-size: 15px;
+    }
+
+
+    .HomeHeroButtons {
+        gap: 10px;
+    }
+
+
+    .HeroVisual {
+        width: 360px;
+        height: 360px;
+    }
+
+
+    .HeroVisualBlob {
+        width: 285px;
+        height: 285px;
+
+        left: 37px;
+    }
+
+
+    .HeroVisualImage {
+        width: 225px;
+        height: 315px;
+    }
+
+
+    .HeroVisualCard {
+        padding: 11px 13px;
+    }
+
+
+    .HeroVisualCardFeature {
+        left: -30px;
+        top: 55px;
+    }
+
+
+    .HeroVisualCardRing {
+        right: -15px;
+        top: 5px;
+    }
+
+
+    .HeroVisualCardSupport {
+        right: -5px;
+        bottom: 15px;
+    }
+
+}
+
+
+/* ================================================= */
+/* TABLET */
+/* ================================================= */
+
+@media (max-width: 992px) {
+
+    .HomeHero {
+        min-height: auto;
+
+        padding: 85px 0 70px;
+    }
+
+
+    .HomeHero-container {
+        width: 90%;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 55px;
+    }
+
+
+    /* -------------------------
+       LEFT SIDE
+    ------------------------- */
+
+    .HomeHero-left {
+        width: 100%;
+
+        align-items: center;
+    }
+
+
+    .HomeHeroSubtitle {
+        margin: 0 auto;
+    }
+
+
+    .HomeHero h1 {
+        max-width: 700px;
+
+        font-size: 40px;
+    }
+
+
+    .HomeHeroDescription {
+        width: 100%;
+
+        max-width: 680px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    .HomeHeroButtons {
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        margin-top: 22px;
+    }
+
+
+    /* -------------------------
+       RIGHT SIDE
+    ------------------------- */
+
+    .HomeHero-right {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+    }
+
+
+    .HeroVisual {
+        width: 380px;
+        height: 380px;
+    }
+
+
+    .HeroVisualBlob {
+        width: 300px;
+        height: 300px;
+
+        left: 40px;
+    }
+
+
+    .HeroVisualImage {
+        width: 235px;
+        height: 330px;
+    }
+
+
+    .HeroVisualCardFeature {
+        left: -25px;
+
+        top: 60px;
+    }
+
+
+    .HeroVisualCardRing {
+        right: -15px;
+
+        top: 5px;
+    }
+
+
+    .HeroVisualCardSupport {
+        right: -5px;
+
+        bottom: 15px;
+    }
+
+}
+
+
+/* ================================================= */
+/* TABLET / SMALL TABLET */
+/* ================================================= */
+
+@media (max-width: 768px) {
+
+    .HomeHero {
+        padding: 75px 0 55px;
+    }
+
+
+    .HomeHero-container {
+        width: 92%;
+
+        gap: 45px;
+    }
+
+
+    /* -------------------------
+       TEXT
+    ------------------------- */
+
+    .HomeHeroSubtitle {
+        font-size: 12px;
+
+        padding: 7px 11px;
+    }
+
+
+    .HomeHero h1 {
+        max-width: 600px;
+
+        font-size: 34px;
+
+        line-height: 1.15;
+    }
+
+
+    .HomeHeroDescription {
+        max-width: 580px;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .HomeHeroButtons {
+        margin-top: 20px;
+    }
+
+
+    /* -------------------------
+       VISUAL
+    ------------------------- */
+
+    .HeroVisual {
+        width: 330px;
+        height: 330px;
+    }
+
+
+    .HeroVisualBlob {
+        width: 250px;
+        height: 250px;
+
+        left: 40px;
+
+        border-radius: 60px;
+    }
+
+
+    .HeroVisualImage {
+        width: 190px;
+        height: 270px;
+
+        border-radius: 9px;
+    }
+
+
+    .HeroVisualCard {
+        padding: 10px 12px;
+
+        border-radius: 13px;
+    }
+
+
+    .HeroVisualCard h4 {
+        font-size: 12px;
+    }
+
+
+    .HeroVisualCard p {
+        font-size: 10px;
+    }
+
+
+    .HeroVisualCardFeature {
+        left: -8px;
+        top: 35px;
+
+        max-width: 170px;
+
+        gap: 8px;
+    }
+
+
+    .HeroVisualIconBox {
+        width: 35px;
+        height: 35px;
+
+        border-radius: 10px;
+    }
+
+
+    .HeroVisualCardRing {
+        right: -8px;
+        top: 0;
+
+        padding: 17px 10px;
+    }
+
+
+    .HeroVisualCardRing h4 {
+        font-size: 15px;
+    }
+
+
+    .HeroVisualRing {
+        width: 37px;
+        height: 37px;
+    }
+
+
+    .HeroVisualRing::before {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .HeroVisualCardSupport {
+        right: 0;
+        bottom: 0;
+
+        gap: 8px;
+    }
+
+
+    .HeroVisualIconCircle {
+        width: 35px;
+        height: 35px;
+    }
+
+}
+
+
+/* ================================================= */
+/* MOBILE */
+/* ================================================= */
+
+@media (max-width: 600px) {
+
+    .HomeHero {
+        padding: 65px 0 50px;
+    }
+
+
+    .HomeHero-container {
+        width: 92%;
+
+        gap: 40px;
+    }
+
+
+    /* -------------------------
+       TEXT
+    ------------------------- */
+
+    .HomeHeroSubtitle {
+        font-size: 11px;
+
+        padding: 6px 10px;
+    }
+
+
+    .HomeHero h1 {
+        font-size: 30px;
+
+        line-height: 1.17;
+    }
+
+
+    .HomeHeroDescription {
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+
+    .HomeHeroButtons {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+    }
+
+
+    .HomeHeroButtons .Button {
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+
+    /* -------------------------
+       VISUAL
+    ------------------------- */
+
+    .HeroVisual {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .HeroVisualBlob {
+        width: 220px;
+        height: 220px;
+
+        left: 40px;
+
+        border-radius: 50px;
+    }
+
+
+    .HeroVisualImage {
+        width: 170px;
+        height: 240px;
+    }
+
+
+    .HeroVisualCard {
+        padding: 8px 10px;
+
+        border-radius: 11px;
+    }
+
+
+    .HeroVisualCard h4 {
+        font-size: 11px;
+    }
+
+
+    .HeroVisualCard p {
+        font-size: 9px;
+    }
+
+
+    .HeroVisualCardFeature {
+        left: -12px;
+        top: 25px;
+
+        max-width: 150px;
+
+        gap: 7px;
+    }
+
+
+    .HeroVisualIconBox {
+        width: 31px;
+        height: 31px;
+
+        border-radius: 8px;
+
+        font-size: 12px;
+    }
+
+
+    .HeroVisualCardRing {
+        right: -10px;
+        top: -5px;
+
+        padding: 14px 9px;
+    }
+
+
+    .HeroVisualCardRing h4 {
+        font-size: 14px;
+    }
+
+
+    .HeroVisualRing {
+        width: 34px;
+        height: 34px;
+    }
+
+
+    .HeroVisualRing::before {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .HeroVisualCardSupport {
+        right: -5px;
+        bottom: -3px;
+    }
+
+
+    .HeroVisualIconCircle {
+        width: 31px;
+        height: 31px;
+
+        font-size: 12px;
+    }
+
+}
+
+
+/* ================================================= */
+/* SMALL MOBILE */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+    .HomeHero {
+        padding: 55px 0 45px;
+    }
+
+
+    .HomeHero-container {
+        width: 92%;
+
+        gap: 35px;
+    }
+
+
+    .HomeHeroSubtitle {
+        gap: 6px;
+
+        padding: 6px 9px;
+
+        font-size: 10px;
+    }
+
+
+    .HomeHeroSubtitle i {
+        font-size: 11px;
+    }
+
+
+    .HomeHero h1 {
+        font-size: 27px;
+
+        line-height: 1.18;
+    }
+
+
+    .HomeHeroDescription {
+        font-size: 12px;
+
+        line-height: 1.65;
+    }
+
+
+    .HomeHeroButtons .Button {
+        max-width: 260px;
+    }
+
+
+    /* -------------------------
+       SMALL VISUAL
+    ------------------------- */
+
+    .HeroVisual {
+        width: 270px;
+        height: 270px;
+    }
+
+
+    .HeroVisualBlob {
+        width: 195px;
+        height: 195px;
+
+        left: 37px;
+
+        border-radius: 45px;
+    }
+
+
+    .HeroVisualImage {
+        width: 150px;
+        height: 215px;
+    }
+
+
+    .HeroVisualCard {
+        padding: 7px 9px;
+
+        border-radius: 10px;
+    }
+
+
+    .HeroVisualCard h4 {
+        font-size: 10px;
+    }
+
+
+    .HeroVisualCard p {
+        font-size: 8px;
+    }
+
+
+    .HeroVisualCardFeature {
+        left: -15px;
+        top: 18px;
+
+        max-width: 135px;
+    }
+
+
+    .HeroVisualIconBox {
+        width: 28px;
+        height: 28px;
+
+        border-radius: 7px;
+    }
+
+
+    .HeroVisualCardRing {
+        right: -14px;
+        top: -8px;
+
+        padding: 11px 8px;
+    }
+
+
+    .HeroVisualCardRing h4 {
+        font-size: 12px;
+    }
+
+
+    .HeroVisualRing {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .HeroVisualRing::before {
+        width: 19px;
+        height: 19px;
+    }
+
+
+    .HeroVisualCardSupport {
+        right: -12px;
+        bottom: -5px;
+    }
+
+
+    .HeroVisualIconCircle {
+        width: 28px;
+        height: 28px;
+    }
+
+}
+
+
+/* ================================================= */
+/* VERY SMALL MOBILE */
+/* ================================================= */
+
+@media (max-width: 380px) {
+
+    .HomeHero {
+        padding: 50px 0 40px;
+    }
+
+
+    .HomeHero-container {
+        width: 94%;
+
+        gap: 30px;
+    }
+
+
+    .HomeHero h1 {
+        font-size: 24px;
+    }
+
+
+    .HomeHeroDescription {
+        font-size: 11px;
+    }
+
+
+    .HeroVisual {
+        width: 245px;
+        height: 245px;
+    }
+
+
+    .HeroVisualBlob {
+        width: 175px;
+        height: 175px;
+
+        left: 35px;
+
+        border-radius: 40px;
+    }
+
+
+    .HeroVisualImage {
+        width: 135px;
+        height: 195px;
+    }
+
+
+    .HeroVisualCard {
+        padding: 6px 8px;
+
+        border-radius: 9px;
+    }
+
+
+    .HeroVisualCard h4 {
+        font-size: 9px;
+    }
+
+
+    .HeroVisualCard p {
+        font-size: 7px;
+    }
+
+
+    .HeroVisualCardFeature {
+        left: -20px;
+        top: 10px;
+    }
+
+
+    .HeroVisualCardRing {
+        right: -20px;
+        top: -10px;
+    }
+
+
+    .HeroVisualCardSupport {
+        right: -18px;
+        bottom: -7px;
+    }
+
+
+    .HeroVisualIconBox,
+    .HeroVisualIconCircle {
+        width: 25px;
+        height: 25px;
+
+        font-size: 10px;
+    }
+
+
+    .HeroVisualRing {
+        width: 27px;
+        height: 27px;
+    }
+
+
+    .HeroVisualRing::before {
+        width: 17px;
+        height: 17px;
+    }
+
+}
+
+
+/* ================================================= */
+/* REDUCED MOTION */
+/* ================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .HomeHero-left,
+    .HomeHero-right,
+    .HomeHeroSubtitle,
+    .HomeHero h1,
+    .HomeHeroDescription,
+    .HomeHeroButtons,
+    .HeroVisualBlob,
+    .HeroVisualImage,
+    .HeroVisualCard {
+        animation: none;
+
+        opacity: 1;
+
+        transform: none;
+    }
+
+}
