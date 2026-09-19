@@ -20,6 +20,7 @@ const lessonRoutes = require("./routes/lessonRoutes");
 const assignmentRoutes = require("./routes/assignmentRoutes");
 const submissionRoutes = require("./routes/submissionRoutes");
 const sessionRoutes = require("./routes/SessionRoutes");
+const reviewRoutes = require("./routes/reviewRoutes");
 
 
 const app = express();
@@ -52,6 +53,7 @@ app.use("/api/lessons", lessonRoutes);
 app.use("/api/assignments", assignmentRoutes);
 app.use("/api/submissions", submissionRoutes);
 app.use("/api/sessions", sessionRoutes);
+app.use("/api/reviews", reviewRoutes);
 
 
 mongoose.connect(process.env.MONGO_URI)
