@@ -1,7 +1,6 @@
-
 import "./StudentDashboard.css";
 
-import StudentDashboard from "../../components/StudentDashboard/StudentDashboard";
+import StudentDashboard from "../../Components/StudentDashboard/StudentDashboard";
 
 
 function StdDashboard() {
@@ -19,4 +18,3 @@ function StdDashboard() {
 }
 
 export default StdDashboard;
-

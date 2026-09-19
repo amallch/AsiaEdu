@@ -1,6 +1,6 @@
 import "./TeacherDashboard.css";
 
-import Sidebar from "../../components/TeacherDashboard/Sidebar/Sidebar";
+import Sidebar from "../../Components/TeacherDashboard/Sidebar/Sidebar";
 
 import {
     useEffect,

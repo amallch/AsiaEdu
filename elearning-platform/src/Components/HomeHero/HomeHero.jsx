@@ -5,8 +5,7 @@ import { useEffect, useState } from "react";
 
 import Button from "../../Utiles/Button/Button";
 
-import heroStudent from "../../assets/heroStudent.png";
-
+import heroStudent from "../../assets/HeroStudent.png";
 
 function HomeHero() {
 
