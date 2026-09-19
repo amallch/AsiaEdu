@@ -48,7 +48,7 @@ function Teachers() {
 
                 const teachersResponse =
                     await fetch(
-                        "http://localhost:5000/api/teachers"
+                        "https://asiaedu-backend.onrender.com/api/teachers"
                     );
 
 
@@ -71,7 +71,7 @@ function Teachers() {
 
                 const sessionsResponse =
                     await fetch(
-                        "http://localhost:5000/api/sessions"
+                        "https://asiaedu-backend.onrender.com/api/sessions"
                     );
 
 
@@ -486,7 +486,7 @@ function Teachers() {
 
             const response =
                 await fetch(
-                    `http://localhost:5000/api/teachers/${statusTeacher.id}`,
+                    `https://asiaedu-backend.onrender.com/api/teachers/${statusTeacher.id}`,
                     {
                         method: "PUT",
                         headers: {
@@ -576,7 +576,7 @@ function Teachers() {
 
 
             const response = await fetch(
-                `http://localhost:5000/api/teachers/${deleteTeacher.id}`,
+                `https://asiaedu-backend.onrender.com/api/teachers/${deleteTeacher.id}`,
                 {
                     method: "DELETE"
                 }

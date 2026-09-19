@@ -9,7 +9,7 @@ import {
 
 
 const API_URL =
-    "http://localhost:5000/api/courses";
+    "https://asiaedu-backend.onrender.com/api/courses";
 
 
 const COURSE_ICONS = {

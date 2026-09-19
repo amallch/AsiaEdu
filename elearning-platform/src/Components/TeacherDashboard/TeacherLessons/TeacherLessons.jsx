@@ -82,7 +82,7 @@ const TeacherLessons = () => {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/teachers"
+                    "https://asiaedu-backend.onrender.com/api/teachers"
                 );
 
 
@@ -186,7 +186,7 @@ const TeacherLessons = () => {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/sessions"
+                    "https://asiaedu-backend.onrender.com/api/sessions"
                 );
 
 
@@ -248,7 +248,7 @@ const TeacherLessons = () => {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/courses"
+                    "https://asiaedu-backend.onrender.com/api/courses"
                 );
 
 
@@ -429,7 +429,7 @@ const TeacherLessons = () => {
 
 
                 const response = await fetch(
-                    `http://localhost:5000/api/lessons/teacher/${teacherId}`
+                    `https://asiaedu-backend.onrender.com/api/lessons/teacher/${teacherId}`
                 );
 
 

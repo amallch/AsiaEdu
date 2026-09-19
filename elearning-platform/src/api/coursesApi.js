@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/courses";
+const API_URL = "https://asiaedu-backend.onrender.com/api/courses";
 
 export const getCourses = async () => {
     const response = await fetch(API_URL);

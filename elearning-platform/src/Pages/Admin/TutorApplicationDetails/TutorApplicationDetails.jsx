@@ -72,7 +72,7 @@ function TutorApplicationsDetails() {
 
                     const response =
                         await fetch(
-                            `http://localhost:5000/api/tutor-applications/${id}`
+                            `https://asiaedu-backend.onrender.com/api/tutor-applications/${id}`
                         );
 
 
@@ -173,7 +173,7 @@ function TutorApplicationsDetails() {
 
                 const response =
                     await fetch(
-                        `http://localhost:5000/api/tutor-applications/${application._id}`,
+                        `https://asiaedu-backend.onrender.com/api/tutor-applications/${application._id}`,
                         {
                             method: "PUT",
 
@@ -285,7 +285,7 @@ function TutorApplicationsDetails() {
 
                 const response =
                     await fetch(
-                        `http://localhost:5000/api/tutor-applications/${application._id}`,
+                        `https://asiaedu-backend.onrender.com/api/tutor-applications/${application._id}`,
                         {
                             method: "PUT",
 
@@ -427,7 +427,7 @@ function TutorApplicationsDetails() {
 
                 const response =
                     await fetch(
-                        `http://localhost:5000/api/tutor-applications/${application._id}`,
+                        `https://asiaedu-backend.onrender.com/api/tutor-applications/${application._id}`,
                         {
                             method: "DELETE"
                         }

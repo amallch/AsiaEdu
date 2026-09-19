@@ -21,7 +21,7 @@ function ForgotPassword() {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/users/forgot-password",
+                "https://asiaedu-backend.onrender.com/api/users/forgot-password",
                 {
                     method: "POST",
 

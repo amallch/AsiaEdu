@@ -22,7 +22,7 @@ function HomeHero() {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/courses"
+                    "https://asiaedu-backend.onrender.com/api/courses"
                 );
 
                 if (!response.ok) {

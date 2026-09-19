@@ -47,7 +47,7 @@ function TeacherDashboard() {
 
                 const response =
                     await fetch(
-                        `http://localhost:5000/api/teachers/user/${user.id}`
+                        `https://asiaedu-backend.onrender.com/api/teachers/user/${user.id}`
                     );
 
 

@@ -297,7 +297,7 @@ function ApplyToTeach() {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/tutor-applications",
+                "https://asiaedu-backend.onrender.com/api/tutor-applications",
                 {
 
                     method: "POST",

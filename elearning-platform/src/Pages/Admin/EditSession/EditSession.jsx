@@ -9,13 +9,13 @@ import {
 
 
 const SESSIONS_API =
-    "http://localhost:5000/api/sessions";
+    "https://asiaedu-backend.onrender.com/api/sessions";
 
 const COURSES_API =
-    "http://localhost:5000/api/courses";
+    "https://asiaedu-backend.onrender.com/api/courses";
 
 const TEACHERS_API =
-    "http://localhost:5000/api/teachers";
+    "https://asiaedu-backend.onrender.com/api/teachers";
 
 
 const INITIAL_FORM = {

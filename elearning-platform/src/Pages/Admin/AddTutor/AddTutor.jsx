@@ -140,7 +140,7 @@ function AddTutor() {
 
                 const response =
                     await fetch(
-                        "http://localhost:5000/api/courses"
+                        "https://asiaedu-backend.onrender.com/api/courses"
                     );
 
 
@@ -473,7 +473,7 @@ function AddTutor() {
 
                 const response =
                     await fetch(
-                        `http://localhost:5000/api/tutor-applications/${application._id}/create-teacher`,
+                        `https://asiaedu-backend.onrender.com/api/tutor-applications/${application._id}/create-teacher`,
                         {
                             method: "POST",
 

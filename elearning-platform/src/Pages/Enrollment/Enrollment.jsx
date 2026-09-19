@@ -30,10 +30,10 @@ const LEVEL_META = {
 // =====================================================
 
 const SESSIONS_API =
-    "http://localhost:5000/api/sessions";
+    "https://asiaedu-backend.onrender.com/api/sessions";
 
 const STUDENTS_API =
-    "http://localhost:5000/api/students";
+    "https://asiaedu-backend.onrender.com/api/students";
 
 // =====================================================
 // COMPONENT
@@ -628,7 +628,7 @@ function Enrollment() {
 
             const response =
                 await fetch(
-                    "http://localhost:5000/api/enrollments",
+                    "https://asiaedu-backend.onrender.com/api/enrollments",
                     {
                         method: "POST",
 

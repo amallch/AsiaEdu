@@ -76,7 +76,7 @@ function TeacherAssignments() {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/teachers"
+                    "https://asiaedu-backend.onrender.com/api/teachers"
                 );
 
                 const data = await response.json();
@@ -176,7 +176,7 @@ function TeacherAssignments() {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/sessions"
+                    "https://asiaedu-backend.onrender.com/api/sessions"
                 );
 
                 const data = await response.json();
@@ -234,7 +234,7 @@ function TeacherAssignments() {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/courses"
+                    "https://asiaedu-backend.onrender.com/api/courses"
                 );
 
                 const data = await response.json();
@@ -413,7 +413,7 @@ function TeacherAssignments() {
 
 
                 const response = await fetch(
-                    `http://localhost:5000/api/assignments/teacher/${teacherId}`
+                    `https://asiaedu-backend.onrender.com/api/assignments/teacher/${teacherId}`
                 );
 
 

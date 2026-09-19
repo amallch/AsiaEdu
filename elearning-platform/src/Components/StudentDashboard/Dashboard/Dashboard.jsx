@@ -83,7 +83,7 @@ function Dashboard() {
 
                 const studentResponse =
                     await fetch(
-                        `http://localhost:5000/api/students/user/${userId}`
+                        `https://asiaedu-backend.onrender.com/api/students/user/${userId}`
                     );
 
 
@@ -145,7 +145,7 @@ function Dashboard() {
 
                     const lessonsResponse =
                         await fetch(
-                            `http://localhost:5000/api/lessons/student/${currentStudent._id}`
+                            `https://asiaedu-backend.onrender.com/api/lessons/student/${currentStudent._id}`
                         );
 
 
@@ -190,7 +190,7 @@ function Dashboard() {
 
                     let assignmentsResponse =
                         await fetch(
-                            `http://localhost:5000/api/assignments/student/${currentStudent._id}`
+                            `https://asiaedu-backend.onrender.com/api/assignments/student/${currentStudent._id}`
                         );
 
 
@@ -208,7 +208,7 @@ function Dashboard() {
 
                         assignmentsResponse =
                             await fetch(
-                                "http://localhost:5000/api/assignments/student"
+                                "https://asiaedu-backend.onrender.com/api/assignments/student"
                             );
 
                     }
@@ -255,7 +255,7 @@ function Dashboard() {
 
                     const submissionsResponse =
                         await fetch(
-                            `http://localhost:5000/api/submissions/student/${currentStudent._id}`
+                            `https://asiaedu-backend.onrender.com/api/submissions/student/${currentStudent._id}`
                         );
 
 

@@ -71,15 +71,15 @@ function Statistics() {
             ] = await Promise.all([
 
                 fetch(
-                    "http://localhost:5000/api/students"
+                    "https://asiaedu-backend.onrender.com/api/students"
                 ),
 
                 fetch(
-                    "http://localhost:5000/api/teachers"
+                    "https://asiaedu-backend.onrender.com/api/teachers"
                 ),
 
                 fetch(
-                    "http://localhost:5000/api/courses"
+                    "https://asiaedu-backend.onrender.com/api/courses"
                 )
 
             ]);

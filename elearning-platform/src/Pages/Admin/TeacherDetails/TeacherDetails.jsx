@@ -84,7 +84,7 @@ function TeacherDetails() {
 
                 const teacherResponse =
                     await fetch(
-                        `http://localhost:5000/api/teachers/${id}`
+                        `https://asiaedu-backend.onrender.com/api/teachers/${id}`
                     );
 
 
@@ -108,7 +108,7 @@ function TeacherDetails() {
 
                 const sessionsResponse =
                     await fetch(
-                        "http://localhost:5000/api/sessions"
+                        "https://asiaedu-backend.onrender.com/api/sessions"
                     );
 
 
@@ -341,7 +341,7 @@ function TeacherDetails() {
 
                 const response =
                     await fetch(
-                        `http://localhost:5000/api/teachers/${id}/course-status`,
+                        `https://asiaedu-backend.onrender.com/api/teachers/${id}/course-status`,
                         {
                             method: "PUT",
 
@@ -584,7 +584,7 @@ function TeacherDetails() {
 
                 const response =
                     await fetch(
-                        `http://localhost:5000/api/courses/${courseId}`,
+                        `https://asiaedu-backend.onrender.com/api/courses/${courseId}`,
                         {
                             method: "DELETE"
                         }
@@ -807,7 +807,7 @@ function TeacherDetails() {
 
                 const response =
                     await fetch(
-                        `http://localhost:5000/api/sessions/${sessionId}/status`,
+                        `https://asiaedu-backend.onrender.com/api/sessions/${sessionId}/status`,
                         {
                             method: "PUT",
 
@@ -998,7 +998,7 @@ function TeacherDetails() {
 
                 const response =
                     await fetch(
-                        `http://localhost:5000/api/sessions/${sessionId}`,
+                        `https://asiaedu-backend.onrender.com/api/sessions/${sessionId}`,
                         {
                             method: "DELETE"
                         }

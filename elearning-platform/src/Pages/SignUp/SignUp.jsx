@@ -107,7 +107,7 @@ function SignUp() {
             ================================================= */
 
             const response = await fetch(
-                "http://localhost:5000/api/users",
+                "https://asiaedu-backend.onrender.com/api/users",
                 {
                     method: "POST",
 

@@ -300,15 +300,15 @@ function Assignments() {
                 ] = await Promise.all([
 
                     fetch(
-                        "http://localhost:5000/api/assignments/admin"
+                        "https://asiaedu-backend.onrender.com/api/assignments/admin"
                     ),
 
                     fetch(
-                        "http://localhost:5000/api/courses"
+                        "https://asiaedu-backend.onrender.com/api/courses"
                     ),
 
                     fetch(
-                        "http://localhost:5000/api/sessions"
+                        "https://asiaedu-backend.onrender.com/api/sessions"
                     )
 
                 ]);

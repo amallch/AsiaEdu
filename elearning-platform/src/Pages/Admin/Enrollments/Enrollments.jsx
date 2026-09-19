@@ -43,7 +43,7 @@ function Enrollments() {
 
 
                 const response = await fetch(
-                    "http://localhost:5000/api/enrollments"
+                    "https://asiaedu-backend.onrender.com/api/enrollments"
                 );
 
 
@@ -222,7 +222,7 @@ function Enrollments() {
         try {
 
             const response = await fetch(
-                `http://localhost:5000/api/enrollments/${deleteEnrollment._id}`,
+                `https://asiaedu-backend.onrender.com/api/enrollments/${deleteEnrollment._id}`,
                 {
                     method: "DELETE"
                 }

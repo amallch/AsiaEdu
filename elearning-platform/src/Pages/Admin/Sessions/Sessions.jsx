@@ -6,10 +6,10 @@ import { useNavigate } from "react-router-dom";
 
 
 const API_URL =
-    "http://localhost:5000/api/sessions";
+    "https://asiaedu-backend.onrender.com/api/sessions";
 
 const COURSES_API =
-    "http://localhost:5000/api/courses";
+    "https://asiaedu-backend.onrender.com/api/courses";
 
 
 function Sessions() {

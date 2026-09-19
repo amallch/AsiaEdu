@@ -50,7 +50,7 @@ function Students() {
 
                 const studentsResponse =
                     await fetch(
-                        "http://localhost:5000/api/students"
+                        "https://asiaedu-backend.onrender.com/api/students"
                     );
 
 
@@ -78,7 +78,7 @@ function Students() {
 
                 const coursesResponse =
                     await fetch(
-                        "http://localhost:5000/api/courses"
+                        "https://asiaedu-backend.onrender.com/api/courses"
                     );
 
 
@@ -419,7 +419,7 @@ function Students() {
 
             const response =
                 await fetch(
-                    `http://localhost:5000/api/students/${statusStudent._id}`,
+                    `https://asiaedu-backend.onrender.com/api/students/${statusStudent._id}`,
                     {
                         method: "PUT",
                         headers: {
@@ -506,7 +506,7 @@ function Students() {
 
             const response =
                 await fetch(
-                    `http://localhost:5000/api/students/${deleteStudent._id}`,
+                    `https://asiaedu-backend.onrender.com/api/students/${deleteStudent._id}`,
                     {
                         method: "DELETE"
                     }

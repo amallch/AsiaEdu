@@ -32,7 +32,7 @@ function ViewContactMessage() {
                 setLoading(true);
 
                 const response = await fetch(
-                    `http://localhost:5000/api/contact/${id}`
+                    `https://asiaedu-backend.onrender.com/api/contact/${id}`
                 );
 
 

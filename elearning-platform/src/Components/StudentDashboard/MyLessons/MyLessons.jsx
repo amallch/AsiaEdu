@@ -209,7 +209,7 @@ function MyLessons() {
 
                 const studentResponse =
                     await fetch(
-                        `http://localhost:5000/api/students/user/${loggedInUser.id}`
+                        `https://asiaedu-backend.onrender.com/api/students/user/${loggedInUser.id}`
                     );
 
 
@@ -404,7 +404,7 @@ function MyLessons() {
 
                 const response =
                     await fetch(
-                        `http://localhost:5000/api/lessons/student/${currentStudentId}`
+                        `https://asiaedu-backend.onrender.com/api/lessons/student/${currentStudentId}`
                     );
 
 
@@ -687,7 +687,7 @@ function MyLessons() {
 
                 const response =
                     await fetch(
-                        `http://localhost:5000/api/lessons/progress/${studentId}/${lesson._id}`,
+                        `https://asiaedu-backend.onrender.com/api/lessons/progress/${studentId}/${lesson._id}`,
                         {
                             method:
                                 "POST",

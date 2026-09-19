@@ -30,7 +30,7 @@ function CourseDetails() {
             try {
 
                 const response = await fetch(
-                    `http://localhost:5000/api/courses/${id}`
+                    `https://asiaedu-backend.onrender.com/api/courses/${id}`
                 );
 
 

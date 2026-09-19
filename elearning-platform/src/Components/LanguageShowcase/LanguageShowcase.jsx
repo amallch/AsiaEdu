@@ -39,7 +39,7 @@ function LanguageShowcase() {
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/courses")
+        fetch("https://asiaedu-backend.onrender.com/api/courses")
 
             .then((response) => response.json())
 

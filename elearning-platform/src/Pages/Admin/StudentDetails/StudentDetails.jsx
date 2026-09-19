@@ -33,7 +33,7 @@ function StudentDetails() {
             setLoading(true);
 
             const response = await fetch(
-                `http://localhost:5000/api/students/${studentId}`
+                `https://asiaedu-backend.onrender.com/api/students/${studentId}`
             );
 
 
@@ -111,7 +111,7 @@ function StudentDetails() {
 
 
             const response = await fetch(
-                `http://localhost:5000/api/enrollments/${enrollmentId}/status`,
+                `https://asiaedu-backend.onrender.com/api/enrollments/${enrollmentId}/status`,
                 {
                     method: "PUT",
 

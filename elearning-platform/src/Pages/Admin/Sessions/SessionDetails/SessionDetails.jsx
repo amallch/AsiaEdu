@@ -9,7 +9,7 @@ import {
 
 
 const API_URL =
-    "http://localhost:5000/api/sessions";
+    "https://asiaedu-backend.onrender.com/api/sessions";
 
 
 function SessionDetails() {

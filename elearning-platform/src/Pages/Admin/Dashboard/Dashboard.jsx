@@ -45,17 +45,17 @@ function Dashboard() {
                     tutorApplicationsResponse
                 ] = await Promise.all([
 
-                    fetch("http://localhost:5000/api/students"),
+                    fetch("https://asiaedu-backend.onrender.com/api/students"),
 
-                    fetch("http://localhost:5000/api/teachers"),
+                    fetch("https://asiaedu-backend.onrender.com/api/teachers"),
 
-                    fetch("http://localhost:5000/api/courses"),
+                    fetch("https://asiaedu-backend.onrender.com/api/courses"),
 
-                    fetch("http://localhost:5000/api/sessions"),
+                    fetch("https://asiaedu-backend.onrender.com/api/sessions"),
 
-                    fetch("http://localhost:5000/api/enrollments"),
+                    fetch("https://asiaedu-backend.onrender.com/api/enrollments"),
 
-                    fetch("http://localhost:5000/api/tutor-applications")
+                    fetch("https://asiaedu-backend.onrender.com/api/tutor-applications")
 
                 ]);
 

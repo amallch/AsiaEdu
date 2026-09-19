@@ -111,7 +111,7 @@ function ViewAssignment() {
         try {
 
             const response = await fetch(
-                `http://localhost:5000/api/assignments/${assignment._id}`,
+                `https://asiaedu-backend.onrender.com/api/assignments/${assignment._id}`,
                 {
                     method: "DELETE"
                 }

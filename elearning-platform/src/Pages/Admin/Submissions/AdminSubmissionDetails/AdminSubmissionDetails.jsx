@@ -326,7 +326,7 @@ function AdminSubmissionDetails({
         ) {
 
             finalUrl =
-                `http://localhost:5000${attachmentUrl}`;
+                `https://asiaedu-backend.onrender.com${attachmentUrl}`;
 
         }
 

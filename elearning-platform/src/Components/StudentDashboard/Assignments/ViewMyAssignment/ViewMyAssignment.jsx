@@ -84,7 +84,7 @@ function ViewMyAssignment() {
 
                 const studentResponse =
                     await fetch(
-                        `http://localhost:5000/api/students/user/${userId}`
+                        `https://asiaedu-backend.onrender.com/api/students/user/${userId}`
                     );
 
 
@@ -118,7 +118,7 @@ function ViewMyAssignment() {
 
                     const submissionsResponse =
                         await fetch(
-                            `http://localhost:5000/api/submissions/student/${currentStudent._id}`
+                            `https://asiaedu-backend.onrender.com/api/submissions/student/${currentStudent._id}`
                         );
 
 
@@ -450,7 +450,7 @@ function ViewMyAssignment() {
         ) {
 
             finalUrl =
-                `http://localhost:5000${attachment.url}`;
+                `https://asiaedu-backend.onrender.com${attachment.url}`;
 
         }
 
@@ -660,7 +660,7 @@ function ViewMyAssignment() {
 
                 const uploadResponse =
                     await fetch(
-                        "http://localhost:5000/api/submissions/upload",
+                        "https://asiaedu-backend.onrender.com/api/submissions/upload",
                         {
                             method: "POST",
 
@@ -697,7 +697,7 @@ function ViewMyAssignment() {
 
             const response =
                 await fetch(
-                    "http://localhost:5000/api/submissions",
+                    "https://asiaedu-backend.onrender.com/api/submissions",
                     {
                         method: "POST",
 

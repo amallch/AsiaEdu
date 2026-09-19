@@ -89,7 +89,7 @@ function Dashboard() {
 
                 const teacherResponse =
                     await fetch(
-                        `http://localhost:5000/api/teachers/user/${userId}`
+                        `https://asiaedu-backend.onrender.com/api/teachers/user/${userId}`
                     );
 
 
@@ -143,23 +143,23 @@ function Dashboard() {
                 ] = await Promise.all([
 
                     fetch(
-                        "http://localhost:5000/api/courses"
+                        "https://asiaedu-backend.onrender.com/api/courses"
                     ),
 
                     fetch(
-                        "http://localhost:5000/api/students"
+                        "https://asiaedu-backend.onrender.com/api/students"
                     ),
 
                     fetch(
-                        `http://localhost:5000/api/lessons/teacher/${teacherId}`
+                        `https://asiaedu-backend.onrender.com/api/lessons/teacher/${teacherId}`
                     ),
 
                     fetch(
-                        `http://localhost:5000/api/assignments/teacher/${teacherId}`
+                        `https://asiaedu-backend.onrender.com/api/assignments/teacher/${teacherId}`
                     ),
 
                     fetch(
-                        "http://localhost:5000/api/sessions"
+                        "https://asiaedu-backend.onrender.com/api/sessions"
                     )
 
                 ]);
@@ -616,7 +616,7 @@ function Dashboard() {
 
                                         const response =
                                             await fetch(
-                                                `http://localhost:5000/api/submissions/assignment/${assignment._id}`
+                                                `https://asiaedu-backend.onrender.com/api/submissions/assignment/${assignment._id}`
                                             );
 
 

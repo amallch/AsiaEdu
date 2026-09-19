@@ -256,7 +256,7 @@ function TeacherSubmissionDetails({
 
                 const uploadResponse =
                     await fetch(
-                        "http://localhost:5000/api/assignments/upload",
+                        "https://asiaedu-backend.onrender.com/api/assignments/upload",
                         {
                             method: "POST",
                             body: formData
@@ -301,7 +301,7 @@ function TeacherSubmissionDetails({
 
             const response =
                 await fetch(
-                    `http://localhost:5000/api/submissions/${submission._id}`,
+                    `https://asiaedu-backend.onrender.com/api/submissions/${submission._id}`,
                     {
                         method: "PUT",
 

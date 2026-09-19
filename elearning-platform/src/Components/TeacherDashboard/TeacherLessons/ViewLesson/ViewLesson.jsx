@@ -111,7 +111,7 @@ function ViewLesson() {
         try {
 
             const response = await fetch(
-                `http://localhost:5000/api/lessons/${lesson._id}`,
+                `https://asiaedu-backend.onrender.com/api/lessons/${lesson._id}`,
                 {
                     method: "DELETE"
                 }

@@ -43,7 +43,7 @@ function TutorApplications() {
 
 
                 const response = await fetch(
-                    "http://localhost:5000/api/tutor-applications"
+                    "https://asiaedu-backend.onrender.com/api/tutor-applications"
                 );
 
 
@@ -244,7 +244,7 @@ function TutorApplications() {
 
 
             const response = await fetch(
-                `http://localhost:5000/api/tutor-applications/${deleteApplication._id}`,
+                `https://asiaedu-backend.onrender.com/api/tutor-applications/${deleteApplication._id}`,
                 {
                     method: "DELETE"
                 }

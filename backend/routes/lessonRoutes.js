@@ -85,7 +85,7 @@ router.post(
                             file.originalname,
 
                         url:
-                            "http://localhost:5000/uploads/" +
+                            "https://asiaedu-backend.onrender.com/uploads/" +
                             file.filename
 
                     };

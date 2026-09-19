@@ -174,7 +174,7 @@ function AddLesson() {
 
             const response =
                 await fetch(
-                    "http://localhost:5000/api/lessons/upload",
+                    "https://asiaedu-backend.onrender.com/api/lessons/upload",
                     {
                         method: "POST",
                         body: formData
@@ -314,7 +314,7 @@ function AddLesson() {
 
             const response =
                 await fetch(
-                    "http://localhost:5000/api/lessons",
+                    "https://asiaedu-backend.onrender.com/api/lessons",
                     {
                         method: "POST",
 

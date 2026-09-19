@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const API_URL =
-    "http://localhost:5000/api/courses";
+    "https://asiaedu-backend.onrender.com/api/courses";
 
 
 const INITIAL_FORM = {

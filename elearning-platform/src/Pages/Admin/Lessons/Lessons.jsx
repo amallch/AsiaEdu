@@ -104,7 +104,7 @@ function Lessons() {
 
                 const coursesResponse =
                     await fetch(
-                        "http://localhost:5000/api/courses"
+                        "https://asiaedu-backend.onrender.com/api/courses"
                     );
 
 
@@ -249,7 +249,7 @@ function Lessons() {
 
                 const sessionsResponse =
                     await fetch(
-                        "http://localhost:5000/api/sessions"
+                        "https://asiaedu-backend.onrender.com/api/sessions"
                     );
 
 
@@ -303,7 +303,7 @@ function Lessons() {
 
                 const lessonsResponse =
                     await fetch(
-                        "http://localhost:5000/api/lessons/admin"
+                        "https://asiaedu-backend.onrender.com/api/lessons/admin"
                     );
 
 
