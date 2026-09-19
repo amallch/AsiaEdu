@@ -1,4 +1,4 @@
-import "./TeachersSection.css";
+import "./Teacherssection.css";
 import Hero from "../../Components/Hero/Hero";
 
 import teacherImg1 from "../../assets/teacher1.webp";

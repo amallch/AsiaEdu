@@ -1,6 +1,7 @@
 import "./StudentDashboard.css";
 
-import Sidebar from "../../components/StudentDashboard/Sidebar/Sidebar";
+import Sidebar from "../Sidebar/Sidebar";
+
 
 import {
     useEffect,

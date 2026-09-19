@@ -1,4 +1,4 @@
-import "./OurValues.css";
+import "./Ourvalues.css";
 
 import { useEffect, useRef } from "react";
 

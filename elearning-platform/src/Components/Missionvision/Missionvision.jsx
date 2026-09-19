@@ -1,4 +1,5 @@
-import "./MissionVision.css";
+import "./Missionvision.css";
+
 
 import Hero from "../../Components/Hero/Hero"
 
