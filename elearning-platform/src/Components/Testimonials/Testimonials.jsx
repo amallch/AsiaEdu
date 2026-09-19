@@ -6,58 +6,52 @@ import TestimonialCard from "../../Cards/TestimonialCard/TestimonialCard";
 
 import Hero from "../../Components/Hero/Hero";
 
+import { getReviews } from "../../api/reviewsApi";
+
 
 function Testimonials() {
 
-    const testimonials = [
-        {
-            id: 1,
-            name: "Emily Thompson",
-            job: "Marketing Manager",
-            comment:
-                "AsiaEdu made learning Chinese much easier than I expected. The live classes and supportive teachers helped me gain confidence in speaking every week."
-        },
+    /* =====================================================
+       REVIEWS STATE
+    ===================================================== */
 
-        {
-            id: 2,
-            name: "Daniel Carter",
-            job: "University Student",
-            comment:
-                "I started Japanese with zero knowledge, and after just a few months I could read Hiragana and hold simple conversations. The lessons were engaging and well organized."
-        },
+    const [testimonials, setTestimonials] = useState([]);
 
-        {
-            id: 3,
-            name: "Sophia Kim",
-            job: "Exchange Student",
-            comment:
-                "I needed Korean for my studies abroad, and this course exceeded my expectations. The instructors explained everything clearly and always encouraged us to practice."
-        },
+    const [loading, setLoading] = useState(true);
 
-        {
-            id: 4,
-            name: "Olivia Wilson",
-            job: "Language Student",
-            comment:
-                "The teachers are patient and professional, and the lessons are very easy to follow. I feel much more comfortable speaking Chinese now."
-        },
+    const [error, setError] = useState(null);
 
-        {
-            id: 5,
-            name: "James Anderson",
-            job: "University Student",
-            comment:
-                "The Japanese lessons are well structured and interactive. I especially enjoy the speaking activities because they help me practice what I learn."
-        },
 
-        {
-            id: 6,
-            name: "Mia Johnson",
-            job: "Exchange Student",
-            comment:
-                "AsiaEdu gave me the confidence I needed to start learning Korean. The classes are enjoyable and the instructors are always supportive."
-        }
-    ];
+    /* =====================================================
+       FETCH REVIEWS FROM API
+    ===================================================== */
+
+    useEffect(() => {
+
+        const fetchReviews = async () => {
+
+            try {
+
+                const data = await getReviews();
+
+                setTestimonials(data.reviews || []);
+
+            } catch (err) {
+
+                setError(err.message);
+
+            } finally {
+
+                setLoading(false);
+
+            }
+
+        };
+
+
+        fetchReviews();
+
+    }, []);
 
 
     /* =====================================================
@@ -265,59 +259,89 @@ function Testimonials() {
 
 
                 {/* =================================================
+                   LOADING / ERROR
+                ================================================= */}
+
+                {loading && (
+
+                    <p className="Testimonials-status">
+                        Loading reviews...
+                    </p>
+
+                )}
+
+                {error && (
+
+                    <p className="Testimonials-status">
+                        Could not load reviews.
+                    </p>
+
+                )}
+
+
+                {/* =================================================
                    SLIDER
                 ================================================= */}
 
-                <div className="Testimonials-slider">
+                {!loading && !error && testimonials.length > 0 && (
+
+                    <div className="Testimonials-slider">
 
 
-                    <button
-                        className="Testimonials-arrow Testimonials-arrow-left"
-                        type="button"
-                        onClick={previousTestimonials}
-                        disabled={
-                            currentIndex === 0
-                        }
-                    >
+                        <button
+                            className="Testimonials-arrow Testimonials-arrow-left"
+                            type="button"
+                            onClick={previousTestimonials}
+                            disabled={
+                                currentIndex === 0
+                            }
+                        >
 
-                        <i className="fa-solid fa-arrow-left"></i>
+                            <i className="fa-solid fa-arrow-left"></i>
 
-                    </button>
+                        </button>
 
 
-                    <div className="Testimonials-cards">
+                        <div className="Testimonials-cards">
 
-                        {visibleTestimonials.map(
-                            (testimonial) => (
+                            {visibleTestimonials.map(
+                                (testimonial) => (
 
-                                <TestimonialCard
-                                    key={testimonial.id}
-                                    testimonial={testimonial}
-                                />
+                                    <TestimonialCard
+                                        key={testimonial._id}
+                                        testimonial={{
+                                            name: testimonial.name,
+                                            job: testimonial.courseName,
+                                            comment: testimonial.message,
+                                            rating: testimonial.rating
+                                        }}
+                                    />
 
-                            )
-                        )}
+                                )
+                            )}
+
+                        </div>
+
+
+                        <button
+                            className="Testimonials-arrow Testimonials-arrow-right"
+                            type="button"
+                            onClick={nextTestimonials}
+                            disabled={
+                                currentIndex >=
+                                testimonials.length -
+                                visibleCards
+                            }
+                        >
+
+                            <i className="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
 
                     </div>
 
-
-                    <button
-                        className="Testimonials-arrow Testimonials-arrow-right"
-                        type="button"
-                        onClick={nextTestimonials}
-                        disabled={
-                            currentIndex >=
-                            testimonials.length -
-                            visibleCards
-                        }
-                    >
-
-                        <i className="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-
-                </div>
+                )}
 
             </div>
 
