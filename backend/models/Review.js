@@ -8,10 +8,10 @@ const reviewSchema = new mongoose.Schema(
             trim: true
         },
 
-        role: {
+        courseName: {
             type: String,
-            trim: true,
-            default: "Student"
+            required: true,
+            trim: true
         },
 
         rating: {

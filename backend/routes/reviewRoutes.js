@@ -16,7 +16,7 @@ router.post("/", async (req, res) => {
 
         const review = new Review({
             name: req.body.name,
-            role: req.body.role,
+            courseName: req.body.courseName,
             rating: req.body.rating,
             message: req.body.message
         });
