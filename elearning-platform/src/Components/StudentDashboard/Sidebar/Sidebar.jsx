@@ -32,6 +32,11 @@ const NAVIGATION_GROUPS = [
                 to: "/student-dashboard/grades",
                 icon: "fa-solid fa-chart-line",
                 label: "Grades"
+            },
+            {
+                to: "/student-dashboard/reviews",
+                icon: "fa-solid fa-star",
+                label: "My Review"
             }
         ]
     },

@@ -88,6 +88,9 @@ import MyLessons
 import ViewMyLesson
     from "./Components/StudentDashboard/MyLessons/ViewMyLesson/ViewMyLesson";
 
+import MyReview
+    from "./Components/StudentDashboard/MyReview/MyReview";
+
 
 /* =========================================================
    TEACHER DASHBOARD
@@ -504,6 +507,12 @@ function App() {
                     <Route
                         path="lessons/view"
                         element={<ViewMyLesson />}
+                    />
+
+
+                    <Route
+                        path="reviews"
+                        element={<MyReview />}
                     />
 
                 </Route>

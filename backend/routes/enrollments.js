@@ -805,6 +805,53 @@ router.get(
 
 
 // =========================================================
+// GET ENROLLMENTS FOR ONE STUDENT
+// PUBLIC
+// GET /api/enrollments/student/:userId
+// =========================================================
+
+router.get(
+    "/student/:userId",
+    async (req, res) => {
+
+        try {
+
+            const enrollments =
+                await Enrollment.find({
+                    userId: req.params.userId,
+                    status: "Confirmed",
+                    enrollmentStatus: "Active"
+                })
+                .sort({ createdAt: -1 });
+
+
+            return res.json({
+                enrollments: enrollments
+            });
+
+        }
+
+        catch (error) {
+
+            console.error(
+                "Get student enrollments error:",
+                error
+            );
+
+            return res.status(500).json({
+                message:
+                    "Failed to fetch student enrollments.",
+                error:
+                    error.message
+            });
+
+        }
+
+    }
+);
+
+
+// =========================================================
 // GET ONE ENROLLMENT
 // ADMIN
 // =========================================================

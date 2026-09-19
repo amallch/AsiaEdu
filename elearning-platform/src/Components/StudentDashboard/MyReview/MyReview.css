@@ -1,0 +1,636 @@
+/* =========================================================
+   MY REVIEW
+========================================================= */
+
+.MyReview {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.MyReview-header {
+    margin-bottom: 25px;
+}
+
+
+.MyReview-header span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #CC3650;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+}
+
+
+.MyReview-header h1 {
+    margin: 0 0 5px;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.MyReview-header p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.MyReview-form {
+    width: 100%;
+
+    padding: 22px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+}
+
+
+.MyReview-field {
+    margin-bottom: 18px;
+}
+
+
+.MyReview-field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #746B66;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.MyReview-input {
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+
+    transition: border-color 0.2s ease;
+}
+
+
+.MyReview-input:focus-within {
+    border-color: rgba(204, 54, 80, 0.35);
+}
+
+
+.MyReview-input i {
+    color: #958B84;
+
+    font-size: 13px;
+}
+
+
+.MyReview-input input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 13px;
+}
+
+
+.MyReview-input input::placeholder {
+    color: #B0A8A2;
+}
+
+
+.MyReview-input input[readonly] {
+    color: #746B66;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   RATING INPUT
+========================================================= */
+
+.MyReview-rating-input {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 14px 15px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+}
+
+
+.MyReview-rating-input i {
+    font-size: 22px;
+
+    color: #F2B01E;
+
+    cursor: pointer;
+
+    transition: transform 0.15s ease;
+}
+
+
+.MyReview-rating-input i:hover {
+    transform: scale(1.15);
+}
+
+
+.MyReview-rating-input span {
+    margin-left: 12px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.MyReview-textarea {
+    padding: 14px 15px;
+
+    box-sizing: border-box;
+
+    background-color: #FBFAFA;
+
+    border: 1px solid rgba(44, 34, 34, 0.08);
+
+    border-radius: 10px;
+
+    transition: border-color 0.2s ease;
+}
+
+
+.MyReview-textarea:focus-within {
+    border-color: rgba(204, 54, 80, 0.35);
+}
+
+
+.MyReview-textarea textarea {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background-color: transparent;
+
+    color: #2C2222;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    resize: vertical;
+}
+
+
+.MyReview-textarea textarea::placeholder {
+    color: #B0A8A2;
+}
+
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.MyReview-feedback {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 15px;
+
+    padding: 12px 15px;
+
+    box-sizing: border-box;
+
+    border-radius: 9px;
+
+    font-size: 12px;
+}
+
+
+.MyReview-feedback-error {
+    background-color: #FDECEC;
+
+    border: 1px solid rgba(204, 54, 80, 0.12);
+
+    color: #CC3650;
+}
+
+
+.MyReview-feedback-success {
+    background-color: #E9F7EC;
+
+    border: 1px solid rgba(40, 160, 80, 0.15);
+
+    color: #1F8A47;
+}
+
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+.MyReview-submit {
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 0 22px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #CC3650;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.MyReview-submit:hover:not(:disabled) {
+    background-color: #B92F47;
+
+    transform: translateY(-1px);
+}
+
+
+.MyReview-submit:disabled {
+    opacity: 0.7;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   EXISTING REVIEW CARD
+========================================================= */
+
+.MyReview-card {
+    width: 100%;
+
+    padding: 22px;
+
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+}
+
+
+.MyReview-card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding-bottom: 16px;
+
+    margin-bottom: 16px;
+
+    border-bottom: 1px solid rgba(44, 34, 34, 0.06);
+}
+
+
+.MyReview-avatar {
+    width: 46px;
+
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color: rgba(204, 54, 80, 0.09);
+
+    color: #CC3650;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+.MyReview-card-info {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    min-width: 0;
+}
+
+
+.MyReview-card-info strong {
+    font-size: 14px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.MyReview-card-info span {
+    font-size: 12px;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   STARS
+========================================================= */
+
+.MyReview-stars {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 3px;
+
+    color: #F2B01E;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   CARD BODY
+========================================================= */
+
+.MyReview-card-body {
+    padding: 0 0 18px;
+}
+
+
+.MyReview-card-body p {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #746B66;
+
+    white-space: pre-wrap;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   CARD FOOTER
+========================================================= */
+
+.MyReview-card-footer {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding-top: 14px;
+
+    border-top: 1px solid rgba(44, 34, 34, 0.06);
+
+    font-size: 11px;
+
+    color: #958B84;
+}
+
+
+.MyReview-card-footer i {
+    color: #CC3650;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   EMPTY / ERROR
+========================================================= */
+
+.MyReview-empty {
+    width: 100%;
+
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid rgba(44, 34, 34, 0.07);
+
+    border-radius: 13px;
+}
+
+
+.MyReview-empty > i {
+    margin-bottom: 14px;
+
+    font-size: 30px;
+
+    color: #CC3650;
+}
+
+
+.MyReview-empty h2 {
+    margin: 0 0 7px;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #2C2222;
+}
+
+
+.MyReview-empty p {
+    max-width: 400px;
+
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #958B84;
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .MyReview-form,
+    .MyReview-card {
+        padding: 18px;
+    }
+
+
+    .MyReview-header h1 {
+        font-size: 22px;
+    }
+
+
+    .MyReview-rating-input i {
+        font-size: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .MyReview-header h1 {
+        font-size: 20px;
+    }
+
+
+    .MyReview-header p {
+        font-size: 12px;
+    }
+
+
+    .MyReview-card-header {
+        flex-wrap: wrap;
+    }
+
+
+    .MyReview-card-info strong {
+        font-size: 13px;
+    }
+
+
+    .MyReview-card-info span {
+        font-size: 11px;
+    }
+
+}
