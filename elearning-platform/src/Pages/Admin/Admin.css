@@ -42,9 +42,7 @@
 
     width: 245px;
 
-    height: auto;
-
-    min-height: 0;
+    min-width: 245px;
 
     flex-shrink: 0;
 
@@ -70,8 +68,6 @@
 
     min-width: 0;
 
-    width: calc(100% - 273px);
-
     margin-top: 40px;
 }
 
@@ -84,19 +80,17 @@
 
     .Admin-container {
 
-        gap: 20px;
+        width: 88%;
+
+        gap: 22px;
     }
 
 
     .Admin-container > .Sidebar {
 
-        width: 230px;
-    }
+        width: 225px;
 
-
-    .Admin-main {
-
-        width: calc(100% - 250px);
+        min-width: 225px;
     }
 
 }
@@ -110,19 +104,27 @@
 
     .Admin-container {
 
-        width: 90%;
+        width: 92%;
+
+        gap: 18px;
     }
 
 
     .Admin-container > .Sidebar {
 
-        width: 220px;
+        width: 200px;
+
+        min-width: 200px;
+
+        margin-top: 30px;
+
+        top: 30px;
     }
 
 
     .Admin-main {
 
-        width: calc(100% - 240px);
+        margin-top: 30px;
     }
 
 }
@@ -146,15 +148,21 @@
 
         width: 75px;
 
+        min-width: 75px;
+
         margin-top: 25px;
 
         top: 25px;
+
+        position: sticky;
     }
 
 
     .Admin-main {
 
-        width: calc(100% - 90px);
+        width: auto;
+
+        flex: 1;
 
         margin-top: 25px;
     }
@@ -172,25 +180,65 @@
 
         width: 94%;
 
-        flex-direction: column;
+        gap: 12px;
     }
 
 
     .Admin-container > .Sidebar {
 
-        width: 100%;
+        width: 65px;
+
+        min-width: 65px;
 
         margin-top: 20px;
 
-        position: static;
+        top: 20px;
+
+        position: sticky;
     }
 
 
     .Admin-main {
 
-        width: 100%;
+        width: auto;
+
+        flex: 1;
 
         margin-top: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   400px
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .Admin-container {
+
+        width: 94%;
+
+        gap: 10px;
+    }
+
+
+    .Admin-container > .Sidebar {
+
+        width: 58px;
+
+        min-width: 58px;
+
+        margin-top: 15px;
+
+        top: 15px;
+    }
+
+
+    .Admin-main {
+
+        margin-top: 15px;
     }
 
 }
