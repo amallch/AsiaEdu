@@ -231,7 +231,7 @@ function Header() {
                     <div className="webname">
 
                         <p>
-                            AsyawiEdu
+                            AsiaEdu
                         </p>
 
                         <p className="logo-desc">

@@ -26,7 +26,7 @@ function MyReview() {
        STATE
     ===================================================== */
 
-    const [review, setReview] = useState(null);
+    const [reviews, setReviews] = useState([]);
 
     const [enrollments, setEnrollments] = useState([]);
 
@@ -39,7 +39,7 @@ function MyReview() {
        FORM STATE
     ===================================================== */
 
-    const [courseName, setCourseName] = useState("");
+    const [selectedCourse, setSelectedCourse] = useState("");
 
     const [rating, setRating] = useState(0);
 
@@ -55,7 +55,7 @@ function MyReview() {
 
 
     /* =====================================================
-       LOAD REVIEW + ENROLLMENTS
+       LOAD REVIEWS + ENROLLMENTS
     ===================================================== */
 
     useEffect(() => {
@@ -79,28 +79,28 @@ function MyReview() {
 
 
                 /* =============================================
-                   FETCH EXISTING REVIEW
+                   FETCH STUDENT'S REVIEWS
                 ============================================= */
 
-                const reviewResponse = await fetch(
+                const reviewsResponse = await fetch(
                     `https://asiaedu-backend.onrender.com/api/reviews/student/${studentId}`
                 );
 
 
-                if (!reviewResponse.ok) {
+                if (!reviewsResponse.ok) {
 
                     throw new Error(
-                        "Failed to fetch review"
+                        "Failed to fetch reviews"
                     );
 
                 }
 
 
-                const reviewData =
-                    await reviewResponse.json();
+                const reviewsData =
+                    await reviewsResponse.json();
 
 
-                setReview(reviewData.review);
+                setReviews(reviewsData.reviews || []);
 
 
                 /* =============================================
@@ -125,22 +125,7 @@ function MyReview() {
                     await enrollmentResponse.json();
 
 
-                const list =
-                    enrollmentData.enrollments || [];
-
-
-                setEnrollments(list);
-
-
-                /* =============================================
-                   AUTO-SELECT COURSE
-                ============================================= */
-
-                if (list.length === 1) {
-
-                    setCourseName(list[0].courseTitle || "");
-
-                }
+                setEnrollments(enrollmentData.enrollments || []);
 
 
                 setError("");
@@ -168,6 +153,43 @@ function MyReview() {
 
 
     /* =====================================================
+       COMPUTE UNREVIEWED COURSES
+    ===================================================== */
+
+    const reviewedCourseNames =
+        reviews.map((r) => r.courseName);
+
+
+    const unreviewedCourses =
+        enrollments.filter(
+            (enrollment) =>
+                !reviewedCourseNames.includes(
+                    enrollment.courseTitle
+                )
+        );
+
+
+    /* =====================================================
+       AUTO-SELECT FIRST UNREVIEWED COURSE
+    ===================================================== */
+
+    useEffect(() => {
+
+        if (
+            unreviewedCourses.length === 1 &&
+            !selectedCourse
+        ) {
+
+            setSelectedCourse(
+                unreviewedCourses[0].courseTitle
+            );
+
+        }
+
+    }, [unreviewedCourses.length, selectedCourse]);
+
+
+    /* =====================================================
        SUBMIT REVIEW
     ===================================================== */
 
@@ -191,10 +213,10 @@ function MyReview() {
         }
 
 
-        if (!courseName.trim()) {
+        if (!selectedCourse.trim()) {
 
             setSubmitError(
-                "Please select the course you enrolled in."
+                "Please select a course."
             );
 
             return;
@@ -241,7 +263,7 @@ function MyReview() {
                     body: JSON.stringify({
                         studentId,
                         name: fullName,
-                        courseName: courseName.trim(),
+                        courseName: selectedCourse.trim(),
                         rating,
                         message: message.trim()
                     })
@@ -264,7 +286,9 @@ function MyReview() {
             }
 
 
-            setReview(data.review);
+            setReviews([data.review, ...reviews]);
+
+            setSelectedCourse("");
 
             setRating(0);
 
@@ -369,7 +393,7 @@ function MyReview() {
                 </h2>
 
                 <p>
-                    Please wait while we check your review.
+                    Please wait while we load your reviews.
                 </p>
 
             </div>
@@ -406,6 +430,33 @@ function MyReview() {
     }
 
 
+    /* =====================================================
+       NO ENROLLMENTS
+    ===================================================== */
+
+    if (enrollments.length === 0) {
+
+        return (
+
+            <div className="MyReview-empty">
+
+                <i className="fa-solid fa-graduation-cap"></i>
+
+                <h2>
+                    No active courses
+                </h2>
+
+                <p>
+                    You need to be enrolled in at least one course before you can leave a review.
+                </p>
+
+            </div>
+
+        );
+
+    }
+
+
     return (
 
         <div className="MyReview">
@@ -418,20 +469,20 @@ function MyReview() {
             <div className="MyReview-header">
 
                 <span>
-                    My Review
+                    My Reviews
                 </span>
 
                 <h1>
-                    {review
-                        ? "Your Review"
-                        : "Share Your Experience"
+                    {unreviewedCourses.length > 0
+                        ? "Share Your Experience"
+                        : "Your Reviews"
                     }
                 </h1>
 
                 <p>
-                    {review
-                        ? "Here is the review you submitted. Thank you for your feedback!"
-                        : "Tell us about your learning journey with AsiaEdu."
+                    {unreviewedCourses.length > 0
+                        ? "Select a course below and tell us about your learning journey."
+                        : "Thank you for reviewing all your courses!"
                     }
                 </p>
 
@@ -439,99 +490,57 @@ function MyReview() {
 
 
             {/* =================================================
-                EXISTING REVIEW
+                FORM (if there are unreviewed courses)
             ================================================= */}
 
-            {review ? (
-
-                <div className="MyReview-card">
-
-
-                    <div className="MyReview-card-header">
-
-                        <div className="MyReview-avatar">
-
-                            {review.name
-                                ?.trim()
-                                .split(" ")
-                                .map((n) => n[0])
-                                .join("")
-                                .slice(0, 2)
-                                .toUpperCase()
-                            }
-
-                        </div>
-
-
-                        <div className="MyReview-card-info">
-
-                            <strong>
-                                {review.name}
-                            </strong>
-
-                            <span>
-                                {review.courseName}
-                            </span>
-
-                        </div>
-
-
-                        {renderStars(review.rating)}
-
-                    </div>
-
-
-                    <div className="MyReview-card-body">
-
-                        <p>
-                            {review.message}
-                        </p>
-
-                    </div>
-
-
-                    <div className="MyReview-card-footer">
-
-                        <i className="fa-regular fa-calendar"></i>
-
-                        <span>
-                            Submitted on {formatDate(review.createdAt)}
-                        </span>
-
-                    </div>
-
-                </div>
-
-            ) : enrollments.length === 0 ? (
-
-                /* =================================================
-                   NO ENROLLMENTS
-                ================================================= */
-
-                <div className="MyReview-empty">
-
-                    <i className="fa-solid fa-graduation-cap"></i>
-
-                    <h2>
-                        No active courses
-                    </h2>
-
-                    <p>
-                        You need to be enrolled in at least one course before you can leave a review.
-                    </p>
-
-                </div>
-
-            ) : (
-
-                /* =================================================
-                   FORM
-                ================================================= */
+            {unreviewedCourses.length > 0 && (
 
                 <form
                     className="MyReview-form"
                     onSubmit={handleSubmit}
                 >
+
+
+                    {/* COURSE SELECTOR */}
+
+                    <div className="MyReview-field">
+
+                        <label>
+                            Select the course you want to review
+                        </label>
+
+                        <div className="MyReview-input">
+
+                            <i className="fa-solid fa-graduation-cap"></i>
+
+                            <select
+                                value={selectedCourse}
+                                onChange={(e) =>
+                                    setSelectedCourse(e.target.value)
+                                }
+                                className="MyReview-select"
+                            >
+
+                                <option value="">
+                                    Choose a course
+                                </option>
+
+                                {unreviewedCourses.map((enrollment) => (
+
+                                    <option
+                                        key={enrollment._id}
+                                        value={enrollment.courseTitle}
+                                    >
+                                        {enrollment.courseTitle}
+                                    </option>
+
+                                ))}
+
+                            </select>
+
+                        </div>
+
+                    </div>
 
 
                     {/* NAME (read-only) */}
@@ -557,55 +566,24 @@ function MyReview() {
                     </div>
 
 
-                    {/* COURSE */}
+                    {/* COURSE (read-only, mirrors selector) */}
 
                     <div className="MyReview-field">
 
                         <label>
-                            Course You Enrolled In
+                            Course
                         </label>
 
                         <div className="MyReview-input">
 
-                            <i className="fa-solid fa-graduation-cap"></i>
+                            <i className="fa-solid fa-book"></i>
 
-
-                            {enrollments.length === 1 ? (
-
-                                <input
-                                    type="text"
-                                    value={courseName}
-                                    readOnly
-                                />
-
-                            ) : (
-
-                                <select
-                                    value={courseName}
-                                    onChange={(e) =>
-                                        setCourseName(e.target.value)
-                                    }
-                                    className="MyReview-select"
-                                >
-
-                                    <option value="">
-                                        Select a course
-                                    </option>
-
-                                    {enrollments.map((enrollment) => (
-
-                                        <option
-                                            key={enrollment._id}
-                                            value={enrollment.courseTitle}
-                                        >
-                                            {enrollment.courseTitle}
-                                        </option>
-
-                                    ))}
-
-                                </select>
-
-                            )}
+                            <input
+                                type="text"
+                                value={selectedCourse}
+                                placeholder="Select a course above"
+                                readOnly
+                            />
 
                         </div>
 
@@ -735,6 +713,96 @@ function MyReview() {
                     </button>
 
                 </form>
+
+            )}
+
+
+            {/* =================================================
+                PREVIOUS REVIEWS
+            ================================================= */}
+
+            {reviews.length > 0 && (
+
+                <div className="MyReview-previous">
+
+                    <h2>
+                        Your Previous Reviews
+                    </h2>
+
+
+                    <div className="MyReview-cards-grid">
+
+                        {reviews.map((review) => (
+
+                            <div
+                                className="MyReview-card"
+                                key={review._id}
+                            >
+
+                                <div className="MyReview-card-header">
+
+                                    <div className="MyReview-avatar">
+
+                                        {review.name
+                                            ?.trim()
+                                            .split(" ")
+                                            .map((n) => n[0])
+                                            .join("")
+                                            .slice(0, 2)
+                                            .toUpperCase()
+                                        }
+
+                                    </div>
+
+
+                                    <div className="MyReview-card-info">
+
+                                        <strong>
+                                            {review.name}
+                                        </strong>
+
+                                        <span>
+                                            {review.courseName}
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div className="MyReview-card-rating">
+
+                                    {renderStars(review.rating)}
+
+                                </div>
+
+
+                                <div className="MyReview-card-body">
+
+                                    <p>
+                                        {review.message}
+                                    </p>
+
+                                </div>
+
+
+                                <div className="MyReview-card-footer">
+
+                                    <i className="fa-regular fa-calendar"></i>
+
+                                    <span>
+                                        {formatDate(review.createdAt)}
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        ))}
+
+                    </div>
+
+                </div>
 
             )}
 
